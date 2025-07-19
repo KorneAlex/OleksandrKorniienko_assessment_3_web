@@ -1,0 +1,20 @@
+{
+  "name": "oleksandrkorniienko_assessment_3_web",
+  "version": "1.0.0",
+  "description": "Assesment 3 web dev 2 by Oleksandr Korniienko",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "assessment",
+    "weather",
+    "SETU"
+  ],
+  "author": "Oleksandr Korniienko",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
