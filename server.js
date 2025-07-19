@@ -4,7 +4,6 @@ import cookieParser from "cookie-parser";
 import fileUpload from "express-fileupload";
 import { engine } from "express-handlebars";
 import { router } from "./routes.js";
-import { loadEnvFile } from ".env";
 
 const app = express();
 app.use(cookieParser());
@@ -16,6 +15,6 @@ app.set("view engine", ".hbs");
 app.set("views", "./views");
 app.use("/", router);
 
-const listener = app.listen(process.env.PORT || 4000, function () {
+const listener = app.listen(5000, function () {
   console.log(`Server started on http://localhost:${listener.address().port}`);
 });
