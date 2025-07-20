@@ -1,12 +1,12 @@
-import { dataStore } from "../models/data-store.js";
-import { stationStore } from "../models/station-store.js";
+import { recordsStore } from "../models/records-store.js";
+import { stationsStore } from "../models/stations-store.js";
 
 export const dashboardController = {
   async index(request, response) {
     const viewData = {
       title: "Dashboard",
-      dataStore: await dataStore.getWeatherData(),
-      stationStore: await stationStore.getStationData(),
+      recordsData: await recordsStore.getRecordsData(),
+      stationsData: await stationsStore.getStationsData(),
     };
     console.log("dashboard rendering");
     response.render("dashboard", viewData);

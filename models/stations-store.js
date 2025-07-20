@@ -1,15 +1,17 @@
 import { v4 } from "uuid";
 import { format } from "date-fns";
 import { initStore } from "../utils/store-utils.js";
+import { recordsStore } from "./records-store.js";
 
-const db = initStore("stationData");
+const db = initStore("stationsData");
 
-export const stationStore = {
+export const stationsStore = {
 
-    async getStationData() {
-        await db.read();
-        return db.data.stationData;
-    },
+  async getStationsData() {
+    await db.read();
+    return db.data.stationsData;
+  },
+
 
   async addStationData(station) {
     await db.read();
@@ -19,12 +21,16 @@ export const stationStore = {
     station.deleted = false;
     station.deleted_timestamp = null;
     station.deleted_by = null;
-    db.data.stationData.push({ station });
+    db.data.stationsData.push({ station });
     await db.write();
     console.log("stations-store: Station data saved successfully.");
     return station;
 },
 
-
-
+async getStationById(id) {
+  await db.read();
+  const list = db.data.stationsData.find(s => s.station.id === id);
+  list.stations = await recordsStore.getRecordsDataByStationId(id);
+  return list;
+},
 }

@@ -1,3 +1,4 @@
+<div class="header"><div style="position: relative; text-align: center;"><div class="title is-4">Station list</div></div></div>
 <table class="table is-fullwidth">
 <thead>
     <tr>
@@ -10,7 +11,7 @@
         <th>Added</th>
     </tr>
 </thead>
-{{#each stationStore}}
+{{#each stationsData}}
   <tr>
     <td>{{station.name}}</td>
     <td>{{station.city}}</td>
@@ -19,6 +20,7 @@
     <td>{{station.longitude}}</td>
     <td>{{station.id}}</td>
     <td>{{station.timestamp_created}}</td>
+     <td><a href="/stations/{{station.id}}">Edit</a></td>
   </tr>
 {{/each}}
 </table>

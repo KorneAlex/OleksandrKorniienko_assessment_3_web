@@ -1,3 +1,8 @@
+<div class="header">
+  <div style="position: relative; text-align: center;">
+    <div class="title is-4">Station {{currentStation.name}}</div>
+    </div>
+    </div>
 <table class="table is-fullwidth">
 <thead>
     <tr>
@@ -10,7 +15,8 @@
         <th>Timestamp</th>
     </tr>
 </thead>
-{{#each dataStore}}
+{{#each recordsData}}
+{{recordsData.length}}
   <tr>
     <td>{{record.code}}</td>
     <td>{{record.temperature}}</td>

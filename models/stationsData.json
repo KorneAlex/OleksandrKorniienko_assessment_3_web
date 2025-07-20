@@ -1,0 +1,65 @@
+{
+  "file": "./models/stationsData.json",
+  "stationsData": [
+    {
+      "station": {
+        "name": "",
+        "city": "",
+        "county": "",
+        "latitude": "",
+        "longitude": "",
+        "id": "fac62806-1d8a-44d2-9e28-1505d8a9cad7",
+        "timestamp_created": "20/07/2025 - 19:07:17",
+        "created_by": "Admin",
+        "deleted": false,
+        "deleted_timestamp": null,
+        "deleted_by": null
+      }
+    },
+    {
+      "station": {
+        "name": "",
+        "city": "",
+        "county": "",
+        "latitude": "",
+        "longitude": "",
+        "id": "69e4cedc-57f6-46df-94c9-10931fe61153",
+        "timestamp_created": "20/07/2025 - 19:20:04",
+        "created_by": "Admin",
+        "deleted": false,
+        "deleted_timestamp": null,
+        "deleted_by": null
+      }
+    },
+    {
+      "station": {
+        "name": "ghghg",
+        "city": "",
+        "county": "",
+        "latitude": "",
+        "longitude": "",
+        "id": "afb58bcd-de68-4cbf-ae8b-9d556216a418",
+        "timestamp_created": "20/07/2025 - 23:08:34",
+        "created_by": "Admin",
+        "deleted": false,
+        "deleted_timestamp": null,
+        "deleted_by": null
+      }
+    },
+    {
+      "station": {
+        "name": "ggff",
+        "city": "ggfg",
+        "county": "df",
+        "latitude": "334",
+        "longitude": "334",
+        "id": "3ddd5f36-e54e-4a73-8cac-5a749d540351",
+        "timestamp_created": "20/07/2025 - 23:20:14",
+        "created_by": "Admin",
+        "deleted": false,
+        "deleted_timestamp": null,
+        "deleted_by": null
+      }
+    }
+  ]
+}
