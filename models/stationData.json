@@ -1,0 +1,50 @@
+{
+  "file": "./models/stationData.json",
+  "stationData": [
+    {
+      "station": {
+        "name": "",
+        "city": "",
+        "county": "",
+        "latitude": "",
+        "longitude": "",
+        "id": "345d4551-fc7e-47b1-a278-850ee879ff0e",
+        "timestamp_created": "20/07/2025 - 15:01:08",
+        "created_by": "Admin",
+        "deleted": false,
+        "deleted_timestamp": null,
+        "deleted_by": null
+      }
+    },
+    {
+      "station": {
+        "name": "2",
+        "city": "2",
+        "county": "2",
+        "latitude": "2",
+        "longitude": "2",
+        "id": "7aef4f86-2b5f-41ea-a6b4-0675c7a7b1a1",
+        "timestamp_created": "20/07/2025 - 15:01:16",
+        "created_by": "Admin",
+        "deleted": false,
+        "deleted_timestamp": null,
+        "deleted_by": null
+      }
+    },
+    {
+      "station": {
+        "name": "33",
+        "city": "33",
+        "county": "33",
+        "latitude": "33",
+        "longitude": "33",
+        "id": "af6aa37e-ca56-438b-b48f-2ac8962461c7",
+        "timestamp_created": "20/07/2025 - 15:36:17",
+        "created_by": "Admin",
+        "deleted": false,
+        "deleted_timestamp": null,
+        "deleted_by": null
+      }
+    }
+  ]
+}

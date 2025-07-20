@@ -1,0 +1,24 @@
+<table class="table is-fullwidth">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>City</th>
+        <th>County</th>
+        <th>Latitude</th>
+        <th>Longitude</th>
+        <th>ID</th>
+        <th>Added</th>
+    </tr>
+</thead>
+{{#each stationStore}}
+  <tr>
+    <td>{{station.name}}</td>
+    <td>{{station.city}}</td>
+    <td>{{station.county}}</td>
+    <td>{{station.latitude}}</td>
+    <td>{{station.longitude}}</td>
+    <td>{{station.id}}</td>
+    <td>{{station.timestamp_created}}</td>
+  </tr>
+{{/each}}
+</table>
