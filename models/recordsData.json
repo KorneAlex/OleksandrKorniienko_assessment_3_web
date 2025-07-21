@@ -3,122 +3,26 @@
   "recordsData": [
     {
       "record": {
-        "code": "",
-        "temperature": "",
-        "wind_speed": "",
-        "wind_direction": "",
-        "pressure": "",
-        "id": "80c57eb9-f81d-4d1e-9b98-4760d7546da7",
-        "station_id": "fac62806-1d8a-44d2-9e28-1505d8a9cad7",
-        "timestamp": "20/07/2025 - 22:58:14"
+        "code": "1",
+        "temperature": "1",
+        "wind_speed": "1",
+        "wind_direction": "1",
+        "pressure": "1",
+        "id": "ae8dba1b-6bb0-46bd-b90b-8beb1c985f04",
+        "station_id": "c015cb2a-ef1f-4cff-89ef-16e9fd84b9c6",
+        "timestamp": "21/07/2025 - 14:31:05"
       }
     },
     {
       "record": {
-        "code": "",
-        "temperature": "",
-        "wind_speed": "",
-        "wind_direction": "",
-        "pressure": "",
-        "id": "8e443004-0ccc-4f32-b266-f5da70d1b17b",
-        "station_id": "69e4cedc-57f6-46df-94c9-10931fe61153",
-        "timestamp": "20/07/2025 - 22:59:41"
-      }
-    },
-    {
-      "record": {
-        "code": "",
-        "temperature": "",
-        "wind_speed": "",
-        "wind_direction": "",
-        "pressure": "",
-        "id": "3f84683d-f324-4c49-bb09-b4973e8f3ce7",
-        "station_id": "69e4cedc-57f6-46df-94c9-10931fe61153",
-        "timestamp": "20/07/2025 - 23:00:02"
-      }
-    },
-    {
-      "record": {
-        "code": "",
-        "temperature": "",
-        "wind_speed": "",
-        "wind_direction": "",
-        "pressure": "",
-        "id": "ccae1cc9-9fb8-42d2-addc-879fbf23d79f",
-        "station_id": "fac62806-1d8a-44d2-9e28-1505d8a9cad7",
-        "timestamp": "20/07/2025 - 23:05:05"
-      }
-    },
-    {
-      "record": {
-        "code": "",
-        "temperature": "",
-        "wind_speed": "",
-        "wind_direction": "",
-        "pressure": "",
-        "id": "ee256fa7-f871-4194-9ea7-30689dcb0db8",
-        "station_id": "69e4cedc-57f6-46df-94c9-10931fe61153",
-        "timestamp": "20/07/2025 - 23:05:09"
-      }
-    },
-    {
-      "record": {
-        "code": "",
-        "temperature": "",
-        "wind_speed": "",
-        "wind_direction": "",
-        "pressure": "",
-        "id": "37aa546a-f8d3-40d1-a235-870c3f4350e1",
-        "station_id": "69e4cedc-57f6-46df-94c9-10931fe61153",
-        "timestamp": "20/07/2025 - 23:05:10"
-      }
-    },
-    {
-      "record": {
-        "code": "",
-        "temperature": "",
-        "wind_speed": "",
-        "wind_direction": "",
-        "pressure": "",
-        "id": "a36107ad-ba73-4577-a772-6cd2f944a591",
-        "station_id": "fac62806-1d8a-44d2-9e28-1505d8a9cad7",
-        "timestamp": "20/07/2025 - 23:08:25"
-      }
-    },
-    {
-      "record": {
-        "code": "",
-        "temperature": "",
-        "wind_speed": "",
-        "wind_direction": "",
-        "pressure": "",
-        "id": "c2453a7a-7082-43bb-9248-49a901c4ede1",
-        "station_id": "afb58bcd-de68-4cbf-ae8b-9d556216a418",
-        "timestamp": "20/07/2025 - 23:08:39"
-      }
-    },
-    {
-      "record": {
-        "code": "",
-        "temperature": "",
-        "wind_speed": "",
-        "wind_direction": "",
-        "pressure": "",
-        "id": "cd37e1c4-9984-49b3-bf11-db1a250bd941",
-        "station_id": "fac62806-1d8a-44d2-9e28-1505d8a9cad7",
-        "timestamp": "20/07/2025 - 23:19:51"
-      }
-    },
-    {
-      "record": {
-        "code": "45",
-        "temperature": "45",
-        "wind_speed": "45",
-        "wind_direction": "45",
-        "pressure": "45",
-        "id": "dfd6a870-3860-4d89-ad66-050e01715422",
-        "station_id": "fac62806-1d8a-44d2-9e28-1505d8a9cad7",
-        "timestamp": "20/07/2025 - 23:19:58"
+        "code": "1",
+        "temperature": "1",
+        "wind_speed": "1",
+        "wind_direction": "1",
+        "pressure": "1",
+        "id": "fbc8e119-a633-43a3-9045-b3943435bc0e",
+        "station_id": "a3fa0696-8904-4cd5-b773-9de9e2fe7ad2",
+        "timestamp": "21/07/2025 - 14:34:55"
       }
     }
   ]

@@ -1,5 +1,4 @@
 import { stationsStore } from "../models/stations-store.js";
-import { recordsStore } from "../models/records-store.js";
 
 export const stationsController = {
   async addStation(request, response) {
@@ -15,18 +14,18 @@ export const stationsController = {
       response.redirect("/dashboard");
   },
 
-  async addRecord(request, response) {
-    console.log("stations-controller: Adding record to station:", request.params.station_id);
-      const newData = {
-        code: request.body.code,
-        temperature: request.body.temperature,
-        wind_speed: request.body.wind_speed,
-        wind_direction: request.body.wind_direction,
-        pressure: request.body.pressure,
-      };
-      const station_id = await request.params.station_id;
-      console.log(`adding data ${newData} to station ${station_id}`);
-      await recordsStore.addRecord(station_id, newData);
-      response.redirect("/stations/" + station_id);
+  async deleteStation(req, res) {
+    await stationsStore.deleteStation(req.params.station_id);
+      res.redirect("/dashboard");
   },
-}
+
+  async deleteStationFromDB(req, res) {
+    await stationsStore.deleteStationFromDB(req.params.station_id);
+      res.redirect("/dashboard");
+  },
+
+    async restoreStation(req, res) {
+    await stationsStore.restoreStation(req.params.station_id);
+      res.redirect("/dashboard");
+  }
+  }

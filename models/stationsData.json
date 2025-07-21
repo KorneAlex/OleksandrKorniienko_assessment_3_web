@@ -3,13 +3,13 @@
   "stationsData": [
     {
       "station": {
-        "name": "",
-        "city": "",
-        "county": "",
-        "latitude": "",
-        "longitude": "",
-        "id": "fac62806-1d8a-44d2-9e28-1505d8a9cad7",
-        "timestamp_created": "20/07/2025 - 19:07:17",
+        "name": "1",
+        "city": "1",
+        "county": "1",
+        "latitude": "1",
+        "longitude": "1",
+        "id": "a3fa0696-8904-4cd5-b773-9de9e2fe7ad2",
+        "timestamp_created": "21/07/2025 - 14:34:43",
         "created_by": "Admin",
         "deleted": false,
         "deleted_timestamp": null,
@@ -23,8 +23,8 @@
         "county": "",
         "latitude": "",
         "longitude": "",
-        "id": "69e4cedc-57f6-46df-94c9-10931fe61153",
-        "timestamp_created": "20/07/2025 - 19:20:04",
+        "id": "4949d2d1-2947-4abf-8e91-3a6b89f2a399",
+        "timestamp_created": "21/07/2025 - 14:46:09",
         "created_by": "Admin",
         "deleted": false,
         "deleted_timestamp": null,
@@ -33,13 +33,13 @@
     },
     {
       "station": {
-        "name": "ghghg",
+        "name": "",
         "city": "",
         "county": "",
         "latitude": "",
         "longitude": "",
-        "id": "afb58bcd-de68-4cbf-ae8b-9d556216a418",
-        "timestamp_created": "20/07/2025 - 23:08:34",
+        "id": "6f8b70c1-5d16-4ded-9355-80cb442ef7ff",
+        "timestamp_created": "21/07/2025 - 14:46:10",
         "created_by": "Admin",
         "deleted": false,
         "deleted_timestamp": null,
@@ -48,17 +48,17 @@
     },
     {
       "station": {
-        "name": "ggff",
-        "city": "ggfg",
-        "county": "df",
-        "latitude": "334",
-        "longitude": "334",
-        "id": "3ddd5f36-e54e-4a73-8cac-5a749d540351",
-        "timestamp_created": "20/07/2025 - 23:20:14",
+        "name": "",
+        "city": "",
+        "county": "",
+        "latitude": "",
+        "longitude": "",
+        "id": "2120c4dc-df4e-4caa-89b7-791f638a3476",
+        "timestamp_created": "21/07/2025 - 14:46:11",
         "created_by": "Admin",
-        "deleted": false,
-        "deleted_timestamp": null,
-        "deleted_by": null
+        "deleted": true,
+        "deleted_timestamp": "21/07/2025 - 14:59:27",
+        "deleted_by": "Admin"
       }
     }
   ]

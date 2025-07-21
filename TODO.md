@@ -6,3 +6,5 @@ Create users-controller and permissions for them
 Add the ability to update all data, Admins - evething, users - only data they created.
 Create logs of events: updates, deletions, creations, etc.
 Create an Admin page console to see logs and etc.
+Create all buttons and functions with routes for stations and records
+Last time updated in stations when add a new record

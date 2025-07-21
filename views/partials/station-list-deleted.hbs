@@ -1,4 +1,4 @@
-<div class="header"><div style="position: relative; text-align: center;"><div class="title is-4">Station list</div></div></div>
+<div class="header"><div style="position: relative; text-align: center;"><div class="title is-4">Station list deleted</div></div></div>
 <table class="table is-fullwidth">
 <thead>
     <tr>
@@ -8,10 +8,13 @@
         <th>Latitude</th>
         <th>Longitude</th>
         <th>ID</th>
-        <th>Added</th>
+        <th>Deleted</th>
+        <th>Edit</th>
+        <th>Restore</th>
+        <th>Delete Forever</th>
     </tr>
 </thead>
-{{#each activeStationsData}}
+{{#each deletedStationsData}}
   <tr>
     <td>{{station.name}}</td>
     <td>{{station.city}}</td>
@@ -19,9 +22,10 @@
     <td>{{station.latitude}}</td>
     <td>{{station.longitude}}</td>
     <td>{{station.id}}</td>
-    <td>{{station.timestamp_created}}</td>
+    <td>{{station.timestamp_deleted}}</td>
      <td><a href="/stations/{{station.id}}">Edit</a></td>
-     <td><a href="/stations/{{station.id}}/deleteStation">Delete</a></td>
+     <td><a href="/stations/{{station.id}}/restoreStation">Restore</a></td>
+     <td><a href="/stations/{{station.id}}/deleteStationFromDB">Delete Forever</a></td>
   </tr>
 {{/each}}
 </table>

@@ -7,6 +7,8 @@ export const dashboardController = {
       title: "Dashboard",
       recordsData: await recordsStore.getRecordsData(),
       stationsData: await stationsStore.getStationsData(),
+      activeStationsData: await stationsStore.getActiveStationsData(),
+      deletedStationsData: await stationsStore.getDeletedStationsData(),
     };
     console.log("dashboard rendering");
     response.render("dashboard", viewData);

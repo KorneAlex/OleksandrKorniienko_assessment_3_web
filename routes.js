@@ -20,7 +20,11 @@ router.post("/dashboard/addStation", stationsController.addStation);
 
 // station buttons
 router.get("/stations/:station_id", recordsController.index);
-router.post("/stations/:station_id/addRecord", stationsController.addRecord);
+router.post("/stations/:station_id/addRecord", recordsController.addRecord);
+router.get("/stations/:station_id/deleteStation", stationsController.deleteStation);
+router.get("/stations/:station_id/deleteStationFromDB", stationsController.deleteStationFromDB);
+router.get("/stations/:station_id/restoreStation", stationsController.restoreStation);
+
 
 // test route
-router.get("/test/:test_id", testController.test);
+router.get("/test", testController.test);
