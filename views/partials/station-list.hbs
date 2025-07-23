@@ -13,15 +13,15 @@
 </thead>
 {{#each activeStationsData}}
   <tr>
-    <td>{{station.name}}</td>
-    <td>{{station.city}}</td>
-    <td>{{station.county}}</td>
-    <td>{{station.latitude}}</td>
-    <td>{{station.longitude}}</td>
-    <td>{{station.id}}</td>
-    <td>{{station.timestamp_created}}</td>
-     <td><a href="/stations/{{station.id}}">Edit</a></td>
-     <td><a href="/stations/{{station.id}}/deleteStation">Delete</a></td>
+    <td>{{name}}</td>
+    <td>{{city}}</td>
+    <td>{{county}}</td>
+    <td>{{latitude}}</td>
+    <td>{{longitude}}</td>
+    <td>{{id}}</td>
+    <td>{{timestamp_created}}</td>
+     <td><a href="/stations/{{id}}">Edit</a></td>
+     <td><a href="/stations/{{id}}/deleteStation">Delete</a></td>
   </tr>
 {{/each}}
 </table>

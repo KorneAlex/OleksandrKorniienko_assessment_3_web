@@ -2,28 +2,24 @@
   "file": "./models/recordsData.json",
   "recordsData": [
     {
-      "record": {
-        "code": "1",
-        "temperature": "1",
-        "wind_speed": "1",
-        "wind_direction": "1",
-        "pressure": "1",
-        "id": "ae8dba1b-6bb0-46bd-b90b-8beb1c985f04",
-        "station_id": "c015cb2a-ef1f-4cff-89ef-16e9fd84b9c6",
-        "timestamp": "21/07/2025 - 14:31:05"
-      }
+      "code": "1",
+      "temperature": "1",
+      "wind_speed": "1",
+      "wind_direction": "1",
+      "pressure": "1",
+      "id": "8a36c024-b74e-4907-98c6-d9277ecd38cd",
+      "station_id": "a1df7bbf-362e-4d87-b035-d2bb1576f8b1",
+      "timestamp": "23/07/2025 - 15:12:55"
     },
     {
-      "record": {
-        "code": "1",
-        "temperature": "1",
-        "wind_speed": "1",
-        "wind_direction": "1",
-        "pressure": "1",
-        "id": "fbc8e119-a633-43a3-9045-b3943435bc0e",
-        "station_id": "a3fa0696-8904-4cd5-b773-9de9e2fe7ad2",
-        "timestamp": "21/07/2025 - 14:34:55"
-      }
+      "code": "2",
+      "temperature": "2",
+      "wind_speed": "2",
+      "wind_direction": "2",
+      "pressure": "2",
+      "id": "e0ae3ba6-c0ad-4146-b5ca-99a945a92ad5",
+      "station_id": "a1df7bbf-362e-4d87-b035-d2bb1576f8b1",
+      "timestamp": "23/07/2025 - 15:15:50"
     }
   ]
 }

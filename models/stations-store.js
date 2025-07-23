@@ -15,13 +15,13 @@ export const stationsStore = {
 
   async getActiveStationsData() {
     await db.read();
-    const activeStationsList = await db.data.stationsData.filter((s) => s.station.deleted === false);
+    const activeStationsList = await db.data.stationsData.filter((s) => s.deleted === false);
     return activeStationsList;
   },
 
   async getDeletedStationsData() {
     await db.read();
-    const deletedStationsList = await db.data.stationsData.filter((s) => s.station.deleted === true);
+    const deletedStationsList = await db.data.stationsData.filter((s) => s.deleted === true);
     return deletedStationsList;
   },
 
@@ -34,7 +34,7 @@ export const stationsStore = {
     station.deleted = false;
     station.deleted_timestamp = null;
     station.deleted_by = null;
-    db.data.stationsData.push({ station });
+    db.data.stationsData.push(station);
     await db.write();
     console.log("stations-store: Station data saved successfully.");
     return station;
@@ -43,48 +43,44 @@ export const stationsStore = {
   async deleteStation(id) {
     await db.read();
     const stationToBeDeleted = await stationsStore.getStationById(id);
-    stationToBeDeleted.station.deleted = true;
-    stationToBeDeleted.station.deleted_by = "Admin"; // TODO add other admins
-    stationToBeDeleted.station.deleted_timestamp = format(new Date(), "dd/MM/yyyy' - 'HH:mm:ss");
-    console.log(`stations-store: Station ${stationToBeDeleted.station.name} has been successfully deleted.`);
+    stationToBeDeleted.deleted = true;
+    stationToBeDeleted.deleted_by = "Admin"; // TODO add other admins
+    stationToBeDeleted.deleted_timestamp = format(new Date(), "dd/MM/yyyy' - 'HH:mm:ss");
+    console.log(`stations-store: Station ${stationToBeDeleted.name} has been successfully deleted.`);
     await db.write();
     return stationToBeDeleted;
   },
 
   async deleteStationFromDB(id) {
     await db.read();
-    await db.stationsStore.splice(stationsStore.getStationIndexByID(3, 1));
-    console.log(`stations-store: Station ${stationName} has been successfully removed from the database.`);
+    const stationToBeDeleted = await stationsStore.getStationById(id);
+    const index = await stationsStore.getStationIndexByID(id);
+    await db.data.stationsData.splice(index, 1);
+    console.log(`stations-store: Station ${stationToBeDeleted.name} has been successfully removed from the database.`);
     await db.write();
+    return stationToBeDeleted;
   },
 
 
    async restoreStation(id) {
     await db.read();
     const stationToBeRestored = await stationsStore.getStationById(id);
-    stationToBeRestored.station.deleted = false;
-    stationToBeRestored.station.deleted_by = null; // TODO maybe add restored
-    stationToBeRestored.station.deleted_timestamp = null; // TODO maybe add restored
-    console.log(`stations-store: Station ${stationToBeRestored.station.name} has been successfully restored.`);
+    stationToBeRestored.deleted = false;
+    stationToBeRestored.deleted_by = null; // TODO maybe add restored
+    stationToBeRestored.deleted_timestamp = null; // TODO maybe add restored
+    console.log(`stations-store: Station ${stationToBeRestored.name} has been successfully restored.`);
     await db.write();
     return stationToBeRestored;
   },
 
 async getStationById(id) {
   await db.read();
-  return await db.data.stationsData.find(s => s.station.id === id);
+  return await db.data.stationsData.find(s => s.id === id);
 },
-
-// async getStationById(id) {
-//   await db.read();
-//   const list = await db.data.stationsData.find(s => s.station.id === id);
-//   list.stations = await recordsStore.getRecordsDataByStationId(id);
-//   return list;
-// },
 
 async getStationIndexByID(id) {
   await db.read();
-  console.log(await db.data.stationsData.findIndex(s => s.station.id === id));
-  return await db.data.stationsData.findIndex(s => s.station.id === id);
+  console.log(await db.data.stationsData.findIndex(s => s.id === id));
+  return await db.data.stationsData.findIndex(s => s.id === id);
 },
 }

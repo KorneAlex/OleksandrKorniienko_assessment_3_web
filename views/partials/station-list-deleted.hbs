@@ -16,16 +16,16 @@
 </thead>
 {{#each deletedStationsData}}
   <tr>
-    <td>{{station.name}}</td>
-    <td>{{station.city}}</td>
-    <td>{{station.county}}</td>
-    <td>{{station.latitude}}</td>
-    <td>{{station.longitude}}</td>
-    <td>{{station.id}}</td>
-    <td>{{station.timestamp_deleted}}</td>
-     <td><a href="/stations/{{station.id}}">Edit</a></td>
-     <td><a href="/stations/{{station.id}}/restoreStation">Restore</a></td>
-     <td><a href="/stations/{{station.id}}/deleteStationFromDB">Delete Forever</a></td>
+    <td>{{name}}</td>
+    <td>{{city}}</td>
+    <td>{{county}}</td>
+    <td>{{latitude}}</td>
+    <td>{{longitude}}</td>
+    <td>{{id}}</td>
+    <td>{{timestamp_deleted}}</td>
+     <td><a href="/stations/{{id}}">Edit</a></td>
+     <td><a href="/stations/{{id}}/restoreStation">Restore</a></td>
+     <td><a href="/stations/{{id}}/deleteStationFromDB">Delete Forever</a></td>
   </tr>
 {{/each}}
 </table>

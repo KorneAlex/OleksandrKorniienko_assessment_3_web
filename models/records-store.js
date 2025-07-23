@@ -16,7 +16,7 @@ export const recordsStore = {
     record.id = v4();
     record.station_id = station_id;
     record.timestamp = format(new Date(), "dd/MM/yyyy' - 'HH:mm:ss");
-    db.data.recordsData.push({ record }); // TODO add user id
+    db.data.recordsData.push(record ); // TODO add user id
     await db.write();
     console.log("records-store: Record data saved successfully.");
     return record;
@@ -24,7 +24,7 @@ export const recordsStore = {
 
   async getRecordsDataByStationId(id) {
     await db.read();
-    return db.data.recordsData.filter(data => data.record.station_id === id);
+    return db.data.recordsData.filter(data => data.station_id === id);
   },
 
 }

@@ -9,10 +9,9 @@ export const recordsController = {
     const viewData = {
       title: "Station " + String(currentStation.name), //TODO fix this
       recordsData: await recordsStore.getRecordsDataByStationId(request.params.station_id),
-      currentStation: currentStation.station,
+      currentStation: currentStation,
     };
-      console.log("station rendering");
-      console.log("station name: ", viewData.currentStation.name);
+      console.log(`station ${viewData.currentStation.name} is rendering`);
       response.render("station", viewData);
     },
 
