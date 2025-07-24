@@ -1,0 +1,14 @@
+{
+  "file": "./models/usersData.json",
+  "usersData": [
+    {
+      "firstName": "Zdzislaw",
+      "lastName": "Trociewicz",
+      "email": "test@test.com",
+      "password": "pass",
+      "id": "707ad73c-0a9f-4bba-a6e6-96b31977f903",
+      "created_timestamp": "24/07/2025 - 15:42:18",
+      "admin": false
+    }
+  ]
+}

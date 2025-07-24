@@ -1,4 +1,9 @@
 {{>page/menu active="station"}}
+{{#if records_exist}}
 {{>records-list}}
+{{/if}}
 {{>add-record}}
+{{#if deleted_records_exist}}
+{{>records-list-deleted}}
+{{/if}}
 {{>page/footer}}

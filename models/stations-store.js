@@ -5,6 +5,8 @@ import { recordsStore } from "./records-store.js";
 
 const db = initStore("stationsData");
 const dbRecords = initStore("recordsData");
+const db_del_st = initStore("deletedStations");
+const db_del_rec = initStore("deletedRecords");
 
 export const stationsStore = {
 
@@ -23,6 +25,24 @@ export const stationsStore = {
     await db.read();
     const deletedStationsList = await db.data.stationsData.filter((s) => s.deleted === true);
     return deletedStationsList;
+  },
+  
+
+  async station_exist() {
+    const activeStationsList = await stationsStore.getActiveStationsData();
+    if(activeStationsList.length != 0) {
+      return true;
+    }
+    return false;
+  },
+
+
+  async deleted_exist() {
+    const deletedStationsList = await stationsStore.getDeletedStationsData();
+    if(deletedStationsList.length != 0) {
+      return true;
+    }
+    return false;
   },
 
 
@@ -53,11 +73,16 @@ export const stationsStore = {
 
   async deleteStationFromDB(id) {
     await db.read();
+    await db_del_st.read();
     const stationToBeDeleted = await stationsStore.getStationById(id);
+    console.log(stationToBeDeleted);
     const index = await stationsStore.getStationIndexByID(id);
     await db.data.stationsData.splice(index, 1);
     console.log(`stations-store: Station ${stationToBeDeleted.name} has been successfully removed from the database.`);
+    stationToBeDeleted.deleted_fromDB = format(new Date(), "dd/MM/yyyy' - 'HH:mm:ss");
+    db_del_st.data.deletedStations.push(stationToBeDeleted);
     await db.write();
+    await db_del_st.write();
     return stationToBeDeleted;
   },
 

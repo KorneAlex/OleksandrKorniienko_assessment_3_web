@@ -1,5 +1,9 @@
 {{>page/menu active="dashboard"}}
+{{#if stations_exist}}
 {{>station-list}}
+{{/if}}
 {{>add-station}}
+{{#if deleted_station_exist}}
 {{>station-list-deleted}}
+{{/if}}
 {{>page/footer}}

@@ -2,43 +2,43 @@
   "file": "./models/stationsData.json",
   "stationsData": [
     {
-      "name": "",
+      "name": "1",
       "city": "",
       "county": "",
       "latitude": "",
       "longitude": "",
-      "id": "326b3a65-1c93-494a-9ce5-f851916cfe57",
-      "timestamp_created": "23/07/2025 - 15:32:20",
+      "id": "3166ea0e-d09c-471e-a75e-3840ad3b38ee",
+      "timestamp_created": "24/07/2025 - 10:52:11",
       "created_by": "Admin",
       "deleted": false,
       "deleted_timestamp": null,
       "deleted_by": null
     },
     {
-      "name": "",
+      "name": "2",
       "city": "",
       "county": "",
       "latitude": "",
       "longitude": "",
-      "id": "8d27f406-ae5f-476c-b58b-f243318e8630",
-      "timestamp_created": "23/07/2025 - 15:32:20",
+      "id": "7c3b76dd-3ab3-47c7-bcf9-71d62267ac1f",
+      "timestamp_created": "24/07/2025 - 10:52:13",
       "created_by": "Admin",
       "deleted": false,
       "deleted_timestamp": null,
       "deleted_by": null
     },
     {
-      "name": "",
+      "name": "3",
       "city": "",
       "county": "",
       "latitude": "",
       "longitude": "",
-      "id": "393d7968-9e6c-4c0c-a232-79a965c25fc4",
-      "timestamp_created": "23/07/2025 - 15:32:21",
+      "id": "2423d287-1df1-4f09-b22a-bc77929438c9",
+      "timestamp_created": "24/07/2025 - 10:52:21",
       "created_by": "Admin",
-      "deleted": false,
-      "deleted_timestamp": null,
-      "deleted_by": null
+      "deleted": true,
+      "deleted_timestamp": "24/07/2025 - 11:24:15",
+      "deleted_by": "Admin"
     }
   ]
 }

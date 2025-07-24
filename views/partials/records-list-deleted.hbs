@@ -1,6 +1,6 @@
 <div class="header">
   <div style="position: relative; text-align: center;">
-    <div class="title is-4">Station {{currentStation.name}}</div>
+    <div class="title is-4">Station {{currentStation.name}} deleted records</div>
     </div>
     </div>
 <table class="table is-fullwidth">
@@ -15,7 +15,7 @@
         <th>Timestamp</th>
     </tr>
 </thead>
-{{#each activeRecordsData}}
+{{#each deletedRecordsData}}
   <tr>
     <td>{{code}}</td>
     <td>{{temperature}}</td>
@@ -24,8 +24,9 @@
     <td>{{pressure}}</td>
     <td>{{id}}</td>
     <td>{{timestamp}}</td>
-    {{!-- <td><a href="/stations/{{station_id}}/{{id}}">Edit</a></td> --}}
-    <td><a href="/stations/{{station_id}}/{{id}}/deleteRecord">Delete</a></td>
-  </tr>   
+    {{!-- <td><a href="/stations/{{station_id}}">Edit</a></td> --}}
+    <td><a href="/stations/{{station_id}}/{{id}}/restoreRecord">Restore</a></td>
+    <td><a href="/stations/{{station_id}}/{{id}}/deleteRecordFromDB">Delete Forever</a></td>
+  </tr>
 {{/each}}
 </table>

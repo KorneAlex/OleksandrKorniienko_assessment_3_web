@@ -1,17 +1,35 @@
 import { stationsStore } from "../models/stations-store.js";
+import { recordsStore } from "../models/records-store.js";
 
 export const stationsController = {
-  async addStation(request, response) {
+
+  async index(req, res) {
+    const station_id = req.params.station_id;
+    const currentStation = await stationsStore.getStationById(station_id);
+    const viewData = {
+      title: "Station " + String(currentStation.name), //TODO fix this
+      recordsData: await recordsStore.getRecordsDataByStationId(station_id),
+      currentStation: currentStation,
+      records_exist: await recordsStore.records_exist(station_id),
+      activeRecordsData: await recordsStore.getActiveRecordsDataById(station_id),
+      deleted_records_exist: await recordsStore.deleted_records_exist(station_id),
+      deletedRecordsData: await recordsStore.getDeletedRecordsDataById(station_id),
+    };
+      console.log(`station ${viewData.currentStation.name} is rendering`);
+      res.render("station", viewData);
+    },
+
+  async addStation(req, res) {
       const stationData = {
-        name: request.body.name,
-        city: request.body.city,
-        county: request.body.county,
-        latitude: request.body.latitude,
-        longitude: request.body.longitude,
+        name: req.body.name,
+        city: req.body.city,
+        county: req.body.county,
+        latitude: req.body.latitude,
+        longitude: req.body.longitude,
       };
       await stationsStore.addStationData(stationData);
       console.log("stations-controller: Station data submitted:", stationData);
-      response.redirect("/dashboard");
+      res.redirect("/dashboard");
   },
 
   async deleteStation(req, res) {
