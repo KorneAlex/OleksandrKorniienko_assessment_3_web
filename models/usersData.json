@@ -1,1 +1,14 @@
-{"file":"./models/usersData.json","usersData":[]}
+{
+  "file": "./models/usersData.json",
+  "usersData": [
+    {
+      "firstName": "test",
+      "lastName": "test",
+      "email": "test@test.com",
+      "password": "pass",
+      "id": "23260601-127c-4b43-b72c-fcf8e99fc0e6",
+      "created_timestamp": "26/07/2025 - 12:03:31",
+      "admin": false
+    }
+  ]
+}

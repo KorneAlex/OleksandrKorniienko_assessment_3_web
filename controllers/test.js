@@ -1,4 +1,5 @@
 import { stationsStore } from "../models/stations-store.js";
+import { usersStore } from "../models/user-store.js";
 
 export const testController = {
     async test(req, res) {
@@ -6,8 +7,8 @@ export const testController = {
         title: "Test Page",
         message: "This is a test page.",
       };
-      const data = await stationsStore.getStationIndexByID("2120c4dc-df4e-4caa-89b7-791f638a3476");
       console.log("data-controller: Test page rendered");
+      const data = await usersStore.userCheck("test@test.com", "pass");
       console.log("test data: " + data);
       res.render("dashboard", viewData);
   }
