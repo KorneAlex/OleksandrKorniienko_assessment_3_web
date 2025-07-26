@@ -5,6 +5,7 @@ import { stationsController } from "./controllers/stations-controller.js";
 import { recordsController } from "./controllers/records-controller.js";
 import { testController } from "./controllers/test.js";
 import { accountsController } from "./controllers/accounts-controller.js"
+import { usersStore } from "./models/user-store.js";
 
 export const router = express.Router();
 
@@ -17,6 +18,7 @@ router.get("/about", aboutController.index);
 // login page
 
 router.get("/login", accountsController.index);
+router.get("/logout", accountsController.logout);
 router.get("/signup", accountsController.signup);
 router.post("/register", accountsController.register);
 router.post("/authenticate", accountsController.authenticate);
@@ -36,6 +38,8 @@ router.get("/stations/:station_id/restoreStation", stationsController.restoreSta
 router.get("/stations/:station_id/:record_id/deleteRecord", recordsController.deleteRecord);
 router.get("/stations/:station_id/:record_id/deleteRecordFromDB", recordsController.deleteRecordFromDB);
 router.get("/stations/:station_id/:record_id/restoreRecord", recordsController.restoreRecord);
+router.get("/stations/:station_id/:record_id/editRecord/:edit", stationsController.index);
+router.post("/stations/:station_id/:record_id/editRecord/:edit", recordsController.editRecord);
 
 // test route
 router.get("/test", testController.test);

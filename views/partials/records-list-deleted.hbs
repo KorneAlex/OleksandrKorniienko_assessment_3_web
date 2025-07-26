@@ -12,7 +12,8 @@
         <th>Wind Direction</th>
         <th>Pressure</th>
         <th>ID</th>
-        <th>Timestamp</th>
+        <th>Created By</th>
+        <th>Created On</th>
     </tr>
 </thead>
 {{#each deletedRecordsData}}
@@ -23,6 +24,7 @@
     <td>{{wind_direction}}</td>
     <td>{{pressure}}</td>
     <td>{{id}}</td>
+    <td>{{created_by_name}}</td>
     <td>{{timestamp}}</td>
     {{!-- <td><a href="/stations/{{station_id}}">Edit</a></td> --}}
     <td><a href="/stations/{{station_id}}/{{id}}/restoreRecord">Restore</a></td>

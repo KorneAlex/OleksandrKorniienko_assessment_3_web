@@ -3,6 +3,7 @@
     <div class="title is-4">Station {{currentStation.name}}</div>
     </div>
     </div>
+{{#if userIsAdmin}}
 <table class="table is-fullwidth">
 <thead>
     <tr>
@@ -12,7 +13,10 @@
         <th>Wind Direction</th>
         <th>Pressure</th>
         <th>ID</th>
+        <th>Created By</th>
         <th>Timestamp</th>
+        <th>Edit</th>
+        <th>Delete</th>
     </tr>
 </thead>
 {{#each activeRecordsData}}
@@ -23,9 +27,63 @@
     <td>{{wind_direction}}</td>
     <td>{{pressure}}</td>
     <td>{{id}}</td>
-    <td>{{timestamp}}</td>
-    {{!-- <td><a href="/stations/{{station_id}}/{{id}}">Edit</a></td> --}}
+    <td>{{created_by_name}}</td>
+    <td>{{timestamp_created}}</td>
+    <td><a href="/stations/{{station_id}}/{{id}}/editRecord/true">Edit</a></td>
     <td><a href="/stations/{{station_id}}/{{id}}/deleteRecord">Delete</a></td>
+  </tr>
+  {{#if (eq ../editRecord id)}}
+  <tr class="field">
+    <form action="/stations/{{../currentStation.id}}/{{id}}/editRecord/false" method="POST">
+    <td><input class="input" type="number" placeholder="Code" name="code"></td>
+    <td><input class="input" type="number" placeholder="Temperature" name="temperature"></td>
+    <td><input class="input" type="number" placeholder="Wind speed" name="wind_speed"></td>
+    <td> <input class="input" type="number" placeholder="Wind direction" name="wind_direction"></td>
+    <td><input class="input" type="number" placeholder="Pressure" name="pressure"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><button class="button is-primary">OK</button></div></td>
+    <td><button class="button is-secondary">X</button></td>
+  </form>
+  </tr>
+  {{/if}}
+{{/each}}
+</table>
+{{!-- view for users --}}
+    {{else}}
+    <table class="table is-fullwidth">
+<thead>
+    <tr>
+        <th>Code</th>
+        <th>Temperature</th>
+        <th>Wind Speed</th>
+        <th>Wind Direction</th>
+        <th>Pressure</th>
+        <th>Created By</th>
+        <th>Created On</th>
+        <th>Delete</th>
+    </tr>
+</thead>
+{{#each activeRecordsData}}
+  <tr>
+    <td>{{code}}</td>
+    <td>{{temperature}}</td>
+    <td>{{wind_speed}}</td>
+    <td>{{wind_direction}}</td>
+    <td>{{pressure}}</td>
+    <td>{{created_by_name}}</td>
+    <td>{{timestamp_created}}</td>
+    {{!-- <td><a href="/stations/{{station_id}}/{{id}}">Edit</a></td> --}}
+    {{!-- I wasted 3 hours to find how can I get currentUserId from viewData, but copilot did it in 5 sec... "../" really??? --}}
+    {{!-- ../currentUserID accesses the currentUserID variable from the parent context (outside the current each loop). This is necessary because, inside a loop, this refers to the current item, so you need ../ to move up one level in the context stack. --}}
+    {{!-- we are living at the wonderfull time --}}
+    {{#if (eq ../currentUserID this.created_by)}} 
+    <td><a href="/stations/{{station_id}}/{{id}}/deleteRecord">Delete</a></td>
+    {{else}}
+    <td></td>
+    {{/if}}
   </tr>   
 {{/each}}
 </table>
+{{/if}}

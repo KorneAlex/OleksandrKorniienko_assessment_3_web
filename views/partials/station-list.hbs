@@ -1,4 +1,5 @@
 <div class="header"><div style="position: relative; text-align: center;"><div class="title is-4">Station list</div></div></div>
+{{#if userIsAdmin}}
 <table class="table is-fullwidth">
 <thead>
     <tr>
@@ -8,7 +9,10 @@
         <th>Latitude</th>
         <th>Longitude</th>
         <th>ID</th>
-        <th>Added</th>
+        <th>Created By</th>
+        <th>Created On</th>
+        <th>Open</th>
+        <th>Delete</th>
     </tr>
 </thead>
 {{#each activeStationsData}}
@@ -19,9 +23,39 @@
     <td>{{latitude}}</td>
     <td>{{longitude}}</td>
     <td>{{id}}</td>
+    <td>{{created_by_name}}</td>
     <td>{{timestamp_created}}</td>
-     <td><a href="/stations/{{id}}">Edit</a></td>
-     <td><a href="/stations/{{id}}/deleteStation">Delete</a></td>
+    <td><a href="/stations/{{id}}">Edit</a></td>
+    <td><a href="/stations/{{id}}/deleteStation">Delete</a></td>
   </tr>
 {{/each}}
 </table>
+{{else}}
+<table class="table is-fullwidth">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>City</th>
+        <th>County</th>
+        <th>Latitude</th>
+        <th>Longitude</th>
+        <th>Created By</th>
+        <th>Created On</th>
+        <th></th>
+    </tr>
+</thead>
+{{#each activeStationsData}}
+  <tr>
+    <td>{{name}}</td>
+    <td>{{city}}</td>
+    <td>{{county}}</td>
+    <td>{{latitude}}</td>
+    <td>{{longitude}}</td>
+    <td>{{created_by_name}}</td>
+    <td>{{timestamp_created}}</td>
+    <td><a href="/stations/{{id}}">Edit</a></td>
+    {{!-- <td><a href="/stations/{{id}}/deleteStation">Delete</a></td> --}}
+  </tr>
+{{/each}}
+</table>
+{{/if}}

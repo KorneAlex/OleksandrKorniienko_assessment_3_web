@@ -112,6 +112,78 @@
       "deleted_timestamp": "24/07/2025 - 10:52:17",
       "deleted_by": "Admin",
       "deleted_fromDB": "24/07/2025 - 10:52:18"
+    },
+    {
+      "name": "",
+      "city": "",
+      "county": "",
+      "latitude": "",
+      "longitude": "",
+      "id": "0d0d0d25-0475-4656-9fd0-07dea48a9309",
+      "timestamp_created": "26/07/2025 - 20:31:03",
+      "created_by": "877835af-3a73-415a-b51b-27ae8426e599",
+      "created_by_name": "Alex Korne",
+      "deleted": true,
+      "deleted_timestamp": "26/07/2025 - 20:31:05",
+      "deleted_by": "Admin",
+      "deleted_fromDB": "26/07/2025 - 20:31:43"
+    },
+    {
+      "name": "",
+      "city": "",
+      "county": "",
+      "latitude": "",
+      "longitude": "",
+      "id": "fba47bbd-5eb0-4481-a104-84064fc219f3",
+      "timestamp_created": "26/07/2025 - 20:29:49",
+      "created_by": "877835af-3a73-415a-b51b-27ae8426e599",
+      "created_by_name": "Alex Korne",
+      "deleted": true,
+      "deleted_timestamp": "26/07/2025 - 20:29:54",
+      "deleted_by": "Admin",
+      "deleted_fromDB": "26/07/2025 - 20:31:44"
+    },
+    {
+      "name": "3",
+      "city": "",
+      "county": "",
+      "latitude": "",
+      "longitude": "",
+      "id": "2423d287-1df1-4f09-b22a-bc77929438c9",
+      "timestamp_created": "24/07/2025 - 10:52:21",
+      "created_by": "Admin",
+      "deleted": true,
+      "deleted_timestamp": "24/07/2025 - 11:24:15",
+      "deleted_by": "Admin",
+      "deleted_fromDB": "26/07/2025 - 20:31:45"
+    },
+    {
+      "name": "2",
+      "city": "",
+      "county": "",
+      "latitude": "",
+      "longitude": "",
+      "id": "7c3b76dd-3ab3-47c7-bcf9-71d62267ac1f",
+      "timestamp_created": "24/07/2025 - 10:52:13",
+      "created_by": "Admin",
+      "deleted": true,
+      "deleted_timestamp": "26/07/2025 - 20:31:46",
+      "deleted_by": "Admin",
+      "deleted_fromDB": "26/07/2025 - 20:31:48"
+    },
+    {
+      "name": "1",
+      "city": "",
+      "county": "",
+      "latitude": "",
+      "longitude": "",
+      "id": "3166ea0e-d09c-471e-a75e-3840ad3b38ee",
+      "timestamp_created": "24/07/2025 - 10:52:11",
+      "created_by": "Admin",
+      "deleted": true,
+      "deleted_timestamp": "26/07/2025 - 20:31:46",
+      "deleted_by": "Admin",
+      "deleted_fromDB": "26/07/2025 - 20:31:48"
     }
   ]
 }

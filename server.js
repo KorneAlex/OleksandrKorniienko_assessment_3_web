@@ -5,6 +5,19 @@ import fileUpload from "express-fileupload";
 import { engine } from "express-handlebars";
 import { router } from "./routes.js";
 
+import Handlebars from "handlebars";
+
+Handlebars.registerHelper('eq', function (operand1, operand2) {
+  // console.log("operand1: " + operand1 + " | " + "operant2: " + operand2);
+  if(operand1 === operand2){
+    return true;
+  } else {
+  return false;
+    }
+})
+
+
+
 const app = express();
 app.use(cookieParser());
 app.use(bodyParser.urlencoded({ extended: false }));

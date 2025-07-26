@@ -1,7 +1,7 @@
 import { v4 } from "uuid";
 import { format } from "date-fns";
 import { initStore } from "../utils/store-utils.js";
-import { recordsStore } from "./records-store.js";
+import { usersStore } from "./user-store.js";
 
 const db = initStore("stationsData");
 const dbRecords = initStore("recordsData");
@@ -46,11 +46,12 @@ export const stationsStore = {
   },
 
 
-  async addStationData(station) {
+  async addStationData(station, user_id) {
     await db.read();
     station.id = v4();
     station.timestamp_created = format(new Date(), "dd/MM/yyyy' - 'HH:mm:ss");
-    station.created_by = "Admin"; // TODO add admin users
+    station.created_by = user_id;
+    station.created_by_name = await usersStore.getUsersFullNameById(user_id);
     station.deleted = false;
     station.deleted_timestamp = null;
     station.deleted_by = null;

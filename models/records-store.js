@@ -1,6 +1,7 @@
 import { v4 } from "uuid";
 import { format } from "date-fns";
 import { initStore } from "../utils/store-utils.js";
+import { usersStore } from "./user-store.js";
 
 const db_rec = initStore("recordsData");
 const db_del_rec = initStore("deletedRecords");
@@ -55,20 +56,39 @@ export const recordsStore = {
       return false;
     },
 
-  async addRecord(station_id, record) {
+  async addRecord(station_id, record, user_id) {
     await db_rec.read();
     record.id = v4();
     record.station_id = station_id;
     record.timestamp_created = format(new Date(), "dd/MM/yyyy' - 'HH:mm:ss");
-    record.created_by = "Admin"; // TODO add admin users
+    record.created_by = user_id;
+    record.created_by_name = await usersStore.getUsersFullNameById(user_id);
     record.deleted = false;
     record.deleted_timestamp = null;
     record.deleted_by = null;
-    db_rec.data.recordsData.push(record ); // TODO add user id
+    db_rec.data.recordsData.push(record );
     await db_rec.write();
     console.log("records-store: Records data saved successfully.");
     return record;
 },
+
+  async editRecord(record_id, newData, loggedInUser) {
+    await db_rec.read();
+    const recordToEdit = await db_rec.data.recordsData.find((r) => r.id === record_id);
+        console.log("recordToEdit: " + recordToEdit);
+        recordToEdit.code = newData.code;
+        recordToEdit.temperature = newData.temperature;
+        recordToEdit.wind_speed = newData.wind_speed;
+        recordToEdit.wind_direction = newData.wind_direction;
+        recordToEdit.pressure = newData.pressure;
+    recordToEdit.edited_by = loggedInUser;
+    recordToEdit.edited_by_name = await usersStore.getUsersFullNameById(loggedInUser);
+    recordToEdit.timestamp_edited = format(new Date(), "dd/MM/yyyy' - 'HH:mm:ss");
+    console.log("Edit record: recordToEdit.code: " + recordToEdit.code);
+    await db_rec.write();
+    console.log("records-store: Records data edited successfully.");
+    return recordToEdit;
+  },
 
   async getRecordsDataByStationId(id) {
     await db_rec.read();

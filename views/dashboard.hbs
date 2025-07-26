@@ -3,7 +3,9 @@
 {{>station-list}}
 {{/if}}
 {{>add-station}}
-{{#if deleted_station_exist}}
-{{>station-list-deleted}}
+{{#if userIsAdmin}}
+    {{#if deleted_station_exist}}
+        {{>station-list-deleted}}
+    {{/if}}
 {{/if}}
 {{>page/footer}}

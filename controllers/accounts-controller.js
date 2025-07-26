@@ -4,9 +4,14 @@ export const accountsController = {
   async index(req, res) {
     const viewData = {
       title: "Welcome!",
+      userLoggedIn: await usersStore.userLoggedIn(req.cookies.loggedInUser),
+      userIsAdmin: await usersStore.userIsAdmin(req.cookies.loggedInUser),
     };
     console.log("login page rendering");
     console.log(viewData);
+    if(await usersStore.userLoggedIn(req.cookies.loggedInUser)){
+      res.redirect("/dashboard");
+    }
     res.render("login", viewData);
   },
 
@@ -20,7 +25,9 @@ export const accountsController = {
     console.log(`access granted: ${accessGranted}`);
     switch(accessGranted){
       case 1:
-        res.redirect("/dashboard"); // TODO add cookies
+        const user = await usersStore.getUserByEmail(req.body.email);
+        res.cookie("loggedInUser", user.id, { httpOnly: true }); //copilot helped with this one :D
+        res.redirect("/dashboard");
         break;
       case 2:
         res.render("login", { title: "Welcome!", "noUser": true, email: req.body.email });
@@ -47,4 +54,10 @@ export const accountsController = {
     console.log(user);
     res.redirect("/");
     },
+
+  async logout(req,res) {
+    res.cookie("loggedInUser", "", { httpOnly: true });
+    res.redirect("/");
+  },
+
   }

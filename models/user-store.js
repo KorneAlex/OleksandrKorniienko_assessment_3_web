@@ -22,6 +22,12 @@ export const usersStore = {
         return user ? user:false;
     },
 
+    async getUserById(id){
+        await db_usr.read();
+        const user = db_usr.data.usersData.find((u) => u.id === id);
+        return user ? user:false;
+    },
+
     async userCheck(email, pass) {
         await db_usr.read();
         console.log("email: " + email);
@@ -52,9 +58,24 @@ export const usersStore = {
     async enteredPassExist(pass) {
         await db_usr.read();
         const userWithEnteredPassExist = await db_usr.data.usersData.find((u) => u.password === pass);
-        if (userWithEnteredPassExist) {
-            return true;
-        }
-        return false;
+        return userWithEnteredPassExist ? true:false;
     },
+
+    async userLoggedIn(id) {
+        console.log(`Logged in user: ${id}`)
+        return await usersStore.getUserById(id) ? true:false;
+    },
+
+    async userIsAdmin(id) {
+        const user = await usersStore.getUserById(id);
+        console.log("is admin?: " + user.admin)
+        return  user.admin;
+    },
+
+    async getUsersFullNameById(id) {
+        const user = await usersStore.getUserById(id);
+        return user.firstName + " " + user.lastName;
+    },
+
+    async test() {},
 }

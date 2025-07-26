@@ -1,14 +1,14 @@
-{{> page/welcome-menu active="login"}}
+{{> page/menu active="login"}}
 
 <section class="section is-flex is-justify-content-center">
   <div class="box " style="width: 50%;">
   <h1 class="title">Log in</h1>
   <form action="/authenticate" method="POST">
     <div class="field">
-      <label class="label">Email</label> <input class="input" type="email" placeholder="Enter email" name="email" value="{{email}}">
+      <label class="label">Email</label> <input class="input" type="email" placeholder="Enter email" name="email" value="{{email}}" autocomplete="email">
     </div>
     <div class="field">
-      <label class="label">Password</label> <input class="input" type="password" placeholder="Enter Password" name="password">
+      <label class="label">Password</label> <input class="input" type="password" placeholder="Enter Password" name="password" autocomplete="current-password">
     </div>
     <div class="field is-grouped is-justify-content-space-between is-align-items-baseline">
       <button class="button is-link">Submit</button>

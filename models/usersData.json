@@ -9,6 +9,15 @@
       "id": "23260601-127c-4b43-b72c-fcf8e99fc0e6",
       "created_timestamp": "26/07/2025 - 12:03:31",
       "admin": false
+    },
+    {
+      "firstName": "Alex",
+      "lastName": "Korne",
+      "email": "admin@weathertop.com",
+      "password": "adminpass",
+      "id": "877835af-3a73-415a-b51b-27ae8426e599",
+      "created_timestamp": "26/07/2025 - 16:19:04",
+      "admin": true
     }
   ]
 }
