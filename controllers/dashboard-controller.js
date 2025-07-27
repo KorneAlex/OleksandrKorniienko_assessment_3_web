@@ -13,8 +13,8 @@ export const dashboardController = {
       stationsData: await stationsStore.getStationsData(),
       activeStationsData: await stationsStore.getActiveStationsData(),
       deletedStationsData: await stationsStore.getDeletedStationsData(),
-      deleted_station_exist: await stationsStore.deleted_exist(),
-      stations_exist: await stationsStore.station_exist(),
+      deletedStationsExist: await stationsStore.deletedStationsExist(),
+      stationsExist: await stationsStore.stationsExist(),
     };
     if (viewData.userLoggedIn) {
     console.log("dashboard rendering");

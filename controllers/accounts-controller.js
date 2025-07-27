@@ -33,7 +33,6 @@ export const accountsController = {
         res.render("login", { title: "Welcome!", "noUser": true, email: req.body.email });
         break;
       case 3:
-            console.log(viewData);
         res.render("login", { title: "Welcome!", "wrongPass": true, email: req.body.email });
         break;
       case 4:

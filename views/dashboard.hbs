@@ -1,11 +1,12 @@
 {{>page/menu active="dashboard"}}
-{{#if stations_exist}}
+{{#if stationsExist}}
 {{>station-list}}
 {{/if}}
-{{>add-station}}
-{{#if userIsAdmin}}
-    {{#if deleted_station_exist}}
-        {{>station-list-deleted}}
+
+    {{#if userIsAdmin}}
+    {{>add-station}}
+        {{#if deletedStationsExist}}
+            {{>station-list-deleted}}
+        {{/if}}
     {{/if}}
-{{/if}}
 {{>page/footer}}

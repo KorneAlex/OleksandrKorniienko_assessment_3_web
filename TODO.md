@@ -13,5 +13,5 @@ Station, record, deleted data tables to not display when there is no information
 Create login system {cm:2025-07-26}
 Adjust view for users. Users cannot see deleted lists {cm:2025-07-26}
 Create pop-up question window asking if you really want to delete station/record
-When delete station from db, all records shold be removed from db too
+When delete station from db, all records shold be removed from db too {cm:2025-07-27}
 Create info page for the record with all info

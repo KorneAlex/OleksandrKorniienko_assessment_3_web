@@ -10,6 +10,7 @@
         <th>ID</th>
         <th>Created By</th>
         <th>Deleted</th>
+        <th>Timestamp</th>
         <th>Edit</th>
         <th>Restore</th>
         <th>Delete Forever</th>
@@ -24,7 +25,8 @@
     <td>{{longitude}}</td>
     <td>{{id}}</td>
     <td>{{created_by_name}}</td>
-    <td>{{timestamp_deleted}}</td>
+    <td>{{deleted_by}}</td>
+    <td>{{deleted_timestamp}}</td>
      <td><a href="/stations/{{id}}">Edit</a></td>
      <td><a href="/stations/{{id}}/restoreStation">Restore</a></td>
      <td><a href="/stations/{{id}}/deleteStationFromDB">Delete Forever</a></td>

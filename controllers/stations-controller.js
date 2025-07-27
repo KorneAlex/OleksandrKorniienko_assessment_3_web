@@ -18,10 +18,11 @@ export const stationsController = {
       userIsAdmin: await usersStore.userIsAdmin(req.cookies.loggedInUser),
       recordsData: await recordsStore.getRecordsDataByStationId(station_id),
       currentStation: currentStation,
-      records_exist: await recordsStore.records_exist(station_id),
-      activeRecordsData: await recordsStore.getActiveRecordsDataById(station_id),
-      deleted_records_exist: await recordsStore.deleted_records_exist(station_id),
-      deletedRecordsData: await recordsStore.getDeletedRecordsDataById(station_id),
+      activeRecordsExist: await recordsStore.recordsExist(station_id),
+      activeRecordsDataByStationId: await recordsStore.getActiveRecordsDataByStationId(station_id),
+      deletedRecordsByStationIdExist: await recordsStore.deletedRecordsByStationIdExist(station_id),
+      deletedRecordsDataByStationId: await recordsStore.getDeletedRecordsDataByStationId(station_id),
+      deletedRecordsDataByUserId: await recordsStore.getDeletedRecordsDataByUserId(req.cookies.loggedInUser),
       editRecord: editRecord,
     };
       console.log(`station ${viewData.currentStation.name} is rendering`);
@@ -46,8 +47,13 @@ export const stationsController = {
       res.redirect("/dashboard");
   },
 
+  // async deleteStationFromDB(req, res) {
+  //   await stationsStore.deleteStationFromDB(req.params.station_id);
+  //     res.redirect("/dashboard");
+  // },
+
   async deleteStationFromDB(req, res) {
-    await stationsStore.deleteStationFromDB(req.params.station_id);
+    await stationsStore.deleteStationFromDB(req.params.station_id, req.cookies.loggedInUser);
       res.redirect("/dashboard");
   },
 

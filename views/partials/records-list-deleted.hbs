@@ -5,6 +5,36 @@
     </div>
 <table class="table is-fullwidth">
 <thead>
+{{#if userIsAdmin}}
+    <tr>
+        <th>Code</th>
+        <th>Temperature</th>
+        <th>Wind Speed</th>
+        <th>Wind Direction</th>
+        <th>Pressure</th>
+        <th>ID</th>
+        <th>Created By</th>
+        <th>Deleted On</th>
+        <th>Restore</th>
+        <th>Delete Forever</th>
+    </tr>
+</thead>
+{{#each deletedRecordsDataByStationId}}
+  <tr>
+    <td>{{code}}</td>
+    <td>{{temperature}}</td>
+    <td>{{wind_speed}}</td>
+    <td>{{wind_direction}}</td>
+    <td>{{pressure}}</td>
+    <td>{{id}}</td>
+    <td>{{created_by_name}}</td>
+    <td>{{deleted_timestamp}}</td>
+    {{!-- <td><a href="/stations/{{station_id}}">Edit</a></td> --}}
+    <td><a href="/stations/{{station_id}}/{{id}}/restoreRecord">Restore</a></td>
+    <td><a href="/stations/{{station_id}}/{{id}}/deleteRecordFromDB">Delete Forever</a></td>
+  </tr>
+{{/each}}
+{{else}}
     <tr>
         <th>Code</th>
         <th>Temperature</th>
@@ -16,7 +46,7 @@
         <th>Created On</th>
     </tr>
 </thead>
-{{#each deletedRecordsData}}
+{{#each deletedRecordsDataByUserId}}
   <tr>
     <td>{{code}}</td>
     <td>{{temperature}}</td>
@@ -30,5 +60,6 @@
     <td><a href="/stations/{{station_id}}/{{id}}/restoreRecord">Restore</a></td>
     <td><a href="/stations/{{station_id}}/{{id}}/deleteRecordFromDB">Delete Forever</a></td>
   </tr>
-{{/each}}
+  {{/each}}
+  {{/if}}
 </table>

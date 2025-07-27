@@ -19,9 +19,9 @@ export const recordsStore = {
       return activeRecordsList;
     },
 
-    async getActiveRecordsDataById(id) {
+    async getActiveRecordsDataByStationId(station_id) {
       await db_rec.read();
-      const activeRecordsList = await db_rec.data.recordsData.filter((r) => r.deleted === false && r.station_id === id);
+      const activeRecordsList = await db_rec.data.recordsData.filter((r) => r.deleted === false && r.station_id === station_id);
       return activeRecordsList;
     },
   
@@ -31,38 +31,43 @@ export const recordsStore = {
       return deletedRecordsList;
     },
 
-    async getDeletedRecordsDataById(id) {
+    async getDeletedRecordsDataByStationId(station_id) {
       await db_rec.read();
-      console.log(id);
+      const deletedRecordsListById = db_rec.data.recordsData.filter((r) => r.deleted === true && r.station_id === station_id);
+      return deletedRecordsListById;
+    },
+
+    async getDeletedRecordsDataByUserId(user_id) {
+      await db_rec.read();
       console.log(db_rec.data.recordsData.station_id);
-      const deletedRecordsList = db_rec.data.recordsData.filter((r) => r.deleted === true && r.station_id === id);
-      return deletedRecordsList;
+      const deletedRecordsListByUserId = db_rec.data.recordsData.filter((r) => r.deleted === true && r.created_by === user_id);
+      return deletedRecordsListByUserId;
     },
     
   
-    async records_exist(id) {
-      const activeRecordsList = await recordsStore.getActiveRecordsDataById(id);
+    async recordsExist(station_id) {
+      const activeRecordsList = await recordsStore.getActiveRecordsDataByStationId(station_id);
       if(activeRecordsList.length != 0) {
         return true;
       }
       return false;
     },
 
-    async deleted_records_exist(id) {
-      const deletedRecordsList = await recordsStore.getDeletedRecordsDataById(id);
+    async deletedRecordsByStationIdExist(station_id) {
+      const deletedRecordsList = await recordsStore.getDeletedRecordsDataByStationId(station_id);
       if(deletedRecordsList.length != 0) {
         return true;
       }
       return false;
     },
 
-  async addRecord(station_id, record, user_id) {
+  async addRecord(station_id, record, loggedInUser) {
     await db_rec.read();
     record.id = v4();
     record.station_id = station_id;
     record.timestamp_created = format(new Date(), "dd/MM/yyyy' - 'HH:mm:ss");
-    record.created_by = user_id;
-    record.created_by_name = await usersStore.getUsersFullNameById(user_id);
+    record.created_by = loggedInUser;
+    record.created_by_name = await usersStore.getUsersFullNameById(loggedInUser);
     record.deleted = false;
     record.deleted_timestamp = null;
     record.deleted_by = null;
@@ -90,41 +95,54 @@ export const recordsStore = {
     return recordToEdit;
   },
 
-  async getRecordsDataByStationId(id) {
+  async getRecordsDataByStationId(station_id) {
     await db_rec.read();
-    return db_rec.data.recordsData.filter(data => data.station_id === id);
+    return db_rec.data.recordsData.filter(data => data.station_id === station_id);
   },
 
-    async deleteRecord(id) {
+    async deleteRecord(record_id, loggedInUser) {
       await db_rec.read();
-      const recordToBeDeleted = await recordsStore.getRecordById(id);
+      const recordToBeDeleted = await recordsStore.getRecordById(record_id);
       recordToBeDeleted.deleted = true;
-      recordToBeDeleted.deleted_by = "Admin"; // TODO add other admins
+      recordToBeDeleted.deleted_by = loggedInUser;
       recordToBeDeleted.deleted_timestamp = format(new Date(), "dd/MM/yyyy' - 'HH:mm:ss");
-      console.log(`records-store: Record ${recordToBeDeleted.name} has been successfully deleted.`);
       await db_rec.write();
       return recordToBeDeleted;
     },
   
-    async deleteRecordFromDB(id) {
+    async deleteRecordFromDB(record_id) {
       await db_rec.read();
       await db_del_rec.read();
-      const recordToBeDeleted = await recordsStore.getRecordById(id);
-      console.log(recordToBeDeleted);
-      const index = await recordsStore.getRecordIndexByID(id);
+      const recordToBeDeleted = await recordsStore.getRecordById(record_id);
+      const index = await recordsStore.getRecordIndexByID(record_id);
       await db_rec.data.recordsData.splice(index, 1);
-      console.log(`records-store: Record ${recordToBeDeleted.name} has been successfully removed from the database.`);
       recordToBeDeleted.deleted_fromDB = format(new Date(), "dd/MM/yyyy' - 'HH:mm:ss");
       db_del_rec.data.deletedRecords.push(recordToBeDeleted);
       await db_rec.write();
       await db_del_rec.write();
       return recordToBeDeleted;
     },
-  
-  
-     async restoreRecord(id) {
+
+    async deleteRecordsFromDbByStationId(station_id, loggedInUser) {
+      await db_del_rec.read();
+      const recordsToBeDeleted = await recordsStore.getRecordsDataByStationId(station_id);
+      for(let i = 0;i<recordsToBeDeleted.length; i++) {
       await db_rec.read();
-      const recordToBeRestored = await recordsStore.getRecordById(id);
+      const recordToBeDeleted = recordsToBeDeleted[i]
+      const index = await recordsStore.getRecordIndexByID(recordToBeDeleted.id);
+      await db_rec.data.recordsData.splice(index, 1);
+      recordToBeDeleted.deleted_fromDB = format(new Date(), "dd/MM/yyyy' - 'HH:mm:ss");
+      db_del_rec.data.deletedRecords.push(recordToBeDeleted);
+      await db_rec.write();
+      }
+      await db_del_rec.write();
+      return recordsToBeDeleted;
+    },
+  
+  
+     async restoreRecord(record_id) {
+      await db_rec.read();
+      const recordToBeRestored = await recordsStore.getRecordById(record_id);
       recordToBeRestored.deleted = false;
       recordToBeRestored.deleted_by = null; // TODO maybe add restored
       recordToBeRestored.deleted_timestamp = null; // TODO maybe add restored
@@ -133,15 +151,15 @@ export const recordsStore = {
       return recordToBeRestored;
     },
   
-  async getRecordById(id) {
+  async getRecordById(record_id) {
     await db_rec.read();
-    return await db_rec.data.recordsData.find(r => r.id === id);
+    return await db_rec.data.recordsData.find(r => r.id === record_id);
   },
   
-  async getRecordIndexByID(id) {
+  async getRecordIndexByID(record_id) {
     await db_rec.read();
-    console.log(await db_rec.data.recordsData.findIndex(r => r.id === id));
-    return await db_rec.data.recordsData.findIndex(r => r.id === id);
+    console.log(await db_rec.data.recordsData.findIndex(r => r.id === record_id));
+    return await db_rec.data.recordsData.findIndex(r => r.id === record_id);
   },
 
 }

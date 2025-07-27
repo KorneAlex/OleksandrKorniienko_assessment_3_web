@@ -77,5 +77,11 @@ export const usersStore = {
         return user.firstName + " " + user.lastName;
     },
 
+    async accessCheck(user_id, id_to_check) {
+        const user = await usersStore.getUserById(user_id);
+        const isAdmin = user.admin;
+            return ((user_id === id_to_check) || isAdmin) ?  true:false;
+    },
+
     async test() {},
 }

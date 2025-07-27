@@ -2,6 +2,7 @@ import { v4 } from "uuid";
 import { format } from "date-fns";
 import { initStore } from "../utils/store-utils.js";
 import { usersStore } from "./user-store.js";
+import { recordsStore } from "./records-store.js";
 
 const db = initStore("stationsData");
 const dbRecords = initStore("recordsData");
@@ -24,11 +25,12 @@ export const stationsStore = {
   async getDeletedStationsData() {
     await db.read();
     const deletedStationsList = await db.data.stationsData.filter((s) => s.deleted === true);
+    console.log("getDeletedStationsData: " + deletedStationsList);
     return deletedStationsList;
   },
   
 
-  async station_exist() {
+  async stationsExist() {
     const activeStationsList = await stationsStore.getActiveStationsData();
     if(activeStationsList.length != 0) {
       return true;
@@ -37,7 +39,7 @@ export const stationsStore = {
   },
 
 
-  async deleted_exist() {
+  async deletedStationsExist() {
     const deletedStationsList = await stationsStore.getDeletedStationsData();
     if(deletedStationsList.length != 0) {
       return true;
@@ -72,18 +74,19 @@ export const stationsStore = {
     return stationToBeDeleted;
   },
 
-  async deleteStationFromDB(id) {
+  async deleteStationFromDB(station_id, loggedInUser) {
     await db.read();
     await db_del_st.read();
-    const stationToBeDeleted = await stationsStore.getStationById(id);
+    const stationToBeDeleted = await stationsStore.getStationById(station_id);
     console.log(stationToBeDeleted);
-    const index = await stationsStore.getStationIndexByID(id);
+    const index = await stationsStore.getStationIndexByID(station_id);
     await db.data.stationsData.splice(index, 1);
     console.log(`stations-store: Station ${stationToBeDeleted.name} has been successfully removed from the database.`);
     stationToBeDeleted.deleted_fromDB = format(new Date(), "dd/MM/yyyy' - 'HH:mm:ss");
     db_del_st.data.deletedStations.push(stationToBeDeleted);
     await db.write();
     await db_del_st.write();
+    await recordsStore.deleteRecordsFromDbByStationId(station_id, loggedInUser);
     return stationToBeDeleted;
   },
 
