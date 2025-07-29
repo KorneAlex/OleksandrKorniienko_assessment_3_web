@@ -3,6 +3,7 @@ import { format } from "date-fns";
 import { initStore } from "../utils/store-utils.js";
 import { usersStore } from "./user-store.js";
 import { recordsStore } from "./records-store.js";
+import { utils } from "../utils/store-utils.js"
 
 const db = initStore("stationsData");
 const dbRecords = initStore("recordsData");
@@ -27,6 +28,49 @@ export const stationsStore = {
     const deletedStationsList = await db.data.stationsData.filter((s) => s.deleted === true);
     console.log("getDeletedStationsData: " + deletedStationsList);
     return deletedStationsList;
+  },
+
+    async getStationById(id) {
+    await db.read();
+    return await db.data.stationsData.find(s => s.id === id);
+  },
+
+  async getStationIndexByID(id) {
+    await db.read();
+    console.log(await db.data.stationsData.findIndex(s => s.id === id));
+    return await db.data.stationsData.findIndex(s => s.id === id);
+  },
+
+  async getSummaryForTheStation(station_id) {
+    const station = await stationsStore.getStationById(station_id);
+    const stationRecords = await recordsStore.getActiveRecordsDataByStationId(station_id);
+    const summaryData = {
+      name: station.name,
+      city: station.city,
+      latitude: station.latitude,
+      longitude: station.longitude,
+      id: station.id,
+
+      weatherCode: "weatherCode",
+
+      currentTemp: "currentTemp",
+      minTemp: await utils.findMin(stationRecords, "temperature"),
+      maxTemp: await utils.findMax(stationRecords, "temperature"),
+      avarageTemp: await utils.findAvarage(stationRecords, "temperature"),
+
+      currentWindSpeed: "currentWindSpeed",
+      currentWindDirection: "currentWindDirection",
+      minWindSpeed:  await utils.findMin(stationRecords, "wind_speed"),
+      maxWindSpeed:  await utils.findMax(stationRecords, "wind_speed"),
+      avarageWindDirection: await utils.findAvarage(stationRecords, "wind_speed"),
+
+      currentPressure: "currentPressure",
+      minPressure:  await utils.findMin(stationRecords, "pressure"),
+      maxPressure:  await utils.findMax(stationRecords, "pressure"),
+      avaragePressure: await utils.findAvarage(stationRecords, "pressure"),
+
+    }
+    return summaryData;
   },
   
 
@@ -102,14 +146,8 @@ export const stationsStore = {
     return stationToBeRestored;
   },
 
-async getStationById(id) {
-  await db.read();
-  return await db.data.stationsData.find(s => s.id === id);
-},
 
-async getStationIndexByID(id) {
-  await db.read();
-  console.log(await db.data.stationsData.findIndex(s => s.id === id));
-  return await db.data.stationsData.findIndex(s => s.id === id);
-},
+  async test() {},
+
+
 }

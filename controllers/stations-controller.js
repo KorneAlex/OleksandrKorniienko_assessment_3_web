@@ -24,6 +24,9 @@ export const stationsController = {
       deletedRecordsDataByStationId: await recordsStore.getDeletedRecordsDataByStationId(station_id),
       deletedRecordsDataByUserId: await recordsStore.getDeletedRecordsDataByUserId(req.cookies.loggedInUser),
       editRecord: editRecord,
+
+      summaryForTheStation: await stationsStore.getSummaryForTheStation(station_id),
+
     };
       console.log(`station ${viewData.currentStation.name} is rendering`);
       res.render("station", viewData);

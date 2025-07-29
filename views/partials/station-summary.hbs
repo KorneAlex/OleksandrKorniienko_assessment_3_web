@@ -13,56 +13,64 @@
 <section class="is-flex is-justify-content-center is-justify-content-space-around" style="margin-bottom: 2rem;">
         <div class="p-2">
             <div class="is-flex is-flex-direction-row">
-            <div class="card-header-title">Location<br>{{currentStation.city}}</div>
+            <div class="card-header-title">Location<br>{{summaryForTheStation.city}}</div>
             <div class="card-header-icon">{{>icons/location}}</div>
             </div>
             <div class="card-content">
-                <p>Longitude: {{currentStation.longitude}}</p>
-                <p>Latitude: {{currentStation.latitude}}</p>
+                <p>Longitude: {{summaryForTheStation.longitude}}</p>
+                <p>Latitude: {{summaryForTheStation.latitude}}</p>
             </div>
         </div>
 
         <div class="p-2">
             <div class="is-flex is-flex-direction-row">
-            <div class="card-header-title">Weather<br>{{currentStation.city}}</div>
+            <div class="card-header-title">Weather<br>{{summaryForTheStation.weatherCode}}<br></div>
             <div class="card-header-icon">{{>icons/location}}</div>
         </div>
             <div class="card-content">
-                <p>Longitude: {{currentStation.longitude}}</p>
-                <p>Latitude: {{currentStation.latitude}}</p>
+            <div><p>weatherDescription</p></div>
+                <p>Now: {{summaryForTheStation.currentTemp}}</p>
+                <p>Min: {{summaryForTheStation.minTemp}}</p>
+                <p>Max: {{summaryForTheStation.maxTemp}}</p>
+                <p>Average: {{summaryForTheStation.avarageTemp}}</p>
             </div>
         </div>
 
         <div class="p-2">
             <div class="is-flex is-flex-direction-row">
-            <div class="card-header-title">Temp<br>{{currentStation.city}}</div>
+            <div class="card-header-title">Temp<br>{{summaryForTheStation.city}}</div>
             <div class="card-header-icon">{{>icons/temperature}}</div>
             </div>
             <div class="card-content">
-                <p>Longitude: {{currentStation.longitude}}</p>
-                <p>Latitude: {{currentStation.latitude}}</p>
+                <p>Longitude: {{summaryForTheStation.longitude}}</p>
+                <p>Latitude: {{summaryForTheStation.latitude}}</p>
             </div>
         </div>
 
         <div class="p-2">
             <div class="is-flex is-flex-direction-row">
-            <div class="card-header-title">Wind<br>{{currentStation.city}}</div>
+            <div class="card-header-title">Wind<br>{{summaryForTheStation.currentWindSpeed}}</div>
             <div class="card-header-icon">{{>icons/wind}}</div>
         </div>
             <div class="card-content">
-                <p>Speed: {{currentStation.longitude}}</p>
-                <p>Direction: {{currentStation.latitude}}</p>
+                <p>Speed: {{summaryForTheStation.currentWindSpeed}}</p>
+                <p>Direction: {{summaryForTheStation.currentWindDirection}}</p>
+                <p>Min: {{summaryForTheStation.minWindSpeed}}</p>
+                <p>Max: {{summaryForTheStation.maxWindSpeed}}</p>
+                <p>Average: {{summaryForTheStation.avarageWindDirection}}</p>
             </div>
         </div>
 
         <div class="p-2">
             <div class="is-flex is-flex-direction-row">
-            <div class="card-header-title">Pressure<br>{{currentStation.city}}</div>
+            <div class="card-header-title">Pressure<br>{{summaryForTheStation.currentPressure}}</div>
             <div class="card-header-icon">{{>icons/pressure}}</div>
             </div>
             <div class="card-content">
-                <p>Longitude: {{currentStation.longitude}}</p>
-                <p>Latitude: {{currentStation.latitude}}</p>
+                <p>Now: {{summaryForTheStation.currentPressure}}</p>
+                <p>Min: {{summaryForTheStation.minPressure}}</p>
+                <p>Max: {{summaryForTheStation.maxPressure}}</p>
+                <p>Avarage: {{summaryForTheStation.avaragePressure}}</p>
             </div>
         
 
