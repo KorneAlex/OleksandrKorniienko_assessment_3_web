@@ -2,8 +2,8 @@
   <div style="text-align: center; margin-bottom: 2rem;">
     <div class="title is-4">Station {{currentStation.name}}</div>
     </div>
-{{>station-summary}}
 {{#if activeRecordsExist}}
+{{>station-summary}}
 {{>records-list}}
 {{/if}}
 {{>add-record}}

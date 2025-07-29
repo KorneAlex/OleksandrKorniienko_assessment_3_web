@@ -30,14 +30,14 @@ export const usersStore = {
 
     async userCheck(email, pass) {
         await db_usr.read();
-        console.log("email: " + email);
-        console.log("pass: " + pass);
+        // console.log("email: " + email);
+        // console.log("pass: " + pass);
         if (email) {
             if (pass) {
                 const user = await this.getUserByEmail(email);
                 if (user) {
                     if (user.password === pass) {
-                        console.log(`User ${user.email} and pass ${user.password} exist`);
+                        // console.log(`User ${user.email} and pass ${user.password} exist`);
                         return 1;
                     } else {
                         console.log("User exist, pass - incorrect");
@@ -62,13 +62,13 @@ export const usersStore = {
     },
 
     async userLoggedIn(id) {
-        console.log(`Logged in user: ${id}`)
+        // console.log(`Logged in user: ${id}`)
         return await usersStore.getUserById(id) ? true:false;
     },
 
     async userIsAdmin(id) {
         const user = await usersStore.getUserById(id);
-        console.log("is admin?: " + user.admin)
+        // console.log("is admin?: " + user.admin)
         return  user.admin;
     },
 

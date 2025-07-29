@@ -24,26 +24,25 @@
 
         <div class="p-2">
             <div class="is-flex is-flex-direction-row">
-            <div class="card-header-title">Weather<br>{{summaryForTheStation.weatherCode}}<br></div>
-            <div class="card-header-icon">{{>icons/location}}</div>
+            <div class="card-header-title">Weather<br>{{currentWeatherConditions.code}}<br></div>
+            <div class="card-header-icon">{{>icons/current-weather}}</div>
         </div>
             <div class="card-content">
-            <div><p>weatherDescription</p></div>
-                <p>Now: {{summaryForTheStation.currentTemp}}</p>
-                <p>Min: {{summaryForTheStation.minTemp}}</p>
-                <p>Max: {{summaryForTheStation.maxTemp}}</p>
-                <p>Average: {{summaryForTheStation.avarageTemp}}</p>
+            <div><p>{{currentWeatherConditions.description}}</p></div>
+      
             </div>
         </div>
 
         <div class="p-2">
             <div class="is-flex is-flex-direction-row">
-            <div class="card-header-title">Temp<br>{{summaryForTheStation.city}}</div>
+            <div class="card-header-title">Temp<br>{{summaryForTheStation.currentTemp}}</div>
             <div class="card-header-icon">{{>icons/temperature}}</div>
             </div>
             <div class="card-content">
-                <p>Longitude: {{summaryForTheStation.longitude}}</p>
-                <p>Latitude: {{summaryForTheStation.latitude}}</p>
+                <p>Now: {{summaryForTheStation.currentTemp}}</p>
+                <p>Min: {{summaryForTheStation.minTemp}}</p>
+                <p>Max: {{summaryForTheStation.maxTemp}}</p>
+                <p>Average: {{summaryForTheStation.avarageTemp}}</p>
             </div>
         </div>
 

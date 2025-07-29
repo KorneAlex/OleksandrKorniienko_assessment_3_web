@@ -8,7 +8,7 @@ export const accountsController = {
       userIsAdmin: await usersStore.userIsAdmin(req.cookies.loggedInUser),
     };
     console.log("login page rendering");
-    console.log(viewData);
+    // console.log(viewData);
     if(await usersStore.userLoggedIn(req.cookies.loggedInUser)){
       res.redirect("/dashboard");
     }
@@ -22,7 +22,7 @@ export const accountsController = {
   // https://youtu.be/SccSCuHhOw0?si=SIrjrKrOjWZ8FdiQ&t=2040
   async authenticate(req, res) {
     const accessGranted = await usersStore.userCheck(req.body.email, req.body.password);
-    console.log(`access granted: ${accessGranted}`);
+    // console.log(`access granted: ${accessGranted}`);
     switch(accessGranted){
       case 1:
         const user = await usersStore.getUserByEmail(req.body.email);
@@ -50,7 +50,7 @@ export const accountsController = {
   async register(req,res) {
     const user = req.body;
     await usersStore.addUser(user);
-    console.log(user);
+    // console.log(user);
     res.redirect("/");
     },
 

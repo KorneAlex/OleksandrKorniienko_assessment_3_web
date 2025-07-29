@@ -1,12 +1,17 @@
 import { stationsStore } from "../models/stations-store.js";
 import { recordsStore } from "../models/records-store.js";
 import { usersStore } from "../models/user-store.js";
+import { weatherCodeStore } from "../models/weatherCodes-store.js";
 
 export const stationsController = {
 
   async index(req, res) {
     const station_id = req.params.station_id;
     const currentStation = await stationsStore.getStationById(station_id);
+    // this check was added by AI. I broke my head trying to find why everythind suddenly stopped working
+    if (!currentStation) {
+      return res.status(404).send("Station not found");
+    }
     let editRecord = null;
     if (req.params.edit) {
       editRecord = req.params.record_id;
@@ -24,9 +29,9 @@ export const stationsController = {
       deletedRecordsDataByStationId: await recordsStore.getDeletedRecordsDataByStationId(station_id),
       deletedRecordsDataByUserId: await recordsStore.getDeletedRecordsDataByUserId(req.cookies.loggedInUser),
       editRecord: editRecord,
-
       summaryForTheStation: await stationsStore.getSummaryForTheStation(station_id),
-
+      currentWeatherConditions: await stationsStore.getCurrentWeatherConditions(req.params.station_id),
+      codesList: await weatherCodeStore.getCodesList(),
     };
       console.log(`station ${viewData.currentStation.name} is rendering`);
       res.render("station", viewData);
