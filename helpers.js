@@ -5,3 +5,4 @@ Handlebars.registerHelper('eq', function (operand1, operand2) {
   return false;
     }
 })
+
