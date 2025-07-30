@@ -15,6 +15,26 @@ export const accountsController = {
     res.render("login", viewData);
   },
 
+  async account(req, res) {
+    const viewData = {
+      title: "Account settings",
+      userLoggedIn: await usersStore.userLoggedIn(req.cookies.loggedInUser),
+      userIsAdmin: await usersStore.userIsAdmin(req.cookies.loggedInUser),
+      userName: await usersStore.getUsersFirstNameById(req.cookies.loggedInUser),
+      api: req.cookies.api,
+    };
+    console.log("account page rendering");
+    if(await usersStore.userLoggedIn(req.cookies.loggedInUser)){
+      if(viewData.userIsAdmin){
+      res.render("admin", viewData);
+      } else {
+        res.render("account", viewData);
+      }
+    } else {
+    res.render("login", viewData);
+    }
+  },
+
   async signup(req,res){
     res.render("signup");
   },
@@ -56,7 +76,13 @@ export const accountsController = {
 
   async logout(req,res) {
     res.cookie("loggedInUser", "", { httpOnly: true });
+    // res.cookie("api", "", { httpOnly: true });
     res.redirect("/");
+  },
+
+  async createCookie(req,res) {
+    res.cookie("api", req.body.api, { httpOnly: true });
+    res.redirect("/account");
   },
 
   }

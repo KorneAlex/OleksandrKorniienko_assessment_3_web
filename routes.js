@@ -14,6 +14,12 @@ router.get("/", (req, res) => {
 });
 router.get("/dashboard", dashboardController.index);
 router.get("/about", aboutController.index);
+router.get("/account", accountsController.account);
+router.get("/admin", accountsController.account);
+
+// acount page
+
+router.post("/addCookieAPI", accountsController.createCookie);
 
 // login page
 
@@ -33,6 +39,7 @@ router.get("/stations/:station_id", stationsController.index);
 router.get("/stations/:station_id/deleteStation", stationsController.deleteStation);
 router.get("/stations/:station_id/deleteStationFromDB", stationsController.deleteStationFromDB);
 router.get("/stations/:station_id/restoreStation", stationsController.restoreStation);
+router.get("/stations/:station_id/requestData", recordsController.requestCurrentWeatherData);
 
 //records buttons
 router.get("/stations/:station_id/:record_id/deleteRecord", recordsController.deleteRecord);

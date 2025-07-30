@@ -65,5 +65,11 @@ export const recordsController = {
     await recordsStore.restoreRecord(req.params.record_id);
       }
       res.redirect("/stations/" + station_id);
-  }
+  },
+
+    async requestCurrentWeatherData(req,res) {
+      const station_id = await req.params.station_id;
+    await recordsStore.getCurrentWeatherData(req.params.station_id, req.cookies.loggedInUser, req.cookies.api);
+    res.redirect("/stations/" + station_id);
+  },
 }

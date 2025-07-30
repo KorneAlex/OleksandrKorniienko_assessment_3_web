@@ -4,9 +4,11 @@
     </div>
 {{#if activeRecordsExist}}
 {{>station-summary}}
-{{>records-list}}
-{{/if}}
 {{>add-record}}
+{{>records-list}}
+{{else}}
+{{>add-record}}
+{{/if}}
 {{#if deletedRecordsByStationIdExist}}
 {{>records-list-deleted}}
 {{/if}}

@@ -68,5 +68,6 @@ export const stationsController = {
     async restoreStation(req, res) {
     await stationsStore.restoreStation(req.params.station_id);
       res.redirect("/dashboard");
-  }
+  },
+
   }

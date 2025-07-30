@@ -1,0 +1,12 @@
+{{>page/menu active="account"}}
+  <div style="text-align: center; margin-bottom: 2rem;">
+    <div class="title is-4">Hi, {{userName}}</div>
+    </div>
+    <p>Current API Key: {{api}}</p>
+<form class="field is-horizontal" action="/addCookieAPI" method="POST">
+    <div class="field">
+        <input class="input" type="text" placeholder="Please enter your API Key" name="api">
+        <p class="help">*your API Key will be stored in your cookies and will not be exposed in any logs ;-)</p>
+      </div>
+    <button class="button is-primary">Submit</button>
+</form>

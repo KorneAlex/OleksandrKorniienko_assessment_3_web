@@ -7,6 +7,16 @@ const db_rec = initStore("recordsData");
 const db_del_rec = initStore("deletedRecords");
 
 export const recordsStore = {
+  
+  //https://www.npmjs.com/package/node-fetch#installation
+  async fetchWeatherData(lat, lon, api_key) {
+    const api = api_key;
+        // const location = await fetch(`http://api.openweathermap.org/geo/1.0/reverse?lat=${lat}&lon=${lon}&limit=1&appid=${api}`);
+        const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${api}&units=metric`);
+        const data = await response.json();
+        console.log(JSON.stringify(data));
+        return data;
+    },
 
     async getRecordsData() {
         await db_rec.read();
@@ -43,8 +53,9 @@ export const recordsStore = {
       const deletedRecordsListByUserId = db_rec.data.recordsData.filter((r) => r.deleted === true && r.created_by === user_id);
       return deletedRecordsListByUserId;
     },
+
     
-  
+    
     async recordsExist(station_id) {
       const activeRecordsList = await recordsStore.getActiveRecordsDataByStationId(station_id);
       if(activeRecordsList.length != 0) {
@@ -52,7 +63,7 @@ export const recordsStore = {
       }
       return false;
     },
-
+    
     async deletedRecordsByStationIdExist(station_id) {
       const deletedRecordsList = await recordsStore.getDeletedRecordsDataByStationId(station_id);
       if(deletedRecordsList.length != 0) {
@@ -60,8 +71,8 @@ export const recordsStore = {
       }
       return false;
     },
-
-  async addRecord(station_id, record, loggedInUser) {
+    
+    async addRecord(station_id, record, loggedInUser) {
     await db_rec.read();
     record.id = v4();
     record.station_id = station_id;
@@ -71,11 +82,31 @@ export const recordsStore = {
     record.deleted = false;
     record.deleted_timestamp = null;
     record.deleted_by = null;
-    db_rec.data.recordsData.push(record );
+    db_rec.data.recordsData.push(record);
     await db_rec.write();
     console.log("records-store: Records data saved successfully.");
     return record;
-},
+  },
+  
+  async getCurrentWeatherData(station_id, loggedInUser, api) {
+    const data = await recordsStore.fetchWeatherData(52.259320, -7.110070, api);  //TODO
+    try {
+    const record = {
+    source: "OpenWeather",
+    code: data.weather[0].id,
+    temperature: data.main.temp,
+    wind_speed: data.wind.speed,
+    wind_direction: data.wind.deg,
+    pressure: data.main.pressure,
+    }
+    // console.log(JSON.stringify(record));
+    await recordsStore.addRecord(station_id, record, loggedInUser);
+    return record;
+  }  catch (error) {
+  console.error("didn't fetch. check API?"); // TODO Make a proper error message
+  return null;
+}
+  },
 
   async editRecord(record_id, newData, loggedInUser) {
     await db_rec.read();
