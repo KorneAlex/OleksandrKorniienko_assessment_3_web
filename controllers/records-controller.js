@@ -10,6 +10,7 @@ export const recordsController = {
     async addRecord(req, res) {
     console.log("stations-controller: Adding record to station:", req.params.station_id);
       const newData = {
+        source: "User input",
         code: req.body.code,
         temperature: req.body.temperature,
         wind_speed: req.body.wind_speed,

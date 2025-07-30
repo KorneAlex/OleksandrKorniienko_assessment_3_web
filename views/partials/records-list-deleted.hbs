@@ -1,7 +1,6 @@
-<div class="header">
+
   <div style="position: relative; text-align: center;">
-    <div class="title is-4">Station {{currentStation.name}} deleted records</div>
-    </div>
+    <div class="title is-4 p-4">Station {{currentStation.name}} deleted records</div>
     </div>
 <table class="table is-fullwidth">
 <thead>
@@ -44,6 +43,8 @@
         <th>ID</th>
         <th>Created By</th>
         <th>Created On</th>
+        <th>Restore</th>
+        <th>Delete Forever</th>
     </tr>
 </thead>
 {{#each deletedRecordsDataByUserId}}

@@ -31,7 +31,21 @@
   {{#if (eq ../editRecord id)}}
   <tr class="field">
     <form action="/stations/{{../currentStation.id}}/{{id}}/editRecord/false" method="POST">
-    <td><input class="input" type="number" placeholder="Code" name="code"></td>
+    <td><div class="select field" placeholder="Code" >
+  <select class="input" type="number" placeholder="Code" name="code">
+    {{#each codesList}}
+    <p>{{code}}</p>
+    {{/each}}
+    <option></option>
+    {{#each codesList}}
+    <option>{{code}}</option>
+    {{/each}}
+  </select>
+</div></td>
+    
+
+
+
     <td><input class="input" type="number" placeholder="Temperature" name="temperature"></td>
     <td><input class="input" type="number" placeholder="Wind speed" name="wind_speed"></td>
     <td> <input class="input" type="number" placeholder="Wind direction" name="wind_direction"></td>

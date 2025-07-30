@@ -2,14 +2,20 @@
   <div style="text-align: center; margin-bottom: 2rem;">
     <div class="title is-4">Station {{currentStation.name}}</div>
     </div>
+<div>
 {{#if activeRecordsExist}}
 {{>station-summary}}
 {{>add-record}}
 {{>records-list}}
+
 {{else}}
 {{>add-record}}
 {{/if}}
+
 {{#if deletedRecordsByStationIdExist}}
 {{>records-list-deleted}}
 {{/if}}
+
+</div>
+
 {{>page/footer}}
