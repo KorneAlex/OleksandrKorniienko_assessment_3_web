@@ -72,7 +72,7 @@ export const stationsStore = {
       maxWindSpeed:  await utils.findMax(stationRecords, "wind_speed"),
       avarageWindDirection: await utils.findAvarage(stationRecords, "wind_speed"),
 
-      currentPressure: await utils.findLast(stationRecords, "pressure"),
+      currentPressure: await utils.findLast(stationRecords, "pressure"),  
       minPressure:  await utils.findMin(stationRecords, "pressure"),
       maxPressure:  await utils.findMax(stationRecords, "pressure"),
       avaragePressure: await utils.findAvarage(stationRecords, "pressure"),

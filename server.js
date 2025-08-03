@@ -4,7 +4,6 @@ import cookieParser from "cookie-parser";
 import fileUpload from "express-fileupload";
 import { engine } from "express-handlebars";
 import { router } from "./routes.js";
-
 import Handlebars from "handlebars";
 // https://stackoverflow.com/questions/10736907/handlebars-js-else-if
 // https://handlebarsjs.com/playground.html
@@ -16,7 +15,6 @@ Handlebars.registerHelper('eq', function (operand1, operand2) {
   return false;
     }
 })
-
 
 
 const app = express();

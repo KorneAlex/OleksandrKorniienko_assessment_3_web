@@ -2,11 +2,11 @@
 {{#if stationsExist}}
 {{>station-list}}
 {{/if}}
-
     {{#if userIsAdmin}}
     {{>add-station}}
         {{#if deletedStationsExist}}
             {{>station-list-deleted}}
         {{/if}}
     {{/if}}
+{{>map}}
 {{>page/footer}}

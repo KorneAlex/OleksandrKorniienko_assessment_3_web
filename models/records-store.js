@@ -2,6 +2,7 @@ import { v4 } from "uuid";
 import { format } from "date-fns";
 import { initStore } from "../utils/store-utils.js";
 import { usersStore } from "./user-store.js";
+import { stationsStore } from "./stations-store.js";
 
 const db_rec = initStore("recordsData");
 const db_del_rec = initStore("deletedRecords");
@@ -89,7 +90,8 @@ export const recordsStore = {
   },
   
   async getCurrentWeatherData(station_id, loggedInUser, api) {
-    const data = await recordsStore.fetchWeatherData(52.259320, -7.110070, api);  //TODO
+    const station = await stationsStore.getStationById(station_id);
+    const data = await recordsStore.fetchWeatherData(station.latitude, station.longitude, api);  //TODO
     try {
     const record = {
     source: "OpenWeather",
