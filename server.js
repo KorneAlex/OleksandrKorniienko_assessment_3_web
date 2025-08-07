@@ -7,14 +7,12 @@ import { router } from "./routes.js";
 import Handlebars from "handlebars";
 
 // env file https://nodejs.org/en/learn/command-line/how-to-read-environment-variables-from-nodejs
-import dotenv from "dotenv";
-dotenv.config();
+import '@dotenvx/dotenvx/config'
 
 
 //AI helped me with this line to serve static files from the current directory for geodata.geojson
 import path from "path";
 import { fileURLToPath } from "url"; 
-
 
 
 

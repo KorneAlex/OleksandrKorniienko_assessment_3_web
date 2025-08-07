@@ -400,6 +400,22 @@
       "deleted": false,
       "deleted_timestamp": null,
       "deleted_by": null
+    },
+    {
+      "source": "OpenWeather",
+      "code": 804,
+      "temperature": 18.97,
+      "wind_speed": 3.58,
+      "wind_direction": 297,
+      "pressure": 1012,
+      "id": "7aabe8a7-fc5a-4fe9-97ce-828ee2099531",
+      "station_id": "eb07ccad-d7a9-4a2b-b332-91c3d78729cb",
+      "timestamp_created": "07/08/2025 - 20:09:41",
+      "created_by": "877835af-3a73-415a-b51b-27ae8426e599",
+      "created_by_name": "Alex Korne",
+      "deleted": false,
+      "deleted_timestamp": null,
+      "deleted_by": null
     }
   ]
 }

@@ -5,6 +5,7 @@
   "main": "server.js",
   "type": "module",
   "dependencies": {
+    "@dotenvx/dotenvx": "^1.48.4",
     "@maptiler/leaflet-maptilersdk": "^4.1.0",
     "@maptiler/sdk": "^3.7.0",
     "body-parser": "^1.20.3",
@@ -24,7 +25,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "./node_modules/.bin/dotenvx run -- node server.js"
   },
   "repository": {
     "type": "git",
