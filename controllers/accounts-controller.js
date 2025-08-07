@@ -21,7 +21,8 @@ export const accountsController = {
       userLoggedIn: await usersStore.userLoggedIn(req.cookies.loggedInUser),
       userIsAdmin: await usersStore.userIsAdmin(req.cookies.loggedInUser),
       userName: await usersStore.getUsersFirstNameById(req.cookies.loggedInUser),
-      api: req.cookies.api,
+      WEATHER_API_KEY: req.cookies.WEATHER_API_KEY,
+      MAP_API_KEY: req.cookies.MAP_API_KEY,
     };
     console.log("account page rendering");
     if(await usersStore.userLoggedIn(req.cookies.loggedInUser)){
@@ -76,12 +77,17 @@ export const accountsController = {
 
   async logout(req,res) {
     res.cookie("loggedInUser", "", { httpOnly: true });
-    // res.cookie("api", "", { httpOnly: true });
+    // res.cookie("WEATHER_API_KEY", "", { httpOnly: true }); // TODO clear all cookies
     res.redirect("/");
   },
 
-  async createCookie(req,res) {
-    res.cookie("api", req.body.api, { httpOnly: true });
+  async createCookieWeatherApi(req,res) {
+    res.cookie("WEATHER_API_KEY", req.body.WEATHER_API_KEY, { httpOnly: true });
+    res.redirect("/account");
+  },
+
+  async createCookieMapApi(req,res) {
+    res.cookie("MAP_API_KEY", req.body.MAP_API_KEY, { httpOnly: true });
     res.redirect("/account");
   },
 

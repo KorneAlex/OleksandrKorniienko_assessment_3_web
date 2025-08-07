@@ -37,34 +37,35 @@
 //     })();
 
 
+// another failed attempt:
 
 
+    // const key = MAP_API_KEY;
+    // console.log(key);
+    // const map = new L.Map('map', {maxZoom: 22}).setView([53.5, -7], 5.5);
+    // const mtLayer = L.maptiler.maptilerLayer({
+    //   style: L.maptiler.MapStyle.DATAVIZ.LIGHT,
+    //   apiKey: key,
+    // }).addTo(map);
 
-    const key = process.env.MAP_API_KEY;
-    const map = new L.Map('map', {maxZoom: 22}).setView([53.5, -7], 5.5);
-    const mtLayer = L.maptiler.maptilerLayer({
-      style: L.maptiler.MapStyle.DATAVIZ.LIGHT,
-      apiKey: key,
-    }).addTo(map);
+    // const markers = L.markerClusterGroup();
 
-    const markers = L.markerClusterGroup();
+    // (async () => {
+    //   const response = await fetch('/models/stationsData.json');
+    //   const jsonData = await response.json();
 
-    (async () => {
-      const response = await fetch('/models/stationsData.json');
-      const jsonData = await response.json();
+    //   for (let i = 0; i < jsonData.stationsData.length; i++) {
+    //     const station = jsonData.stationsData[i];
+    //     const title = station.name;
+    //     const description = 'sdsd';
+    //     const marker = L.marker(new L.LatLng(station.latitude, station.longitude), { title: title }, { description: description });
+    //     marker.bindPopup(`${title}`);
+    //     markers.addLayer(marker);
+    //     marker.on('click', function() {
+    //       const popupContent = `<strong><a href="/stations/${station.id}">${title}</a></strong><br>${description}`;
+    //       marker.bindPopup(popupContent).openPopup();
+    //     });
+    //   }
 
-      for (let i = 0; i < jsonData.stationsData.length; i++) {
-        const station = jsonData.stationsData[i];
-        const title = station.name;
-        const description = 'sdsd';
-        const marker = L.marker(new L.LatLng(station.latitude, station.longitude), { title: title }, { description: description });
-        marker.bindPopup(`${title}`);
-        markers.addLayer(marker);
-        marker.on('click', function() {
-          const popupContent = `<strong><a href="/stations/${station.id}">${title}</a></strong><br>${description}`;
-          marker.bindPopup(popupContent).openPopup();
-        });
-      }
-
-      map.addLayer(markers);
-    })();
+    //   map.addLayer(markers);
+    // })();

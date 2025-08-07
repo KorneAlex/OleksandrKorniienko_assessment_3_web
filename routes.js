@@ -18,7 +18,8 @@ router.get("/admin", accountsController.account);
 
 // acount page
 
-router.post("/addCookieAPI", accountsController.createCookie);
+router.post("/addCookieWeatherApi", accountsController.createCookieWeatherApi);
+router.post("/addCookieMapApi", accountsController.createCookieMapApi);
 
 // login page
 

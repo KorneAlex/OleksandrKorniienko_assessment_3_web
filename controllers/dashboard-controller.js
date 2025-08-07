@@ -16,7 +16,7 @@ export const dashboardController = {
       deletedStationsData: await stationsStore.getDeletedStationsData(),
       deletedStationsExist: await stationsStore.deletedStationsExist(),
       stationsExist: await stationsStore.stationsExist(),
-      mapApiKey: process.env.MAP_API_KEY,
+      MAP_API_KEY: req.cookies.MAP_API_KEY,
     };
     if (viewData.userLoggedIn) {
     console.log("dashboard rendering");

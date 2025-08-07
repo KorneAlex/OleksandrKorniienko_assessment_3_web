@@ -1,11 +1,21 @@
 {{>page/menu active="account"}}
   <div style="text-align: center; margin-bottom: 2rem;">
     <div class="title is-4">Hi, {{userName}}</div>
+    <p>For the security reasons I decided to not leave any API keys for now so you can use yours. For now I'm not realy sure how properly set up the API keys in Node.js and Render.com so please use this forms. It wil store them during this session in cookies and delete if you log out.</p>
     </div>
-     <p>Current API Key: {{api}}</p>
-<form class="field is-horizontal" action="/addCookieAPI" method="POST">
+     <p>Weather API Key: {{WEATHER_API_KEY}}</p>
+<form class="field is-horizontal" action="/addCookieWeatherApi" method="POST">
     <div class="field">
-        <input class="input" type="text" placeholder="Please enter your API Key" name="api">
+        <input class="input" type="text" placeholder="Please enter your API Key" name="WEATHER_API_KEY">
+        <p class="help">*your API Key will be stored in your cookies and will not be exposed in any logs ;-)</p>
+      </div>
+    <button class="button is-primary">Submit</button>
+</form>
+
+     <p>MapTiles API Key: {{MAP_API_KEY}}</p>
+<form class="field is-horizontal" action="/addCookieMapApi" method="POST">
+    <div class="field">
+        <input class="input" type="text" placeholder="Please enter your API Key" name="MAP_API_KEY">
         <p class="help">*your API Key will be stored in your cookies and will not be exposed in any logs ;-)</p>
       </div>
     <button class="button is-primary">Submit</button>
