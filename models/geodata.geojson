@@ -1,0 +1,64 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "id": "444044c4-b860-4635-ba39-50e9c2f83bd1",
+            "type": "Feature",
+            "properties": {
+                "stationName": "WAT-001",
+                "bolean": true,
+                "number": 10,
+                "createdBy": "okorniienko"
+            },
+            "geometry": {
+                "coordinates": [
+                    -7.13434290307481,
+                    52.26213228601503,
+                    68.9
+                ],
+                "type": "Point"
+            }
+        }
+    ],
+    "metadata": {
+        "tileStats": {
+            "layers": [
+                {
+                    "layer": "New dataset",
+                    "sourceType": "geojson",
+                    "attributes": [
+                        {
+                            "attribute": "Station name",
+                            "type": "String",
+                            "values": [
+                                "WAT-001"
+                            ]
+                        },
+                        {
+                            "attribute": "Created by",
+                            "type": "String",
+                            "values": [
+                                "okorniienko"
+                            ]
+                        },
+                        {
+                            "attribute": "Number",
+                            "type": "Number",
+                            "min": 10,
+                            "max": 10
+                        },
+                        {
+                            "attribute": "Bolean",
+                            "type": "Boolean"
+                        }
+                    ],
+                    "attributeCount": 4,
+                    "geometry": [
+                        "Point"
+                    ]
+                }
+            ],
+            "layerCount": 1
+        }
+    }
+}

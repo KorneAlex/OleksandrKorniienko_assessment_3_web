@@ -5,7 +5,6 @@ import { stationsController } from "./controllers/stations-controller.js";
 import { recordsController } from "./controllers/records-controller.js";
 import { testController } from "./controllers/test.js";
 import { accountsController } from "./controllers/accounts-controller.js"
-import { usersStore } from "./models/user-store.js";
 
 export const router = express.Router();
 
