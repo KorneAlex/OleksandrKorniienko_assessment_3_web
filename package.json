@@ -21,11 +21,14 @@
     "lowdb": "^5.1.0",
     "node-fetch": "^3.3.2",
     "popups": "^1.1.3",
-    "uuid": "^9.0.0"
+    "uuid": "^9.0.0",
+    "vite": "^7.1.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "./node_modules/.bin/dotenvx run -- node server.js"
+    "start": "./node_modules/.bin/dotenvx run -- node server.js",
+    "dev": "vite",
+    "build": "vite build"
   },
   "repository": {
     "type": "git",

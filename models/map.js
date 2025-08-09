@@ -1,71 +1,31 @@
-// import { MaptilerLayer, MapStyle } from '@maptiler/leaflet-maptilersdk';
-// import L from 'leaflet';
-// import L from 'leaflet.markercluster';
-// import 'leaflet/dist/leaflet.css';
-// import 'leaflet.markercluster/dist/MarkerCluster.css';
-// import 'leaflet.markercluster/dist/MarkerCluster.Default.css';
+document.addEventListener("DOMContentLoaded", function() {
+    const key = window.MAP_API_KEY;
+    const map = new L.Map('map', {maxZoom: 22}).setView([53.45, -7.3], 5.5);
+    const mtLayer = L.maptiler.maptilerLayer({
+        style: L.maptiler.MapStyle.DATAVIZ.LIGHT,
+      apiKey: key,
+    }).addTo(map);
 
-// console.log(L.MarkerClusterGroup); // Should be a function
+    const markers = L.markerClusterGroup();
 
-//     const key = import.meta.env.map_api_key;
-//     const map = new L.Map('map', {maxZoom: 22}).setView([53.5, -7], 5.5);
-//     const mtLayer = L.maptiler.maptilerLayer({
-//       style: L.maptiler.MapStyle.DATAVIZ.LIGHT,
-//       apiKey: "key", //temp to not spend all free requests
-//     }).addTo(map);
+    (async () => {
+      const response = await fetch('/models/stationsData.json');
+      const jsonData = await response.json();
 
-//     const markers = L.markerClusterGroup();
+      for (let i = 0; i < jsonData.stationsData.length; i++) {
+        const station = jsonData.stationsData[i];
+        const title = station.name;
+        
+        const description = 'info'; // TODO
+        const marker = L.marker(new L.LatLng(station.latitude, station.longitude), { title: title }, { description: description });
+        marker.bindPopup(`${title}`);
+        markers.addLayer(marker);
+        marker.on('click', function() {
+          const popupContent = `<strong><a href="/stations/${station.id}">${title}</a></strong><br>${description}`;
+          marker.bindPopup(popupContent).openPopup();
+        });
+      }
 
-//     (async () => {
-//       const response = await fetch('/models/geodata.geojson');
-//       const jsonData = await response.json();
-
-    //   for (let i = 0; i < jsonData.features.length; i++) {
-    //     const feature = jsonData.features[i];
-    //     const title = feature.properties.stationName;
-    //     const description = 'sdsd';
-    //     const marker = L.marker(new L.LatLng(feature.geometry.coordinates[1], feature.geometry.coordinates[0]), { title: title }, { description: description });
-    //     marker.bindPopup(`${title}`);
-    //     markers.addLayer(marker);
-    //     marker.on('click', function() {
-    //       const popupContent = `<strong><a href="/stations/eb07ccad-d7a9-4a2b-b332-91c3d78729cb">${title}</a></strong><br>${description}`;
-    //       marker.bindPopup(popupContent).openPopup();
-    //     });
-    //   }
-
-//       map.addLayer(markers);
-//     })();
-
-
-// another failed attempt:
-
-
-    // const key = MAP_API_KEY;
-    // console.log(key);
-    // const map = new L.Map('map', {maxZoom: 22}).setView([53.5, -7], 5.5);
-    // const mtLayer = L.maptiler.maptilerLayer({
-    //   style: L.maptiler.MapStyle.DATAVIZ.LIGHT,
-    //   apiKey: key,
-    // }).addTo(map);
-
-    // const markers = L.markerClusterGroup();
-
-    // (async () => {
-    //   const response = await fetch('/models/stationsData.json');
-    //   const jsonData = await response.json();
-
-    //   for (let i = 0; i < jsonData.stationsData.length; i++) {
-    //     const station = jsonData.stationsData[i];
-    //     const title = station.name;
-    //     const description = 'sdsd';
-    //     const marker = L.marker(new L.LatLng(station.latitude, station.longitude), { title: title }, { description: description });
-    //     marker.bindPopup(`${title}`);
-    //     markers.addLayer(marker);
-    //     marker.on('click', function() {
-    //       const popupContent = `<strong><a href="/stations/${station.id}">${title}</a></strong><br>${description}`;
-    //       marker.bindPopup(popupContent).openPopup();
-    //     });
-    //   }
-
-    //   map.addLayer(markers);
-    // })();
+      map.addLayer(markers);
+    })();
+    });

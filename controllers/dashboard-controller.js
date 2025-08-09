@@ -19,7 +19,7 @@ export const dashboardController = {
       MAP_API_KEY: req.cookies.MAP_API_KEY,
     };
     if (viewData.userLoggedIn) {
-    console.log("dashboard rendering");
+    console.log("dashboard rendering ");
     res.render("dashboard", viewData);
     }
     else {

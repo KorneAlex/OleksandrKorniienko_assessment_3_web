@@ -11,7 +11,8 @@ export const recordsStore = {
   
   //https://www.npmjs.com/package/node-fetch#installation
   async fetchWeatherData(lat, lon, api_key) {
-    const api = api_key;
+    const api = String(api_key);
+        console.log(api);
         // const location = await fetch(`http://api.openweathermap.org/geo/1.0/reverse?lat=${lat}&lon=${lon}&limit=1&appid=${api}`);
         const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${api}&units=metric`);
         const data = await response.json();

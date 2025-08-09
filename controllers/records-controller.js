@@ -70,7 +70,7 @@ export const recordsController = {
 
     async requestCurrentWeatherData(req,res) {
       const station_id = await req.params.station_id;
-    await recordsStore.getCurrentWeatherData(req.params.station_id, req.cookies.loggedInUser, req.cookies.api);
+    await recordsStore.getCurrentWeatherData(req.params.station_id, req.cookies.loggedInUser, req.cookies.WEATHER_API_KEY);
     res.redirect("/stations/" + station_id);
   },
 }
