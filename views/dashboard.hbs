@@ -1,6 +1,9 @@
 {{>page/menu active="dashboard"}}
 {{>map}}
 {{#if stationsExist}}
+{{#each activeStationsData}}
+{{>station-summary-dashboard}}
+{{/each}}
 {{>station-list}}
 {{/if}}
     {{#if userIsAdmin}}

@@ -1,0 +1,69 @@
+<div id="chart"></div>
+<style>
+    {{!-- felt great fixing it myself in 2 min haha --}}
+    .graph-svg-tip .title {
+        color: rgb(255, 255, 255);
+        font-size: 20;
+    }
+</style>
+
+<script>
+const data = {
+    labels: [
+                {{#each activeRecordsDataByStationId}}
+                    "{{timestamp_created}}",
+                {{/each}}
+            ],
+    datasets: [
+    {
+        name: "Temperature °C", 
+        type: "line",
+        values: [
+                {{#each activeRecordsDataByStationId}}
+                    "{{temperature}}",
+                {{/each}}
+                ],
+    },
+    {
+        name: "Wind Speed km/h", 
+        type: "line",
+        values: [
+                {{#each activeRecordsDataByStationId}}
+                    "{{wind_speed}}",
+                {{/each}}
+                ]
+    }
+    ]
+}
+
+
+const chart = new frappe.Chart("#chart", {  // or a DOM element,
+                                            // new Chart() in case of ES6 module with above usage
+    title: "Temperature Chart",
+    data: data,
+    type: 'axis-mixed', // or 'bar', 'line', 'scatter', 'pie', 'percentage'
+    height: 250,
+    colors: ['#1E90FF', '#DAA520'],
+    tooltipOptions: {
+    formatTooltipX: (d) => (d + "").toUpperCase(),
+   
+  },
+  axisOptions: {
+    xAxisMode: "span",
+    xIsSeries: true,
+  },
+  lineOptions: {
+    dotSize: 4, // default: 4
+    regionFill: 1, // default: 0
+    hideLine: 0,
+    hideDots: 1,
+    heatline: 1,
+    spline: 1
+},
+})
+function getElementByXPath(path) {
+  return document.evaluate(path, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+}
+
+console.log( getElementByXPath("/html/body/div/div[2]/div[1]/div/div/ul/li[0]"));
+    </script>

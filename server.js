@@ -25,7 +25,8 @@ Handlebars.registerHelper('eq', function (operand1, operand2) {
   } else {
   return false;
     }
-})
+});
+
 
 
 const __filename = fileURLToPath(import.meta.url);

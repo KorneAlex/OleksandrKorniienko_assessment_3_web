@@ -10,7 +10,7 @@ export const testController = {
     };
     console.log("data-controller: Test page rendered");
       // const data = req.cookies.loggedInUser;
-      console.log("test data: " + data);
+      // console.log("test data: " + data);
       res.render("test", viewData);
   }
 };

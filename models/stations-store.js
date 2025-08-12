@@ -80,7 +80,50 @@ export const stationsStore = {
     }
     return summaryData;
   },
+
+
+
+  /////////////////////////////////////////// TODO FIX
+  async getSummaryForTheStations() {
+    const stations = await stationsStore.getActiveStationsData();
+     // this check was added by AI. I broke my head trying to find why everythind suddenly stopped working
+    if (!stations) {
+      console.error(`No stations found`);
+      return null;
+    }
+    const summaryData = [];
+    for (const station in stations) {
+      const stationSummary = await stationsStore.getStationSummary(station);
+      summaryData.push(stationSummary);
+      console.log("EACH station : " + JSON.stringify(stationSummary));
+    };
+    // return summaryData;
+  },
+
+
+  async getStationSummary(station) {
+      const stationRecords = await recordsStore.getActiveRecordsDataByStationId(station.id);
+      // console.log("stationRecords : \n" + JSON.stringify(stationRecords));
+      const summaryData = {
+        name: station.name,
+        city: station.city,
+        latitude: station.latitude,
+        longitude: station.longitude,
+        id: station.id,
+      
+        // weatherCode: await utils.findLast(stationRecords, "code"),
+        
+        // currentTemp: await utils.findLast(stationRecords, "temperature"),
+   
+        // currentWindSpeed: await utils.findLast(stationRecords, "wind_speed"),
+        // currentWindDirection: await utils.findLast(stationRecords, "wind_direction"),
   
+        // currentPressure: await utils.findLast(stationRecords, "pressure"),
+      }
+      // console.log("summaryData : \n" + JSON.stringify(summaryData));
+      return summaryData;
+    },
+  ////////////////////////////////////////////////////////////////////////////
 
   async stationsExist() {
     const activeStationsList = await stationsStore.getActiveStationsData();
