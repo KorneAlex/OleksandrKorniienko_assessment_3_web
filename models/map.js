@@ -3,20 +3,29 @@ document.addEventListener("DOMContentLoaded", function() {
     const map = new L.Map('map', {maxZoom: 22}).setView([53.45, -7.3], 5.5);
     const mtLayer = L.maptiler.maptilerLayer({
         style: L.maptiler.MapStyle.DATAVIZ.LIGHT,
-      apiKey: key,
+        apiKey: key,
     }).addTo(map);
 
     const markers = L.markerClusterGroup();
 
     (async () => {
-      const response = await fetch('/models/stationsData.json');
-      const jsonData = await response.json();
+      const responseStations = await fetch('/models/stationsData.json');
+      const jsonDataStations = await responseStations.json();
+      const responseRecords = await fetch('/models/recordsData.json');
+      const jsonDataRecords = await responseRecords.json();
+      // const stationSummary = await stationsStore.getSummaryForTheStation(station[0].id)
+      // console.log("stationSummary : " + JSON.stringify(stationSummary));
 
-      for (let i = 0; i < jsonData.stationsData.length; i++) {
-        const station = jsonData.stationsData[i];
+      for (let i = 0; i < jsonDataStations.stationsData.length; i++) {
+        const station = jsonDataStations.stationsData[i];
         const title = station.name;
-        
-        const description = 'info'; // TODO
+        let description = 'd';
+        const latestRecord = jsonDataRecords.recordsData
+          .filter(record => (record.station_id === station.id) && (record.deleted === false));
+        if (latestRecord) {
+          const latest = latestRecord[latestRecord.length - 1];
+          description = `${latest.temperature} °C <br>${latest.wind_speed} km/h`;
+        }
         const marker = L.marker(new L.LatLng(station.latitude, station.longitude), { title: title }, { description: description });
         marker.bindPopup(`${title}`);
         markers.addLayer(marker);
@@ -25,7 +34,6 @@ document.addEventListener("DOMContentLoaded", function() {
           marker.bindPopup(popupContent).openPopup();
         });
       }
-
       map.addLayer(markers);
     })();
     });

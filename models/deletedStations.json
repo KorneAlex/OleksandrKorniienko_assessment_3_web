@@ -1,1 +1,35 @@
-{"file":"./models/deletedStations.json","deletedStations":[]}
+{
+  "file": "./models/deletedStations.json",
+  "deletedStations": [
+    {
+      "name": "",
+      "city": "",
+      "county": "",
+      "latitude": "",
+      "longitude": "",
+      "id": "b1cbbc82-8d4d-49d0-aadf-cc1fd1ef2b5f",
+      "timestamp_created": "12/08/2025 - 09:46:45",
+      "created_by": "877835af-3a73-415a-b51b-27ae8426e599",
+      "created_by_name": "Alex Korne",
+      "deleted": true,
+      "deleted_timestamp": "12/08/2025 - 09:48:09",
+      "deleted_by": "Admin",
+      "deleted_fromDB": "12/08/2025 - 09:59:23"
+    },
+    {
+      "name": "",
+      "city": "",
+      "county": "",
+      "latitude": "52",
+      "longitude": "-7",
+      "id": "8cd4e913-6cf5-4a58-b9e1-ff8bdee45b28",
+      "timestamp_created": "12/08/2025 - 09:47:56",
+      "created_by": "877835af-3a73-415a-b51b-27ae8426e599",
+      "created_by_name": "Alex Korne",
+      "deleted": true,
+      "deleted_timestamp": "12/08/2025 - 09:59:20",
+      "deleted_by": "Admin",
+      "deleted_fromDB": "12/08/2025 - 09:59:26"
+    }
+  ]
+}

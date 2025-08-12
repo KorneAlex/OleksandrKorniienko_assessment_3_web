@@ -576,6 +576,38 @@
       "deleted": false,
       "deleted_timestamp": null,
       "deleted_by": null
+    },
+    {
+      "source": "OpenWeather",
+      "code": 800,
+      "temperature": 20.2,
+      "wind_speed": 2.24,
+      "wind_direction": 50,
+      "pressure": 1013,
+      "id": "7756d589-3c51-4242-8c5c-0c61fb7efb0e",
+      "station_id": "eb07ccad-d7a9-4a2b-b332-91c3d78729cb",
+      "timestamp_created": "12/08/2025 - 09:41:34",
+      "created_by": "877835af-3a73-415a-b51b-27ae8426e599",
+      "created_by_name": "Alex Korne",
+      "deleted": false,
+      "deleted_timestamp": null,
+      "deleted_by": null
+    },
+    {
+      "source": "OpenWeather",
+      "code": 804,
+      "temperature": 20.94,
+      "wind_speed": 5.16,
+      "wind_direction": 47,
+      "pressure": 1013,
+      "id": "a3114cb8-a119-4086-ab37-3ae1ff40b7cd",
+      "station_id": "09bf9e46-cd19-4544-b8fd-fc1faed90d77",
+      "timestamp_created": "12/08/2025 - 09:59:47",
+      "created_by": "877835af-3a73-415a-b51b-27ae8426e599",
+      "created_by_name": "Alex Korne",
+      "deleted": false,
+      "deleted_timestamp": null,
+      "deleted_by": null
     }
   ]
 }
