@@ -12,11 +12,11 @@ export const recordsStore = {
   //https://www.npmjs.com/package/node-fetch#installation
   async fetchWeatherData(lat, lon, api_key) {
     const api = String(api_key);
-        console.log(api);
+        // console.log(api);
         // const location = await fetch(`http://api.openweathermap.org/geo/1.0/reverse?lat=${lat}&lon=${lon}&limit=1&appid=${api}`);
         const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${api}&units=metric`);
         const data = await response.json();
-        console.log(JSON.stringify(data));
+        // console.log(JSON.stringify(data));
         return data;
     },
 
@@ -51,7 +51,7 @@ export const recordsStore = {
 
     async getDeletedRecordsDataByUserId(user_id) {
       await db_rec.read();
-      console.log(db_rec.data.recordsData.station_id);
+      // console.log(db_rec.data.recordsData.station_id);
       const deletedRecordsListByUserId = db_rec.data.recordsData.filter((r) => r.deleted === true && r.created_by === user_id);
       return deletedRecordsListByUserId;
     },
@@ -192,7 +192,7 @@ export const recordsStore = {
   
   async getRecordIndexByID(record_id) {
     await db_rec.read();
-    console.log(await db_rec.data.recordsData.findIndex(r => r.id === record_id));
+    // console.log(await db_rec.data.recordsData.findIndex(r => r.id === record_id));
     return await db_rec.data.recordsData.findIndex(r => r.id === record_id);
   },
 

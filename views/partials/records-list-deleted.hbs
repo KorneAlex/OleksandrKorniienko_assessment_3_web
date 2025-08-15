@@ -1,24 +1,25 @@
+<div style="position: relative; text-align: center;">
+  <div class="title is-4 p-4">Station {{currentStation.name}} deleted records</div>
+</div>
+<div  style="max-height: 20rem; overflow-y:auto">
 
-  <div style="position: relative; text-align: center;">
-    <div class="title is-4 p-4">Station {{currentStation.name}} deleted records</div>
-    </div>
 <table class="table is-fullwidth">
-<thead>
-{{#if userIsAdmin}}
+  {{#if userIsAdmin}}
+  <thead>
     <tr>
-        <th>Code</th>
-        <th>Temperature</th>
-        <th>Wind Speed</th>
-        <th>Wind Direction</th>
-        <th>Pressure</th>
-        <th>ID</th>
-        <th>Created By</th>
-        <th>Deleted On</th>
-        <th>Restore</th>
-        <th>Delete Forever</th>
+      <th>Code</th>
+      <th>Temperature</th>
+      <th>Wind Speed</th>
+      <th>Wind Direction</th>
+      <th>Pressure</th>
+      <th>ID</th>
+      <th>Created By</th>
+      <th>Deleted On</th>
+      <th>Restore</th>
+      <th>Delete Forever</th>
     </tr>
-</thead>
-{{#each deletedRecordsDataByStationId}}
+  </thead>
+  {{#each deletedRecordsDataByStationId}}
   <tr>
     <td>{{code}}</td>
     <td>{{temperature}}</td>
@@ -32,35 +33,40 @@
     <td><a href="/stations/{{station_id}}/{{id}}/restoreRecord">Restore</a></td>
     <td><a href="/stations/{{station_id}}/{{id}}/deleteRecordFromDB">Delete Forever</a></td>
   </tr>
-{{/each}}
-{{else}}
+  {{/each}}
+  {{else}}
+  {{!-- for users --}}
+  <thead>
     <tr>
-        <th>Code</th>
-        <th>Temperature</th>
-        <th>Wind Speed</th>
-        <th>Wind Direction</th>
-        <th>Pressure</th>
-        <th>ID</th>
-        <th>Created By</th>
-        <th>Created On</th>
-        <th>Restore</th>
-        <th>Delete Forever</th>
+      <th>Code</th>
+      <th>Temperature</th>
+      <th>Wind Speed</th>
+      <th>Wind Direction</th>
+      <th>Pressure</th>
+      <th>Created By</th>
+      <th>Deleted On</th>
+      <th>Restore</th>
+      <th>Delete Forever</th>
     </tr>
-</thead>
-{{#each deletedRecordsDataByUserId}}
+  </thead>
+  {{#each deletedRecordsDataByStationId}}
+  {{!-- <p>{{this.deleted_by}} & {{../currentUserID}}<br></p> --}}
+  {{#if (eq this.deleted_by ../currentUserID)}}
   <tr>
     <td>{{code}}</td>
     <td>{{temperature}}</td>
     <td>{{wind_speed}}</td>
     <td>{{wind_direction}}</td>
     <td>{{pressure}}</td>
-    <td>{{id}}</td>
     <td>{{created_by_name}}</td>
-    <td>{{timestamp}}</td>
+    <td>{{deleted_timestamp}}</td>
     {{!-- <td><a href="/stations/{{station_id}}">Edit</a></td> --}}
     <td><a href="/stations/{{station_id}}/{{id}}/restoreRecord">Restore</a></td>
     <td><a href="/stations/{{station_id}}/{{id}}/deleteRecordFromDB">Delete Forever</a></td>
   </tr>
+  {{else}}
+  {{/if}}
   {{/each}}
   {{/if}}
 </table>
+</div>

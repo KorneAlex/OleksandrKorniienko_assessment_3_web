@@ -1,4 +1,4 @@
-<form class="box" action="/dashboard/addStation" method="POST">
+<form class="box" action="/dashboard/addStation" method="POST" name="form" onsubmit="return validateForm()">
   <label>Add new station:</label>
   <div class="field is-horizontal">
     <div class="field-body">
@@ -21,3 +21,22 @@
   </div>
   <button class="button is-primary">Submit station</button>
 </form>
+
+<script type="text/javascript">
+  function validateForm() {
+    const form = "form";
+    var a = document.forms[form]["name"].value;
+    var b = document.forms[form]["city"].value;
+    var c = document.forms[form]["county"].value;
+    var d = document.forms[form]["latitude"].value;
+    var e = document.forms[form]["longitude"].value;
+    if  ((a == null || a == "") || 
+        (b == null || b == "") ||
+        (c == null || c == "") ||
+        (d == null || d == "") ||
+        (e == null || e == "")) {
+      alert("Please Fill In All Fields");
+      return false;
+    }
+  }
+</script>

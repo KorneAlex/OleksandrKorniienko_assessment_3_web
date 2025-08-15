@@ -30,6 +30,34 @@
       "deleted_timestamp": "12/08/2025 - 09:59:20",
       "deleted_by": "Admin",
       "deleted_fromDB": "12/08/2025 - 09:59:26"
+    },
+        {
+      "name": "WAT-001",
+      "city": "Waterford",
+      "county": "Waterford",
+      "latitude": "52.25833",
+      "longitude": "-7.11194",
+      "id": "eb07ccad-d7a9-4a2b-b332-91c3d78729cb",
+      "timestamp_created": "29/07/2025 - 20:29:17",
+      "created_by": "877835af-3a73-415a-b51b-27ae8426e599",
+      "created_by_name": "Alex Korne",
+      "deleted": true,
+      "deleted_timestamp": null,
+      "deleted_by": null
+    },
+    {
+      "name": "CORK-001",
+      "city": "Cork",
+      "county": "Cork",
+      "latitude": "51.89797",
+      "longitude": "-8.47061",
+      "id": "b76e0253-86f3-4c7a-b2ac-ac1dd0be9f80",
+      "timestamp_created": "29/07/2025 - 20:51:09",
+      "created_by": "877835af-3a73-415a-b51b-27ae8426e599",
+      "created_by_name": "Alex Korne",
+      "deleted": true,
+      "deleted_timestamp": null,
+      "deleted_by": null
     }
   ]
 }

@@ -18,6 +18,7 @@ export const stationsController = {
     }
     const viewData = {
       title: "Station " + String(currentStation.name), //TODO fix this
+      // city: String(currentStation.city),
       currentUserID: await req.cookies.loggedInUser,
       userLoggedIn: await usersStore.userLoggedIn(req.cookies.loggedInUser),
       userIsAdmin: await usersStore.userIsAdmin(req.cookies.loggedInUser),

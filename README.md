@@ -48,5 +48,17 @@ Start the server
 
 ## Features
 
+- Two account types:
+    - Admin:
+      - Can add, edit, delete and restore all stations and records
+    - User:
+      - Can add, edit, delete records added by them
+      - Can delete their pulled data from the OpenWeather source, but cannot edit it
+      - Can see only deleted records that were deleted by them (cannot see records created by user and deleted by admin)
+- Account page that allows user add their API keys to display map and pull data from OpenWeather resource
+- Map that shows active stations with markers containing hyperlinks to those stations and descriprion showing the latest record information
+- Data Chart displaying dynamics of Temperature and Wind Speed on the each station's page
+
+
 - Cross platform
 

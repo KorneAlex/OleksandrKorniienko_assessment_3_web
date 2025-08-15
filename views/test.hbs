@@ -6,37 +6,36 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <div id="map"></div>
-  <script>
-   const key = `${{{MAP_API_KEY}}}`;
- console.log(key);
-    const map = new L.Map('map', {maxZoom: 22}).setView([53.5, -7], 5.5);
-    const mtLayer = L.maptiler.maptilerLayer({
-      style: L.maptiler.MapStyle.DATAVIZ.LIGHT,
-      apiKey: key,
-    }).addTo(map);
 
-    const markers = L.markerClusterGroup();
+{{!-- https://stackoverflow.com/questions/3937513/javascript-validation-for-empty-input-field --}}
+<section class="section">
 
-    (async () => {
-      const response = await fetch('/models/stationsData.json');
-      const jsonData = await response.json();
 
-      for (let i = 0; i < jsonData.stationsData.length; i++) {
-        const station = jsonData.stationsData[i];
-        const title = station.name;
-        const description = 'sdsd';
-        const marker = L.marker(new L.LatLng(station.latitude, station.longitude), { title: title }, { description: description });
-        marker.bindPopup(`${title}`);
-        markers.addLayer(marker);
-        marker.on('click', function() {
-          const popupContent = `<strong><a href="/stations/${station.id}">${title}</a></strong><br>${description}`;
-          marker.bindPopup(popupContent).openPopup();
-        });
-      }
+<script type="text/javascript">
+  function validateForm() {
+    const form = "Form";
+    var a = document.forms[form]["answer_a"].value;
+    var b = document.forms[form]["answer_b"].value;
+    var c = document.forms[form]["answer_c"].value;
+    var d = document.forms[form]["answer_d"].value;
+    if  ((a == null || a == "") || 
+        (b == null || b == "") ||
+        (c == null || c == "") ||
+        (d == null || d == "")) {
+      alert("Please Fill In All Required Fields");
+      return false;
+    }
+  }
+</script>
 
-      map.addLayer(markers);
-    })();
-    </script>
+<form method="post" name="Form" onsubmit="return validateForm()" action="">
+  <textarea cols="30" rows="2" name="answer_a" id="a"></textarea>
+  <textarea cols="30" rows="2" name="answer_b" id="b"></textarea>
+  <textarea cols="30" rows="2" name="answer_c" id="c"></textarea>
+  <textarea cols="30" rows="2" name="answer_d" id="d"></textarea>
+<input id="insert" onclick="IsEmpty();" type="submit" value="Add Question" />
+</form>
+
+
 </body>
 </html>

@@ -11,26 +11,28 @@ document.addEventListener("DOMContentLoaded", function() {
     (async () => {
       const responseStations = await fetch('/models/stationsData.json');
       const jsonDataStations = await responseStations.json();
+      const activeStations = await jsonDataStations.stationsData.filter((s) => s.deleted === false);
       const responseRecords = await fetch('/models/recordsData.json');
       const jsonDataRecords = await responseRecords.json();
       // const stationSummary = await stationsStore.getSummaryForTheStation(station[0].id)
-      // console.log("stationSummary : " + JSON.stringify(stationSummary));
+      // console.log("activeStations : " + JSON.stringify(activeStations));
 
-      for (let i = 0; i < jsonDataStations.stationsData.length; i++) {
-        const station = jsonDataStations.stationsData[i];
+      for (let i = 0; i < activeStations.length; i++) {
+        const station = activeStations[i];
         const title = station.name;
         let description = 'd';
         const latestRecord = jsonDataRecords.recordsData
           .filter(record => (record.station_id === station.id) && (record.deleted === false));
         if (latestRecord) {
           const latest = latestRecord[latestRecord.length - 1];
-          description = `${latest.temperature} °C <br>${latest.wind_speed} km/h`;
+          description = `<font color="grey">${latest.timestamp_created}</font><br><br>${latest.temperature} °C <br>${latest.wind_speed} km/h`;
         }
+        
         const marker = L.marker(new L.LatLng(station.latitude, station.longitude), { title: title }, { description: description });
         marker.bindPopup(`${title}`);
         markers.addLayer(marker);
         marker.on('click', function() {
-          const popupContent = `<strong><a href="/stations/${station.id}">${title}</a></strong><br>${description}`;
+          const popupContent = `<font size="3"><strong><a href="/stations/${station.id}">${title}</a></strong></font><br>${description}`;
           marker.bindPopup(popupContent).openPopup();
         });
       }

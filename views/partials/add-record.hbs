@@ -1,23 +1,23 @@
-<form class="box" action="/stations/{{currentStation.id}}/addRecord" method="POST">
+<form class="box" action="/stations/{{currentStation.id}}/addRecord" method="POST" name="form" onsubmit="return validateForm()">
   <label>Enter new record:</label>
   <div class="field is-horizontal">
     <div class="field-body" >
       {{!-- <div class="field">
         <input class="input" type="number" placeholder="Code" name="code">
       </div> --}}
-  <div class="select field" placeholder="Code" >
-  <select class="input" type="number" placeholder="Code" name="code">
-    {{#each codesList}}
-    <p>{{code}}</p>
-    {{/each}}
-    <option></option>
-    {{#each codesList}}
-    <option>{{code}}</option>
-    {{/each}}
-  </select>
-</div>
+        <div class="select field" placeholder="Code" >
+        <select class="input" type="number" placeholder="Code" name="code">
+          {{#each codesList}}
+          <p>{{code}}</p>
+          {{/each}}
+          <option></option>
+          {{#each codesList}}
+          <option>{{code}}</option>
+          {{/each}}
+        </select>
+      </div>
       <div class="field">
-        <input class="input" type="number" placeholder="Temperature" name="temperature">
+        <input class="input" type="number" placeholder="Temperature" name="temperature" >
       </div>
       <div class="field">
         <input class="input" type="number" placeholder="Wind speed" name="wind_speed">
@@ -35,3 +35,25 @@
 <div class="box">
   <a href="/stations/{{currentStation.id}}/requestData"><button class="button is-primary">Request data</button></a>
 </div>
+
+
+{{!-- https://stackoverflow.com/questions/3937513/javascript-validation-for-empty-input-field --}}
+{{!-- TODO: add data validation (min - max etc.) --}}
+<script type="text/javascript">
+  function validateForm() {
+    const form = "form";
+    var a = document.forms[form]["temperature"].value;
+    var b = document.forms[form]["wind_speed"].value;
+    var c = document.forms[form]["wind_direction"].value;
+    var d = document.forms[form]["pressure"].value;
+    var e = document.forms[form]["code"].value;
+    if  ((a == null || a == "") || 
+        (b == null || b == "") ||
+        (c == null || c == "") ||
+        (d == null || d == "") ||
+        (e == null || e == "")) {
+      alert("Please Fill In All Fields");
+      return false;
+    }
+  }
+</script>

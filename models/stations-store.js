@@ -39,7 +39,7 @@ export const stationsStore = {
 
   async getStationIndexByID(id) {
     await db.read();
-    console.log(await db.data.stationsData.findIndex(s => s.id === id));
+    // console.log(await db.data.stationsData.findIndex(s => s.id === id));
     return await db.data.stationsData.findIndex(s => s.id === id);
   },
 
@@ -50,7 +50,7 @@ export const stationsStore = {
       console.error(`No station found with id: ${station_id}`);
       return null;
     }
-    console.log("station : " + JSON.stringify(station.name));
+    // console.log("station : " + JSON.stringify(station.name));
     const stationRecords = await recordsStore.getActiveRecordsDataByStationId(station_id);
     const summaryData = {
       name: station.name,
@@ -95,7 +95,7 @@ export const stationsStore = {
     for (const station in stations) {
       const stationSummary = await stationsStore.getStationSummary(station);
       summaryData.push(stationSummary);
-      console.log("EACH station : " + JSON.stringify(stationSummary));
+      // console.log("EACH station : " + JSON.stringify(stationSummary));
     };
     // return summaryData;
   },

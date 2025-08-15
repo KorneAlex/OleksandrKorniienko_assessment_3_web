@@ -1,17 +1,21 @@
-<div class="header"><div style="position: relative; text-align: center;"><div class="title is-4">Station list</div></div></div>
+<div class="header">
+  <div style="position: relative; text-align: center;">
+    <div class="title is-4">Station list</div>
+  </div>
+</div>
 
 {{!-- {{#if userIsAdmin}}
 {{#each activeStationsData}}
-  <tr>
-    <td>{{name}}</td>
-    <td><a href="/stations/{{id}}">Edit</a></td>
-    <td><a href="/stations/{{id}}/deleteStation">Delete</a></td>
-  </tr>
-    {{>station-summary}}
+<tr>
+  <td>{{name}}</td>
+  <td><a href="/stations/{{id}}">Edit</a></td>
+  <td><a href="/stations/{{id}}/deleteStation">Delete</a></td>
+</tr>
+{{>station-summary}}
 {{/each}}
 {{else}}
 <table class="table is-fullwidth">
-{{#each activeStationsData}}
+  {{#each activeStationsData}}
   <tr>
     <td>{{name}}</td>
     <td>{{city}}</td>
@@ -23,16 +27,17 @@
     <td><a href="/stations/{{id}}">Edit</a></td>
 
   </tr>
-{{/each}}
+  {{/each}}
 </table>
 {{/if}} --}}
 
 
 {{!-- OLD --}}
-{{#if userIsAdmin}}
-<table class="table is-fullwidth">
-<thead>
-    <tr>
+<div style="max-height: 40rem; overflow-y:auto">
+  <table class="table is-fullwidth">
+    {{#if userIsAdmin}}
+    <thead>
+      <tr>
         <th>Name</th>
         <th>City</th>
         <th>County</th>
@@ -43,38 +48,37 @@
         <th>Created On</th>
         <th>Open</th>
         <th>Delete</th>
-    </tr>
-</thead>
-{{#each activeStationsData}}
-  <tr>
-    <td>{{name}}</td>
-    <td>{{city}}</td>
-    <td>{{county}}</td>
-    <td>{{latitude}}</td>
-    <td>{{longitude}}</td>
-    <td>{{id}}</td>
-    <td>{{created_by_name}}</td>
-    <td>{{timestamp_created}}</td>
-    <td><a href="/stations/{{id}}">Edit</a></td>
-    <td><a href="/stations/{{id}}/deleteStation">Delete</a></td>
-  </tr>
-{{/each}}
-</table>
-{{else}}
-<table class="table is-fullwidth">
-<thead>
+      </tr>
+    </thead>
+    {{#each activeStationsData}}
     <tr>
-        <th>Name</th>
-        <th>City</th>
-        <th>County</th>
-        <th>Latitude</th>
-        <th>Longitude</th>
-        <th>Created By</th>
-        <th>Created On</th>
-        <th></th>
+      <td>{{name}}</td>
+      <td>{{city}}</td>
+      <td>{{county}}</td>
+      <td>{{latitude}}</td>
+      <td>{{longitude}}</td>
+      <td>{{id}}</td>
+      <td>{{created_by_name}}</td>
+      <td>{{timestamp_created}}</td>
+      <td><a href="/stations/{{id}}">Edit</a></td>
+      <td><a href="/stations/{{id}}/deleteStation">Delete</a></td>
     </tr>
-</thead>
-{{#each activeStationsData}}
+    {{/each}}
+  </table>
+  {{else}}
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>City</th>
+      <th>County</th>
+      <th>Latitude</th>
+      <th>Longitude</th>
+      <th>Created By</th>
+      <th>Created On</th>
+      <th></th>
+    </tr>
+  </thead>
+  {{#each activeStationsData}}
   <tr>
     <td>{{name}}</td>
     <td>{{city}}</td>
@@ -86,6 +90,7 @@
     <td><a href="/stations/{{id}}">Edit</a></td>
     {{!-- <td><a href="/stations/{{id}}/deleteStation">Delete</a></td> --}}
   </tr>
-{{/each}}
-</table>
+  {{/each}}
+  </table>
+</div>
 {{/if}}
