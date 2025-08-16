@@ -85,6 +85,7 @@ export const recordsStore = {
     record.deleted_timestamp = null;
     record.deleted_by = null;
     db_rec.data.recordsData.push(record);
+    await stationsStore.lastTimeUpdatedStation(station_id);
     await db_rec.write();
     console.log("records-store: Records data saved successfully.");
     return record;

@@ -55,10 +55,12 @@ export const stationsStore = {
     const summaryData = {
       name: station.name,
       city: station.city,
+      county: station.county,
       latitude: station.latitude,
       longitude: station.longitude,
       id: station.id,
 
+      currentWeatherConditions: await stationsStore.getCurrentWeatherConditions(station_id),
       weatherCode: await utils.findLast(stationRecords, "code"),
 
       currentTemp: await utils.findLast(stationRecords, "temperature"),
@@ -76,14 +78,10 @@ export const stationsStore = {
       minPressure:  await utils.findMin(stationRecords, "pressure"),
       maxPressure:  await utils.findMax(stationRecords, "pressure"),
       avaragePressure: await utils.findAvarage(stationRecords, "pressure"),
-
     }
     return summaryData;
   },
 
-
-
-  /////////////////////////////////////////// TODO FIX
   async getSummaryForTheStations() {
     const stations = await stationsStore.getActiveStationsData();
      // this check was added by AI. I broke my head trying to find why everythind suddenly stopped working
@@ -92,38 +90,14 @@ export const stationsStore = {
       return null;
     }
     const summaryData = [];
-    for (const station in stations) {
-      const stationSummary = await stationsStore.getStationSummary(station);
+    for (const index in stations) {
+      const stationSummary = await stationsStore.getSummaryForTheStation(stations[index].id);
       summaryData.push(stationSummary);
       // console.log("EACH station : " + JSON.stringify(stationSummary));
     };
-    // return summaryData;
+    // console.log("summaryData: " + JSON.stringify(summaryData));
+    return summaryData;
   },
-
-
-  async getStationSummary(station) {
-      const stationRecords = await recordsStore.getActiveRecordsDataByStationId(station.id);
-      // console.log("stationRecords : \n" + JSON.stringify(stationRecords));
-      const summaryData = {
-        name: station.name,
-        city: station.city,
-        latitude: station.latitude,
-        longitude: station.longitude,
-        id: station.id,
-      
-        // weatherCode: await utils.findLast(stationRecords, "code"),
-        
-        // currentTemp: await utils.findLast(stationRecords, "temperature"),
-   
-        // currentWindSpeed: await utils.findLast(stationRecords, "wind_speed"),
-        // currentWindDirection: await utils.findLast(stationRecords, "wind_direction"),
-  
-        // currentPressure: await utils.findLast(stationRecords, "pressure"),
-      }
-      // console.log("summaryData : \n" + JSON.stringify(summaryData));
-      return summaryData;
-    },
-  ////////////////////////////////////////////////////////////////////////////
 
   async stationsExist() {
     const activeStationsList = await stationsStore.getActiveStationsData();
@@ -133,7 +107,6 @@ export const stationsStore = {
     return false;
   },
 
-
   async deletedStationsExist() {
     const deletedStationsList = await stationsStore.getDeletedStationsData();
     if(deletedStationsList.length != 0) {
@@ -141,7 +114,6 @@ export const stationsStore = {
     }
     return false;
   },
-
 
   async addStationData(station, user_id) {
     await db.read();
@@ -185,6 +157,13 @@ export const stationsStore = {
     return stationToBeDeleted;
   },
 
+  async lastTimeUpdatedStation(station_id) {
+    await db.read();
+    let stationToEdit = await stationsStore.getStationById(station_id);
+    stationToEdit.last_updated = format(new Date(), "dd/MM/yyyy' - 'HH:mm:ss");
+    console.log("stationToEdit.last_updated: " + stationToEdit.last_updated);
+    await db.write();
+  },
 
    async restoreStation(id) {
     await db.read();

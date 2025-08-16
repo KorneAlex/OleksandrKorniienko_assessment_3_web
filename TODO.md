@@ -3,11 +3,11 @@ Create admin account and give it permissions add and delete stations and data of
 Add a list of all npm's to the readme.md
 Add feature that will allow to recover data for all data stores. Instead of Delete I want each data piece to have flags "deleted", "deleted by" etc. {cm:2025-07-24}
 Create users-controller and permissions for them {cm:2025-07-26}
-Add the ability to update all data, Admins - evething, users - only data they created.
+Add the ability to update all data, Admins - evething, users - only data they created. {cm:2025-08-16}
 Create logs of events: updates, deletions, creations, etc.
 Create an Admin page console to see logs and etc.
 Create all buttons and functions with routes for stations and records {cm:2025-07-24}
-Last time updated in stations when add a new record
+Last time updated in stations when add a new record {cm:2025-08-16}
 Instead of delete forever from database make it be moved to the deleted_stations.json and deleted_records.json so it still could be recovered {cm:2025-07-24}
 Station, record, deleted data tables to not display when there is no information {cm:2025-07-24}
 Create login system {cm:2025-07-26}

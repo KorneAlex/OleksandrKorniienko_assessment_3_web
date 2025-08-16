@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function() {
           .filter(record => (record.station_id === station.id) && (record.deleted === false));
         if (latestRecord) {
           const latest = latestRecord[latestRecord.length - 1];
-          description = `<font color="grey">${latest.timestamp_created}</font><br><br>${latest.temperature} °C <br>${latest.wind_speed} km/h`;
+          description = `<font color="grey">${latest.timestamp_created}</font><br><br>${latest.temperature} °C <br>${latest.wind_speed} m/s`;
         }
         
         const marker = L.marker(new L.LatLng(station.latitude, station.longitude), { title: title }, { description: description });
