@@ -238,6 +238,51 @@
       "deleted_timestamp": "16/08/2025 - 17:41:34",
       "deleted_by": "Admin",
       "deleted_fromDB": "16/08/2025 - 17:42:31"
+    },
+    {
+      "name": "s",
+      "city": "s",
+      "county": "s",
+      "latitude": "s",
+      "longitude": "s",
+      "id": "2b8a7523-5b11-4573-8c2e-e5f44b9d58b7",
+      "timestamp_created": "17/08/2025 - 19:12:27",
+      "created_by": "877835af-3a73-415a-b51b-27ae8426e599",
+      "created_by_name": "Alex Korne",
+      "deleted": true,
+      "deleted_timestamp": "17/08/2025 - 19:25:15",
+      "deleted_by": "877835af-3a73-415a-b51b-27ae8426e599",
+      "deleted_fromDB": "17/08/2025 - 19:27:33"
+    },
+    {
+      "name": "d",
+      "city": "d",
+      "county": "d",
+      "latitude": "d",
+      "longitude": "d",
+      "id": "ef94ca44-7e54-4d3f-bf13-2bdd173b69e3",
+      "timestamp_created": "16/08/2025 - 17:41:20",
+      "created_by": "877835af-3a73-415a-b51b-27ae8426e599",
+      "created_by_name": "Alex Korne",
+      "deleted": true,
+      "deleted_timestamp": "16/08/2025 - 17:41:28",
+      "deleted_by": "Admin",
+      "deleted_fromDB": "17/08/2025 - 19:28:10"
+    },
+    {
+      "name": "s",
+      "city": "s",
+      "county": "s",
+      "latitude": "s",
+      "longitude": "s",
+      "id": "94cee610-4172-48d8-8248-d9ffea9f245e",
+      "timestamp_created": "17/08/2025 - 19:11:59",
+      "created_by": "877835af-3a73-415a-b51b-27ae8426e599",
+      "created_by_name": "Alex Korne",
+      "deleted": true,
+      "deleted_timestamp": "17/08/2025 - 19:28:26",
+      "deleted_by": "877835af-3a73-415a-b51b-27ae8426e599",
+      "deleted_fromDB": "17/08/2025 - 19:28:28"
     }
   ]
 }

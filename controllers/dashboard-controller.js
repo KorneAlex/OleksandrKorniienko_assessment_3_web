@@ -5,6 +5,10 @@ import { usersStore } from "../models/user-store.js";
 
 export const dashboardController = {
   async index(req, res) {
+    let editStation = req.cookies.stationToEdit; // TODO: FIX THIS!
+    if (req.params.edit) {
+      res.cookie("stationToEdit", req.params.station_id);
+    }
     const viewData = {
      
       title: "Dashboard",
@@ -18,9 +22,10 @@ export const dashboardController = {
       stationsExist: await stationsStore.stationsExist(),
       MAP_API_KEY: req.cookies.MAP_API_KEY,
       summaryForTheStation: await stationsStore.getSummaryForTheStations(),
+      editStation: await req.cookies.stationToEdit,
     };
     if (viewData.userLoggedIn) {
-    console.log("dashboard rendering ");
+    console.log("dashboard rendering " + viewData.editStation);
     res.render("dashboard", viewData);
     }
     else {

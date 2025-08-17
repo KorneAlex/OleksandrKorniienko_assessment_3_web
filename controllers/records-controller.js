@@ -19,7 +19,7 @@ export const recordsController = {
       };
       const station_id = await req.params.station_id;
       console.log(`adding data ${newData} to station ${station_id}`);
-      await recordsStore.addRecord(station_id, newData, req.cookies.loggedInUser);
+      await recordsStore.addRecord(station_id, newData, req.cookies.loggedInUser, "");
       res.redirect("/stations/" + station_id);
   },
 
@@ -35,7 +35,7 @@ export const recordsController = {
       // console.log("New Data to write : " + newData);
       const record = await recordsStore.getRecordById(req.params.record_id);
       if(await usersStore.accessCheck(req.cookies.loggedInUser, record.created_by)){
-      await recordsStore.editRecord(req.params.record_id, newData, req.cookies.loggedInUser);
+      await recordsStore.editRecord(req.params.station_id, req.params.record_id, newData, req.cookies.loggedInUser);
       }
       const station_id = await req.params.station_id;
       res.redirect("/stations/" + station_id);
@@ -45,7 +45,7 @@ export const recordsController = {
       const station_id = await req.params.station_id;
       const record = await recordsStore.getRecordById(req.params.record_id);
       if(await usersStore.accessCheck(req.cookies.loggedInUser, record.created_by)){
-      await recordsStore.deleteRecord(await req.params.record_id, req.cookies.loggedInUser);
+      await recordsStore.deleteRecord(await req.params.station_id, await req.params.record_id, req.cookies.loggedInUser);
       }
       res.redirect("/stations/" + station_id);
   },
@@ -54,7 +54,7 @@ export const recordsController = {
     const station_id = await req.params.station_id;
       const record = await recordsStore.getRecordById(req.params.record_id);
       if(await usersStore.accessCheck(req.cookies.loggedInUser, record.created_by)){
-    await recordsStore.deleteRecordFromDB(req.params.record_id);
+    await recordsStore.deleteRecordFromDB(req.params.station_id, req.params.record_id, req.cookies.loggedInUser);
     }
       res.redirect("/stations/" + station_id);
   },
@@ -63,7 +63,7 @@ export const recordsController = {
       const station_id = await req.params.station_id;
       const record = await recordsStore.getRecordById(req.params.record_id);
       if(await usersStore.accessCheck(req.cookies.loggedInUser, record.created_by)){
-    await recordsStore.restoreRecord(req.params.record_id);
+    await recordsStore.restoreRecord(req.params.station_id, req.params.record_id, req.cookies.loggedInUser);
       }
       res.redirect("/stations/" + station_id);
   },

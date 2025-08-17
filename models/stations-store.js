@@ -5,12 +5,13 @@ import { usersStore } from "./user-store.js";
 import { recordsStore } from "./records-store.js";
 import { utils } from "../utils/store-utils.js"
 import { weatherCodeStore } from "../models/weatherCodes-store.js"
+import { adminsStore } from "./admins-store.js";
 
 
 const db = initStore("stationsData");
-const dbRecords = initStore("recordsData");
+// const dbRecords = initStore("recordsData");
 const db_del_st = initStore("deletedStations");
-const db_del_rec = initStore("deletedRecords");
+// const db_del_rec = initStore("deletedRecords");
 
 export const stationsStore = {
 
@@ -115,29 +116,31 @@ export const stationsStore = {
     return false;
   },
 
-  async addStationData(station, user_id) {
+  async addStationData(station, loggedInUser) {
     await db.read();
     station.id = v4();
     station.timestamp_created = format(new Date(), "dd/MM/yyyy' - 'HH:mm:ss");
-    station.created_by = user_id;
-    station.created_by_name = await usersStore.getUsersFullNameById(user_id);
+    station.created_by = loggedInUser;
+    station.created_by_name = await usersStore.getUsersFullNameById(loggedInUser);
     station.deleted = false;
     station.deleted_timestamp = null;
     station.deleted_by = null;
     db.data.stationsData.push(station);
     await db.write();
     console.log("stations-store: Station data saved successfully.");
+    await adminsStore.createLog(await usersStore.getUsersFullNameById(loggedInUser),"created station ", station.name, " with ID: ", station.id, ``);
     return station;
 },
 
-  async deleteStation(id) {
+  async deleteStation(station_id, loggedInUser) {
     await db.read();
-    const stationToBeDeleted = await stationsStore.getStationById(id);
+    const stationToBeDeleted = await stationsStore.getStationById(station_id);
     stationToBeDeleted.deleted = true;
-    stationToBeDeleted.deleted_by = "Admin"; // TODO add other admins
+    stationToBeDeleted.deleted_by = loggedInUser;
     stationToBeDeleted.deleted_timestamp = format(new Date(), "dd/MM/yyyy' - 'HH:mm:ss");
     console.log(`stations-store: Station ${stationToBeDeleted.name} has been successfully deleted.`);
     await db.write();
+    await adminsStore.createLog(await usersStore.getUsersFullNameById(loggedInUser),"deleted station ", stationToBeDeleted.name, " with ID: ", station_id, ``);
     return stationToBeDeleted;
   },
 
@@ -154,7 +157,36 @@ export const stationsStore = {
     await db.write();
     await db_del_st.write();
     await recordsStore.deleteRecordsFromDbByStationId(station_id, loggedInUser);
+    await adminsStore.createLog(await usersStore.getUsersFullNameById(loggedInUser),"deleted station ", stationToBeDeleted.name, " with ID: ", station_id, ` from the database with all records`);
     return stationToBeDeleted;
+  },
+
+  async editStation(station_id, newData, loggedInUser) {
+    console.log("editStation in stations-store");
+    console.log("station_id: " + station_id + "newData: " + JSON.stringify(newData) + "loggedInUser: " + loggedInUser);
+     await db.read();
+        const stationToEdit = await db.data.stationsData.find((s) => s.id === station_id);
+        const oldData = {
+            name: stationToEdit.name,
+            city: stationToEdit.city,
+            county: stationToEdit.county,
+            latitude: stationToEdit.latitude,
+            longitude: stationToEdit.longitude
+        };
+            console.log("stationToEdit: " + stationToEdit);
+            stationToEdit.name = newData.name;
+            stationToEdit.city = newData.city;
+            stationToEdit.county = newData.county;
+            stationToEdit.latitude = newData.latitude;
+            stationToEdit.longitude = newData.longitude;
+        stationToEdit.edited_by = loggedInUser;
+        stationToEdit.edited_by_name = await usersStore.getUsersFullNameById(loggedInUser);
+        stationToEdit.timestamp_edited = format(new Date(), "dd/MM/yyyy' - 'HH:mm:ss");
+        console.log("Edit station: stationToEdit.name: " + stationToEdit.name);
+        await db.write();
+        console.log("stations-store: Stations data edited successfully.");
+        await adminsStore.createLog(await usersStore.getUsersFullNameById(loggedInUser),"edited station ", ``, "", station_id, ` old data: ${JSON.stringify(oldData)}, new data: ${JSON.stringify(newData)}`);
+        return stationToEdit;
   },
 
   async lastTimeUpdatedStation(station_id) {
@@ -165,14 +197,15 @@ export const stationsStore = {
     await db.write();
   },
 
-   async restoreStation(id) {
+   async restoreStation(station_id, loggedInUser) {
     await db.read();
-    const stationToBeRestored = await stationsStore.getStationById(id);
+    const stationToBeRestored = await stationsStore.getStationById(station_id);
     stationToBeRestored.deleted = false;
     stationToBeRestored.deleted_by = null; // TODO maybe add restored
     stationToBeRestored.deleted_timestamp = null; // TODO maybe add restored
     console.log(`stations-store: Station ${stationToBeRestored.name} has been successfully restored.`);
     await db.write();
+    await adminsStore.createLog(await usersStore.getUsersFullNameById(loggedInUser),"restored station ", stationToBeRestored.name, " with ID: ", station_id, ``);
     return stationToBeRestored;
   },
 

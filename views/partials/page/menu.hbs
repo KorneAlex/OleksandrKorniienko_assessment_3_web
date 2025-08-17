@@ -11,6 +11,9 @@
           <a id="dashboard" class="button" href="/dashboard"> Dashboard </a>
           {{/if}}
           <a id="about" class="button" href="/about"> About </a>
+          {{#if userIsAdmin}}
+          <a id="about" class="button" href="/logs"> Logs </a>
+          {{/if}}
           {{#unless userLoggedIn}}
           <a id="login" class="button" href="/login"> Login </a>
           <a id="signup" class="button" href="/signup"> Sign Up </a>

@@ -4,7 +4,8 @@ import { dashboardController } from "./controllers/dashboard-controller.js";
 import { stationsController } from "./controllers/stations-controller.js";
 import { recordsController } from "./controllers/records-controller.js";
 import { testController } from "./controllers/test.js";
-import { accountsController } from "./controllers/accounts-controller.js"
+import { accountsController } from "./controllers/accounts-controller.js";
+import { adminsController } from "./controllers/admin-controller.js";
 
 export const router = express.Router();
 
@@ -20,6 +21,10 @@ router.get("/admin", accountsController.account);
 
 router.post("/addCookieWeatherApi", accountsController.createCookieWeatherApi);
 router.post("/addCookieMapApi", accountsController.createCookieMapApi);
+
+// admin pages
+
+router.get("/logs", adminsController.logs);
 
 // login page
 
@@ -40,6 +45,8 @@ router.get("/stations/:station_id/deleteStation", stationsController.deleteStati
 router.get("/stations/:station_id/deleteStationFromDB", stationsController.deleteStationFromDB);
 router.get("/stations/:station_id/restoreStation", stationsController.restoreStation);
 router.get("/stations/:station_id/requestData", recordsController.requestCurrentWeatherData);
+router.get("/stations/editStation/:station_id/:edit", dashboardController.index);
+router.post("/stations/editStation/:edit", stationsController.editStation);
 
 //records buttons
 router.get("/stations/:station_id/:record_id/deleteRecord", recordsController.deleteRecord);

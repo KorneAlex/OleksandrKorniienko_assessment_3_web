@@ -49,6 +49,7 @@
         <th>Created By</th>
         <th>Created On</th>
         <th>Open</th>
+        <th>Edit</th>
         <th>Delete</th>
       </tr>
     </thead>
@@ -62,9 +63,13 @@
       <td>{{id}}</td>
       <td>{{created_by_name}}</td>
       <td>{{timestamp_created}}</td>
-      <td><a href="/stations/{{id}}">Edit</a></td>
+      <td><a href="/stations/{{id}}">Open</a></td>
+      <td><a href="/stations/editStation/{{id}}/true">Edit</a></td>
       <td><a href="/stations/{{id}}/deleteStation">Delete</a></td>
     </tr>
+  {{#if (eq ../editStation id)}}
+      {{>editStation}}
+      {{/if}}
     {{/each}}
   </table>
   {{else}}
@@ -89,11 +94,11 @@
     <td>{{longitude}}</td>
     <td>{{created_by_name}}</td>
     <td>{{timestamp_created}}</td>
-    <td><a href="/stations/{{id}}">Edit</a></td>
+    <td><a href="/stations/{{id}}">Open</a></td>
     {{!-- <td><a href="/stations/{{id}}/deleteStation">Delete</a></td> --}}
   </tr>
-  {{/each}}
   </table>
 </div>
+  {{/each}}
 {{/if}}
 </section>

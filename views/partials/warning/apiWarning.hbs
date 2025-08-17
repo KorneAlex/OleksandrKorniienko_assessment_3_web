@@ -1,0 +1,14 @@
+<div class="is-flex is-flex-direction-column is-justify-content-center is-align-items-center" style="height: 40vh;" role="alert" id="warningApi">
+    <h4 class="alert-heading">Map API Key Missing</h4>
+    <p class="p-2">Please set the <code>MapTiles API Key</code> environment variable to use the map features.</p>
+    <a href="/account" class="button is-primary">Go to account settings</a>
+    <a class="p-2 has-text-grey-light" onclick="hideWarning()">do not show this again</a>
+</div>
+<script>
+
+function hideWarning(){
+    let warning = document.getElementById("warningApi");
+    warning.style.setProperty("display", "none", "important"); // AI again... i spent too much time trying to fix it by myself... !important...... :/
+    localStorage.setItem("theWarningIsHidden", "true");
+}
+</script>

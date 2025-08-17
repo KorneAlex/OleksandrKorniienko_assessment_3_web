@@ -1,17 +1,18 @@
-  <tr class="field">
-    <form action="/stations/{{../currentStation.id}}/{{id}}/editRecord/false" method="POST">
-    <td><div class="select field" placeholder="Code" >
-  <select class="input" type="number" placeholder="Code" name="code">
-    {{#each codesList}}
-    <p>{{code}}</p>
-    {{/each}}
-    <option></option>
-    {{#each codesList}}
-    <option>{{code}}</option>
-    {{/each}}
-  </select>
-</div>
-</td>
+<tr class="field">
+  <form action="/stations/{{station_id}}/{{id}}/editRecord/false" method="POST">
+    <td>
+      <div class="select field" placeholder="Code">
+        <select class="input" type="number" placeholder="Code" name="code">
+          {{#each codesList}}
+          <p>{{code}}</p>
+          {{/each}}
+          <option></option>
+          {{#each codesList}}
+          <option>{{code}}</option>
+          {{/each}}
+        </select>
+      </div>
+    </td>
     <td><input class="input" type="number" placeholder="Temperature" name="temperature"></td>
     <td><input class="input" type="number" placeholder="Wind speed" name="wind_speed"></td>
     <td> <input class="input" type="number" placeholder="Wind direction" name="wind_direction"></td>
@@ -19,7 +20,10 @@
     <td></td>
     <td></td>
     <td></td>
-    <td><button class="button is-primary">OK</button></div></td>
-    <td><button class="button is-secondary">X</button></td>
+    <td><button class="button is-primary">OK</button></div>
+    </td>
+    <td><button class="button is-secondary">X</button></td> 
   </form>
-  </tr>
+</tr>
+
+{{!-- TODO: cancel button fix --}}

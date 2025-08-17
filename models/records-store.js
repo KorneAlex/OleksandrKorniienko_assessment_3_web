@@ -3,6 +3,7 @@ import { format } from "date-fns";
 import { initStore } from "../utils/store-utils.js";
 import { usersStore } from "./user-store.js";
 import { stationsStore } from "./stations-store.js";
+import { adminsStore } from "./admins-store.js";
 
 const db_rec = initStore("recordsData");
 const db_del_rec = initStore("deletedRecords");
@@ -74,7 +75,7 @@ export const recordsStore = {
       return false;
     },
     
-    async addRecord(station_id, record, loggedInUser) {
+    async addRecord(station_id, record, loggedInUser, extra_info) {
     await db_rec.read();
     record.id = v4();
     record.station_id = station_id;
@@ -88,6 +89,8 @@ export const recordsStore = {
     await stationsStore.lastTimeUpdatedStation(station_id);
     await db_rec.write();
     console.log("records-store: Records data saved successfully.");
+    extra_info = extra_info===""? "manually":extra_info; 
+    await adminsStore.createLog(await usersStore.getUsersFullNameById(loggedInUser),"added record ", record.id, " to the station ", station_id, extra_info);
     return record;
   },
   
@@ -104,7 +107,7 @@ export const recordsStore = {
     pressure: data.main.pressure,
     }
     // console.log(JSON.stringify(record));
-    await recordsStore.addRecord(station_id, record, loggedInUser);
+    await recordsStore.addRecord(station_id, record, loggedInUser, " from OpenWeather");
     return record;
   }  catch (error) {
   console.error("didn't fetch. check API?"); // TODO Make a proper error message
@@ -112,9 +115,16 @@ export const recordsStore = {
 }
   },
 
-  async editRecord(record_id, newData, loggedInUser) {
+  async editRecord(station_id, record_id, newData, loggedInUser) {
     await db_rec.read();
     const recordToEdit = await db_rec.data.recordsData.find((r) => r.id === record_id);
+    const oldData = {
+        code: recordToEdit.code,
+        temperature: recordToEdit.temperature,
+        wind_speed: recordToEdit.wind_speed,
+        wind_direction: recordToEdit.wind_direction,
+        pressure: recordToEdit.pressure
+    };
         console.log("recordToEdit: " + recordToEdit);
         recordToEdit.code = newData.code;
         recordToEdit.temperature = newData.temperature;
@@ -127,6 +137,7 @@ export const recordsStore = {
     console.log("Edit record: recordToEdit.code: " + recordToEdit.code);
     await db_rec.write();
     console.log("records-store: Records data edited successfully.");
+    await adminsStore.createLog(await usersStore.getUsersFullNameById(loggedInUser),"edited record ", record_id, " on the station ", station_id, ` old data: ${JSON.stringify(oldData)}, new data: ${JSON.stringify(newData)}`);
     return recordToEdit;
   },
 
@@ -135,17 +146,18 @@ export const recordsStore = {
     return db_rec.data.recordsData.filter(data => data.station_id === station_id);
   },
 
-    async deleteRecord(record_id, loggedInUser) {
+    async deleteRecord(station_id, record_id, loggedInUser) {
       await db_rec.read();
       const recordToBeDeleted = await recordsStore.getRecordById(record_id);
       recordToBeDeleted.deleted = true;
       recordToBeDeleted.deleted_by = loggedInUser;
       recordToBeDeleted.deleted_timestamp = format(new Date(), "dd/MM/yyyy' - 'HH:mm:ss");
       await db_rec.write();
+      await adminsStore.createLog(await usersStore.getUsersFullNameById(loggedInUser),"deleted record ", record_id, " from the station ", station_id, ``);
       return recordToBeDeleted;
     },
   
-    async deleteRecordFromDB(record_id) {
+    async deleteRecordFromDB(station_id, record_id, loggedInUser) {
       await db_rec.read();
       await db_del_rec.read();
       const recordToBeDeleted = await recordsStore.getRecordById(record_id);
@@ -155,6 +167,7 @@ export const recordsStore = {
       db_del_rec.data.deletedRecords.push(recordToBeDeleted);
       await db_rec.write();
       await db_del_rec.write();
+      await adminsStore.createLog(await usersStore.getUsersFullNameById(loggedInUser),"deleted record ", record_id, " from the station ", station_id, ` from the database`);
       return recordToBeDeleted;
     },
 
@@ -175,7 +188,7 @@ export const recordsStore = {
     },
   
   
-     async restoreRecord(record_id) {
+     async restoreRecord(station_id, record_id, loggedInUser) {
       await db_rec.read();
       const recordToBeRestored = await recordsStore.getRecordById(record_id);
       recordToBeRestored.deleted = false;
@@ -183,6 +196,7 @@ export const recordsStore = {
       recordToBeRestored.deleted_timestamp = null; // TODO maybe add restored
       console.log(`records-store: Record ${recordToBeRestored.name} has been successfully restored.`);
       await db_rec.write();
+      await adminsStore.createLog(await usersStore.getUsersFullNameById(loggedInUser),"restored record ", record_id, " to the station ", station_id, ``);
       return recordToBeRestored;
     },
   

@@ -4,7 +4,7 @@ Add a list of all npm's to the readme.md
 Add feature that will allow to recover data for all data stores. Instead of Delete I want each data piece to have flags "deleted", "deleted by" etc. {cm:2025-07-24}
 Create users-controller and permissions for them {cm:2025-07-26}
 Add the ability to update all data, Admins - evething, users - only data they created. {cm:2025-08-16}
-Create logs of events: updates, deletions, creations, etc.
+Create logs of events: updates, deletions, creations, etc. {cm:2025-08-17}
 Create an Admin page console to see logs and etc.
 Create all buttons and functions with routes for stations and records {cm:2025-07-24}
 Last time updated in stations when add a new record {cm:2025-08-16}

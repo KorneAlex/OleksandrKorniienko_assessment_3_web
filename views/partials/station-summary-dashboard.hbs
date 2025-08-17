@@ -30,7 +30,7 @@
         <div class="p-2 is-align-content-center" style="width: 18%;">
             <div class="is-flex is-flex-direction-row">
                 {{!-- <div class="card-header-title">Code {{this.weatherCode}}<br></div> --}}
-                <div class="card-header-title">{{currentWeatherConditions.description}}<br></div>
+                <div class="card-header-title">Now: <br>{{currentWeatherConditions.description}}<br></div>
                 <div class="card-header-icon">{{>icons/current-weather}}</div>
             </div>
             {{!-- <div class="card-content">
@@ -42,7 +42,7 @@
 
         <div class="p-2 is-align-content-center" style="width: 18%;">
             <div class="is-flex is-flex-direction-row">
-                <div class="card-header-title">{{this.currentTemp}} °C</div>
+                <div class="card-header-title">Temperature: <br>{{this.currentTemp}} °C</div>
                 <div class="card-header-icon">{{>icons/temperature}}</div>
             </div>
             {{!-- <div class="card-content"> --}}

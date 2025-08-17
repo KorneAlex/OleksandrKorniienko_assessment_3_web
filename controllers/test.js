@@ -1,4 +1,6 @@
+import { adminsStore } from "../models/admins-store.js";
 import { usersStore } from "../models/user-store.js";
+
 
 export const testController = {
   async test(req, res) {
@@ -9,6 +11,7 @@ export const testController = {
       MAP_API_KEY: req.cookies.MAP_API_KEY,
     };
     console.log("data-controller: Test page rendered");
+      await adminsStore.createLog("testuser", "created test log");
       // const data = req.cookies.loggedInUser;
       // console.log("test data: " + data);
       res.render("test", viewData);
