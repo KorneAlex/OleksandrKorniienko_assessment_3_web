@@ -740,6 +740,92 @@
       "text2": " with ID: ",
       "station_id": "3b394787-4958-4768-b9c7-c622178689f4",
       "text3": ""
+    },
+    {
+      "date": "18/08/2025",
+      "time": "14:25:43",
+      "user": "Alex Korne",
+      "text1": "deleted station ",
+      "record_id": "sdsd",
+      "text2": " with ID: ",
+      "station_id": "3b394787-4958-4768-b9c7-c622178689f4",
+      "text3": " from the database with all records"
+    },
+    {
+      "date": "18/08/2025",
+      "time": "14:25:46",
+      "user": "Alex Korne",
+      "text1": "restored station ",
+      "record_id": "a",
+      "text2": " with ID: ",
+      "station_id": "08506983-27fe-4888-8ee4-c6d92dcf68c4",
+      "text3": ""
+    },
+    {
+      "date": "18/08/2025",
+      "time": "14:28:32",
+      "user": "Alex Korne",
+      "text1": "deleted station ",
+      "record_id": "a",
+      "text2": " with ID: ",
+      "station_id": "08506983-27fe-4888-8ee4-c6d92dcf68c4",
+      "text3": ""
+    },
+    {
+      "date": "18/08/2025",
+      "time": "14:28:35",
+      "user": "Alex Korne",
+      "text1": "restored station ",
+      "record_id": "a",
+      "text2": " with ID: ",
+      "station_id": "08506983-27fe-4888-8ee4-c6d92dcf68c4",
+      "text3": ""
+    },
+    {
+      "date": "18/08/2025",
+      "time": "14:32:08",
+      "user": "Alex Korne",
+      "text1": "deleted station ",
+      "record_id": "a",
+      "text2": " with ID: ",
+      "station_id": "08506983-27fe-4888-8ee4-c6d92dcf68c4",
+      "text3": ""
+    },
+    {
+      "date": "18/08/2025",
+      "time": "14:35:05",
+      "user": "Alex Korne",
+      "text1": "added record ",
+      "record_id": "0ad190cc-9cb4-46f3-a05a-0aa23b2fac7f",
+      "text2": " to the station ",
+      "station_id": "8fd8c21b-8398-4b6c-b160-23b7f95b0c6b",
+      "text3": " from OpenWeather"
+    },
+    {
+      "date": "18/08/2025",
+      "time": "14:35:21",
+      "user": "Alex Korne",
+      "text1": "added record ",
+      "record_id": "401c1035-39d5-4094-b2e5-08f8e7056292",
+      "text2": " to the station ",
+      "station_id": "eb07ccad-d7a9-4a2b-b332-91c3d78729cb",
+      "text3": " from OpenWeather"
+    },
+    {
+      "date": "18/08/2025",
+      "time": "14:43:04",
+      "user": "test test",
+      "text1": "restored record ",
+      "record_id": "bcef0d5e-c5dd-4469-bd4b-96f950410475",
+      "text2": " to the station ",
+      "station_id": "eb07ccad-d7a9-4a2b-b332-91c3d78729cb",
+      "text3": ""
+    },
+    {
+      "date": "18/08/2025",
+      "time": "14:59:34",
+      "user": "testuser",
+      "text1": "created test log"
     }
   ]
 }

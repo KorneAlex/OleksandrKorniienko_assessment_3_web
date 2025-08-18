@@ -18,7 +18,7 @@
   <form action="/stations/{{station_id}}/{{id}}/editRecord/false" method="POST">
     <td>
       <div class="select field" placeholder="Code">
-        <select class="input" type="number" placeholder="Code" name="code" style="appearance: none !important;">
+        <select class="input" type="number" placeholder="Code" name="code">
           {{!-- asked AI about @root because {{../../codesList}} didnt work and google was giving me handlebars for
           bikes :D --}}
           {{#each @root.codesList}}
@@ -39,15 +39,15 @@
         value="{{wind_direction}}"></td>
     <td><input class="input" type="number" placeholder="Pressure" name="pressure" min="750" max="1200"
         value="{{pressure}}"></td>
-    {{#if userIsAdmin}}
+    {{#if @root.userIsAdmin}}
     <td>{{id}}</td>
     {{/if}}
     <td>{{created_by_name}}</td>
     <td>{{timestamp_created}}</td>
-    <td><button class="button is-primary">OK</button></div>
+    <td><button class="button is-primary"><div class="station-button">{{>icons/ok-icon}}</div></button></div>
     </td>
   </form>
-  <td><a href="/stations/{{station_id}}" class="button is-secondary">X</button></td>
+  <td><a href="/stations/{{station_id}}" class="button is-secondary"><div class="station-button">{{>icons/cancel-icon}}</div></button></td>
 </tr>
 
 {{!-- TODO: Request data if no API -> error --}}

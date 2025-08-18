@@ -1,3 +1,5 @@
+{{!-- TODO: organise all styles --}}
+
 <style>
     .card {
         margin-bottom: 1rem;
@@ -9,7 +11,13 @@
         pointer-events: none;
 
     }
+
+    
+
 </style>
+    {{!-- .station-button {
+   padding-right: 12px;
+    } --}}
 
 
 {{!-- TODO: CSS animation stations open when click --}}
@@ -21,23 +29,13 @@
                 <div class="card-header-title">{{this.name}}<br>{{this.city}}<br>Co. {{this.county}}</div>
                 <div class="card-header-icon">{{>icons/location}}</div>
             </div>
-            {{!-- <div class="card-content">
-                <p>Lon: {{this.longitude}}</p>
-                <p>Lat: {{this.latitude}}</p>
-            </div> --}}
         </div>
 
         <div class="p-2 is-align-content-center" style="width: 18%;">
             <div class="is-flex is-flex-direction-row">
-                {{!-- <div class="card-header-title">Code {{this.weatherCode}}<br></div> --}}
                 <div class="card-header-title">Now: <br>{{currentWeatherConditions.description}}<br></div>
                 <div class="card-header-icon">{{>icons/current-weather}}</div>
             </div>
-            {{!-- <div class="card-content">
-                <div>
-                    <p>{{currentWeatherConditions.description}}</p>
-                </div>
-            </div> --}}
         </div>
 
         <div class="p-2 is-align-content-center" style="width: 18%;">
@@ -45,12 +43,6 @@
                 <div class="card-header-title">Temperature: <br>{{this.currentTemp}} °C</div>
                 <div class="card-header-icon">{{>icons/temperature}}</div>
             </div>
-            {{!-- <div class="card-content"> --}}
-                {{!-- <p>Now: {{this.currentTemp}}</p> --}}
-                {{!-- <p>Min: {{this.minTemp}}</p>
-                <p>Max: {{this.maxTemp}}</p>
-                <p>Average: {{this.avarageTemp}}</p> --}}
-            {{!-- </div> --}}
         </div>
 
         <div class="p-2 is-align-content-center" style="width: 18%;">
@@ -58,14 +50,6 @@
                 <div class="card-header-title">Wind<br>{{this.currentWindSpeed}} m/s</div>
                 <div class="card-header-icon">{{>icons/wind}}</div>
             </div>
-            {{!-- <div class="card-content"> --}}
-                {{!-- <p>Speed: {{this.currentWindSpeed}}</p> --}}
-                {{!-- TODO: arrow --}}
-                {{!-- <p>Direction: {{this.currentWindDirection}}</p>  --}}
-                {{!-- <p>Min: {{this.minWindSpeed}}</p>
-                <p>Max: {{this.maxWindSpeed}}</p>
-                <p>Average: {{this.avarageWindDirection}}</p> --}}
-            {{!-- </div> --}}
         </div>
 
         <div class="p-2 is-align-content-center" style="width: 18%;">
@@ -73,12 +57,9 @@
                 <div class="card-header-title">Pressure<br>{{this.currentPressure}} hPa</div>
                 <div class="card-header-icon">{{>icons/pressure}}</div>
             </div>
-            {{!-- <div class="card-content"> --}}
-                {{!-- <p>Now: {{this.currentPressure}}</p> --}}
-                {{!-- <p>Min: {{this.minPressure}}</p>
-                <p>Max: {{this.maxPressure}}</p>
-                <p>Avarage: {{this.avaragePressure}}</p> --}}
-            {{!-- </div> --}}
+        </div>
+        <div class="p-2 is-align-content-center">
+            <a href="/stations/{{id}}" class="button"><div class="station-button" style="padding-right: 12px">{{>icons/logo}}</div> <p>Open station</p></a>
         </div>
 
 </section>

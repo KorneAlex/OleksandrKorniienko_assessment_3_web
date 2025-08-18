@@ -8,11 +8,11 @@
         <td>{{id}}</td>
       <td>{{created_by_name}}</td>
       <td>{{timestamp_created}}</td>
-    <td><button class="button is-primary">OK</button></div>
+    <td><button class="button is-primary"><div class="station-button">{{>icons/ok-icon}}</div></button></div>
     </td>
   </form>
-    <td><a href="/dashboard" class="button is-secondary">X</button></td>
-      <td><a href="/stations/{{id}}/deleteStation">Delete</a></td>
+    <td><a href="/dashboard" class="button is-secondary"><div class="station-button">{{>icons/cancel-icon}}</div></button></td>
+      <td><a href="/stations/{{id}}/deleteStation" class="button"><div class="station-button">{{>icons/delete-icon}}</div></a></td>
 </tr>
 
 {{!-- <script>

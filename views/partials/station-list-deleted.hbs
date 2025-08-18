@@ -32,9 +32,9 @@
       <td>{{created_by_name}}</td>
       <td>{{deleted_by}}</td>
       <td>{{deleted_timestamp}}</td>
-      <td><a href="/stations/{{id}}">Edit</a></td>
-      <td><a href="/stations/{{id}}/restoreStation">Restore</a></td>
-      <td><a href="/stations/{{id}}/deleteStationFromDB">Delete Forever</a></td>
+      <td><a href="/stations/{{id}}" class="button"><div class="station-button">{{>icons/edit-icon}}</div></a></td>
+      <td><a href="/stations/{{id}}/restoreStation" class="button"><div class="station-button">{{>icons/restore-icon}}</div></a></td>
+      <td><a href="/stations/{{id}}/deleteStationFromDB" class="button"><div class="station-button">{{>icons/delete-forever-icon}}</div></a></td>
     </tr>
     {{/each}}
   </table>

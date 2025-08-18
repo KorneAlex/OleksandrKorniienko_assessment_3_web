@@ -13,9 +13,16 @@
 {{>add-record}}
 {{/if}}
 
-{{#if deletedRecordsByStationIdExist}}
-{{>records-list-deleted}}
+{{#if userIsAdmin}}
+  {{#if deletedRecordsByStationIdExist}}
+  {{>records-list-deleted}}
+  {{/if}}
+{{else}}
+  {{#if deletedRecordsDataByUserId}}
+  {{>records-list-deleted}}
+  {{/if}}
 {{/if}}
+
 
 </div>
 {{>page/footer}}

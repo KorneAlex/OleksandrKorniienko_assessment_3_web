@@ -1,3 +1,17 @@
+<style>
+  table {
+  text-align: left;
+  position: relative;
+}
+
+th {
+  background: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+</style>
+
 <div>
   <div class="table-container" style="max-height: 40rem; overflow-y:auto">
     <table class="table is-fullwidth">
@@ -29,8 +43,8 @@
         <td>{{id}}</td>
         <td>{{created_by_name}}</td>
         <td>{{timestamp_created}}</td>
-        <td><a href="/stations/{{station_id}}/{{id}}/editRecord/true">Edit</a></td>
-        <td><a href="/stations/{{station_id}}/{{id}}/deleteRecord">Delete</a></td>
+        <td><a href="/stations/{{station_id}}/{{id}}/editRecord/true" class="button"><div class="station-button">{{>icons/edit-icon}}</div></a></td>
+        <td><a href="/stations/{{station_id}}/{{id}}/deleteRecord" class="button"><div class="station-button">{{>icons/delete-icon}}</div></a></td>
       </tr>
       {{/if}}
       {{/each}}
@@ -71,11 +85,11 @@
       {{!-- we are living at the wonderfull time --}}
       {{#if (eq ../currentUserID this.created_by)}}
       {{#if (eq this.source "User input")}}
-      <td><a href="/stations/{{station_id}}/{{id}}/editRecord/true">Edit</a></td>
+      <td><a href="/stations/{{station_id}}/{{id}}/editRecord/true" class="button"><div class="station-button">{{>icons/edit-icon}}</div></a></td>
       {{else}}
       <td></td>
       {{/if}}
-      <td><a href="/stations/{{station_id}}/{{id}}/deleteRecord">Delete</a></td>
+      <td><a href="/stations/{{station_id}}/{{id}}/deleteRecord" class="button"><div class="station-button">{{>icons/delete-icon}}</div></a></td>
       {{else}}
       <td></td>
       <td></td>

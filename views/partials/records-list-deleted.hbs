@@ -30,8 +30,8 @@
     <td>{{created_by_name}}</td>
     <td>{{deleted_timestamp}}</td>
     {{!-- <td><a href="/stations/{{station_id}}">Edit</a></td> --}}
-    <td><a href="/stations/{{station_id}}/{{id}}/restoreRecord">Restore</a></td>
-    <td><a href="/stations/{{station_id}}/{{id}}/deleteRecordFromDB">Delete Forever</a></td>
+    <td><a href="/stations/{{station_id}}/{{id}}/restoreRecord" class="button"><div class="station-button">{{>icons/restore-icon}}</div></a></td>
+    <td><a href="/stations/{{station_id}}/{{id}}/deleteRecordFromDB" class="button"><div class="station-button">{{>icons/delete-forever-icon}}</div></a></td>
   </tr>
   {{/each}}
   {{else}}
@@ -61,8 +61,8 @@
     <td>{{created_by_name}}</td>
     <td>{{deleted_timestamp}}</td>
     {{!-- <td><a href="/stations/{{station_id}}">Edit</a></td> --}}
-    <td><a href="/stations/{{station_id}}/{{id}}/restoreRecord">Restore</a></td>
-    <td><a href="/stations/{{station_id}}/{{id}}/deleteRecordFromDB">Delete Forever</a></td>
+    <td><a href="/stations/{{station_id}}/{{id}}/restoreRecord" class="button"><div class="station-button">{{>icons/restore-icon}}</div></a></td>
+    <td><a href="/stations/{{station_id}}/{{id}}/deleteRecordFromDB" class="button"><div class="station-button">{{>icons/delete-forever-icon}}</div></a></td>
   </tr>
   {{else}}
   {{/if}}

@@ -37,9 +37,12 @@
         <td>{{id}}</td>
         <td>{{created_by_name}}</td>
         <td>{{timestamp_created}}</td>
-        <td><a href="/stations/{{id}}">Open</a></td>
+        <td><a href="/stations/{{id}}" class="button"><div class="station-button">{{>icons/logo}}</div></a></td>
+        <td><a href="/stations/editStation/{{id}}/true" class="button"><div class="station-button">{{>icons/edit-icon}}</div></a></td>
+        <td><a href="/stations/{{id}}/deleteStation" class="button"><div class="station-button">{{>icons/delete-icon}}</div></a></td>
+        {{!-- <td><a href="/stations/{{id}}">Open</a></td>
         <td><a href="/stations/editStation/{{id}}/true">Edit</a></td>
-        <td><a href="/stations/{{id}}/deleteStation">Delete</a></td>
+        <td><a href="/stations/{{id}}/deleteStation">Delete</a></td> --}}
       </tr>
       {{/if}}
       {{/each}}
@@ -54,7 +57,7 @@
         <th>Longitude</th>
         <th>Created By</th>
         <th>Created On</th>
-        <th></th>
+        <th>Open</th>
       </tr>
     </thead>
     {{#each activeStationsData}}
@@ -66,7 +69,7 @@
       <td>{{longitude}}</td>
       <td>{{created_by_name}}</td>
       <td>{{timestamp_created}}</td>
-      <td><a href="/stations/{{id}}">Open</a></td>
+      <td><a href="/stations/{{id}}" class="button"><div class="station-button">{{>icons/logo}}</div></a></td>
       {{!-- <td><a href="/stations/{{id}}/deleteStation">Delete</a></td> --}}
     </tr>
     {{/each}}

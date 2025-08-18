@@ -14,7 +14,7 @@
       "deleted": false,
       "deleted_timestamp": null,
       "deleted_by": null,
-      "last_updated": "18/08/2025 - 11:49:46"
+      "last_updated": "18/08/2025 - 14:35:21"
     },
     {
       "name": "CORK-001",
@@ -44,25 +44,7 @@
       "deleted": false,
       "deleted_timestamp": null,
       "deleted_by": null,
-      "last_updated": "16/08/2025 - 20:12:05"
-    },
-    {
-      "name": "sdsd",
-      "city": "as",
-      "county": "r",
-      "latitude": "2",
-      "longitude": "2",
-      "id": "3b394787-4958-4768-b9c7-c622178689f4",
-      "timestamp_created": "17/08/2025 - 20:10:14",
-      "created_by": "877835af-3a73-415a-b51b-27ae8426e599",
-      "created_by_name": "Alex Korne",
-      "deleted": true,
-      "deleted_timestamp": "18/08/2025 - 12:48:56",
-      "deleted_by": "877835af-3a73-415a-b51b-27ae8426e599",
-      "edited_by": "877835af-3a73-415a-b51b-27ae8426e599",
-      "edited_by_name": "Alex Korne",
-      "timestamp_edited": "18/08/2025 - 10:12:41",
-      "last_updated": "18/08/2025 - 11:23:00"
+      "last_updated": "18/08/2025 - 14:35:05"
     },
     {
       "name": "a",
@@ -75,7 +57,7 @@
       "created_by": "877835af-3a73-415a-b51b-27ae8426e599",
       "created_by_name": "Alex Korne",
       "deleted": true,
-      "deleted_timestamp": "18/08/2025 - 10:01:35",
+      "deleted_timestamp": "18/08/2025 - 14:32:08",
       "deleted_by": "877835af-3a73-415a-b51b-27ae8426e599"
     }
   ]
