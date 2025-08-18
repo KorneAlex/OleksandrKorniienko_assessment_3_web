@@ -30,7 +30,7 @@ export const stationsController = {
       deletedRecordsByStationIdExist: await recordsStore.deletedRecordsByStationIdExist(station_id),
       deletedRecordsDataByStationId: await recordsStore.getDeletedRecordsDataByStationId(station_id),
       deletedRecordsDataByUserId: await recordsStore.getDeletedRecordsDataByUserId(req.cookies.loggedInUser),
-      // editRecord: editRecord,
+      editRecord: editRecord,
       summaryForTheStation: await stationsStore.getSummaryForTheStation(station_id),
       currentWeatherConditions: await stationsStore.getCurrentWeatherConditions(req.params.station_id),
       codesList: await weatherCodeStore.getCodesList(),
@@ -53,7 +53,6 @@ export const stationsController = {
   },
 
   async editStation(req, res) {
-      // console.log("Edit Station: " + req.cookies.stationToEdit)
       const newData = {
           name: req.body.name,
           city: req.body.city,
@@ -63,7 +62,7 @@ export const stationsController = {
         };
         // console.log("New Data to write : " + JSON.stringify(newData));
         if(await usersStore.userIsAdmin(req.cookies.loggedInUser)){
-        await stationsStore.editStation(req.cookies.stationToEdit, newData, req.cookies.loggedInUser);
+        await stationsStore.editStation(req.params.station_id, newData, req.cookies.loggedInUser);
         } else {
           console.log("you dont have permission to do it!")
         }

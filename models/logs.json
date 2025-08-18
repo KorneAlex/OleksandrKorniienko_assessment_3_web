@@ -250,6 +250,496 @@
       "text2": "",
       "station_id": "3b394787-4958-4768-b9c7-c622178689f4",
       "text3": " old data: {\"name\":\"4\",\"city\":\"4\",\"county\":\"4\",\"latitude\":\"4\",\"longitude\":\"4\"}, new data: {\"name\":\"5\",\"city\":\"5\",\"county\":\"5\",\"latitude\":\"5\",\"longitude\":\"5\"}"
+    },
+    {
+      "date": "18/08/2025",
+      "time": "09:07:37",
+      "user": "Alex Korne",
+      "text1": "deleted station ",
+      "record_id": "5",
+      "text2": " with ID: ",
+      "station_id": "3b394787-4958-4768-b9c7-c622178689f4",
+      "text3": ""
+    },
+    {
+      "date": "18/08/2025",
+      "time": "09:07:41",
+      "user": "Alex Korne",
+      "text1": "restored station ",
+      "record_id": "5",
+      "text2": " with ID: ",
+      "station_id": "3b394787-4958-4768-b9c7-c622178689f4",
+      "text3": ""
+    },
+    {
+      "date": "18/08/2025",
+      "time": "09:08:18",
+      "user": "Alex Korne",
+      "text1": "deleted record ",
+      "record_id": "c18ff8cc-6f9f-4a5f-ab81-3163d5bfb93f",
+      "text2": " from the station ",
+      "station_id": "eb07ccad-d7a9-4a2b-b332-91c3d78729cb",
+      "text3": " from the database"
+    },
+    {
+      "date": "18/08/2025",
+      "time": "09:08:23",
+      "user": "Alex Korne",
+      "text1": "deleted record ",
+      "record_id": "038e1e23-9ef7-476b-a0b1-3aecffc66063",
+      "text2": " from the station ",
+      "station_id": "eb07ccad-d7a9-4a2b-b332-91c3d78729cb",
+      "text3": " from the database"
+    },
+    {
+      "date": "18/08/2025",
+      "time": "09:08:25",
+      "user": "Alex Korne",
+      "text1": "deleted record ",
+      "record_id": "83c64c39-d644-42ed-9c0f-aa0128ebc2e8",
+      "text2": " from the station ",
+      "station_id": "eb07ccad-d7a9-4a2b-b332-91c3d78729cb",
+      "text3": " from the database"
+    },
+    {
+      "date": "18/08/2025",
+      "time": "09:08:28",
+      "user": "Alex Korne",
+      "text1": "deleted record ",
+      "record_id": "9b4b1d5d-7dc0-4a94-ad14-97ee602e56a5",
+      "text2": " from the station ",
+      "station_id": "eb07ccad-d7a9-4a2b-b332-91c3d78729cb",
+      "text3": " from the database"
+    },
+    {
+      "date": "18/08/2025",
+      "time": "09:11:07",
+      "user": "Alex Korne",
+      "text1": "deleted record ",
+      "record_id": "7978d83f-c460-4192-acc8-a4291b43b7be",
+      "text2": " from the station ",
+      "station_id": "eb07ccad-d7a9-4a2b-b332-91c3d78729cb",
+      "text3": " from the database"
+    },
+    {
+      "date": "18/08/2025",
+      "time": "09:11:09",
+      "user": "Alex Korne",
+      "text1": "deleted record ",
+      "record_id": "7dd7ac27-3013-45c8-b5c1-4cf7bbfae47a",
+      "text2": " from the station ",
+      "station_id": "eb07ccad-d7a9-4a2b-b332-91c3d78729cb",
+      "text3": " from the database"
+    },
+    {
+      "date": "18/08/2025",
+      "time": "09:11:10",
+      "user": "Alex Korne",
+      "text1": "deleted record ",
+      "record_id": "c3331e5f-1116-4f31-b3d5-e13565886e59",
+      "text2": " from the station ",
+      "station_id": "eb07ccad-d7a9-4a2b-b332-91c3d78729cb",
+      "text3": " from the database"
+    },
+    {
+      "date": "18/08/2025",
+      "time": "09:11:11",
+      "user": "Alex Korne",
+      "text1": "deleted record ",
+      "record_id": "0e10c217-d036-4da7-b4a3-bf2e1da79127",
+      "text2": " from the station ",
+      "station_id": "eb07ccad-d7a9-4a2b-b332-91c3d78729cb",
+      "text3": " from the database"
+    },
+    {
+      "date": "18/08/2025",
+      "time": "09:11:17",
+      "user": "Alex Korne",
+      "text1": "deleted record ",
+      "record_id": "46240e21-9a9c-4f7e-ba51-4470b93d4e3b",
+      "text2": " from the station ",
+      "station_id": "eb07ccad-d7a9-4a2b-b332-91c3d78729cb",
+      "text3": " from the database"
+    },
+    {
+      "date": "18/08/2025",
+      "time": "09:11:31",
+      "user": "Alex Korne",
+      "text1": "deleted station ",
+      "record_id": "5",
+      "text2": " with ID: ",
+      "station_id": "3b394787-4958-4768-b9c7-c622178689f4",
+      "text3": ""
+    },
+    {
+      "date": "18/08/2025",
+      "time": "09:19:44",
+      "user": "Alex Korne",
+      "text1": "restored station ",
+      "record_id": "5",
+      "text2": " with ID: ",
+      "station_id": "3b394787-4958-4768-b9c7-c622178689f4",
+      "text3": ""
+    },
+    {
+      "date": "18/08/2025",
+      "time": "09:22:13",
+      "user": "Alex Korne",
+      "text1": "edited station ",
+      "record_id": "",
+      "text2": "",
+      "station_id": "3b394787-4958-4768-b9c7-c622178689f4",
+      "text3": " old data: {\"name\":\"5\",\"city\":\"5\",\"county\":\"5\",\"latitude\":\"5\",\"longitude\":\"5\"}, new data: {\"name\":\"a\",\"city\":\"ssss\",\"county\":\"a\",\"latitude\":\"2\",\"longitude\":\"1\"}"
+    },
+    {
+      "date": "18/08/2025",
+      "time": "09:29:33",
+      "user": "Alex Korne",
+      "text1": "edited station ",
+      "record_id": "",
+      "text2": "",
+      "station_id": "3b394787-4958-4768-b9c7-c622178689f4",
+      "text3": " old data: {\"name\":\"a\",\"city\":\"ssss\",\"county\":\"a\",\"latitude\":\"2\",\"longitude\":\"1\"}, new data: {\"name\":\"\",\"city\":\"\",\"county\":\"\",\"latitude\":\"\",\"longitude\":\"\"}"
+    },
+    {
+      "date": "18/08/2025",
+      "time": "09:37:05",
+      "user": "Alex Korne",
+      "text1": "edited station ",
+      "record_id": "",
+      "text2": "",
+      "station_id": "3b394787-4958-4768-b9c7-c622178689f4",
+      "text3": " old data: {\"name\":\"\",\"city\":\"\",\"county\":\"\",\"latitude\":\"\",\"longitude\":\"\"}, new data: {\"name\":\"\",\"city\":\"s\",\"county\":\"\",\"latitude\":\"\",\"longitude\":\"\"}"
+    },
+    {
+      "date": "18/08/2025",
+      "time": "09:37:10",
+      "user": "Alex Korne",
+      "text1": "edited station ",
+      "record_id": "",
+      "text2": "",
+      "station_id": "3b394787-4958-4768-b9c7-c622178689f4",
+      "text3": " old data: {\"name\":\"\",\"city\":\"s\",\"county\":\"\",\"latitude\":\"\",\"longitude\":\"\"}, new data: {\"name\":\"\",\"city\":\"\",\"county\":\"\",\"latitude\":\"\",\"longitude\":\"\"}"
+    },
+    {
+      "date": "18/08/2025",
+      "time": "09:38:59",
+      "user": "Alex Korne",
+      "text1": "edited station ",
+      "record_id": "",
+      "text2": "",
+      "station_id": "3b394787-4958-4768-b9c7-c622178689f4",
+      "text3": " old data: {\"name\":\"\",\"city\":\"\",\"county\":\"\",\"latitude\":\"\",\"longitude\":\"\"}, new data: {\"name\":\"\",\"city\":\"s\",\"county\":\"\",\"latitude\":\"\",\"longitude\":\"\"}"
+    },
+    {
+      "date": "18/08/2025",
+      "time": "09:39:03",
+      "user": "Alex Korne",
+      "text1": "edited station ",
+      "record_id": "",
+      "text2": "",
+      "station_id": "3b394787-4958-4768-b9c7-c622178689f4",
+      "text3": " old data: {\"name\":\"\",\"city\":\"s\",\"county\":\"\",\"latitude\":\"\",\"longitude\":\"\"}, new data: {\"name\":\"\",\"city\":\"\",\"county\":\"\",\"latitude\":\"\",\"longitude\":\"\"}"
+    },
+    {
+      "date": "18/08/2025",
+      "time": "09:42:43",
+      "user": "Alex Korne",
+      "text1": "edited station ",
+      "record_id": "",
+      "text2": "",
+      "station_id": "3b394787-4958-4768-b9c7-c622178689f4",
+      "text3": " old data: {\"name\":\"\",\"city\":\"\",\"county\":\"\",\"latitude\":\"\",\"longitude\":\"\"}, new data: {\"name\":\"\",\"city\":\"s\",\"county\":\"\",\"latitude\":\"\",\"longitude\":\"\"}"
+    },
+    {
+      "date": "18/08/2025",
+      "time": "09:44:14",
+      "user": "Alex Korne",
+      "text1": "edited station ",
+      "record_id": "",
+      "text2": "",
+      "station_id": "3b394787-4958-4768-b9c7-c622178689f4",
+      "text3": " old data: {\"name\":\"\",\"city\":\"s\",\"county\":\"\",\"latitude\":\"\",\"longitude\":\"\"}, new data: {\"name\":\"\",\"city\":\"d\",\"county\":\"\",\"latitude\":\"\",\"longitude\":\"\"}"
+    },
+    {
+      "date": "18/08/2025",
+      "time": "09:49:27",
+      "user": "Alex Korne",
+      "text1": "edited station ",
+      "record_id": "",
+      "text2": "",
+      "station_id": "3b394787-4958-4768-b9c7-c622178689f4",
+      "text3": " old data: {\"name\":\"\",\"city\":\"d\",\"county\":\"\",\"latitude\":\"\",\"longitude\":\"\"}, new data: {\"name\":\"\",\"city\":\"\",\"county\":\"\",\"latitude\":\"-90\",\"longitude\":\"\"}"
+    },
+    {
+      "date": "18/08/2025",
+      "time": "10:01:10",
+      "user": "Alex Korne",
+      "text1": "created station ",
+      "record_id": "a",
+      "text2": " with ID: ",
+      "station_id": "08506983-27fe-4888-8ee4-c6d92dcf68c4",
+      "text3": ""
+    },
+    {
+      "date": "18/08/2025",
+      "time": "10:01:35",
+      "user": "Alex Korne",
+      "text1": "deleted station ",
+      "record_id": "a",
+      "text2": " with ID: ",
+      "station_id": "08506983-27fe-4888-8ee4-c6d92dcf68c4",
+      "text3": ""
+    },
+    {
+      "date": "18/08/2025",
+      "time": "10:03:24",
+      "user": "Alex Korne",
+      "text1": "edited station ",
+      "record_id": "",
+      "text2": "",
+      "station_id": "3b394787-4958-4768-b9c7-c622178689f4",
+      "text3": " old data: {\"name\":\"\",\"city\":\"\",\"county\":\"\",\"latitude\":\"-90\",\"longitude\":\"\"}, new data: {\"name\":\"sdsd\",\"city\":\"as\",\"county\":\"as\",\"latitude\":\"2\",\"longitude\":\"2\"}"
+    },
+    {
+      "date": "18/08/2025",
+      "time": "10:04:31",
+      "user": "Alex Korne",
+      "text1": "edited station ",
+      "record_id": "",
+      "text2": "",
+      "station_id": "3b394787-4958-4768-b9c7-c622178689f4",
+      "text3": " old data: {\"name\":\"sdsd\",\"city\":\"as\",\"county\":\"as\",\"latitude\":\"2\",\"longitude\":\"2\"}, new data: {\"name\":\"sdsd\",\"city\":\"as\",\"county\":\"\",\"latitude\":\"2\",\"longitude\":\"2\"}"
+    },
+    {
+      "date": "18/08/2025",
+      "time": "10:12:41",
+      "user": "Alex Korne",
+      "text1": "edited station ",
+      "record_id": "",
+      "text2": "",
+      "station_id": "3b394787-4958-4768-b9c7-c622178689f4",
+      "text3": " old data: {\"name\":\"sdsd\",\"city\":\"as\",\"county\":\"\",\"latitude\":\"2\",\"longitude\":\"2\"}, new data: {\"name\":\"sdsd\",\"city\":\"as\",\"county\":\"r\",\"latitude\":\"2\",\"longitude\":\"2\"}"
+    },
+    {
+      "date": "18/08/2025",
+      "time": "10:17:34",
+      "user": "Alex Korne",
+      "text1": "added record ",
+      "record_id": "b6479781-1fbb-485b-a551-f0a75177493a",
+      "text2": " to the station ",
+      "station_id": "3b394787-4958-4768-b9c7-c622178689f4",
+      "text3": " from OpenWeather"
+    },
+    {
+      "date": "18/08/2025",
+      "time": "10:17:52",
+      "user": "Alex Korne",
+      "text1": "added record ",
+      "record_id": "330fc9f8-8d4e-4a39-964c-2c539d53b35e",
+      "text2": " to the station ",
+      "station_id": "3b394787-4958-4768-b9c7-c622178689f4",
+      "text3": " from OpenWeather"
+    },
+    {
+      "date": "18/08/2025",
+      "time": "10:26:22",
+      "user": "Alex Korne",
+      "text1": "edited record ",
+      "record_id": "330fc9f8-8d4e-4a39-964c-2c539d53b35e",
+      "text2": " on the station ",
+      "station_id": "3b394787-4958-4768-b9c7-c622178689f4",
+      "text3": " old data: {\"code\":804,\"temperature\":23.78,\"wind_speed\":5.58,\"wind_direction\":197,\"pressure\":1017}, new data: {\"code\":\"\",\"temperature\":\"\",\"wind_speed\":\"\",\"wind_direction\":\"\",\"pressure\":\"\"}"
+    },
+    {
+      "date": "18/08/2025",
+      "time": "10:35:53",
+      "user": "Alex Korne",
+      "text1": "edited record ",
+      "record_id": "330fc9f8-8d4e-4a39-964c-2c539d53b35e",
+      "text2": " on the station ",
+      "station_id": "3b394787-4958-4768-b9c7-c622178689f4",
+      "text3": " old data: {\"code\":\"\",\"temperature\":\"\",\"wind_speed\":\"\",\"wind_direction\":\"\",\"pressure\":\"\"}, new data: {\"code\":\"221\",\"temperature\":\"\",\"wind_speed\":\"\",\"wind_direction\":\"\",\"pressure\":\"\"}"
+    },
+    {
+      "date": "18/08/2025",
+      "time": "10:42:38",
+      "user": "Alex Korne",
+      "text1": "edited record ",
+      "record_id": "330fc9f8-8d4e-4a39-964c-2c539d53b35e",
+      "text2": " on the station ",
+      "station_id": "3b394787-4958-4768-b9c7-c622178689f4",
+      "text3": " old data: {\"code\":\"221\",\"temperature\":\"\",\"wind_speed\":\"\",\"wind_direction\":\"\",\"pressure\":\"\"}, new data: {\"code\":\"\",\"temperature\":\"34\",\"wind_speed\":\"34\",\"wind_direction\":\"34\",\"pressure\":\"34\"}"
+    },
+    {
+      "date": "18/08/2025",
+      "time": "10:43:29",
+      "user": "Alex Korne",
+      "text1": "edited record ",
+      "record_id": "330fc9f8-8d4e-4a39-964c-2c539d53b35e",
+      "text2": " on the station ",
+      "station_id": "3b394787-4958-4768-b9c7-c622178689f4",
+      "text3": " old data: {\"code\":\"\",\"temperature\":\"34\",\"wind_speed\":\"34\",\"wind_direction\":\"34\",\"pressure\":\"34\"}, new data: {\"code\":\"500\",\"temperature\":\"34\",\"wind_speed\":\"343\",\"wind_direction\":\"344\",\"pressure\":\"345\"}"
+    },
+    {
+      "date": "18/08/2025",
+      "time": "10:43:39",
+      "user": "Alex Korne",
+      "text1": "edited record ",
+      "record_id": "330fc9f8-8d4e-4a39-964c-2c539d53b35e",
+      "text2": " on the station ",
+      "station_id": "3b394787-4958-4768-b9c7-c622178689f4",
+      "text3": " old data: {\"code\":\"500\",\"temperature\":\"34\",\"wind_speed\":\"343\",\"wind_direction\":\"344\",\"pressure\":\"345\"}, new data: {\"code\":\"\",\"temperature\":\"34\",\"wind_speed\":\"343\",\"wind_direction\":\"344\",\"pressure\":\"345\"}"
+    },
+    {
+      "date": "18/08/2025",
+      "time": "10:43:52",
+      "user": "Alex Korne",
+      "text1": "edited record ",
+      "record_id": "330fc9f8-8d4e-4a39-964c-2c539d53b35e",
+      "text2": " on the station ",
+      "station_id": "3b394787-4958-4768-b9c7-c622178689f4",
+      "text3": " old data: {\"code\":\"\",\"temperature\":\"34\",\"wind_speed\":\"343\",\"wind_direction\":\"344\",\"pressure\":\"345\"}, new data: {\"code\":\"613\",\"temperature\":\"34\",\"wind_speed\":\"343\",\"wind_direction\":\"344\",\"pressure\":\"345\"}"
+    },
+    {
+      "date": "18/08/2025",
+      "time": "10:43:57",
+      "user": "Alex Korne",
+      "text1": "edited record ",
+      "record_id": "330fc9f8-8d4e-4a39-964c-2c539d53b35e",
+      "text2": " on the station ",
+      "station_id": "3b394787-4958-4768-b9c7-c622178689f4",
+      "text3": " old data: {\"code\":\"613\",\"temperature\":\"34\",\"wind_speed\":\"343\",\"wind_direction\":\"344\",\"pressure\":\"345\"}, new data: {\"code\":\"\",\"temperature\":\"34\",\"wind_speed\":\"343\",\"wind_direction\":\"344\",\"pressure\":\"345\"}"
+    },
+    {
+      "date": "18/08/2025",
+      "time": "10:44:30",
+      "user": "Alex Korne",
+      "text1": "edited record ",
+      "record_id": "330fc9f8-8d4e-4a39-964c-2c539d53b35e",
+      "text2": " on the station ",
+      "station_id": "3b394787-4958-4768-b9c7-c622178689f4",
+      "text3": " old data: {\"code\":\"\",\"temperature\":\"34\",\"wind_speed\":\"343\",\"wind_direction\":\"344\",\"pressure\":\"345\"}, new data: {\"code\":\"321\",\"temperature\":\"34\",\"wind_speed\":\"343\",\"wind_direction\":\"344\",\"pressure\":\"345\"}"
+    },
+    {
+      "date": "18/08/2025",
+      "time": "10:44:36",
+      "user": "Alex Korne",
+      "text1": "edited record ",
+      "record_id": "330fc9f8-8d4e-4a39-964c-2c539d53b35e",
+      "text2": " on the station ",
+      "station_id": "3b394787-4958-4768-b9c7-c622178689f4",
+      "text3": " old data: {\"code\":\"321\",\"temperature\":\"34\",\"wind_speed\":\"343\",\"wind_direction\":\"344\",\"pressure\":\"345\"}, new data: {\"code\":\"321\",\"temperature\":\"34\",\"wind_speed\":\"343\",\"wind_direction\":\"344\",\"pressure\":\"345\"}"
+    },
+    {
+      "date": "18/08/2025",
+      "time": "10:44:43",
+      "user": "Alex Korne",
+      "text1": "edited record ",
+      "record_id": "330fc9f8-8d4e-4a39-964c-2c539d53b35e",
+      "text2": " on the station ",
+      "station_id": "3b394787-4958-4768-b9c7-c622178689f4",
+      "text3": " old data: {\"code\":\"321\",\"temperature\":\"34\",\"wind_speed\":\"343\",\"wind_direction\":\"344\",\"pressure\":\"345\"}, new data: {\"code\":\"501\",\"temperature\":\"34\",\"wind_speed\":\"343\",\"wind_direction\":\"344\",\"pressure\":\"345\"}"
+    },
+    {
+      "date": "18/08/2025",
+      "time": "11:12:01",
+      "user": "Alex Korne",
+      "text1": "edited record ",
+      "record_id": "330fc9f8-8d4e-4a39-964c-2c539d53b35e",
+      "text2": " on the station ",
+      "station_id": "3b394787-4958-4768-b9c7-c622178689f4",
+      "text3": " old data: {\"code\":\"501\",\"temperature\":\"34\",\"wind_speed\":\"343\",\"wind_direction\":\"344\",\"pressure\":\"345\"}, new data: {\"code\":\"803\",\"temperature\":\"34\",\"wind_speed\":\"343\",\"wind_direction\":\"344\",\"pressure\":\"345\"}"
+    },
+    {
+      "date": "18/08/2025",
+      "time": "11:23:00",
+      "user": "Alex Korne",
+      "text1": "added record ",
+      "record_id": "1ac7f14b-54c1-427b-a818-1883262a78be",
+      "text2": " to the station ",
+      "station_id": "3b394787-4958-4768-b9c7-c622178689f4",
+      "text3": "manually"
+    },
+    {
+      "date": "18/08/2025",
+      "time": "11:23:26",
+      "user": "Alex Korne",
+      "text1": "edited record ",
+      "record_id": "1ac7f14b-54c1-427b-a818-1883262a78be",
+      "text2": " on the station ",
+      "station_id": "3b394787-4958-4768-b9c7-c622178689f4",
+      "text3": " old data: {\"code\":\"801\",\"temperature\":\"20\",\"wind_speed\":\"5\",\"wind_direction\":\"65\",\"pressure\":\"900\"}, new data: {\"code\":\"314\",\"temperature\":\"2\",\"wind_speed\":\"3\",\"wind_direction\":\"43\",\"pressure\":\"1000\"}"
+    },
+    {
+      "date": "18/08/2025",
+      "time": "11:46:04",
+      "user": "Alex Korne",
+      "text1": "edited record ",
+      "record_id": "1ac7f14b-54c1-427b-a818-1883262a78be",
+      "text2": " on the station ",
+      "station_id": "3b394787-4958-4768-b9c7-c622178689f4",
+      "text3": " old data: {\"code\":\"314\",\"temperature\":\"2\",\"wind_speed\":\"3\",\"wind_direction\":\"43\",\"pressure\":\"1000\"}, new data: {\"code\":\"314\",\"temperature\":\"2\",\"wind_speed\":\"3\",\"wind_direction\":\"43\",\"pressure\":\"1000\"}"
+    },
+    {
+      "date": "18/08/2025",
+      "time": "11:47:55",
+      "user": "Alex Korne",
+      "text1": "edited record ",
+      "record_id": "1ac7f14b-54c1-427b-a818-1883262a78be",
+      "text2": " on the station ",
+      "station_id": "3b394787-4958-4768-b9c7-c622178689f4",
+      "text3": " old data: {\"code\":\"314\",\"temperature\":\"2\",\"wind_speed\":\"3\",\"wind_direction\":\"43\",\"pressure\":\"1000\"}, new data: {\"code\":\"314\",\"temperature\":\"2\",\"wind_speed\":\"3\",\"wind_direction\":\"4\",\"pressure\":\"1000\"}"
+    },
+    {
+      "date": "18/08/2025",
+      "time": "11:48:09",
+      "user": "Alex Korne",
+      "text1": "edited record ",
+      "record_id": "1ac7f14b-54c1-427b-a818-1883262a78be",
+      "text2": " on the station ",
+      "station_id": "3b394787-4958-4768-b9c7-c622178689f4",
+      "text3": " old data: {\"code\":\"314\",\"temperature\":\"2\",\"wind_speed\":\"3\",\"wind_direction\":\"4\",\"pressure\":\"1000\"}, new data: {\"code\":\"311\",\"temperature\":\"2\",\"wind_speed\":\"3\",\"wind_direction\":\"4\",\"pressure\":\"1000\"}"
+    },
+    {
+      "date": "18/08/2025",
+      "time": "11:49:46",
+      "user": "test test",
+      "text1": "added record ",
+      "record_id": "bcef0d5e-c5dd-4469-bd4b-96f950410475",
+      "text2": " to the station ",
+      "station_id": "eb07ccad-d7a9-4a2b-b332-91c3d78729cb",
+      "text3": "manually"
+    },
+    {
+      "date": "18/08/2025",
+      "time": "11:50:14",
+      "user": "test test",
+      "text1": "edited record ",
+      "record_id": "bcef0d5e-c5dd-4469-bd4b-96f950410475",
+      "text2": " on the station ",
+      "station_id": "eb07ccad-d7a9-4a2b-b332-91c3d78729cb",
+      "text3": " old data: {\"code\":\"211\",\"temperature\":\"4\",\"wind_speed\":\"4\",\"wind_direction\":\"4\",\"pressure\":\"1000\"}, new data: {\"code\":\"211\",\"temperature\":\"44\",\"wind_speed\":\"4\",\"wind_direction\":\"4\",\"pressure\":\"1000\"}"
+    },
+    {
+      "date": "18/08/2025",
+      "time": "11:53:38",
+      "user": "test test",
+      "text1": "deleted record ",
+      "record_id": "bcef0d5e-c5dd-4469-bd4b-96f950410475",
+      "text2": " from the station ",
+      "station_id": "eb07ccad-d7a9-4a2b-b332-91c3d78729cb",
+      "text3": ""
+    },
+    {
+      "date": "18/08/2025",
+      "time": "12:48:56",
+      "user": "Alex Korne",
+      "text1": "deleted station ",
+      "record_id": "sdsd",
+      "text2": " with ID: ",
+      "station_id": "3b394787-4958-4768-b9c7-c622178689f4",
+      "text3": ""
     }
   ]
 }

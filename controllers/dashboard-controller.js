@@ -2,15 +2,13 @@ import { recordsStore } from "../models/records-store.js";
 import { stationsStore } from "../models/stations-store.js";
 import { usersStore } from "../models/user-store.js";
 
-
 export const dashboardController = {
   async index(req, res) {
-    let editStation = req.cookies.stationToEdit; // TODO: FIX THIS!
+    let editStation = req.params.station_id; // TODO: FIX THIS!
     if (req.params.edit) {
       res.cookie("stationToEdit", req.params.station_id);
     }
     const viewData = {
-     
       title: "Dashboard",
       userLoggedIn: await usersStore.userLoggedIn(req.cookies.loggedInUser),
       userIsAdmin: await usersStore.userIsAdmin(req.cookies.loggedInUser),
@@ -22,13 +20,12 @@ export const dashboardController = {
       stationsExist: await stationsStore.stationsExist(),
       MAP_API_KEY: req.cookies.MAP_API_KEY,
       summaryForTheStation: await stationsStore.getSummaryForTheStations(),
-      editStation: await req.cookies.stationToEdit,
+      editStation: await req.params.station_id,
     };
     if (viewData.userLoggedIn) {
-    console.log("dashboard rendering " + viewData.editStation);
-    res.render("dashboard", viewData);
-    }
-    else {
+      console.log("dashboard rendering " + viewData.editStation);
+      res.render("dashboard", viewData);
+    } else {
       res.redirect("/");
     }
   },

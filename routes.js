@@ -46,7 +46,7 @@ router.get("/stations/:station_id/deleteStationFromDB", stationsController.delet
 router.get("/stations/:station_id/restoreStation", stationsController.restoreStation);
 router.get("/stations/:station_id/requestData", recordsController.requestCurrentWeatherData);
 router.get("/stations/editStation/:station_id/:edit", dashboardController.index);
-router.post("/stations/editStation/:edit", stationsController.editStation);
+router.post("/stations/editStation/:station_id/:edit", stationsController.editStation);
 
 //records buttons
 router.get("/stations/:station_id/:record_id/deleteRecord", recordsController.deleteRecord);

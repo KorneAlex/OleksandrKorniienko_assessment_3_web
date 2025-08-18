@@ -1,29 +1,53 @@
+<style>
+  .input,
+  .select select,
+  .textarea {
+    background-color: rgba(255, 0, 0, 0);
+    padding-right: 3px !important;
+    padding-left: 3px !important;
+    margin-left: 0px;
+    !important;
+  }
+
+  .select:not(.is-multiple):not(.is-loading)::after {
+    border: 0;
+  }
+</style>
+
 <tr class="field">
   <form action="/stations/{{station_id}}/{{id}}/editRecord/false" method="POST">
     <td>
       <div class="select field" placeholder="Code">
-        <select class="input" type="number" placeholder="Code" name="code">
-          {{#each codesList}}
+        <select class="input" type="number" placeholder="Code" name="code" style="appearance: none !important;">
+          {{!-- asked AI about @root because {{../../codesList}} didnt work and google was giving me handlebars for
+          bikes :D --}}
+          {{#each @root.codesList}}
           <p>{{code}}</p>
           {{/each}}
-          <option></option>
-          {{#each codesList}}
+          <option>{{code}}</option>
+          {{#each @root.codesList}}
           <option>{{code}}</option>
           {{/each}}
         </select>
       </div>
     </td>
-    <td><input class="input" type="number" placeholder="Temperature" name="temperature"></td>
-    <td><input class="input" type="number" placeholder="Wind speed" name="wind_speed"></td>
-    <td> <input class="input" type="number" placeholder="Wind direction" name="wind_direction"></td>
-    <td><input class="input" type="number" placeholder="Pressure" name="pressure"></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td><input class="input" type="number" placeholder="Temperature" name="temperature" min="-100" max="70"
+        value="{{temperature}}"></td>
+    <td><input class="input" type="number" placeholder="Wind speed" name="wind_speed" min="0" max="999"
+        value="{{wind_speed}}"></td>
+    <td> <input class="input" type="number" placeholder="Wind direction" name="wind_direction" min="0" max="360"
+        value="{{wind_direction}}"></td>
+    <td><input class="input" type="number" placeholder="Pressure" name="pressure" min="750" max="1200"
+        value="{{pressure}}"></td>
+    {{#if userIsAdmin}}
+    <td>{{id}}</td>
+    {{/if}}
+    <td>{{created_by_name}}</td>
+    <td>{{timestamp_created}}</td>
     <td><button class="button is-primary">OK</button></div>
     </td>
-    <td><button class="button is-secondary">X</button></td> 
   </form>
+  <td><a href="/stations/{{station_id}}" class="button is-secondary">X</button></td>
 </tr>
 
-{{!-- TODO: cancel button fix --}}
+{{!-- TODO: Request data if no API -> error --}}
