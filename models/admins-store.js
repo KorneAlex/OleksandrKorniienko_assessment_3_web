@@ -12,7 +12,16 @@ const db_del_rec = initStore("deletedRecords");
 export const adminsStore = {
   async createLog(user, text1, record_id, text2, station_id, text3) {
     await db_logs.read();
+    const logs = await adminsStore.getLogs();
+    let lastId = 0;
+    console.log("logs boolean: " + Boolean(logs));
+    if(logs){
+      if(logs.length>0 && (logs[logs.length-1].id)){ // here i'm making sure the next line will not brake the program even if the file is empty
+      lastId = logs[logs.length-1].id;
+      }
+    }
     const newLog = {
+        id: lastId+1,
         date: format(new Date(), "dd/MM/yyyy"),
         time: format(new Date(), "HH:mm:ss"),
         user: user,

@@ -1,21 +1,11 @@
 {{>page/menu active="logs"}}
-{{!-- TODO: make style work! --}}
-<style>
-    .code{
-        font-size: large; 
-    }
-
-    .log{
-        background-color: #f5f5f5; 
-        color: #da1039;"
-    }
-</style>
 <section>
-    <div class="table-container" style="max-height: 40rem; overflow-y:auto">
+    <div class="table-container logs__table" style="max-height: 40rem; overflow-y:auto" id="scroll">
         <table class="table is-fullwidth">
 
             <thead>
                 <tr>
+                    <th>LogID</th>
                     <th>Date</th>
                     <th>Time</th>
                     <th>User name</th>
@@ -24,6 +14,7 @@
             </thead>
             {{#each logsData}}
             <tr>
+                <td>{{this.id}}</td>
                 <td>{{this.date}}</td>
                 <td>{{this.time}}</td>
                 <td>{{this.user}}</td>
@@ -33,7 +24,4 @@
         </table>
     </div>
 </section>
-
-
-
 {{>page/footer}}

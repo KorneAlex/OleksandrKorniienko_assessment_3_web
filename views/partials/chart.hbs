@@ -1,11 +1,4 @@
 <div id="chart"></div>
-<style>
-    {{!-- felt great fixing it myself in 2 min haha --}}
-    .graph-svg-tip .title {
-        color: rgb(255, 255, 255);
-        font-size: 20;
-    }
-</style>
 
 <script>
 const data = {
@@ -61,9 +54,3 @@ const chart = new frappe.Chart("#chart", {  // or a DOM element,
     spline: 1
 },
 })
-function getElementByXPath(path) {
-  return document.evaluate(path, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
-}
-
-console.log( getElementByXPath("/html/body/div/div[2]/div[1]/div/div/ul/li[0]"));
-    </script>

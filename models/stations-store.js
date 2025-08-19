@@ -201,8 +201,8 @@ export const stationsStore = {
     await db.read();
     const stationToBeRestored = await stationsStore.getStationById(station_id);
     stationToBeRestored.deleted = false;
-    stationToBeRestored.deleted_by = null; // TODO maybe add restored
-    stationToBeRestored.deleted_timestamp = null; // TODO maybe add restored
+    stationToBeRestored.restored_by = loggedInUser;
+    stationToBeRestored.restored_timestamp = format(new Date(), "dd/MM/yyyy' - 'HH:mm:ss");
     console.log(`stations-store: Station ${stationToBeRestored.name} has been successfully restored.`);
     await db.write();
     await adminsStore.createLog(await usersStore.getUsersFullNameById(loggedInUser),"restored station ", stationToBeRestored.name, " with ID: ", station_id, ``);

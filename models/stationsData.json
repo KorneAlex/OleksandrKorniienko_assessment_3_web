@@ -57,8 +57,10 @@
       "created_by": "877835af-3a73-415a-b51b-27ae8426e599",
       "created_by_name": "Alex Korne",
       "deleted": true,
-      "deleted_timestamp": "18/08/2025 - 14:32:08",
-      "deleted_by": "877835af-3a73-415a-b51b-27ae8426e599"
+      "deleted_timestamp": "19/08/2025 - 20:45:32",
+      "deleted_by": "877835af-3a73-415a-b51b-27ae8426e599",
+      "restored_by": "877835af-3a73-415a-b51b-27ae8426e599",
+      "restored_timestamp": "19/08/2025 - 20:45:25"
     }
   ]
 }

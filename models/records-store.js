@@ -194,8 +194,8 @@ export const recordsStore = {
       await db_rec.read();
       const recordToBeRestored = await recordsStore.getRecordById(record_id);
       recordToBeRestored.deleted = false;
-      recordToBeRestored.deleted_by = null; // TODO maybe add restored
-      recordToBeRestored.deleted_timestamp = null; // TODO maybe add restored
+      recordToBeRestored.restored_by = loggedInUser; 
+      recordToBeRestored.restored_timestamp = format(new Date(), "dd/MM/yyyy' - 'HH:mm:ss"); 
       console.log(`records-store: Record ${recordToBeRestored.name} has been successfully restored.`);
       await db_rec.write();
       await adminsStore.createLog(await usersStore.getUsersFullNameById(loggedInUser),"restored record ", record_id, " to the station ", station_id, ``);

@@ -1044,6 +1044,242 @@
       "text2": " to the station ",
       "station_id": "8fd8c21b-8398-4b6c-b160-23b7f95b0c6b",
       "text3": " from OpenWeather"
+    },
+    {
+      "date": "19/08/2025",
+      "time": "18:09:06",
+      "user": "Alex Korne",
+      "text1": "restored record ",
+      "record_id": "bcef0d5e-c5dd-4469-bd4b-96f950410475",
+      "text2": " to the station ",
+      "station_id": "eb07ccad-d7a9-4a2b-b332-91c3d78729cb",
+      "text3": ""
+    },
+    {
+      "date": "19/08/2025",
+      "time": "18:10:22",
+      "user": "Alex Korne",
+      "text1": "deleted record ",
+      "record_id": "bcef0d5e-c5dd-4469-bd4b-96f950410475",
+      "text2": " from the station ",
+      "station_id": "eb07ccad-d7a9-4a2b-b332-91c3d78729cb",
+      "text3": ""
+    },
+    {
+      "date": "19/08/2025",
+      "time": "18:10:27",
+      "user": "Alex Korne",
+      "text1": "deleted record ",
+      "record_id": "7edba3ca-1d8a-4421-b241-21f03ae0a798",
+      "text2": " from the station ",
+      "station_id": "eb07ccad-d7a9-4a2b-b332-91c3d78729cb",
+      "text3": " from the database"
+    },
+    {
+      "date": "19/08/2025",
+      "time": "18:10:30",
+      "user": "Alex Korne",
+      "text1": "deleted record ",
+      "record_id": "9f6f0f3f-9669-45ba-aa69-00ae145ef9b8",
+      "text2": " from the station ",
+      "station_id": "eb07ccad-d7a9-4a2b-b332-91c3d78729cb",
+      "text3": " from the database"
+    },
+    {
+      "date": "19/08/2025",
+      "time": "18:10:32",
+      "user": "Alex Korne",
+      "text1": "deleted record ",
+      "record_id": "bcef0d5e-c5dd-4469-bd4b-96f950410475",
+      "text2": " from the station ",
+      "station_id": "eb07ccad-d7a9-4a2b-b332-91c3d78729cb",
+      "text3": " from the database"
+    },
+    {
+      "date": "19/08/2025",
+      "time": "19:01:14",
+      "user": "Alex Korne",
+      "text1": "restored station ",
+      "record_id": "a",
+      "text2": " with ID: ",
+      "station_id": "08506983-27fe-4888-8ee4-c6d92dcf68c4",
+      "text3": ""
+    },
+    {
+      "date": "19/08/2025",
+      "time": "19:02:06",
+      "user": "Alex Korne",
+      "text1": "deleted station ",
+      "record_id": "a",
+      "text2": " with ID: ",
+      "station_id": "08506983-27fe-4888-8ee4-c6d92dcf68c4",
+      "text3": ""
+    },
+    {
+      "date": "19/08/2025",
+      "time": "19:02:09",
+      "user": "Alex Korne",
+      "text1": "restored station ",
+      "record_id": "a",
+      "text2": " with ID: ",
+      "station_id": "08506983-27fe-4888-8ee4-c6d92dcf68c4",
+      "text3": ""
+    },
+    {
+      "date": "19/08/2025",
+      "time": "19:03:02",
+      "user": "Alex Korne",
+      "text1": "deleted station ",
+      "record_id": "a",
+      "text2": " with ID: ",
+      "station_id": "08506983-27fe-4888-8ee4-c6d92dcf68c4",
+      "text3": ""
+    },
+    {
+      "date": "19/08/2025",
+      "time": "19:03:04",
+      "user": "Alex Korne",
+      "text1": "restored station ",
+      "record_id": "a",
+      "text2": " with ID: ",
+      "station_id": "08506983-27fe-4888-8ee4-c6d92dcf68c4",
+      "text3": ""
+    },
+    {
+      "date": "19/08/2025",
+      "time": "19:11:43",
+      "user": "Alex Korne",
+      "text1": "deleted station ",
+      "record_id": "a",
+      "text2": " with ID: ",
+      "station_id": "08506983-27fe-4888-8ee4-c6d92dcf68c4",
+      "text3": ""
+    },
+    {
+      "date": "19/08/2025",
+      "time": "20:22:47",
+      "user": "Alex Korne",
+      "text1": "restored station ",
+      "record_id": "a",
+      "text2": " with ID: ",
+      "station_id": "08506983-27fe-4888-8ee4-c6d92dcf68c4",
+      "text3": ""
+    },
+    {
+      "date": "19/08/2025",
+      "time": "20:34:56",
+      "user": "Alex Korne",
+      "text1": "restored station ",
+      "record_id": "a",
+      "text2": " with ID: ",
+      "station_id": "08506983-27fe-4888-8ee4-c6d92dcf68c4",
+      "text3": ""
+    },
+    {
+      "id": 1,
+      "date": "19/08/2025",
+      "time": "20:45:25",
+      "user": "Alex Korne",
+      "text1": "restored station ",
+      "record_id": "a",
+      "text2": " with ID: ",
+      "station_id": "08506983-27fe-4888-8ee4-c6d92dcf68c4",
+      "text3": ""
+    },
+    {
+      "id": 2,
+      "date": "19/08/2025",
+      "time": "20:45:32",
+      "user": "Alex Korne",
+      "text1": "deleted station ",
+      "record_id": "a",
+      "text2": " with ID: ",
+      "station_id": "08506983-27fe-4888-8ee4-c6d92dcf68c4",
+      "text3": ""
+    },
+    {
+      "id": 3,
+      "date": "19/08/2025",
+      "time": "20:45:54",
+      "user": "testuser",
+      "text1": "created test log"
+    },
+    {
+      "id": 4,
+      "date": "19/08/2025",
+      "time": "21:04:42",
+      "user": "Alex Korne",
+      "text1": "deleted record ",
+      "record_id": "3953f6fa-c6f9-4c61-b94c-70e8ad0fc7b8",
+      "text2": " from the station ",
+      "station_id": "eb07ccad-d7a9-4a2b-b332-91c3d78729cb",
+      "text3": ""
+    },
+    {
+      "id": 5,
+      "date": "19/08/2025",
+      "time": "21:10:55",
+      "user": "Alex Korne",
+      "text1": "deleted record ",
+      "record_id": "11b7c49c-afaa-43eb-a594-3c7ef2d80c64",
+      "text2": " from the station ",
+      "station_id": "eb07ccad-d7a9-4a2b-b332-91c3d78729cb",
+      "text3": ""
+    },
+    {
+      "id": 6,
+      "date": "19/08/2025",
+      "time": "21:10:57",
+      "user": "Alex Korne",
+      "text1": "deleted record ",
+      "record_id": "fdccbb06-6e6d-4fd0-90e1-3f2e2454795d",
+      "text2": " from the station ",
+      "station_id": "eb07ccad-d7a9-4a2b-b332-91c3d78729cb",
+      "text3": ""
+    },
+    {
+      "id": 7,
+      "date": "19/08/2025",
+      "time": "21:10:58",
+      "user": "Alex Korne",
+      "text1": "deleted record ",
+      "record_id": "2e357b81-ee17-4990-9939-2333b5c6493f",
+      "text2": " from the station ",
+      "station_id": "eb07ccad-d7a9-4a2b-b332-91c3d78729cb",
+      "text3": ""
+    },
+    {
+      "id": 8,
+      "date": "19/08/2025",
+      "time": "21:11:00",
+      "user": "Alex Korne",
+      "text1": "deleted record ",
+      "record_id": "93b15f10-01aa-40c4-920f-8996ea579b8c",
+      "text2": " from the station ",
+      "station_id": "eb07ccad-d7a9-4a2b-b332-91c3d78729cb",
+      "text3": ""
+    },
+    {
+      "id": 9,
+      "date": "19/08/2025",
+      "time": "21:11:01",
+      "user": "Alex Korne",
+      "text1": "deleted record ",
+      "record_id": "c0b60445-b8b1-4e8e-9e4b-233a74b8054a",
+      "text2": " from the station ",
+      "station_id": "eb07ccad-d7a9-4a2b-b332-91c3d78729cb",
+      "text3": ""
+    },
+    {
+      "id": 10,
+      "date": "19/08/2025",
+      "time": "21:11:02",
+      "user": "Alex Korne",
+      "text1": "deleted record ",
+      "record_id": "3b5856b1-c6a6-48cb-810b-457f2f4cdd45",
+      "text2": " from the station ",
+      "station_id": "eb07ccad-d7a9-4a2b-b332-91c3d78729cb",
+      "text3": ""
     }
   ]
 }

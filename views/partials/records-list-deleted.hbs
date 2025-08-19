@@ -1,9 +1,9 @@
 <div style="position: relative; text-align: center;">
-  <div class="title is-4 p-4">Station {{currentStation.name}} deleted records</div>
+  <div class="title is-4 p-5">Station {{currentStation.name}} deleted records</div>
 </div>
 <div  style="max-height: 20rem; overflow-y:auto">
 
-<table class="table is-fullwidth">
+<table class="table is-fullwidth centered__table" id="scroll">
   {{#if userIsAdmin}}
   <thead>
     <tr>

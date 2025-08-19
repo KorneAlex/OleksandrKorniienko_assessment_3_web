@@ -1,20 +1,6 @@
-<style>
-  table {
-  text-align: left;
-  position: relative;
-}
-
-th {
-  background: white;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-</style>
-
 <div>
-  <div class="table-container" style="max-height: 40rem; overflow-y:auto">
-    <table class="table is-fullwidth">
+  <div class="table-container" style="max-height: 40rem; overflow-y:auto" id="scroll">
+    <table class="table is-fullwidth centered__table">
       {{#if userIsAdmin}}
       <thead>
         <tr>

@@ -1,16 +1,3 @@
-<style>
-  #error {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); 
-    position:fixed; 
-    z-index:110;
-    width: 30rem; 
-    display: none; 
-  }
-</style>
-
-
 <form class="box" action="/stations/{{currentStation.id}}/addRecord" method="POST" name="form" onsubmit="return validateForm()">
   <label>Enter new record:</label>
   <div class="field is-horizontal">
@@ -43,9 +30,6 @@
         <button class="button is-primary">Submit record</button>
   <a onclick="checkApi()" class="button">Request data</a><span class="text-danger"></span>
 </form>
-{{!-- /stations/{{currentStation.id}}/requestData --}}
-
-
 
 <article id="error" class="message is-warning box">
   <div class="message-header">
