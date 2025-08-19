@@ -8,19 +8,17 @@
       <div class="navbar-item">
         <div class="buttons">
           {{#if userLoggedIn}}
-          <a id="dashboard" class="button" href="/dashboard"> Dashboard </a>
-          {{/if}}
-          <a id="about" class="button" href="/about"> About </a>
-          {{#if userIsAdmin}}
-          <a id="about" class="button" href="/logs"> Logs </a>
-          {{/if}}
-          {{#unless userLoggedIn}}
-          <a id="login" class="button" href="/login"> Login </a>
-          <a id="signup" class="button" href="/signup"> Sign Up </a>
-          {{/unless}}
-          {{#if userLoggedIn}}
-          <a id="account" class="button" href="/account"> Account </a>
-          <a id="logout" class="button" href="/logout"> Logout </a>
+              <a id="dashboard" class="button" href="/dashboard"> Dashboard </a>
+              {{#if userIsAdmin}}
+                  <a id="logs" class="button" href="/logs">Logs </a>
+              {{/if}}
+              <a id="account" class="button" href="/account"> Account </a>
+              <a id="about" class="button" href="/about"> About </a>
+              <a id="logout" class="button" href="/logout"> Logout </a>
+          {{else}}
+              <a id="about" class="button" href="/about"> About </a>
+              <a id="login" class="button" href="/login"> Login </a>
+              <a id="signup" class="button" href="/signup"> Sign Up </a>
           {{/if}}
           <a id="test" class="button" href="/test"> Test </a>
         </div>

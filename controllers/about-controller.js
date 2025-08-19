@@ -5,6 +5,7 @@ export const aboutController = {
     const viewData = {
       title: "About",
       userLoggedIn: await usersStore.userLoggedIn(req.cookies.loggedInUser),
+      userIsAdmin: await usersStore.userIsAdmin(req.cookies.loggedInUser),
       message: "This is a sample application to demonstrate the use of JS, Node.js, Express.js and Handlebars.js in a web development context.",
     };
     console.log("about rendering");

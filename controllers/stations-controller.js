@@ -17,7 +17,7 @@ export const stationsController = {
       editRecord = req.params.record_id;
     }
     const viewData = {
-      title: "Station " + String(currentStation.name), //TODO fix this
+      title: "Station " + String(currentStation.name),
       // city: String(currentStation.city),
       currentUserID: await req.cookies.loggedInUser,
       station_id: req.params.station_id,
@@ -34,6 +34,7 @@ export const stationsController = {
       summaryForTheStation: await stationsStore.getSummaryForTheStation(station_id),
       currentWeatherConditions: await stationsStore.getCurrentWeatherConditions(req.params.station_id),
       codesList: await weatherCodeStore.getCodesList(),
+      weatherApiExist: req.cookies.WEATHER_API_KEY? true:false,
     };
       console.log(`station ${viewData.currentStation.name} is rendering`);
       res.render("station", viewData);

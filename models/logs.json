@@ -826,6 +826,224 @@
       "time": "14:59:34",
       "user": "testuser",
       "text1": "created test log"
+    },
+    {
+      "date": "19/08/2025",
+      "time": "07:17:22",
+      "user": "Alex Korne",
+      "text1": "deleted record ",
+      "record_id": "bcef0d5e-c5dd-4469-bd4b-96f950410475",
+      "text2": " from the station ",
+      "station_id": "eb07ccad-d7a9-4a2b-b332-91c3d78729cb",
+      "text3": ""
+    },
+    {
+      "date": "19/08/2025",
+      "time": "07:18:37",
+      "user": "testuser",
+      "text1": "created test log"
+    },
+    {
+      "date": "19/08/2025",
+      "time": "07:29:03",
+      "user": "testuser",
+      "text1": "created test log"
+    },
+    {
+      "date": "19/08/2025",
+      "time": "07:51:45",
+      "user": "testuser",
+      "text1": "created test log"
+    },
+    {
+      "date": "19/08/2025",
+      "time": "08:09:32",
+      "user": "Alex Korne",
+      "text1": "attempted to fetch data from OpenWeather for the station",
+      "record_id": "",
+      "text2": "",
+      "station_id": "eb07ccad-d7a9-4a2b-b332-91c3d78729cb",
+      "text3": "ERROR: NO API KEY"
+    },
+    {
+      "date": "19/08/2025",
+      "time": "08:34:31",
+      "user": "Alex Korne",
+      "text1": "attempted to fetch data from OpenWeather for the station",
+      "record_id": "",
+      "text2": "",
+      "station_id": "eb07ccad-d7a9-4a2b-b332-91c3d78729cb",
+      "text3": "ERROR: NO API KEY"
+    },
+    {
+      "date": "19/08/2025",
+      "time": "08:34:54",
+      "user": "Alex Korne",
+      "text1": "attempted to fetch data from OpenWeather for the station",
+      "record_id": "",
+      "text2": "",
+      "station_id": "eb07ccad-d7a9-4a2b-b332-91c3d78729cb",
+      "text3": "ERROR: NO API KEY"
+    },
+    {
+      "date": "19/08/2025",
+      "time": "08:37:07",
+      "user": "Alex Korne",
+      "text1": "attempted to fetch data from OpenWeather for the station",
+      "record_id": "",
+      "text2": "",
+      "station_id": "eb07ccad-d7a9-4a2b-b332-91c3d78729cb",
+      "text3": "ERROR: NO API KEY"
+    },
+    {
+      "date": "19/08/2025",
+      "time": "08:42:58",
+      "user": "Alex Korne",
+      "text1": "attempted to fetch data from OpenWeather for the station",
+      "record_id": "",
+      "text2": "",
+      "station_id": "eb07ccad-d7a9-4a2b-b332-91c3d78729cb",
+      "text3": "ERROR: NO API KEY"
+    },
+    {
+      "date": "19/08/2025",
+      "time": "09:24:44",
+      "user": "Alex Korne",
+      "text1": "attempted to fetch data from OpenWeather for the station",
+      "record_id": "",
+      "text2": "",
+      "station_id": "eb07ccad-d7a9-4a2b-b332-91c3d78729cb",
+      "text3": "ERROR: NO API KEY"
+    },
+    {
+      "date": "19/08/2025",
+      "time": "09:42:11",
+      "user": "Alex Korne",
+      "text1": "attempted to fetch data from OpenWeather for the station",
+      "record_id": "",
+      "text2": "",
+      "station_id": "eb07ccad-d7a9-4a2b-b332-91c3d78729cb",
+      "text3": "ERROR: NO API KEY"
+    },
+    {
+      "date": "19/08/2025",
+      "time": "10:14:29",
+      "user": "Alex Korne",
+      "text1": "added record ",
+      "record_id": "c15c6eab-0212-4b94-92ba-fd081ef253aa",
+      "text2": " to the station ",
+      "station_id": "eb07ccad-d7a9-4a2b-b332-91c3d78729cb",
+      "text3": " from OpenWeather"
+    },
+    {
+      "date": "19/08/2025",
+      "time": "10:14:51",
+      "user": "Alex Korne",
+      "text1": "added record ",
+      "record_id": "f14bfc5f-037c-46b3-a5e9-cf2d572040f7",
+      "text2": " to the station ",
+      "station_id": "eb07ccad-d7a9-4a2b-b332-91c3d78729cb",
+      "text3": " from OpenWeather"
+    },
+    {
+      "date": "19/08/2025",
+      "time": "10:15:49",
+      "user": "Alex Korne",
+      "text1": "added record ",
+      "record_id": "0879cdd5-0d02-40f5-82b7-fc5915de6bc2",
+      "text2": " to the station ",
+      "station_id": "eb07ccad-d7a9-4a2b-b332-91c3d78729cb",
+      "text3": " from OpenWeather"
+    },
+    {
+      "date": "19/08/2025",
+      "time": "10:47:53",
+      "user": "Alex Korne",
+      "text1": "added record ",
+      "record_id": "11b7c49c-afaa-43eb-a594-3c7ef2d80c64",
+      "text2": " to the station ",
+      "station_id": "eb07ccad-d7a9-4a2b-b332-91c3d78729cb",
+      "text3": " from OpenWeather"
+    },
+    {
+      "date": "19/08/2025",
+      "time": "10:48:27",
+      "user": "Alex Korne",
+      "text1": "attempted to fetch data from OpenWeather for the station",
+      "record_id": "",
+      "text2": "",
+      "station_id": "eb07ccad-d7a9-4a2b-b332-91c3d78729cb",
+      "text3": "ERROR: NO API KEY"
+    },
+    {
+      "date": "19/08/2025",
+      "time": "10:56:08",
+      "user": "Alex Korne",
+      "text1": "attempted to fetch data from OpenWeather for the station",
+      "record_id": "",
+      "text2": "",
+      "station_id": "eb07ccad-d7a9-4a2b-b332-91c3d78729cb",
+      "text3": "ERROR: NO API KEY"
+    },
+    {
+      "date": "19/08/2025",
+      "time": "10:56:27",
+      "user": "Alex Korne",
+      "text1": "attempted to fetch data from OpenWeather for the station",
+      "record_id": "",
+      "text2": "",
+      "station_id": "eb07ccad-d7a9-4a2b-b332-91c3d78729cb",
+      "text3": "ERROR: NO API KEY"
+    },
+    {
+      "date": "19/08/2025",
+      "time": "11:08:11",
+      "user": "Alex Korne",
+      "text1": "attempted to fetch data from OpenWeather for the station",
+      "record_id": "",
+      "text2": "",
+      "station_id": "eb07ccad-d7a9-4a2b-b332-91c3d78729cb",
+      "text3": "ERROR: NO API KEY"
+    },
+    {
+      "date": "19/08/2025",
+      "time": "11:08:24",
+      "user": "Alex Korne",
+      "text1": "attempted to fetch data from OpenWeather for the station",
+      "record_id": "",
+      "text2": "",
+      "station_id": "eb07ccad-d7a9-4a2b-b332-91c3d78729cb",
+      "text3": "ERROR: NO API KEY"
+    },
+    {
+      "date": "19/08/2025",
+      "time": "11:47:27",
+      "user": "Alex Korne",
+      "text1": "added record ",
+      "record_id": "3953f6fa-c6f9-4c61-b94c-70e8ad0fc7b8",
+      "text2": " to the station ",
+      "station_id": "eb07ccad-d7a9-4a2b-b332-91c3d78729cb",
+      "text3": " from OpenWeather"
+    },
+    {
+      "date": "19/08/2025",
+      "time": "11:47:38",
+      "user": "Alex Korne",
+      "text1": "added record ",
+      "record_id": "8e127b73-b5c4-4273-b1ae-e8ca5e813f0a",
+      "text2": " to the station ",
+      "station_id": "b76e0253-86f3-4c7a-b2ac-ac1dd0be9f80",
+      "text3": " from OpenWeather"
+    },
+    {
+      "date": "19/08/2025",
+      "time": "11:47:42",
+      "user": "Alex Korne",
+      "text1": "added record ",
+      "record_id": "e2c6a879-ec22-4044-b130-d0d4cd02f667",
+      "text2": " to the station ",
+      "station_id": "8fd8c21b-8398-4b6c-b160-23b7f95b0c6b",
+      "text3": " from OpenWeather"
     }
   ]
 }

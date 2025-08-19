@@ -17,3 +17,5 @@ export const adminsController = {
     res.render("logs", viewData);
   },
 }
+
+// TODO: last 100 logs + download?

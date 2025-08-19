@@ -4,7 +4,6 @@ import { usersStore } from "../models/user-store.js";
 
 export const dashboardController = {
   async index(req, res) {
-    let editStation = req.params.station_id; // TODO: FIX THIS!
     if (req.params.edit) {
       res.cookie("stationToEdit", req.params.station_id);
     }
@@ -23,7 +22,7 @@ export const dashboardController = {
       editStation: await req.params.station_id,
     };
     if (viewData.userLoggedIn) {
-      console.log("dashboard rendering " + viewData.editStation);
+      console.log("dashboard rendering ");
       res.render("dashboard", viewData);
     } else {
       res.redirect("/");

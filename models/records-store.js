@@ -96,7 +96,7 @@ export const recordsStore = {
   
   async getCurrentWeatherData(station_id, loggedInUser, api) {
     const station = await stationsStore.getStationById(station_id);
-    const data = await recordsStore.fetchWeatherData(station.latitude, station.longitude, api);  //TODO
+    const data = await recordsStore.fetchWeatherData(station.latitude, station.longitude, api);
     try {
     const record = {
     source: "OpenWeather",
@@ -111,6 +111,8 @@ export const recordsStore = {
     return record;
   }  catch (error) {
   console.error("didn't fetch. check API?"); // TODO Make a proper error message
+  console.error(error);
+  await adminsStore.createLog(await usersStore.getUsersFullNameById(loggedInUser), "attempted to fetch data from OpenWeather for the station",``,"",station_id,"ERROR: NO API KEY");
   return null;
 }
   },

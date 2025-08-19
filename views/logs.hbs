@@ -1,8 +1,13 @@
-{{>page/menu}}
+{{>page/menu active="logs"}}
 {{!-- TODO: make style work! --}}
 <style>
     .code{
         font-size: large; 
+    }
+
+    .log{
+        background-color: #f5f5f5; 
+        color: #da1039;"
     }
 </style>
 <section>
@@ -22,7 +27,7 @@
                 <td>{{this.date}}</td>
                 <td>{{this.time}}</td>
                 <td>{{this.user}}</td>
-                <td>{{this.text1}}<code style="font-size: large">{{this.record_id}}</code>{{this.text2}}<code style="font-size: large">{{this.station_id}}</code>{{this.text3}}</td>
+                <td>{{this.text1}}&nbsp;<span class="log">{{this.record_id}}</span>&nbsp;{{this.text2}}&nbsp;<span class="log">{{this.station_id}}</span>&nbsp;{{this.text3}}</td>
             </tr>
             {{/each}}
         </table>

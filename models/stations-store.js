@@ -247,6 +247,4 @@ export const stationsStore = {
   },
 
   async test() {},
-
-
 }

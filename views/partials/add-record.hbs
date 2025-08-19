@@ -1,10 +1,20 @@
+<style>
+  #error {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    position:fixed; 
+    z-index:110;
+    width: 30rem; 
+    display: none; 
+  }
+</style>
+
+
 <form class="box" action="/stations/{{currentStation.id}}/addRecord" method="POST" name="form" onsubmit="return validateForm()">
   <label>Enter new record:</label>
   <div class="field is-horizontal">
-    <div class="field-body" >
-      {{!-- <div class="field">
-        <input class="input" type="number" placeholder="Code" name="code">
-      </div> --}}
+      <div class="field-body" >
         <div class="select field" placeholder="Code" >
         <select class="input" type="number" placeholder="Code" name="code">
           {{#each codesList}}
@@ -28,17 +38,27 @@
       <div class="field">
         <input class="input" type="number" placeholder="Pressure" name="pressure" min="750" max="1200">
       </div>
-    </div>
+      </div>
   </div>
-  <button class="button is-primary">Submit record</button>
+        <button class="button is-primary">Submit record</button>
+  <a onclick="checkApi()" class="button">Request data</a><span class="text-danger"></span>
 </form>
-<div class="box">
-  <a href="/stations/{{currentStation.id}}/requestData"><button class="button is-primary">Request data</button></a>
-</div>
+{{!-- /stations/{{currentStation.id}}/requestData --}}
 
+
+
+<article id="error" class="message is-warning box">
+  <div class="message-header">
+      <p>Error: API key is not provided</p>
+      <button onclick="closeErrorMessage()" class="delete" style="right: 0px;" aria-label="delete"></button>
+  </div>
+  <div class="message-body is-flex is-flex-direction-column is-justify-items-center">
+<p>To pull current data for this station please add your weather API key on your account page: </p><br>
+<a class="button" href="/account"> Account </a>
+  </div>
+</article>
 
 {{!-- https://stackoverflow.com/questions/3937513/javascript-validation-for-empty-input-field --}}
-{{!-- TODO: add data validation (min - max etc.) --}}
 <script type="text/javascript">
   function validateForm() {
     const form = "form";
@@ -55,5 +75,23 @@
       alert("Please Fill In All Fields");
       return false;
     }
+  }
+
+function checkApi() {
+      let error = document.getElementById("error");
+      if({{weatherApiExist}}){
+        console.log("weatherApiExist: " + {{weatherApiExist}});
+        window.location.href = "/stations/{{currentStation.id}}/requestData";
+      } else { 
+        console.log("weatherApiExist: " + {{weatherApiExist}});
+      error.style.display = "block";
+
+      }
+      console.log("TEST");
+  }
+
+  function closeErrorMessage() {
+      let error = document.getElementById("error");
+      error.style.display = "none";
   }
 </script>
