@@ -19,3 +19,5 @@ export const adminsController = {
 }
 
 // TODO: last 100 logs + download? Fix logs design
+// TODO: check all methods and add loggedInUser check to prevent user under the user account execute methods by link
+// TODO: check if there is the way to find somewhere admin's id under the user's account

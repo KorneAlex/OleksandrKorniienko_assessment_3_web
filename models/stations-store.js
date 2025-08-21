@@ -134,6 +134,7 @@ export const stationsStore = {
 
   async deleteStation(station_id, loggedInUser) {
     await db.read();
+    if(await usersStore.userIsAdmin(loggedInUser)) {
     const stationToBeDeleted = await stationsStore.getStationById(station_id);
     stationToBeDeleted.deleted = true;
     stationToBeDeleted.deleted_by = loggedInUser;
@@ -142,6 +143,10 @@ export const stationsStore = {
     await db.write();
     await adminsStore.createLog(await usersStore.getUsersFullNameById(loggedInUser),"deleted station ", stationToBeDeleted.name, " with ID: ", station_id, ``);
     return stationToBeDeleted;
+    } else {
+    console.log("Who are you trying to fool? You are just a little user. You don't have permissions to do that!") // TODO: make it popup mesage
+    return null;
+    }
   },
 
   async deleteStationFromDB(station_id, loggedInUser) {

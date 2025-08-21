@@ -1,8 +1,15 @@
-{{!-- TODO: css search by station city or county --}}
+{{!-- TODO: css search by station  name, city or county --}}
 {{!-- TODO: hover over the tile show tooltip on the map and centers the viev on the station --}}
-<div class="is-flex is-flex-wrap-wrap p-2;" style="max-height: 50rem; overflow-y:auto">
+
+
+<style>
+
+</style>
+
+
+<div class="is-flex is-flex-wrap-wrap p-2;" style="max-height: 50rem; overflow-y:auto; padding-bottom: 20px;">
   {{#each summaryForTheStation}}
-  <div class="is-flex is-flex-direction-column is-flex-wrap-wrap is-justify-content-center p-2"
+  <div class="is-flex is-flex-direction-column is-flex-wrap-wrap is-justify-content-center p-2 station__card"
     style="width: 20%; min-width: 215px; margin-top: 10px;">
     <div class="is-flex is-flex-direction-row is-flex-wrap-wrap card p-0"
       style="background-color: #ffb901; margin: 0; gap: 15px; height: 300px;">
@@ -56,6 +63,45 @@
           </div>
         </div>
       </a>
+
+{{!-- https://stackoverflow.com/questions/4502633/how-to-affect-other-elements-when-one-element-is-hovered --}}
+<style>
+    .buttons__bar {
+      position: absolute; 
+      right: 0; 
+      width: 45px; 
+      height: 310px; 
+      {{!-- border-style:solid;  --}}
+      {{!-- border-color: red; --}}
+    }
+
+     .buttons__bar a{
+        margin: 3px;
+      }
+
+    
+.station__card .buttons__bar {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    transform: translateX(21px) rotate3d(0, 1, 0, 90deg);
+}
+
+.station__card:hover .buttons__bar {
+    transform: translateX(0px) rotate3d(0, 1, 0, 0deg);
+}
+
+</style>
+
+{{!-- TODO: move this to .css --}}
+
+  <div class="buttons__bar">
+        {{!-- <a href="/stations/{{id}}" class="button"><div class="station-button">{{>icons/logo}}</div></a> --}}
+        <a href="/stations/editStation/{{id}}/true" class="button"><div class="station-button">{{>icons/edit-icon}}</div></a>
+        <a href="/stations/{{id}}/deleteStation" class="button"><div class="station-button">{{>icons/delete-icon}}</div></a>
+  </div>
+
     </div>
 
 
@@ -66,7 +112,6 @@
       style="margin: 0">
 
     </div> --}}
-
 
 
 
