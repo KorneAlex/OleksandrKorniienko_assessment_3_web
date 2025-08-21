@@ -1,5 +1,10 @@
 /* layout */
 
+a {
+    text-decoration: none !important;
+    color: inherit !important;  
+}
+
 body {
     margin: 0;
     padding: 0;

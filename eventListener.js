@@ -12,7 +12,6 @@ document.addEventListener("DOMContentLoaded", function() {
     table.scrollTo({top: table.scrollHeight});
 });
 
-//TODO: scroll for classes, not ID's?
 function tableScroller() {
   console.log("SCROLLLL!!!");
   let table = document.getElementById("scroll");

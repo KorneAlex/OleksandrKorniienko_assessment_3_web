@@ -1,5 +1,6 @@
 import { adminsStore } from "../models/admins-store.js";
 import { usersStore } from "../models/user-store.js";
+import { stationsStore } from "../models/stations-store.js";
 
 
 export const testController = {
@@ -11,9 +12,9 @@ export const testController = {
       MAP_API_KEY: req.cookies.MAP_API_KEY,
     };
     console.log("data-controller: Test page rendered");
-      await adminsStore.createLog("testuser", "created test log");
+      const currentData =  await stationsStore.getSummaryForTheStations();
       // const data = req.cookies.loggedInUser;
-      // console.log("test data: " + data);
+      console.log("test data: " + JSON.stringify(currentData));
       res.render("test", viewData);
   }
 };

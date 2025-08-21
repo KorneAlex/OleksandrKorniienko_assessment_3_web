@@ -24,7 +24,9 @@
     <td>{{code}}</td>
     <td>{{temperature}}</td>
     <td>{{wind_speed}}</td>
-    <td>{{wind_direction}}</td>
+    <td><img src="/views/partials/icons/wind_unselected.svg" alt="{{wind_direction}}"
+            style="height: 16px; width: 16px; rotate: -{{wind_direction}}deg;">
+        {{wind_direction}}°</td>
     <td>{{pressure}}</td>
     <td>{{id}}</td>
     <td>{{created_by_name}}</td>
@@ -56,7 +58,9 @@
     <td>{{code}}</td>
     <td>{{temperature}}</td>
     <td>{{wind_speed}}</td>
-    <td>{{wind_direction}}</td>
+    <td><img src="/views/partials/icons/wind_unselected.svg" alt="{{wind_direction}}"
+            style="height: 16px; width: 16px; rotate: -{{wind_direction}}deg;">
+        {{wind_direction}}°</td>
     <td>{{pressure}}</td>
     <td>{{created_by_name}}</td>
     <td>{{deleted_timestamp}}</td>

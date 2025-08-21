@@ -1,8 +1,8 @@
 <tr class="field">
   <form action="/stations/editStation/{{id}}/false" method="POST">
-    <td><input class="input" type="text" placeholder="Name" name="name" value="{{name}}"></td>
-    <td><input class="input" type="text" placeholder="City" name="city" value="{{city}}"></td>
-    <td> <input class="input" type="text" placeholder="County" name="county" value="{{county}}"></td>
+    <td><input class="input" type="text" placeholder="Name" name="name" value="{{name}}" maxlength="20"></td>
+    <td><input class="input" type="text" placeholder="City" name="city" value="{{city}}" maxlength="58"></td>
+    <td> <input class="input" type="text" placeholder="County" name="county" value="{{county}}" maxlength="25"></td>
     <td><input class="input" type="number" placeholder="Latitude" name="latitude" min="-90" max="90" value="{{latitude}}"></td>
     <td><input class="input" type="number" placeholder="Longtitude" name="longitude" min="-180" max="180" value="{{longitude}}"></td>
         <td>{{id}}</td>

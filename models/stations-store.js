@@ -210,7 +210,12 @@ export const stationsStore = {
   },
 
   async getCurrentWeatherConditions(station_id) {
-    let output = null;
+    let output = {
+        code: null,
+        main: "No data",
+        description: "No description available",
+        icon: "/views/partials/icons/weather_icons/noData.png",
+      };
     const weatherConditions = await weatherCodeStore.getWeatherData();
 
     const stationRecords = await recordsStore.getActiveRecordsDataByStationId(station_id);
@@ -232,13 +237,6 @@ export const stationsStore = {
         main: data.main,
         description: data.description,
         icon: data.icon,
-      };
-    } else {
-      output = {
-        code: lastRecord.code,
-        main: "Unknown",
-        description: "No description available",
-        icon: null,
       };
     }
   }

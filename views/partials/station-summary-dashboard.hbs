@@ -25,7 +25,10 @@
 
         <div class="p-2 is-align-content-center" style="width: 18%;">
             <div class="is-flex is-flex-direction-row">
-                <div class="card-header-title">Wind<br>{{this.currentWindSpeed}} m/s</div>
+                <div class="card-header-title">Wind<br>{{this.currentWindSpeed}} m/s
+                <img src="/views/partials/icons/wind_unselected.svg" alt="{{wind_direction}}"
+            style="height: 16px; width: 16px; rotate: -{{this.currentWindDirection}}deg;">
+        {{wind_direction}}°</div>
                 <div class="card-header-icon">{{>icons/wind}}</div>
             </div>
         </div>

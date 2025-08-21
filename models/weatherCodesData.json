@@ -59,6 +59,5 @@
         { "id": 803, "main": "Clouds", "description": "broken clouds: 51-84%", "icon": "http://openweathermap.org/img/wn/04d@2x.png" },
         { "id": 803, "main": "Clouds", "description": "broken clouds: 51-84%", "icon": "http://openweathermap.org/img/wn/04n@2x.png" },
         { "id": 804, "main": "Clouds", "description": "overcast clouds: 85-100%", "icon": "http://openweathermap.org/img/wn/04d@2x.png"}
-    
   ]
 }

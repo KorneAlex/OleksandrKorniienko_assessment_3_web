@@ -18,4 +18,4 @@ export const adminsController = {
   },
 }
 
-// TODO: last 100 logs + download?
+// TODO: last 100 logs + download? Fix logs design

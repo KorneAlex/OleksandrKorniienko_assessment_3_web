@@ -5,7 +5,10 @@
 {{>warning/apiWarning}}
 {{/if}}
 {{#if stationsExist}}
-{{>station-summary-dashboard}}
+
+{{>station-tile}}
+
+{{!-- {{>station-summary-dashboard}} --}}
 {{>station-list}}
 {{/if}}
 {{#if userIsAdmin}}

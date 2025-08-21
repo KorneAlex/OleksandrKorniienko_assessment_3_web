@@ -960,6 +960,56 @@
       "deleted": false,
       "deleted_timestamp": null,
       "deleted_by": null
+    },
+    {
+      "source": "OpenWeather",
+      "code": 803,
+      "temperature": 16.66,
+      "wind_speed": 5.74,
+      "wind_direction": 357,
+      "pressure": 1019,
+      "id": "273b0cb8-7bc6-4069-9bec-74816e01a036",
+      "station_id": "f78341a8-415b-485c-a49e-02bde649035d",
+      "timestamp_created": "21/08/2025 - 08:00:13",
+      "created_by": "877835af-3a73-415a-b51b-27ae8426e599",
+      "created_by_name": "Alex Korne",
+      "deleted": false,
+      "deleted_timestamp": "21/08/2025 - 09:12:30",
+      "deleted_by": "877835af-3a73-415a-b51b-27ae8426e599",
+      "restored_by": "877835af-3a73-415a-b51b-27ae8426e599",
+      "restored_timestamp": "21/08/2025 - 09:12:32"
+    },
+    {
+      "source": "OpenWeather",
+      "code": 803,
+      "temperature": 16.66,
+      "wind_speed": 5.74,
+      "wind_direction": 357,
+      "pressure": 1019,
+      "id": "b80bbfc2-3eef-4dd9-9302-7ad75299e944",
+      "station_id": "f327036a-fa9d-444c-8753-08b3e75a03b1",
+      "timestamp_created": "21/08/2025 - 08:05:48",
+      "created_by": "877835af-3a73-415a-b51b-27ae8426e599",
+      "created_by_name": "Alex Korne",
+      "deleted": false,
+      "deleted_timestamp": null,
+      "deleted_by": null
+    },
+    {
+      "source": "OpenWeather",
+      "code": 803,
+      "temperature": 16.66,
+      "wind_speed": 105.74,
+      "wind_direction": 357,
+      "pressure": 1019,
+      "id": "4bf1900f-7720-4591-978d-fd6ff388f656",
+      "station_id": "a2b1b872-4ce8-4eae-90fc-f68c7015340d",
+      "timestamp_created": "21/08/2025 - 08:05:54",
+      "created_by": "877835af-3a73-415a-b51b-27ae8426e599",
+      "created_by_name": "Alex Korne",
+      "deleted": false,
+      "deleted_timestamp": null,
+      "deleted_by": null
     }
   ]
 }
