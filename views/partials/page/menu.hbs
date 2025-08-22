@@ -2,7 +2,7 @@
   <div class="navbar-brand">
     {{>page/brand}}
   </div>
-   <span id="cityStatus">TODO: in sunny Co.Waterford</span>
+   <span id="cityStatus"></span>
   <div class="navbar-menu" id="navMenu">
     <div class="navbar-end">
       <div class="navbar-item">
@@ -29,5 +29,7 @@
 
 <script>
   try { document.getElementById("{{active}}").classList.add("is-primary"); } catch { console.log("menu.hbs: no active menu")}
-  try { document.getElementById("cityStatus").innerHTML = `in ${codeFriendlyName} ${stationCounty}`; } catch { console.log("menu.hbs: no city")} //TODO: make "in" "sunny/rainy/etc." "Co. Galway/Co.Waterford etc."
+  if ({{stationView}}){
+  try { document.getElementById("cityStatus").innerHTML = `in {{currentWeatherConditions.friendlyStatus}} {{currentStation.city}}`; } catch { console.log("menu.hbs: no city")}
+  }
 </script>

@@ -242,6 +242,7 @@ export const stationsStore = {
         main: data.main,
         description: data.description,
         icon: data.icon,
+        friendlyStatus: data.friendlyStatus,
       };
     }
   }

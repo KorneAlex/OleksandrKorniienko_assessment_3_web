@@ -9,11 +9,11 @@ document.addEventListener("DOMContentLoaded", function() {
     } } catch { console.log("eventListener: warningAPI not found");}
 
     let table = document.getElementById("scroll");
-    table.scrollTo({top: table.scrollHeight});
+    try { table.scrollTo({top: table.scrollHeight}); } catch { console.log("eventListener: nothing to scroll")};
 });
 
 function tableScroller() {
   console.log("SCROLLLL!!!");
   let table = document.getElementById("scroll");
-  table.scrollTo({top: table.scrollHeight});
+  try { table.scrollTo({top: table.scrollHeight}); } catch { console.log("eventListener: nothing to scroll")};
 }

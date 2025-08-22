@@ -17,6 +17,7 @@ export const stationsController = {
       editRecord = req.params.record_id;
     }
     const viewData = {
+      stationView: true,
       title: "Station " + String(currentStation.name),
       // city: String(currentStation.city),
       currentUserID: await req.cookies.loggedInUser,
