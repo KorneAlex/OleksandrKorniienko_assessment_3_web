@@ -2067,6 +2067,39 @@
       "text2": " with ID: ",
       "station_id": "08506983-27fe-4888-8ee4-c6d92dcf68c4",
       "text3": ""
+    },
+    {
+      "id": 84,
+      "date": "22/08/2025",
+      "time": "20:22:19",
+      "user": "Alex Korne",
+      "text1": "added record ",
+      "record_id": "8fa55122-e3e5-4100-91cf-af1be68441c3",
+      "text2": " to the station ",
+      "station_id": "dcba1c5a-2579-4bda-88d4-6bf0d758dd06",
+      "text3": " from OpenWeather"
+    },
+    {
+      "id": 85,
+      "date": "22/08/2025",
+      "time": "20:22:41",
+      "user": "Alex Korne",
+      "text1": "added record ",
+      "record_id": "96175efa-316d-4f51-86f3-ba84c37a85e5",
+      "text2": " to the station ",
+      "station_id": "8fd8c21b-8398-4b6c-b160-23b7f95b0c6b",
+      "text3": " from OpenWeather"
+    },
+    {
+      "id": 86,
+      "date": "22/08/2025",
+      "time": "20:22:47",
+      "user": "Alex Korne",
+      "text1": "added record ",
+      "record_id": "1595964a-7865-419f-8bec-45c6cb78bb9b",
+      "text2": " to the station ",
+      "station_id": "b76e0253-86f3-4c7a-b2ac-ac1dd0be9f80",
+      "text3": " from OpenWeather"
     }
   ]
 }

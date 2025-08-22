@@ -11,9 +11,3 @@ document.addEventListener("DOMContentLoaded", function() {
     let table = document.getElementById("scroll");
     try { table.scrollTo({top: table.scrollHeight}); } catch { console.log("eventListener: nothing to scroll")};
 });
-
-function tableScroller() {
-  console.log("SCROLLLL!!!");
-  let table = document.getElementById("scroll");
-  try { table.scrollTo({top: table.scrollHeight}); } catch { console.log("eventListener: nothing to scroll")};
-}

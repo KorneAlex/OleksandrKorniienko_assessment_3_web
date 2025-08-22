@@ -109,4 +109,31 @@ body {
 
 }
 
-/*  */
+/* station-tiles */
+/* https://stackoverflow.com/questions/4502633/how-to-affect-other-elements-when-one-element-is-hovered */
+
+    .buttons__bar {
+      position: absolute; 
+      right: 0; 
+      width: 45px; 
+      height: 310px; 
+      {{!-- border-style:solid;  --}}
+      {{!-- border-color: red; --}}
+    }
+
+     .buttons__bar a{
+        margin: 3px;
+      }
+
+    
+.station__card .buttons__bar {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    transform: translateX(21px) rotate3d(0, 1, 0, 90deg);
+}
+
+.station__card:hover .buttons__bar {
+    transform: translateX(0px) rotate3d(0, 1, 0, 0deg);
+}

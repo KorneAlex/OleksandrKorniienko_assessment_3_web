@@ -1,4 +1,6 @@
-{{!-- TODO: css search by station  name, city or county --}}
+{{!-- TODO: css search by station name, city or county --}}
+{{!-- TODO: edit button on the tile opens the form to edit the station information + the same button in the station itself --}}
+{{!-- TODO: optimise for the mobile divices. tiles long press calls the tiles bar, fix the scroll (double touch scroll?) --}}
 
 <div class="is-flex is-flex-wrap-wrap p-2;" style="max-height: 50rem; overflow-y:auto; padding-bottom: 20px;">
   {{#each summaryForTheStation}}
@@ -39,13 +41,9 @@
 
                 {{#if this.currentWindDirection}}
                 Direction: {{this.currentWindDirection}}°&nbsp
-              
+
                 <img src="/views/partials/icons/wind_unselected.svg" alt="{{currentWindDirection}}"
-                  style="rotate: -{{currentWindDirection}}deg; height: 16px; width: 16px;"
-                {{else}}
-                Deg: -
-                {{/if}}
-                </p>
+                  style="rotate: -{{currentWindDirection}}deg; height: 16px; width: 16px;" {{else}} Deg: - {{/if}} </p>
             </div>
             <p>Pressure:
               {{#if this.currentPressure}}
@@ -57,58 +55,21 @@
         </div>
       </a>
 
-{{!-- https://stackoverflow.com/questions/4502633/how-to-affect-other-elements-when-one-element-is-hovered --}}
-<style>
-    .buttons__bar {
-      position: absolute; 
-      right: 0; 
-      width: 45px; 
-      height: 310px; 
-      {{!-- border-style:solid;  --}}
-      {{!-- border-color: red; --}}
-    }
-
-     .buttons__bar a{
-        margin: 3px;
-      }
-
-    
-.station__card .buttons__bar {
-    position: absolute;
-    top: 5px;
-    right: 0;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-    transform: translateX(21px) rotate3d(0, 1, 0, 90deg);
-}
-
-.station__card:hover .buttons__bar {
-    transform: translateX(0px) rotate3d(0, 1, 0, 0deg);
-}
-
-</style>
-
-{{!-- TODO: move this to .css --}}
-
-  <div class="buttons__bar">
-        {{!-- <a href="/stations/{{id}}" class="button"><div class="station-button">{{>icons/logo}}</div></a> --}}
-        <a href="/stations/editStation/{{id}}/true" class="button"><div class="station-button">{{>icons/edit-icon}}</div></a>
-        <a href="/stations/{{id}}/deleteStation" class="button"><div class="station-button">{{>icons/delete-icon}}</div></a>
-  </div>
-
+      <div class="buttons__bar">
+        <a href="/stations/editStation/{{id}}/true" class="button">
+          <div class="station-button">{{>icons/edit-icon}}</div>
+        </a>
+        <a href="/stations/{{id}}/deleteStation" class="button">
+          <div class="station-button">{{>icons/delete-icon}}</div>
+        </a>
+      </div>
     </div>
-
-
-
     {{!-- info --}}
     {{!-- <div
       class="is-flex is-justify-content-space-evenly is-align-items-center is-flex-grow-3 is-flex-direction-row card cardInfo"
       style="margin: 0">
 
     </div> --}}
-
-
-
   </div>
-
   {{/each}}
 </div>
