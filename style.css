@@ -137,3 +137,44 @@ body {
 .station__card:hover .buttons__bar {
     transform: translateX(0px) rotate3d(0, 1, 0, 0deg);
 }
+
+/* station-tiles edit-station */
+
+.edit__station_tile {
+          position: absolute;
+          display: none;
+          background-color: #eeeeee;
+          height: 94%;
+          width: 90%;
+          left: 5%;
+          top: 3%;
+          padding: 0;
+          padding-left: 12px;
+        }
+
+        .edit__station_tile--header {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 15%;
+          width: 100%;
+          border-top-left-radius: 4px;
+          border-top-right-radius: 4px;
+          background-color: #E0E0E1;
+          padding: 10px;
+        }
+
+        .edit__station_tile--body {
+          position: absolute;
+          height: 80%;
+          top: 18%;
+        }
+
+        .edit__station_tile--body .field-body .field input {
+          margin: 1px;
+          padding: 0;
+          border-color: #E0E0E1;
+          background-color: #E0E0E1;
+        }
+
+/*  */

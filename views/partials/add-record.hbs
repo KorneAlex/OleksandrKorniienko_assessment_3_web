@@ -1,4 +1,4 @@
-<form class="box" action="/stations/{{currentStation.id}}/addRecord" method="POST" name="form" onsubmit="return validateForm()">
+<form class="box" action="/stations/{{currentStation.id}}/addRecord" method="POST" name="form" onsubmit="return validateFormRecord()">
   <label>Enter new record:</label>
   <div class="field is-horizontal">
       <div class="field-body" >
@@ -14,10 +14,10 @@
         </select>
       </div>
       <div class="field">
-        <input class="input" type="number" placeholder="Temperature" name="temperature" min="-100" max="70">
+        <input class="input" type="number" placeholder="Temperature" name="temperature" min="-100" max="70" step="0.01">
       </div>
       <div class="field">
-       <input class="input" type="number" placeholder="Wind speed" name="wind_speed" min="0" max="999">
+       <input class="input" type="number" placeholder="Wind speed" name="wind_speed" min="0" max="999" step="0.01">
       </div>
       <div class="field">
         <input class="input" type="number" placeholder="Wind direction" name="wind_direction" min="0" max="360">
@@ -44,7 +44,7 @@
 
 {{!-- https://stackoverflow.com/questions/3937513/javascript-validation-for-empty-input-field --}}
 <script type="text/javascript">
-  function validateForm() {
+  function validateFormRecord() {
     const form = "form";
     var a = document.forms[form]["temperature"].value;
     var b = document.forms[form]["wind_speed"].value;

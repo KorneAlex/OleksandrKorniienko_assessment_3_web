@@ -28,8 +28,8 @@
 </nav>
 
 <script>
-  try { document.getElementById("{{active}}").classList.add("is-primary"); } catch { console.log("menu.hbs: no active menu")}
-  if ({{stationView}}){
+  try { document.getElementById("{{active}}").classList.add("is-primary"); } catch { console.log("menu: no active menu")}
+  {{#if stationView}}
   try { document.getElementById("cityStatus").innerHTML = `in {{currentWeatherConditions.friendlyStatus}} {{currentStation.city}}`; } catch { console.log("menu.hbs: no city")}
-  }
+  {{/if}}
 </script>

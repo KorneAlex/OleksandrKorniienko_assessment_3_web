@@ -17,5 +17,5 @@
 </nav>
 
 <script>
-  document.getElementById("{{active}}").classList.add("is-primary");
+  try { document.getElementById("{{active}}").classList.add("is-primary"); } catch { console.log("welcome-menu: no active menu")}
 </script>

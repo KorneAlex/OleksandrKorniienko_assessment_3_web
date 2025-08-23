@@ -371,6 +371,23 @@
       "deleted_timestamp": "21/08/2025 - 10:44:54",
       "deleted_by": "877835af-3a73-415a-b51b-27ae8426e599",
       "deleted_fromDB": "21/08/2025 - 10:45:34"
+    },
+    {
+      "name": "a",
+      "city": "ssss",
+      "county": "a",
+      "latitude": "2",
+      "longitude": "1",
+      "id": "08506983-27fe-4888-8ee4-c6d92dcf68c4",
+      "timestamp_created": "18/08/2025 - 10:01:10",
+      "created_by": "877835af-3a73-415a-b51b-27ae8426e599",
+      "created_by_name": "Alex Korne",
+      "deleted": true,
+      "deleted_timestamp": "21/08/2025 - 20:28:05",
+      "deleted_by": "877835af-3a73-415a-b51b-27ae8426e599",
+      "restored_by": "877835af-3a73-415a-b51b-27ae8426e599",
+      "restored_timestamp": "21/08/2025 - 11:51:20",
+      "deleted_fromDB": "23/08/2025 - 17:52:52"
     }
   ]
 }

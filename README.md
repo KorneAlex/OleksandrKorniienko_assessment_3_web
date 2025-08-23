@@ -61,5 +61,7 @@ Start the server
 - Data Chart displaying dynamics of Temperature and Wind Speed on the each station's page
 
 
-- Cross platform
+## Known bugs
 
+- After closing the popup on the station on the map, cannot open it again. Page reload needed.
+- Possible to enter the value into the code field if in the developer mode change <option> to something else or in case of the input fields change the min-max values to the one we want. Need to implement validation on the server side.
