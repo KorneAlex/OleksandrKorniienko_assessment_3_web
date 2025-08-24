@@ -18,6 +18,33 @@
       "id": "877835af-3a73-415a-b51b-27ae8426e599",
       "created_timestamp": "26/07/2025 - 16:19:04",
       "admin": true
+    },
+    {
+      "firstName": "Auto",
+      "lastName": "Mate",
+      "email": "automate@weathertop.com",
+      "password": "adminpass",
+      "id": "25e92b1b-4e35-48c1-a774-a50d6817bb5e",
+      "created_timestamp": "24/08/2025 - 15:00:41",
+      "admin": false
+    },
+    {
+      "firstName": "34",
+      "lastName": "32",
+      "email": "admffin@weathertop.com",
+      "password": "adminpass",
+      "id": "02c73fa4-5e1e-4be6-977f-00bce8b79667",
+      "created_timestamp": "24/08/2025 - 15:10:54",
+      "admin": false
+    },
+    {
+      "firstName": "34",
+      "lastName": "32",
+      "email": "admffin@weathertop.com",
+      "password": "adminpass",
+      "id": "6b5c2ece-e150-4950-a3eb-6dd043f4d82a",
+      "created_timestamp": "24/08/2025 - 15:11:15",
+      "admin": false
     }
   ]
 }

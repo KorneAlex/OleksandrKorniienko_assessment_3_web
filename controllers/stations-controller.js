@@ -1,6 +1,6 @@
 import { stationsStore } from "../models/stations-store.js";
 import { recordsStore } from "../models/records-store.js";
-import { usersStore } from "../models/user-store.js";
+import { usersStore } from "../models/users-store.js";
 import { weatherCodeStore } from "../models/weatherCodes-store.js";
 
 export const stationsController = {
@@ -19,7 +19,7 @@ export const stationsController = {
     const viewData = {
       stationView: true,
       title: "Station " + String(currentStation.name),
-      // city: String(currentStation.city),
+      // location: String(currentStation.location),
       currentUserID: await req.cookies.loggedInUser,
       station_id: req.params.station_id,
       userLoggedIn: await usersStore.userLoggedIn(req.cookies.loggedInUser),
@@ -44,8 +44,8 @@ export const stationsController = {
   async addStation(req, res) {
       const stationData = {
         name: req.body.name,
-        city: req.body.city,
-        county: req.body.county,
+        location: req.body.location,
+        country: req.body.country,
         latitude: req.body.latitude,
         longitude: req.body.longitude,
       };
@@ -57,8 +57,8 @@ export const stationsController = {
   async editStation(req, res) {
       const newData = {
           name: req.body.name,
-          city: req.body.city,
-          county: req.body.county,
+          location: req.body.location,
+          country: req.body.country,
           latitude: req.body.latitude,
           longitude: req.body.longitude,
         };
@@ -87,4 +87,9 @@ export const stationsController = {
       res.redirect("/dashboard");
   },
 
+    async getCurrentWeatherDataForAllActiveStations(req,res) {
+      // TODO: check status from fetching API
+      await recordsStore.getCurrentWeatherDataForAllActiveStations(req.cookies.loggedInUser, req.cookies.WEATHER_API_KEY);
+     res.redirect("/dashboard");
+    }
   }

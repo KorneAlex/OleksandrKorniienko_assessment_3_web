@@ -6,10 +6,10 @@
         <input class="input" type="text" placeholder="Name" name="name" autocomplete="name" maxlength="20">
       </div>
       <div class="field">
-        <input class="input" type="text" placeholder="City" name="city" maxlength="58">
+        <input class="input" type="text" placeholder="Location" name="location" maxlength="58">
       </div>
       <div class="field">
-        <input class="input" type="text" placeholder="County" name="county" maxlength="25">
+        <input class="input" type="text" placeholder="Country" name="country" maxlength="25">
       </div>
       <div class="field">
         <input class="input" type="number" placeholder="Latitude" name="latitude" min="-90" step="0.00000001" max="90">
@@ -26,8 +26,8 @@
   function validateFormStation() {
     const form = "form";
     var a = document.forms[form]["name"].value;
-    var b = document.forms[form]["city"].value;
-    var c = document.forms[form]["county"].value;
+    var b = document.forms[form]["location"].value;
+    var c = document.forms[form]["country"].value;
     var d = document.forms[form]["latitude"].value;
     var e = document.forms[form]["longitude"].value;
     if  ((a == null || a == "") || 

@@ -38,6 +38,8 @@ router.post("/authenticate", accountsController.authenticate);
 
 router.post("/dashboard/addStation", stationsController.addStation);
 router.post("/stations/:station_id/addRecord", recordsController.addRecord);
+router.get("/stations/requestRecordsForAllStations", stationsController.getCurrentWeatherDataForAllActiveStations);
+
 
 // station buttons
 router.get("/stations/:station_id", stationsController.index);

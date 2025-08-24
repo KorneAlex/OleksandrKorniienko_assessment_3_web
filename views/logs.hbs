@@ -1,7 +1,7 @@
 {{>page/menu active="logs"}}
 <section>
-    <div class="table-container logs__table" style="max-height: 40rem; overflow-y:auto" id="scroll">
-        <table class="table is-fullwidth">
+    <div class="table-container logs__table" style="max-height: 40rem; overflow-y:auto;" id="scroll">
+        <table class="table is-striped is-narrow is-fullwidth">
 
             <thead>
                 <tr>
@@ -18,7 +18,12 @@
                 <td>{{this.date}}</td>
                 <td>{{this.time}}</td>
                 <td>{{this.user}}</td>
-                <td>{{this.text1}}&nbsp;<span class="log">{{this.record_id}}</span>&nbsp;{{this.text2}}&nbsp;<span class="log">{{this.station_id}}</span>&nbsp;{{this.text3}}</td>
+                <td>
+                    {{this.text1}}&nbsp;<span class="log">{{this.record_id}}</span>
+                <br>{{this.text2}}&nbsp;<span class="log">{{this.station_id}}</span>
+                <br>{{this.text3}}
+                <br>{{this.text4}}
+                </td>
             </tr>
             {{/each}}
         </table>

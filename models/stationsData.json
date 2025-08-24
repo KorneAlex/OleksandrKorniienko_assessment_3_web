@@ -2,9 +2,9 @@
   "file": "./models/stationsData.json",
   "stationsData": [
     {
-      "name": "WAT-001",
-      "city": "Waterford",
-      "county": "Waterford",
+      "name": "Waterford-001",
+      "location": "Waterford",
+      "country": "Ireland",
       "latitude": "52.25833",
       "longitude": "-7.11194",
       "id": "eb07ccad-d7a9-4a2b-b332-91c3d78729cb",
@@ -14,15 +14,15 @@
       "deleted": false,
       "deleted_timestamp": null,
       "deleted_by": null,
-      "last_updated": "23/08/2025 - 17:58:21",
+      "last_updated": "24/08/2025 - 14:41:44",
       "edited_by": "877835af-3a73-415a-b51b-27ae8426e599",
       "edited_by_name": "Alex Korne",
       "timestamp_edited": "23/08/2025 - 14:10:14"
     },
     {
-      "name": "COR-001",
-      "city": "Cork",
-      "county": "Cork",
+      "name": "Cork-001",
+      "location": "Cork",
+      "country": "Ireland",
       "latitude": "51.89797",
       "longitude": "-8.47061",
       "id": "b76e0253-86f3-4c7a-b2ac-ac1dd0be9f80",
@@ -32,7 +32,7 @@
       "deleted": false,
       "deleted_timestamp": "21/08/2025 - 18:42:34",
       "deleted_by": "23260601-127c-4b43-b72c-fcf8e99fc0e6",
-      "last_updated": "22/08/2025 - 20:22:47",
+      "last_updated": "24/08/2025 - 14:41:44",
       "restored_by": "877835af-3a73-415a-b51b-27ae8426e599",
       "restored_timestamp": "21/08/2025 - 18:43:12",
       "edited_by": "877835af-3a73-415a-b51b-27ae8426e599",
@@ -40,9 +40,9 @@
       "timestamp_edited": "23/08/2025 - 17:16:47"
     },
     {
-      "name": "GAL-001",
-      "city": "Galway",
-      "county": "Galway",
+      "name": "Galway-001",
+      "location": "Galway",
+      "country": "Ireland",
       "latitude": "53.2740",
       "longitude": "-9.0513",
       "id": "8fd8c21b-8398-4b6c-b160-23b7f95b0c6b",
@@ -52,15 +52,15 @@
       "deleted": false,
       "deleted_timestamp": null,
       "deleted_by": null,
-      "last_updated": "22/08/2025 - 20:22:41",
+      "last_updated": "24/08/2025 - 14:41:44",
       "edited_by": "877835af-3a73-415a-b51b-27ae8426e599",
       "edited_by_name": "Alex Korne",
       "timestamp_edited": "23/08/2025 - 16:53:26"
     },
     {
-      "name": "BEL-001",
-      "city": "Belfast",
-      "county": "Antrim",
+      "name": "Belfast-001",
+      "location": "Belfast",
+      "country": "UK",
       "latitude": "54.607868",
       "longitude": "-5.926437",
       "id": "dcba1c5a-2579-4bda-88d4-6bf0d758dd06",
@@ -72,15 +72,15 @@
       "deleted_by": "877835af-3a73-415a-b51b-27ae8426e599",
       "restored_by": "877835af-3a73-415a-b51b-27ae8426e599",
       "restored_timestamp": "21/08/2025 - 11:49:45",
-      "last_updated": "23/08/2025 - 16:59:12",
+      "last_updated": "24/08/2025 - 14:41:44",
       "edited_by": "877835af-3a73-415a-b51b-27ae8426e599",
       "edited_by_name": "Alex Korne",
       "timestamp_edited": "23/08/2025 - 17:01:31"
     },
     {
-      "name": "DUB-001",
-      "city": "Dublin",
-      "county": "Dublin",
+      "name": "Dublin-001",
+      "location": "Dublin",
+      "country": "Ireland",
       "latitude": "53.350140",
       "longitude": "-6.266155",
       "id": "cce1f7d4-60c9-49ed-93f2-e453c15ab051",
@@ -92,15 +92,15 @@
       "deleted_by": "877835af-3a73-415a-b51b-27ae8426e599",
       "restored_by": "877835af-3a73-415a-b51b-27ae8426e599",
       "restored_timestamp": "21/08/2025 - 11:51:12",
-      "last_updated": "23/08/2025 - 17:02:55",
+      "last_updated": "24/08/2025 - 14:41:44",
       "edited_by": "877835af-3a73-415a-b51b-27ae8426e599",
       "edited_by_name": "Alex Korne",
       "timestamp_edited": "23/08/2025 - 17:02:52"
     },
     {
-      "name": "LIM-001",
-      "city": "Limerick",
-      "county": "Limerick",
+      "name": "Limerick-001",
+      "location": "Limerick",
+      "country": "Ireland",
       "latitude": "52.668018",
       "longitude": "-8.630498",
       "id": "a889a3d7-f85e-4c87-8d89-c826f1fb4e45",
@@ -115,12 +115,12 @@
       "edited_by": "877835af-3a73-415a-b51b-27ae8426e599",
       "edited_by_name": "Alex Korne",
       "timestamp_edited": "23/08/2025 - 17:03:57",
-      "last_updated": "23/08/2025 - 17:04:01"
+      "last_updated": "24/08/2025 - 14:41:44"
     },
     {
       "name": "Dummy station",
-      "city": "Dummy City",
-      "county": "Dummy County",
+      "location": "Dummy Location",
+      "country": "Dummy Country",
       "latitude": "66",
       "longitude": "-7",
       "id": "537850d2-94bb-4a5d-a9e6-ea789c02cf39",
@@ -138,9 +138,9 @@
       "timestamp_edited": "23/08/2025 - 16:14:13"
     },
     {
-      "name": "KIL-001",
-      "city": "Kilkenny",
-      "county": "Killkenny",
+      "name": "Kilkenny-001",
+      "location": "Kilkenny",
+      "country": "Ireland",
       "latitude": "52.6477",
       "longitude": "-7.2561",
       "id": "1f5f75f0-352e-43ca-83a7-e9d8d69931cb",
@@ -153,12 +153,12 @@
       "edited_by": "877835af-3a73-415a-b51b-27ae8426e599",
       "edited_by_name": "Alex Korne",
       "timestamp_edited": "23/08/2025 - 17:05:45",
-      "last_updated": "23/08/2025 - 17:05:48"
+      "last_updated": "24/08/2025 - 14:41:44"
     },
     {
       "name": "Dummy station",
-      "city": "Dummy City",
-      "county": "Dummy County",
+      "location": "Dummy Location",
+      "country": "Dummy Country",
       "latitude": "55",
       "longitude": "-7",
       "id": "e044756a-0e4c-47f3-887b-7195827c9791",
@@ -173,9 +173,9 @@
       "timestamp_edited": "23/08/2025 - 16:28:34"
     },
     {
-      "name": "WEX-001",
-      "city": "Wexford",
-      "county": "Wexford",
+      "name": "Wexford-001",
+      "location": "Wexford",
+      "country": "Ireland",
       "latitude": "52.3369",
       "longitude": "-6.4633",
       "id": "0ded1343-6105-4ca9-b3ca-c930a0a20a79",
@@ -188,12 +188,12 @@
       "edited_by": "877835af-3a73-415a-b51b-27ae8426e599",
       "edited_by_name": "Alex Korne",
       "timestamp_edited": "23/08/2025 - 17:07:43",
-      "last_updated": "23/08/2025 - 17:13:36"
+      "last_updated": "24/08/2025 - 14:41:44"
     },
     {
-      "name": "TRA-001",
-      "city": "Tralee",
-      "county": "Kerry",
+      "name": "Tralee-001",
+      "location": "Tralee",
+      "country": "Ireland",
       "latitude": "52.2675",
       "longitude": "-9.6962",
       "id": "d285da0d-a0a6-4f37-971b-2741bb4ddf5e",
@@ -206,12 +206,12 @@
       "edited_by": "877835af-3a73-415a-b51b-27ae8426e599",
       "edited_by_name": "Alex Korne",
       "timestamp_edited": "23/08/2025 - 17:33:22",
-      "last_updated": "23/08/2025 - 17:13:13"
+      "last_updated": "24/08/2025 - 14:41:44"
     },
     {
       "name": "Dummy edited",
-      "city": "Dummy City",
-      "county": "Dummy County",
+      "location": "Dummy Location",
+      "country": "Dummy Country",
       "latitude": "44",
       "longitude": "-7",
       "id": "8cd883a9-2412-4a19-a802-aaa7a61ef0f1",
@@ -227,8 +227,8 @@
     },
     {
       "name": "Dummy station",
-      "city": "Dummy City",
-      "county": "Dummy County",
+      "location": "Dummy Location",
+      "country": "Dummy Country",
       "latitude": "77",
       "longitude": "-7",
       "id": "2eb00f1d-95ac-405f-96b0-db4f82869b90",
@@ -243,9 +243,9 @@
       "timestamp_edited": "23/08/2025 - 16:11:21"
     },
     {
-      "name": "COR-002",
-      "city": "Skibbereen",
-      "county": "Cork",
+      "name": "Skibbereen-001",
+      "location": "Skibbereen",
+      "country": "Ireland",
       "latitude": "51.5486",
       "longitude": "-9.2636",
       "id": "d92dcfde-b484-4da2-afa0-503391d95dc4",
@@ -255,12 +255,12 @@
       "deleted": false,
       "deleted_timestamp": null,
       "deleted_by": null,
-      "last_updated": "23/08/2025 - 17:16:56"
+      "last_updated": "24/08/2025 - 14:41:44"
     },
     {
-      "name": "UA-001",
-      "city": "Kyiv",
-      "county": "Kyiv",
+      "name": "Kyiv-001",
+      "location": "Kyiv",
+      "country": "Ukraine",
       "latitude": "50.45",
       "longitude": "30.523333",
       "id": "0b10c7c2-6559-45b0-9f03-66bd9a37643c",
@@ -270,12 +270,12 @@
       "deleted": false,
       "deleted_timestamp": null,
       "deleted_by": null,
-      "last_updated": "23/08/2025 - 17:19:01"
+      "last_updated": "24/08/2025 - 14:41:44"
     },
     {
-      "name": "RIO-001",
-      "city": "Rio de Janeiro",
-      "county": "Rio de Janeiro",
+      "name": "Rio-de-Janeiro-001",
+      "location": "Rio de Janeiro",
+      "country": "Brazil",
       "latitude": "-22.911111",
       "longitude": "-43.205556",
       "id": "2e805229-48ea-4ff7-b42a-5b0049c69a6c",
@@ -285,7 +285,27 @@
       "deleted": false,
       "deleted_timestamp": null,
       "deleted_by": null,
-      "last_updated": "23/08/2025 - 17:21:04"
+      "last_updated": "24/08/2025 - 14:41:44"
+    },
+    {
+      "name": "test",
+      "location": "test",
+      "country": "test",
+      "latitude": "44",
+      "longitude": "55",
+      "id": "99a99bf4-8c9e-4750-b32d-de18dda04f4a",
+      "timestamp_created": "24/08/2025 - 11:51:08",
+      "created_by": "877835af-3a73-415a-b51b-27ae8426e599",
+      "created_by_name": "Alex Korne",
+      "deleted": true,
+      "deleted_timestamp": "24/08/2025 - 14:38:18",
+      "deleted_by": "877835af-3a73-415a-b51b-27ae8426e599",
+      "restored_by": "877835af-3a73-415a-b51b-27ae8426e599",
+      "restored_timestamp": "24/08/2025 - 14:19:10",
+      "edited_by": "877835af-3a73-415a-b51b-27ae8426e599",
+      "edited_by_name": "Alex Korne",
+      "timestamp_edited": "24/08/2025 - 14:23:14",
+      "last_updated": "24/08/2025 - 16:02:12"
     }
   ]
 }

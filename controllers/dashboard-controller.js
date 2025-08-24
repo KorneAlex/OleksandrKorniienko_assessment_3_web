@@ -1,6 +1,6 @@
 import { recordsStore } from "../models/records-store.js";
 import { stationsStore } from "../models/stations-store.js";
-import { usersStore } from "../models/user-store.js";
+import { usersStore } from "../models/users-store.js";
 
 export const dashboardController = {
   async index(req, res) {

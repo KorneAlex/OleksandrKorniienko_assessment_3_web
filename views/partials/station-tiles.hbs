@@ -1,133 +1,191 @@
-{{!-- TODO: css search by station name, city or county --}}
+{{!-- TODO: css search by station name, location or country --}}
 {{!-- TODO: edit button on the tile opens the form to edit the station information + the same button in the station
 itself --}}
 {{!-- TODO: optimise for the mobile divices. tiles long press calls the tiles bar, fix the scroll (double touch scroll?)
 --}}
 
-<div class="is-flex is-flex-wrap-wrap p-2;" style="max-height: 50rem; overflow-y:auto; padding-bottom: 20px;">
+<div class="is-flex is-flex-wrap-wrap is-justify-content-center p-2;"
+  style="max-height: 50rem; overflow-y:auto; padding-bottom: 20px;">
   {{#each summaryForTheStation}}
-  <div class="is-flex is-flex-direction-column is-flex-wrap-wrap is-justify-content-center p-2 station__card"
-    style="width: 20%; min-width: 215px; margin-top: 10px;">
-    <div class="is-flex is-flex-direction-row is-flex-wrap-wrap card p-0"
-      style="background-color: #ffb901; margin: 0; gap: 15px; height: 300px;">
 
-      {{!-- card --}}
-      <a href="/stations/{{id}}"
-        class="card is-flex is-flex-direction-column is-justify-content-center is-flex-grow-1 p-0"
-        style="width: 100px; ">
-        <div class="has-text-centered" style="padding: 10px 10px 0 10px;">
-          <p style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"><strong>{{name}}</strong></p>
-          <p class="is-2">Co. {{county}}</p>
-        </div>
-        <div class="is-flex is-justify-content-center">
-          <div class="card-header-icon"><img src="{{currentWeatherConditions.icon}}" style="width: 100px;"></div>
-        </div>
-        <div class="card-content is-flex" style="padding: 0px 15px 15px 15px;">
-          <div class="is-flex is-flex-direction-column">
-            <p><span class="has-text-weight-bold">
-                {{#if this.currentTemp}}
-                Temp: {{this.currentTemp}} °C
-                {{else}}
-                t°: -
-                {{/if}}
-              </span></p>
+  {{!-- card --}}
+  <a href="/stations/{{id}}">
+    <div class="card is-flex is-flex-direction-column is-justify-content-center p-2 station__card"
+      style="max-width: 25%; min-width: 215px; height: 300px; margin: 8px; margin-top: 8px;">
 
-            <div class="is-flex is-align-items-center">
-              <p>Wind:&nbsp
-                {{#if this.currentWindSpeed}}
-                {{this.currentWindSpeed}} m/s&nbsp
-                {{else}}
-                -
-                {{/if}}
-                <br>
 
-                {{#if this.currentWindDirection}}
-                Direction: {{this.currentWindDirection}}°&nbsp
-
-                <img src="/views/partials/icons/wind_unselected.svg" alt="{{currentWindDirection}}"
-                  style="rotate: -{{currentWindDirection}}deg; height: 16px; width: 16px;" {{else}} Deg: - {{/if}} </p>
-            </div>
-            <p>Pressure:
-              {{#if this.currentPressure}}
-              {{this.currentPressure}} hPa&nbsp
-              {{else}}
-              - &nbsp
-              {{/if}}</p>
-          </div>
-        </div>
-      </a>
-
-      {{#if ../userIsAdmin}}
-      <div class="buttons__bar">
-        <a onclick="openEditOnTile('{{id}}')" class="button">
-          <div class="station-button">{{>icons/edit-icon}}</div>
-        </a>
-        <a href="/stations/{{id}}/deleteStation" class="button">
-          <div class="station-button">{{>icons/delete-icon}}</div>
-        </a>
+      {{!-- card header --}}
+      <div class="has-text-centered" style="padding: 10px 10px 0 10px;">
+        <p style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"><strong>{{name}}</strong></p>
+        <p class="is-2">{{country}}</p>
       </div>
+      {{!-- code picture --}}
+      <div class="is-flex is-justify-content-center">
+        <div class="card-header-icon"><img src="{{currentWeatherConditions.icon}}" style="width: 100px;"></div>
+      </div>
+      {{!-- card info --}}
+      <div class="card-content is-flex" style="padding: 0px 15px 15px 15px;">
+        <div class="is-flex is-flex-direction-column">
+          <p><span class="has-text-weight-bold">
+              {{#if this.currentTemp}}
+              Temp: {{this.currentTemp}} °C
+              {{else}}
+              t°: -
+              {{/if}}
+            </span></p>
 
-      <style>
-        
-      </style>
+          <div class="is-flex is-align-items-center">
+            <p>Wind:&nbsp
+              {{#if this.currentWindSpeed}}
+              {{this.currentWindSpeed}} m/s&nbsp
+              {{else}}
+              -
+              {{/if}}
+              <br>
 
-      <form class="box message edit__station_tile" name="{{id}}" id="{{id}}" action="/stations/editStation/{{id}}/false" method="POST"
-        onsubmit="return validateFormStationTile(this)">
-        <div class="edit__station_tile--header is-flex is-justify-content-space-between is-align-items-center">
-          <p><strong>Edit station</strong></p>
+              {{#if this.currentWindDirection}}
+              Direction: {{this.currentWindDirection}}°&nbsp
 
-          <div>
-            <button class="button" type="submit" style="padding: 0; height: 20px; width: 20px; background-color: #48c78e00;">
-              <span class="icon has-text-success">{{>icons/save-button}}</span>
-            </button>
-            <a onclick="closeEditOnTile('{{id}}')" class="delete" style="right: 0px;" aria-label="delete"></a>
+              <img src="/views/partials/icons/wind_unselected.svg" alt="{{currentWindDirection}}"
+                style="rotate: -{{currentWindDirection}}deg; height: 16px; width: 16px;" {{else}} Deg: - {{/if}} </p>
           </div>
+          <p>Pressure:
+            {{#if this.currentPressure}}
+            {{this.currentPressure}} hPa&nbsp
+            {{else}}
+            - &nbsp
+            {{/if}}</p>
         </div>
-        <div class="field edit__station_tile--body">
-          <div class="field-body is-flex is-flex-direction-column p-2">
-            <div class="field">
-              <input title="Name" class="input" type="text" placeholder="Name" name="name" autocomplete="name"
-                maxlength="20" value="{{this.name}}">
-            </div>
-            <div class="field">
-              <input title="City" class="input" type="text" placeholder="City" name="city" maxlength="58"
-                value="{{this.city}}">
-            </div>
-            <div class="field">
-              <input title="County" class="input" type="text" placeholder="County" name="county" maxlength="25"
-                value="{{this.county}}">
-            </div>
-            <div class="field">
-              <input title="Latitude" class="input" type="number" placeholder="Latitude" name="latitude" min="-90"
-                max="90" step="0.00000001" value="{{this.latitude}}">
-            </div>
-            <div class="field" style="padding-right: 12px;">
-              <input title="Longtitude" class="input" type="number" placeholder="Longtitude" name="longitude" min="-180"
-                max="180" step="0.00000001" value="{{this.longitude}}">
-            </div>
-          </div>
-        </div>
-      </form>
-      {{/if}}
-    </div>
+      </div>
+  </a>
+  {{!-- buttons bar for admin --}}
+  {{#if ../userIsAdmin}}
+  <div class="buttons__bar">
+    <a onclick="openEditOnTile('{{id}}')" class="button">
+      <div class="station-button">{{>icons/edit-icon}}</div>
+    </a>
+    <a href="/stations/{{id}}/deleteStation" class="button">
+      <div class="station-button">{{>icons/delete-icon}}</div>
+    </a>
   </div>
-  {{/each}}
+  {{!-- popup edit station on the card --}}
+  <form class="box message edit__station_tile" name="{{id}}" id="{{id}}" action="/stations/editStation/{{id}}/false"
+    method="POST" onsubmit="return validateFormStationTile(this)">
+    <div class="edit__station_tile--header is-flex is-justify-content-space-between is-align-items-center">
+      <p><strong>Edit station</strong></p>
+
+      <div>
+        <button class="button" type="submit"
+          style="padding: 0; height: 20px; width: 20px; background-color: #48c78e00;">
+          <span class="icon has-text-success">{{>icons/save-button}}</span>
+        </button>
+        <a onclick="closeEditOnTile('{{id}}')" class="delete" style="right: 0px;" aria-label="delete"></a>
+      </div>
+    </div>
+    <div class="field edit__station_tile--body">
+      <div class="field-body is-flex is-flex-direction-column p-2">
+        <div class="field">
+          <input title="Name" class="input" type="text" placeholder="Name" name="name" autocomplete="name"
+            maxlength="20" value="{{this.name}}">
+        </div>
+        <div class="field">
+          <input title="Location" class="input" type="text" placeholder="Location" name="location" maxlength="58"
+            value="{{this.location}}">
+        </div>
+        <div class="field">
+          <input title="Country" class="input" type="text" placeholder="Country" name="country" maxlength="25"
+            value="{{this.country}}">
+        </div>
+        <div class="field">
+          <input title="Latitude" class="input" type="number" placeholder="Latitude" name="latitude" min="-90" max="90"
+            step="0.00000001" value="{{this.latitude}}">
+        </div>
+        <div class="field" style="padding-right: 12px;">
+          <input title="Longtitude" class="input" type="number" placeholder="Longtitude" name="longitude" min="-180"
+            max="180" step="0.00000001" value="{{this.longitude}}">
+        </div>
+      </div>
+    </div>
+  </form>
+  {{/if}}
 </div>
+{{/each}}
+{{!-- add new station --}}
+<style>
+  .station__card--add {
+    max-width: 25%;
+    min-width: 215px;
+    height: 300px;
+    margin: 8px;
+    margin-top: 8px;
+  }
+</style>
+
+
+  {{#if userIsAdmin}}
+{{!-- this code is a mess but it works --}}
+  <div class="card is-flex is-flex-direction-column is-justify-content-center is-align-items-center p-2 station__card station__card--add">
+    <div style="padding: 90px 50px ; cursor: pointer;" onclick="openAddStationOnTile('add-station')">
+    {{>icons/add-icon}}
+    </div>
+  {{!-- popup form to add the station --}}
+  <form class="box message edit__station_tile" name="add-station" id="add-station" action="/dashboard/addStation"
+    method="POST" onsubmit="return validateFormStationTile(this)">
+    <div class="edit__station_tile--header is-flex is-justify-content-space-between is-align-items-center">
+      <p><strong>Add station</strong></p>
+
+      <div>
+        <button class="button" type="submit"
+          style="padding: 0; height: 20px; width: 20px; background-color: #48c78e00;">
+          <span class="icon has-text-success">{{>icons/save-button}}</span>
+        </button>
+        <a onclick="closeEditOnTile('add-station')" class="delete" style="right: 0px;" aria-label="delete"></a>
+      </div>
+    </div>
+    <div class="field edit__station_tile--body">
+      <div class="field-body is-flex is-flex-direction-column p-2">
+        <div class="field">
+          <input title="Name" class="input" type="text" placeholder="Name" name="name" autocomplete="name"
+            maxlength="20" value="{{this.name}}">
+        </div>
+        <div class="field">
+          <input title="Location" class="input" type="text" placeholder="Location" name="location" maxlength="58"
+            value="{{this.location}}">
+        </div>
+        <div class="field">
+          <input title="Country" class="input" type="text" placeholder="Country" name="country" maxlength="25"
+            value="{{this.country}}">
+        </div>
+        <div class="field">
+          <input title="Latitude" class="input" type="number" placeholder="Latitude" name="latitude" min="-90" max="90"
+            step="0.00000001" value="{{this.latitude}}">
+        </div>
+        <div class="field" style="padding-right: 12px;">
+          <input title="Longtitude" class="input" type="number" placeholder="Longtitude" name="longitude" min="-180"
+            max="180" step="0.00000001" value="{{this.longitude}}">
+        </div>
+      </div>
+    </div>
+  </form>
+  </div>
+  {{/if}}
+</div>
+
 
 
 <script>
   function validateFormStationTile(formTile) {
     const form = formTile.id;
     var a = document.forms[form]["name"].value;
-    var b = document.forms[form]["city"].value;
-    var c = document.forms[form]["county"].value;
+    var b = document.forms[form]["location"].value;
+    var c = document.forms[form]["country"].value;
     var d = document.forms[form]["latitude"].value;
     var e = document.forms[form]["longitude"].value;
-    if  ((a == null || a == "") || 
-        (b == null || b == "") ||
-        (c == null || c == "") ||
-        (d == null || d == "") ||
-        (e == null || e == "")) {
+    if ((a == null || a == "") ||
+      (b == null || b == "") ||
+      (c == null || c == "") ||
+      (d == null || d == "") ||
+      (e == null || e == "")) {
       alert("Please Fill In All Fields");
       return false;
     }
@@ -146,6 +204,11 @@ itself --}}
       editBlock.style.display = "block";
     } catch { console.log("openEditOnTile: " + "error") }
   }
-</script>
 
-{{!-- TODO: last tile should be add station tile that reuses the edit tile --}}
+  function openAddStationOnTile(id) {
+    try {
+      let addBlock = document.getElementById(id);
+      addBlock.style.display = "block";
+    } catch { console.log("openAddStationOnTile: " + "error") }
+  }
+</script>

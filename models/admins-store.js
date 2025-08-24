@@ -1,16 +1,11 @@
-import { v4 } from "uuid";
 import { format } from "date-fns";
 import { initStore } from "../utils/store-utils.js";
-import { usersStore } from "./user-store.js";
-import { stationsStore } from "./stations-store.js";
-import { timeStamp } from "console";
+
 
 const db_logs = initStore("logs");
-const db_rec = initStore("recordsData");
-const db_del_rec = initStore("deletedRecords");
 
 export const adminsStore = {
-  async createLog(user, text1, record_id, text2, station_id, text3) {
+  async createLog(user, text1, record_id, text2, station_id, text3, text4) {
     await db_logs.read();
     const logs = await adminsStore.getLogs();
     let lastId = 0;
@@ -30,6 +25,7 @@ export const adminsStore = {
         text2: text2,
         station_id: station_id,
         text3: text3,
+        text4: text4,
         // description: description,
     }
     db_logs.data.logs.push(newLog);

@@ -1,6 +1,7 @@
 import { v4 } from "uuid";
 import { format } from "date-fns";
 import { initStore } from "../utils/store-utils.js";
+import { adminsStore } from "./admins-store.js";
 
 const db_usr = initStore("usersData");
 
@@ -13,6 +14,7 @@ export const usersStore = {
         user.admin = false;
         db_usr.data.usersData.push(user);
         await db_usr.write();
+        await adminsStore.createLog("Server", `the user ${user.firstName} ${user.lastName}`, ``, `has been created with email & ID: `, ``, user.email, user.id);
         return user;
     },
     

@@ -1,7 +1,7 @@
 import { v4 } from "uuid";
 import { format } from "date-fns";
 import { initStore } from "../utils/store-utils.js";
-import { usersStore } from "./user-store.js";
+import { usersStore } from "./users-store.js";
 import { stationsStore } from "./stations-store.js";
 import { adminsStore } from "./admins-store.js";
 
@@ -90,7 +90,7 @@ export const recordsStore = {
     await db_rec.write();
     console.log("records-store: Records data saved successfully.");
     extra_info = extra_info===""? "manually":extra_info; 
-    await adminsStore.createLog(await usersStore.getUsersFullNameById(loggedInUser),"added record ", record.id, " to the station ", station_id, extra_info);
+    await adminsStore.createLog(await usersStore.getUsersFullNameById(loggedInUser),"added record ", record.id, " to the station ", station_id, extra_info, "");
     return record;
   },
   
@@ -112,9 +112,18 @@ export const recordsStore = {
   }  catch (error) {
   console.error("didn't fetch. check API?"); // TODO Make a proper error message
   console.error(error);
-  await adminsStore.createLog(await usersStore.getUsersFullNameById(loggedInUser), "attempted to fetch data from OpenWeather for the station",``,"",station_id,"ERROR: NO API KEY");
+  await adminsStore.createLog(await usersStore.getUsersFullNameById(loggedInUser), "attempted to fetch data from OpenWeather for the station",``,"",station_id,"ERROR: NO API KEY", "");
   return null;
 }
+  },
+
+  async getCurrentWeatherDataForAllActiveStations(loggedInUser, api) {
+    const activeStations = await stationsStore.getActiveStationsData();
+    for(const station of activeStations) {
+         console.log(station.id);
+      await recordsStore.getCurrentWeatherData(station.id, loggedInUser, api);
+    }
+    // console.error("getCurrentWeatherDataForAllActiveStations: no stations");
   },
 
   async editRecord(station_id, record_id, newData, loggedInUser) {
@@ -139,7 +148,7 @@ export const recordsStore = {
     console.log("Edit record: recordToEdit.code: " + recordToEdit.code);
     await db_rec.write();
     console.log("records-store: Records data edited successfully.");
-    await adminsStore.createLog(await usersStore.getUsersFullNameById(loggedInUser),"edited record ", record_id, " on the station ", station_id, ` old data: ${JSON.stringify(oldData)}, new data: ${JSON.stringify(newData)}`);
+    await adminsStore.createLog(await usersStore.getUsersFullNameById(loggedInUser),"edited record ", record_id, " on the station ", station_id, ` old data: ${JSON.stringify(oldData)}, new data: ${JSON.stringify(newData)}`, "");
     return recordToEdit;
   },
 
@@ -155,7 +164,7 @@ export const recordsStore = {
       recordToBeDeleted.deleted_by = loggedInUser;
       recordToBeDeleted.deleted_timestamp = format(new Date(), "dd/MM/yyyy' - 'HH:mm:ss");
       await db_rec.write();
-      await adminsStore.createLog(await usersStore.getUsersFullNameById(loggedInUser),"deleted record ", record_id, " from the station ", station_id, ``);
+      await adminsStore.createLog(await usersStore.getUsersFullNameById(loggedInUser),"deleted record ", record_id, " from the station ", station_id, ``,``);
       return recordToBeDeleted;
     },
   
@@ -169,7 +178,7 @@ export const recordsStore = {
       db_del_rec.data.deletedRecords.push(recordToBeDeleted);
       await db_rec.write();
       await db_del_rec.write();
-      await adminsStore.createLog(await usersStore.getUsersFullNameById(loggedInUser),"deleted record ", record_id, " from the station ", station_id, ` from the database`);
+      await adminsStore.createLog(await usersStore.getUsersFullNameById(loggedInUser),"deleted record ", record_id, " from the station ", station_id, ` from the database`,``);
       return recordToBeDeleted;
     },
 
@@ -198,7 +207,7 @@ export const recordsStore = {
       recordToBeRestored.restored_timestamp = format(new Date(), "dd/MM/yyyy' - 'HH:mm:ss"); 
       console.log(`records-store: Record ${recordToBeRestored.name} has been successfully restored.`);
       await db_rec.write();
-      await adminsStore.createLog(await usersStore.getUsersFullNameById(loggedInUser),"restored record ", record_id, " to the station ", station_id, ``);
+      await adminsStore.createLog(await usersStore.getUsersFullNameById(loggedInUser),"restored record ", record_id, " to the station ", station_id, ``,``);
       return recordToBeRestored;
     },
   

@@ -1,5 +1,5 @@
 import { adminsStore } from "../models/admins-store.js";
-import { usersStore } from "../models/user-store.js";
+import { usersStore } from "../models/users-store.js";
 
 export const adminsController = {
   async logs(req, res) {

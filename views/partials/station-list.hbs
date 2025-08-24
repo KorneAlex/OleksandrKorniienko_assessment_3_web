@@ -7,16 +7,16 @@
 <section>
 
   <div style="max-height: 40rem; overflow-y:auto">
-    <table class="table is-fullwidth centered__table">
+    <table class="table is-fullwidth centered__table is-striped is-narrow">
       {{#if userIsAdmin}}
       <thead>
         <tr>
           <th>Name</th>
-          <th>City</th>
-          <th>County</th>
+          <th>Location</th>
+          <th>Country</th>
           <th>Latitude</th>
           <th>Longitude</th>
-          <th>ID</th>
+          {{!-- <th>ID</th> --}}
           <th>Created By</th>
           <th>Created On</th>
           <th>Open</th>
@@ -30,11 +30,11 @@
       {{else}}
       <tr>
         <td>{{name}}</td>
-        <td>{{city}}</td>
-        <td>{{county}}</td>
+        <td>{{location}}</td>
+        <td>{{country}}</td>
         <td>{{latitude}}</td>
         <td>{{longitude}}</td>
-        <td>{{id}}</td>
+        {{!-- <td>{{id}}</td> --}}
         <td>{{created_by_name}}</td>
         <td>{{timestamp_created}}</td>
         <td><a href="/stations/{{id}}" class="button"><div class="station-button">{{>icons/logo}}</div></a></td>
@@ -51,8 +51,8 @@
     <thead>
       <tr>
         <th>Name</th>
-        <th>City</th>
-        <th>County</th>
+        <th>Location</th>
+        <th>Country</th>
         <th>Latitude</th>
         <th>Longitude</th>
         <th>Created By</th>
@@ -63,8 +63,8 @@
     {{#each activeStationsData}}
     <tr>
       <td>{{name}}</td>
-      <td>{{city}}</td>
-      <td>{{county}}</td>
+      <td>{{location}}</td>
+      <td>{{country}}</td>
       <td>{{latitude}}</td>
       <td>{{longitude}}</td>
       <td>{{created_by_name}}</td>

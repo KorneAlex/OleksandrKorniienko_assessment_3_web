@@ -3,6 +3,10 @@
     <div class="title is-2 p-5">Station {{currentStation.name}}</div>
     </div>
 <div>
+  {{#if userIsAdmin}}
+    {{>station-info}}
+    {{/if}}
+
 {{#if activeRecordsExist}}
 {{>station-summary}}
 {{>chart}}

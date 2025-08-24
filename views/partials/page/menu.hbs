@@ -2,7 +2,7 @@
   <div class="navbar-brand">
     {{>page/brand}}
   </div>
-   <span id="cityStatus"></span>
+   <span id="locationStatus"></span>
   <div class="navbar-menu" id="navMenu">
     <div class="navbar-end">
       <div class="navbar-item">
@@ -30,6 +30,6 @@
 <script>
   try { document.getElementById("{{active}}").classList.add("is-primary"); } catch { console.log("menu: no active menu")}
   {{#if stationView}}
-  try { document.getElementById("cityStatus").innerHTML = `in {{currentWeatherConditions.friendlyStatus}} {{currentStation.city}}`; } catch { console.log("menu.hbs: no city")}
+  try { document.getElementById("locationStatus").innerHTML = `in {{currentWeatherConditions.friendlyStatus}} {{currentStation.location}}`; } catch { console.log("menu.hbs: no location")}
   {{/if}}
 </script>

@@ -1,4 +1,4 @@
-import { usersStore } from "../models/user-store.js";
+import { usersStore } from "../models/users-store.js";
 
 export const aboutController = {
   async index(req, res) {

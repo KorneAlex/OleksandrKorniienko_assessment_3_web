@@ -4,33 +4,33 @@
   </div>
 </div>
 <div style="max-height: 20rem; overflow-y:auto">
-  <table class="table is-fullwidth centered__table">
+  <table class="table is-fullwidth centered__table is-striped is-narrow">
     <thead>
       <tr>
         <th>Name</th>
-        <th>City</th>
-        <th>County</th>
+        <th>Location</th>
+        <th>Country</th>
         <th>Latitude</th>
         <th>Longitude</th>
-        <th>ID</th>
+        {{!-- <th>ID</th> --}}
         <th>Created By</th>
-        <th>Deleted</th>
-        <th>Timestamp</th>
-        <th>Edit</th>
-        <th>Restore</th>
-        <th>Delete Forever</th>
+        <th>Deleted By</th>
+        <th>Deleted On</th>
+        <th>EDIT</th>
+        <th><abbr title="Restore">RSTR</abbr></th>
+        <th><abbr title="Delete From DB">DFDB</abbr></th>
       </tr>
     </thead>
     {{#each deletedStationsData}}
     <tr>
       <td>{{name}}</td>
-      <td>{{city}}</td>
-      <td>{{county}}</td>
+      <td>{{location}}</td>
+      <td>{{country}}</td>
       <td>{{latitude}}</td>
       <td>{{longitude}}</td>
-      <td>{{id}}</td>
+      {{!-- <td>{{id}}</td> --}}
       <td>{{created_by_name}}</td>
-      <td>{{deleted_by}}</td>
+      <td>{{deleted_by_name}}</td>
       <td>{{deleted_timestamp}}</td>
       <td><a href="/stations/{{id}}" class="button"><div class="station-button">{{>icons/edit-icon}}</div></a></td>
       <td><a href="/stations/{{id}}/restoreStation" class="button"><div class="station-button">{{>icons/restore-icon}}</div></a></td>

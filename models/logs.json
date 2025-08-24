@@ -23,26 +23,6 @@
     },
     {
       "date": "17/08/2025",
-      "time": "18:46:18",
-      "user": "Alex Korne",
-      "text1": "edited record ",
-      "record_id": "3d6718fe-f9d1-48d7-9ba1-44244d11005b",
-      "text2": " on the station ",
-      "station_id": "eb07ccad-d7a9-4a2b-b332-91c3d78729cb",
-      "text3": " old data: {\"code\":\"\",\"temperature\":\"3\",\"wind_speed\":\"3\",\"wind_direction\":\"3\",\"pressure\":\"3\"}, new data: {\"code\":\"\",\"temperature\":\"3\",\"wind_speed\":\"3\",\"wind_direction\":\"3\",\"pressure\":\"3\"}"
-    },
-    {
-      "date": "17/08/2025",
-      "time": "18:47:34",
-      "user": "Alex Korne",
-      "text1": "edited record ",
-      "record_id": "3d6718fe-f9d1-48d7-9ba1-44244d11005b",
-      "text2": " on the station ",
-      "station_id": "eb07ccad-d7a9-4a2b-b332-91c3d78729cb",
-      "text3": " old data: {\"code\":\"\",\"temperature\":\"3\",\"wind_speed\":\"3\",\"wind_direction\":\"3\",\"pressure\":\"3\"}, new data: {\"code\":\"\",\"temperature\":\"5\",\"wind_speed\":\"5\",\"wind_direction\":\"5\",\"pressure\":\"5\"}"
-    },
-    {
-      "date": "17/08/2025",
       "time": "18:57:15",
       "user": "Alex Korne",
       "text1": "deleted record ",
@@ -212,46 +192,6 @@
       "text3": ""
     },
     {
-      "date": "17/08/2025",
-      "time": "21:12:12",
-      "user": "Alex Korne",
-      "text1": "edited station ",
-      "record_id": "",
-      "text2": "",
-      "station_id": "3b394787-4958-4768-b9c7-c622178689f4",
-      "text3": " old data: {\"name\":\"s\",\"city\":\"s\",\"county\":\"s\",\"latitude\":\"s\",\"longitude\":\"s\"}, new data: {\"name\":\"2\",\"city\":\"2\",\"county\":\"2\",\"latitude\":\"2\",\"longitude\":\"2\"}"
-    },
-    {
-      "date": "17/08/2025",
-      "time": "21:19:48",
-      "user": "Alex Korne",
-      "text1": "edited station ",
-      "record_id": "",
-      "text2": "",
-      "station_id": "3b394787-4958-4768-b9c7-c622178689f4",
-      "text3": " old data: {\"name\":\"2\",\"city\":\"2\",\"county\":\"2\",\"latitude\":\"2\",\"longitude\":\"2\"}, new data: {\"name\":\"3\",\"city\":\"3\",\"county\":\"3\",\"latitude\":\"33\",\"longitude\":\"3\"}"
-    },
-    {
-      "date": "17/08/2025",
-      "time": "21:21:45",
-      "user": "Alex Korne",
-      "text1": "edited station ",
-      "record_id": "",
-      "text2": "",
-      "station_id": "3b394787-4958-4768-b9c7-c622178689f4",
-      "text3": " old data: {\"name\":\"3\",\"city\":\"3\",\"county\":\"3\",\"latitude\":\"33\",\"longitude\":\"3\"}, new data: {\"name\":\"4\",\"city\":\"4\",\"county\":\"4\",\"latitude\":\"4\",\"longitude\":\"4\"}"
-    },
-    {
-      "date": "17/08/2025",
-      "time": "21:24:08",
-      "user": "Alex Korne",
-      "text1": "edited station ",
-      "record_id": "",
-      "text2": "",
-      "station_id": "3b394787-4958-4768-b9c7-c622178689f4",
-      "text3": " old data: {\"name\":\"4\",\"city\":\"4\",\"county\":\"4\",\"latitude\":\"4\",\"longitude\":\"4\"}, new data: {\"name\":\"5\",\"city\":\"5\",\"county\":\"5\",\"latitude\":\"5\",\"longitude\":\"5\"}"
-    },
-    {
       "date": "18/08/2025",
       "time": "09:07:37",
       "user": "Alex Korne",
@@ -383,96 +323,6 @@
     },
     {
       "date": "18/08/2025",
-      "time": "09:22:13",
-      "user": "Alex Korne",
-      "text1": "edited station ",
-      "record_id": "",
-      "text2": "",
-      "station_id": "3b394787-4958-4768-b9c7-c622178689f4",
-      "text3": " old data: {\"name\":\"5\",\"city\":\"5\",\"county\":\"5\",\"latitude\":\"5\",\"longitude\":\"5\"}, new data: {\"name\":\"a\",\"city\":\"ssss\",\"county\":\"a\",\"latitude\":\"2\",\"longitude\":\"1\"}"
-    },
-    {
-      "date": "18/08/2025",
-      "time": "09:29:33",
-      "user": "Alex Korne",
-      "text1": "edited station ",
-      "record_id": "",
-      "text2": "",
-      "station_id": "3b394787-4958-4768-b9c7-c622178689f4",
-      "text3": " old data: {\"name\":\"a\",\"city\":\"ssss\",\"county\":\"a\",\"latitude\":\"2\",\"longitude\":\"1\"}, new data: {\"name\":\"\",\"city\":\"\",\"county\":\"\",\"latitude\":\"\",\"longitude\":\"\"}"
-    },
-    {
-      "date": "18/08/2025",
-      "time": "09:37:05",
-      "user": "Alex Korne",
-      "text1": "edited station ",
-      "record_id": "",
-      "text2": "",
-      "station_id": "3b394787-4958-4768-b9c7-c622178689f4",
-      "text3": " old data: {\"name\":\"\",\"city\":\"\",\"county\":\"\",\"latitude\":\"\",\"longitude\":\"\"}, new data: {\"name\":\"\",\"city\":\"s\",\"county\":\"\",\"latitude\":\"\",\"longitude\":\"\"}"
-    },
-    {
-      "date": "18/08/2025",
-      "time": "09:37:10",
-      "user": "Alex Korne",
-      "text1": "edited station ",
-      "record_id": "",
-      "text2": "",
-      "station_id": "3b394787-4958-4768-b9c7-c622178689f4",
-      "text3": " old data: {\"name\":\"\",\"city\":\"s\",\"county\":\"\",\"latitude\":\"\",\"longitude\":\"\"}, new data: {\"name\":\"\",\"city\":\"\",\"county\":\"\",\"latitude\":\"\",\"longitude\":\"\"}"
-    },
-    {
-      "date": "18/08/2025",
-      "time": "09:38:59",
-      "user": "Alex Korne",
-      "text1": "edited station ",
-      "record_id": "",
-      "text2": "",
-      "station_id": "3b394787-4958-4768-b9c7-c622178689f4",
-      "text3": " old data: {\"name\":\"\",\"city\":\"\",\"county\":\"\",\"latitude\":\"\",\"longitude\":\"\"}, new data: {\"name\":\"\",\"city\":\"s\",\"county\":\"\",\"latitude\":\"\",\"longitude\":\"\"}"
-    },
-    {
-      "date": "18/08/2025",
-      "time": "09:39:03",
-      "user": "Alex Korne",
-      "text1": "edited station ",
-      "record_id": "",
-      "text2": "",
-      "station_id": "3b394787-4958-4768-b9c7-c622178689f4",
-      "text3": " old data: {\"name\":\"\",\"city\":\"s\",\"county\":\"\",\"latitude\":\"\",\"longitude\":\"\"}, new data: {\"name\":\"\",\"city\":\"\",\"county\":\"\",\"latitude\":\"\",\"longitude\":\"\"}"
-    },
-    {
-      "date": "18/08/2025",
-      "time": "09:42:43",
-      "user": "Alex Korne",
-      "text1": "edited station ",
-      "record_id": "",
-      "text2": "",
-      "station_id": "3b394787-4958-4768-b9c7-c622178689f4",
-      "text3": " old data: {\"name\":\"\",\"city\":\"\",\"county\":\"\",\"latitude\":\"\",\"longitude\":\"\"}, new data: {\"name\":\"\",\"city\":\"s\",\"county\":\"\",\"latitude\":\"\",\"longitude\":\"\"}"
-    },
-    {
-      "date": "18/08/2025",
-      "time": "09:44:14",
-      "user": "Alex Korne",
-      "text1": "edited station ",
-      "record_id": "",
-      "text2": "",
-      "station_id": "3b394787-4958-4768-b9c7-c622178689f4",
-      "text3": " old data: {\"name\":\"\",\"city\":\"s\",\"county\":\"\",\"latitude\":\"\",\"longitude\":\"\"}, new data: {\"name\":\"\",\"city\":\"d\",\"county\":\"\",\"latitude\":\"\",\"longitude\":\"\"}"
-    },
-    {
-      "date": "18/08/2025",
-      "time": "09:49:27",
-      "user": "Alex Korne",
-      "text1": "edited station ",
-      "record_id": "",
-      "text2": "",
-      "station_id": "3b394787-4958-4768-b9c7-c622178689f4",
-      "text3": " old data: {\"name\":\"\",\"city\":\"d\",\"county\":\"\",\"latitude\":\"\",\"longitude\":\"\"}, new data: {\"name\":\"\",\"city\":\"\",\"county\":\"\",\"latitude\":\"-90\",\"longitude\":\"\"}"
-    },
-    {
-      "date": "18/08/2025",
       "time": "10:01:10",
       "user": "Alex Korne",
       "text1": "created station ",
@@ -490,36 +340,6 @@
       "text2": " with ID: ",
       "station_id": "08506983-27fe-4888-8ee4-c6d92dcf68c4",
       "text3": ""
-    },
-    {
-      "date": "18/08/2025",
-      "time": "10:03:24",
-      "user": "Alex Korne",
-      "text1": "edited station ",
-      "record_id": "",
-      "text2": "",
-      "station_id": "3b394787-4958-4768-b9c7-c622178689f4",
-      "text3": " old data: {\"name\":\"\",\"city\":\"\",\"county\":\"\",\"latitude\":\"-90\",\"longitude\":\"\"}, new data: {\"name\":\"sdsd\",\"city\":\"as\",\"county\":\"as\",\"latitude\":\"2\",\"longitude\":\"2\"}"
-    },
-    {
-      "date": "18/08/2025",
-      "time": "10:04:31",
-      "user": "Alex Korne",
-      "text1": "edited station ",
-      "record_id": "",
-      "text2": "",
-      "station_id": "3b394787-4958-4768-b9c7-c622178689f4",
-      "text3": " old data: {\"name\":\"sdsd\",\"city\":\"as\",\"county\":\"as\",\"latitude\":\"2\",\"longitude\":\"2\"}, new data: {\"name\":\"sdsd\",\"city\":\"as\",\"county\":\"\",\"latitude\":\"2\",\"longitude\":\"2\"}"
-    },
-    {
-      "date": "18/08/2025",
-      "time": "10:12:41",
-      "user": "Alex Korne",
-      "text1": "edited station ",
-      "record_id": "",
-      "text2": "",
-      "station_id": "3b394787-4958-4768-b9c7-c622178689f4",
-      "text3": " old data: {\"name\":\"sdsd\",\"city\":\"as\",\"county\":\"\",\"latitude\":\"2\",\"longitude\":\"2\"}, new data: {\"name\":\"sdsd\",\"city\":\"as\",\"county\":\"r\",\"latitude\":\"2\",\"longitude\":\"2\"}"
     },
     {
       "date": "18/08/2025",
@@ -543,116 +363,6 @@
     },
     {
       "date": "18/08/2025",
-      "time": "10:26:22",
-      "user": "Alex Korne",
-      "text1": "edited record ",
-      "record_id": "330fc9f8-8d4e-4a39-964c-2c539d53b35e",
-      "text2": " on the station ",
-      "station_id": "3b394787-4958-4768-b9c7-c622178689f4",
-      "text3": " old data: {\"code\":804,\"temperature\":23.78,\"wind_speed\":5.58,\"wind_direction\":197,\"pressure\":1017}, new data: {\"code\":\"\",\"temperature\":\"\",\"wind_speed\":\"\",\"wind_direction\":\"\",\"pressure\":\"\"}"
-    },
-    {
-      "date": "18/08/2025",
-      "time": "10:35:53",
-      "user": "Alex Korne",
-      "text1": "edited record ",
-      "record_id": "330fc9f8-8d4e-4a39-964c-2c539d53b35e",
-      "text2": " on the station ",
-      "station_id": "3b394787-4958-4768-b9c7-c622178689f4",
-      "text3": " old data: {\"code\":\"\",\"temperature\":\"\",\"wind_speed\":\"\",\"wind_direction\":\"\",\"pressure\":\"\"}, new data: {\"code\":\"221\",\"temperature\":\"\",\"wind_speed\":\"\",\"wind_direction\":\"\",\"pressure\":\"\"}"
-    },
-    {
-      "date": "18/08/2025",
-      "time": "10:42:38",
-      "user": "Alex Korne",
-      "text1": "edited record ",
-      "record_id": "330fc9f8-8d4e-4a39-964c-2c539d53b35e",
-      "text2": " on the station ",
-      "station_id": "3b394787-4958-4768-b9c7-c622178689f4",
-      "text3": " old data: {\"code\":\"221\",\"temperature\":\"\",\"wind_speed\":\"\",\"wind_direction\":\"\",\"pressure\":\"\"}, new data: {\"code\":\"\",\"temperature\":\"34\",\"wind_speed\":\"34\",\"wind_direction\":\"34\",\"pressure\":\"34\"}"
-    },
-    {
-      "date": "18/08/2025",
-      "time": "10:43:29",
-      "user": "Alex Korne",
-      "text1": "edited record ",
-      "record_id": "330fc9f8-8d4e-4a39-964c-2c539d53b35e",
-      "text2": " on the station ",
-      "station_id": "3b394787-4958-4768-b9c7-c622178689f4",
-      "text3": " old data: {\"code\":\"\",\"temperature\":\"34\",\"wind_speed\":\"34\",\"wind_direction\":\"34\",\"pressure\":\"34\"}, new data: {\"code\":\"500\",\"temperature\":\"34\",\"wind_speed\":\"343\",\"wind_direction\":\"344\",\"pressure\":\"345\"}"
-    },
-    {
-      "date": "18/08/2025",
-      "time": "10:43:39",
-      "user": "Alex Korne",
-      "text1": "edited record ",
-      "record_id": "330fc9f8-8d4e-4a39-964c-2c539d53b35e",
-      "text2": " on the station ",
-      "station_id": "3b394787-4958-4768-b9c7-c622178689f4",
-      "text3": " old data: {\"code\":\"500\",\"temperature\":\"34\",\"wind_speed\":\"343\",\"wind_direction\":\"344\",\"pressure\":\"345\"}, new data: {\"code\":\"\",\"temperature\":\"34\",\"wind_speed\":\"343\",\"wind_direction\":\"344\",\"pressure\":\"345\"}"
-    },
-    {
-      "date": "18/08/2025",
-      "time": "10:43:52",
-      "user": "Alex Korne",
-      "text1": "edited record ",
-      "record_id": "330fc9f8-8d4e-4a39-964c-2c539d53b35e",
-      "text2": " on the station ",
-      "station_id": "3b394787-4958-4768-b9c7-c622178689f4",
-      "text3": " old data: {\"code\":\"\",\"temperature\":\"34\",\"wind_speed\":\"343\",\"wind_direction\":\"344\",\"pressure\":\"345\"}, new data: {\"code\":\"613\",\"temperature\":\"34\",\"wind_speed\":\"343\",\"wind_direction\":\"344\",\"pressure\":\"345\"}"
-    },
-    {
-      "date": "18/08/2025",
-      "time": "10:43:57",
-      "user": "Alex Korne",
-      "text1": "edited record ",
-      "record_id": "330fc9f8-8d4e-4a39-964c-2c539d53b35e",
-      "text2": " on the station ",
-      "station_id": "3b394787-4958-4768-b9c7-c622178689f4",
-      "text3": " old data: {\"code\":\"613\",\"temperature\":\"34\",\"wind_speed\":\"343\",\"wind_direction\":\"344\",\"pressure\":\"345\"}, new data: {\"code\":\"\",\"temperature\":\"34\",\"wind_speed\":\"343\",\"wind_direction\":\"344\",\"pressure\":\"345\"}"
-    },
-    {
-      "date": "18/08/2025",
-      "time": "10:44:30",
-      "user": "Alex Korne",
-      "text1": "edited record ",
-      "record_id": "330fc9f8-8d4e-4a39-964c-2c539d53b35e",
-      "text2": " on the station ",
-      "station_id": "3b394787-4958-4768-b9c7-c622178689f4",
-      "text3": " old data: {\"code\":\"\",\"temperature\":\"34\",\"wind_speed\":\"343\",\"wind_direction\":\"344\",\"pressure\":\"345\"}, new data: {\"code\":\"321\",\"temperature\":\"34\",\"wind_speed\":\"343\",\"wind_direction\":\"344\",\"pressure\":\"345\"}"
-    },
-    {
-      "date": "18/08/2025",
-      "time": "10:44:36",
-      "user": "Alex Korne",
-      "text1": "edited record ",
-      "record_id": "330fc9f8-8d4e-4a39-964c-2c539d53b35e",
-      "text2": " on the station ",
-      "station_id": "3b394787-4958-4768-b9c7-c622178689f4",
-      "text3": " old data: {\"code\":\"321\",\"temperature\":\"34\",\"wind_speed\":\"343\",\"wind_direction\":\"344\",\"pressure\":\"345\"}, new data: {\"code\":\"321\",\"temperature\":\"34\",\"wind_speed\":\"343\",\"wind_direction\":\"344\",\"pressure\":\"345\"}"
-    },
-    {
-      "date": "18/08/2025",
-      "time": "10:44:43",
-      "user": "Alex Korne",
-      "text1": "edited record ",
-      "record_id": "330fc9f8-8d4e-4a39-964c-2c539d53b35e",
-      "text2": " on the station ",
-      "station_id": "3b394787-4958-4768-b9c7-c622178689f4",
-      "text3": " old data: {\"code\":\"321\",\"temperature\":\"34\",\"wind_speed\":\"343\",\"wind_direction\":\"344\",\"pressure\":\"345\"}, new data: {\"code\":\"501\",\"temperature\":\"34\",\"wind_speed\":\"343\",\"wind_direction\":\"344\",\"pressure\":\"345\"}"
-    },
-    {
-      "date": "18/08/2025",
-      "time": "11:12:01",
-      "user": "Alex Korne",
-      "text1": "edited record ",
-      "record_id": "330fc9f8-8d4e-4a39-964c-2c539d53b35e",
-      "text2": " on the station ",
-      "station_id": "3b394787-4958-4768-b9c7-c622178689f4",
-      "text3": " old data: {\"code\":\"501\",\"temperature\":\"34\",\"wind_speed\":\"343\",\"wind_direction\":\"344\",\"pressure\":\"345\"}, new data: {\"code\":\"803\",\"temperature\":\"34\",\"wind_speed\":\"343\",\"wind_direction\":\"344\",\"pressure\":\"345\"}"
-    },
-    {
-      "date": "18/08/2025",
       "time": "11:23:00",
       "user": "Alex Korne",
       "text1": "added record ",
@@ -663,46 +373,6 @@
     },
     {
       "date": "18/08/2025",
-      "time": "11:23:26",
-      "user": "Alex Korne",
-      "text1": "edited record ",
-      "record_id": "1ac7f14b-54c1-427b-a818-1883262a78be",
-      "text2": " on the station ",
-      "station_id": "3b394787-4958-4768-b9c7-c622178689f4",
-      "text3": " old data: {\"code\":\"801\",\"temperature\":\"20\",\"wind_speed\":\"5\",\"wind_direction\":\"65\",\"pressure\":\"900\"}, new data: {\"code\":\"314\",\"temperature\":\"2\",\"wind_speed\":\"3\",\"wind_direction\":\"43\",\"pressure\":\"1000\"}"
-    },
-    {
-      "date": "18/08/2025",
-      "time": "11:46:04",
-      "user": "Alex Korne",
-      "text1": "edited record ",
-      "record_id": "1ac7f14b-54c1-427b-a818-1883262a78be",
-      "text2": " on the station ",
-      "station_id": "3b394787-4958-4768-b9c7-c622178689f4",
-      "text3": " old data: {\"code\":\"314\",\"temperature\":\"2\",\"wind_speed\":\"3\",\"wind_direction\":\"43\",\"pressure\":\"1000\"}, new data: {\"code\":\"314\",\"temperature\":\"2\",\"wind_speed\":\"3\",\"wind_direction\":\"43\",\"pressure\":\"1000\"}"
-    },
-    {
-      "date": "18/08/2025",
-      "time": "11:47:55",
-      "user": "Alex Korne",
-      "text1": "edited record ",
-      "record_id": "1ac7f14b-54c1-427b-a818-1883262a78be",
-      "text2": " on the station ",
-      "station_id": "3b394787-4958-4768-b9c7-c622178689f4",
-      "text3": " old data: {\"code\":\"314\",\"temperature\":\"2\",\"wind_speed\":\"3\",\"wind_direction\":\"43\",\"pressure\":\"1000\"}, new data: {\"code\":\"314\",\"temperature\":\"2\",\"wind_speed\":\"3\",\"wind_direction\":\"4\",\"pressure\":\"1000\"}"
-    },
-    {
-      "date": "18/08/2025",
-      "time": "11:48:09",
-      "user": "Alex Korne",
-      "text1": "edited record ",
-      "record_id": "1ac7f14b-54c1-427b-a818-1883262a78be",
-      "text2": " on the station ",
-      "station_id": "3b394787-4958-4768-b9c7-c622178689f4",
-      "text3": " old data: {\"code\":\"314\",\"temperature\":\"2\",\"wind_speed\":\"3\",\"wind_direction\":\"4\",\"pressure\":\"1000\"}, new data: {\"code\":\"311\",\"temperature\":\"2\",\"wind_speed\":\"3\",\"wind_direction\":\"4\",\"pressure\":\"1000\"}"
-    },
-    {
-      "date": "18/08/2025",
       "time": "11:49:46",
       "user": "test test",
       "text1": "added record ",
@@ -710,16 +380,6 @@
       "text2": " to the station ",
       "station_id": "eb07ccad-d7a9-4a2b-b332-91c3d78729cb",
       "text3": "manually"
-    },
-    {
-      "date": "18/08/2025",
-      "time": "11:50:14",
-      "user": "test test",
-      "text1": "edited record ",
-      "record_id": "bcef0d5e-c5dd-4469-bd4b-96f950410475",
-      "text2": " on the station ",
-      "station_id": "eb07ccad-d7a9-4a2b-b332-91c3d78729cb",
-      "text3": " old data: {\"code\":\"211\",\"temperature\":\"4\",\"wind_speed\":\"4\",\"wind_direction\":\"4\",\"pressure\":\"1000\"}, new data: {\"code\":\"211\",\"temperature\":\"44\",\"wind_speed\":\"4\",\"wind_direction\":\"4\",\"pressure\":\"1000\"}"
     },
     {
       "date": "18/08/2025",
@@ -1629,28 +1289,6 @@
       "text3": "ERROR: NO API KEY"
     },
     {
-      "id": 44,
-      "date": "21/08/2025",
-      "time": "10:20:29",
-      "user": "Alex Korne",
-      "text1": "edited station ",
-      "record_id": "",
-      "text2": "",
-      "station_id": "006e5207-506c-4dc4-9bb9-3fd13c895121",
-      "text3": " old data: {\"name\":\"sdgsbsbsebsbsebsebsebse\",\"city\":\"bsebsevsbsvzsrv\\\\sv\",\"county\":\"s\\\\ev\\\\sev\\\\sdvsrfbxfbfbxftjfthth\",\"latitude\":\"50\",\"longitude\":\"-7\"}, new data: {\"name\":\"Llanfair­pwllgwyngyll­gogery­chwyrn­drobwll­llan­tysilio­gogo­goch \",\"city\":\"bsebsevsbsvzsrv\\\\sv\",\"county\":\"s\\\\ev\\\\sev\\\\sdvsrfbxfbfbxftjfthth\",\"latitude\":\"50\",\"longitude\":\"-7\"}"
-    },
-    {
-      "id": 45,
-      "date": "21/08/2025",
-      "time": "10:37:41",
-      "user": "Alex Korne",
-      "text1": "edited station ",
-      "record_id": "",
-      "text2": "",
-      "station_id": "006e5207-506c-4dc4-9bb9-3fd13c895121",
-      "text3": " old data: {\"name\":\"Llanfair­pwllgwyngyll­gogery­chwyrn­drobwll­llan­tysilio­gogo­goch \",\"city\":\"bsebsevsbsvzsrv\\\\sv\",\"county\":\"s\\\\ev\\\\sev\\\\sdvsrfbxfbfbxftjfthth\",\"latitude\":\"50\",\"longitude\":\"-7\"}, new data: {\"name\":\"Llanfair­pwllgwyngyll­gogery­chwyrn­drobwll­llan­tysilio­gogo­goch \",\"city\":\"bsebsevsbsvzsrv\\\\sv\",\"county\":\"s\\\\ev\\\\sev\\\\sdvsrfbxfbfbxftjft\",\"latitude\":\"50\",\"longitude\":\"-7\"}"
-    },
-    {
       "id": 46,
       "date": "21/08/2025",
       "time": "10:38:42",
@@ -1660,17 +1298,6 @@
       "text2": " with ID: ",
       "station_id": "42615d12-abdf-4073-a50a-403f4d3bb84a",
       "text3": ""
-    },
-    {
-      "id": 47,
-      "date": "21/08/2025",
-      "time": "10:40:08",
-      "user": "Alex Korne",
-      "text1": "edited station ",
-      "record_id": "",
-      "text2": "",
-      "station_id": "42615d12-abdf-4073-a50a-403f4d3bb84a",
-      "text3": " old data: {\"name\":\"sdgsbsbsebsbsebsebsebse\",\"city\":\"bsebsevsbsvzsrv\\\\sv\",\"county\":\"sdssdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsds\",\"latitude\":\"50\",\"longitude\":\"-7\"}, new data: {\"name\":\"sdgsbsbsebsbsebsebsebse\",\"city\":\"bsebsevsbsvzsrv\\\\sv\",\"county\":\"dsdsdsdsdsdsdsdsdsdsdsdsdsdsds\",\"latitude\":\"50\",\"longitude\":\"-7\"}"
     },
     {
       "id": 48,
@@ -1693,17 +1320,6 @@
       "text2": " with ID: ",
       "station_id": "8ba25b98-2617-42ef-8fd3-98be93ed57bc",
       "text3": ""
-    },
-    {
-      "id": 50,
-      "date": "21/08/2025",
-      "time": "10:41:08",
-      "user": "Alex Korne",
-      "text1": "edited station ",
-      "record_id": "",
-      "text2": "",
-      "station_id": "8ba25b98-2617-42ef-8fd3-98be93ed57bc",
-      "text3": " old data: {\"name\":\"sdgsbsbsebsbsebsebsebse\",\"city\":\"bsebsevsbsvzsrv\\\\sv\",\"county\":\"dsdsdsdsdsdsdsdsdsdsdsdsdsds\",\"latitude\":\"50\",\"longitude\":\"-7\"}, new data: {\"name\":\"sdgsbsbsebsbsebsebsebse\",\"city\":\"bsebsevsbsvzsrv\\\\sv\",\"county\":\"dsdsdsdsdsdsddsdsdsdsdsds\",\"latitude\":\"50\",\"longitude\":\"-7\"}"
     },
     {
       "id": 51,
@@ -2135,39 +1751,6 @@
       "text3": ""
     },
     {
-      "id": 90,
-      "date": "23/08/2025",
-      "time": "13:37:35",
-      "user": "Alex Korne",
-      "text1": "edited station ",
-      "record_id": "",
-      "text2": "",
-      "station_id": "8cd883a9-2412-4a19-a802-aaa7a61ef0f1",
-      "text3": " old data: {\"name\":\"Dummy station\",\"city\":\"Dummy City\",\"county\":\"Dummy County\",\"latitude\":\"88\",\"longitude\":\"-7\"}, new data: {\"name\":\"Dummy station\",\"city\":\"Dummy City\",\"county\":\"Dummy County\",\"latitude\":\"66\",\"longitude\":\"-7\"}"
-    },
-    {
-      "id": 91,
-      "date": "23/08/2025",
-      "time": "13:38:00",
-      "user": "Alex Korne",
-      "text1": "edited station ",
-      "record_id": "",
-      "text2": "",
-      "station_id": "8cd883a9-2412-4a19-a802-aaa7a61ef0f1",
-      "text3": " old data: {\"name\":\"Dummy station\",\"city\":\"Dummy City\",\"county\":\"Dummy County\",\"latitude\":\"66\",\"longitude\":\"-7\"}, new data: {\"name\":\"Dummy edited\",\"city\":\"Dummy City\",\"county\":\"Dummy County\",\"latitude\":\"44\",\"longitude\":\"-7\"}"
-    },
-    {
-      "id": 92,
-      "date": "23/08/2025",
-      "time": "13:40:01",
-      "user": "Alex Korne",
-      "text1": "edited station ",
-      "record_id": "",
-      "text2": "",
-      "station_id": "8cd883a9-2412-4a19-a802-aaa7a61ef0f1",
-      "text3": " old data: {\"name\":\"Dummy edited\",\"city\":\"Dummy City\",\"county\":\"Dummy County\",\"latitude\":\"44\",\"longitude\":\"-7\"}, new data: {\"name\":\"Dummy edited\",\"city\":\"Dummy City\",\"county\":\"Dummy County\",\"latitude\":\"44\",\"longitude\":\"-7\"}"
-    },
-    {
       "id": 93,
       "date": "23/08/2025",
       "time": "13:47:06",
@@ -2179,347 +1762,6 @@
       "text3": " from OpenWeather"
     },
     {
-      "id": 94,
-      "date": "23/08/2025",
-      "time": "13:56:35",
-      "user": "Alex Korne",
-      "text1": "edited station ",
-      "record_id": "",
-      "text2": "",
-      "station_id": "a889a3d7-f85e-4c87-8d89-c826f1fb4e45",
-      "text3": " old data: {\"name\":\"Dummy station\",\"city\":\"Dummy City\",\"county\":\"Dummy County\",\"latitude\":\"52\",\"longitude\":\"-7\"}, new data: {\"name\":\"Dummy station\",\"city\":\"Dummy City\",\"county\":\"Dummy County\",\"latitude\":\"52\",\"longitude\":\"-7.0\"}"
-    },
-    {
-      "id": 95,
-      "date": "23/08/2025",
-      "time": "13:59:47",
-      "user": "Alex Korne",
-      "text1": "edited station ",
-      "record_id": "",
-      "text2": "",
-      "station_id": "d285da0d-a0a6-4f37-971b-2741bb4ddf5e",
-      "text3": " old data: {\"name\":\"Dummy station\",\"city\":\"Dummy City\",\"county\":\"Dummy County\",\"latitude\":\"52\",\"longitude\":\"-7\"}, new data: {\"name\":\"Dummy station\",\"city\":\"Dummy City\",\"county\":\"Dummy County\",\"latitude\":\"53.35645090\",\"longitude\":\"-9\"}"
-    },
-    {
-      "id": 96,
-      "date": "23/08/2025",
-      "time": "14:10:14",
-      "user": "Alex Korne",
-      "text1": "edited station ",
-      "record_id": "",
-      "text2": "",
-      "station_id": "eb07ccad-d7a9-4a2b-b332-91c3d78729cb",
-      "text3": " old data: {\"name\":\"WAT-001\",\"city\":\"Waterford\",\"county\":\"Waterford\",\"latitude\":\"52.25833\",\"longitude\":\"-7.11194\"}, new data: {\"name\":\"WAT-001\",\"city\":\"Waterford\",\"county\":\"Waterford\",\"latitude\":\"52.25833\",\"longitude\":\"-7.11194\"}"
-    },
-    {
-      "id": 97,
-      "date": "23/08/2025",
-      "time": "14:11:31",
-      "user": "Alex Korne",
-      "text1": "edited station ",
-      "record_id": "",
-      "text2": "",
-      "station_id": "a889a3d7-f85e-4c87-8d89-c826f1fb4e45",
-      "text3": " old data: {\"name\":\"Dummy station\",\"city\":\"Dummy City\",\"county\":\"Dummy County\",\"latitude\":\"52\",\"longitude\":\"-7.0\"}, new data: {\"name\":\"Dummy station\",\"city\":\"Dummy City\",\"county\":\"Dummy County\",\"latitude\":\"52\",\"longitude\":\"-7.0\"}"
-    },
-    {
-      "id": 98,
-      "date": "23/08/2025",
-      "time": "14:47:09",
-      "user": "Alex Korne",
-      "text1": "edited station ",
-      "record_id": "",
-      "text2": "",
-      "station_id": "537850d2-94bb-4a5d-a9e6-ea789c02cf39",
-      "text3": " old data: {\"name\":\"Dummy station\",\"city\":\"Dummy City\",\"county\":\"Dummy County\",\"latitude\":\"52\",\"longitude\":\"-7\"}, new data: {\"name\":\"Dummy station\",\"city\":\"Dummy City\",\"county\":\"Dummy County\",\"latitude\":\"\",\"longitude\":\"-7\"}"
-    },
-    {
-      "id": 99,
-      "date": "23/08/2025",
-      "time": "14:47:53",
-      "user": "Alex Korne",
-      "text1": "edited station ",
-      "record_id": "",
-      "text2": "",
-      "station_id": "537850d2-94bb-4a5d-a9e6-ea789c02cf39",
-      "text3": " old data: {\"name\":\"Dummy station\",\"city\":\"Dummy City\",\"county\":\"Dummy County\",\"latitude\":\"\",\"longitude\":\"-7\"}, new data: {\"name\":\"Dummy station\",\"city\":\"Dummy City\",\"county\":\"Dummy County\",\"latitude\":\"\",\"longitude\":\"-7\"}"
-    },
-    {
-      "id": 100,
-      "date": "23/08/2025",
-      "time": "14:56:07",
-      "user": "Alex Korne",
-      "text1": "edited station ",
-      "record_id": "",
-      "text2": "",
-      "station_id": "2eb00f1d-95ac-405f-96b0-db4f82869b90",
-      "text3": " old data: {\"name\":\"Dummy station\",\"city\":\"Dummy City\",\"county\":\"Dummy County\",\"latitude\":\"77\",\"longitude\":\"-7\"}, new data: {\"name\":\"Dummy station\",\"city\":\"Dummy City\",\"county\":\"Dummy County\",\"latitude\":\"77\",\"longitude\":\"-7\"}"
-    },
-    {
-      "id": 101,
-      "date": "23/08/2025",
-      "time": "15:14:02",
-      "user": "Alex Korne",
-      "text1": "edited station ",
-      "record_id": "",
-      "text2": "",
-      "station_id": "2eb00f1d-95ac-405f-96b0-db4f82869b90",
-      "text3": " old data: {\"name\":\"Dummy station\",\"city\":\"Dummy City\",\"county\":\"Dummy County\",\"latitude\":\"77\",\"longitude\":\"-7\"}, new data: {\"name\":\"Dummy station\",\"city\":\"Dummy City\",\"county\":\"Dummy County\",\"latitude\":\"77\",\"longitude\":\"-7\"}"
-    },
-    {
-      "id": 102,
-      "date": "23/08/2025",
-      "time": "15:16:04",
-      "user": "Alex Korne",
-      "text1": "edited station ",
-      "record_id": "",
-      "text2": "",
-      "station_id": "1f5f75f0-352e-43ca-83a7-e9d8d69931cb",
-      "text3": " old data: {\"name\":\"Dummy station\",\"city\":\"Dummy City\",\"county\":\"Dummy County\",\"latitude\":\"52\",\"longitude\":\"-7\"}, new data: {\"name\":\"Dummy station\",\"city\":\"Dummy City\",\"county\":\"Dummy County\",\"latitude\":\"52\",\"longitude\":\"-7\"}"
-    },
-    {
-      "id": 103,
-      "date": "23/08/2025",
-      "time": "15:16:29",
-      "user": "Alex Korne",
-      "text1": "edited station ",
-      "record_id": "",
-      "text2": "",
-      "station_id": "e044756a-0e4c-47f3-887b-7195827c9791",
-      "text3": " old data: {\"name\":\"Dummy station\",\"city\":\"Dummy City\",\"county\":\"Dummy County\",\"latitude\":\"52\",\"longitude\":\"-7\"}, new data: {\"name\":\"Dummy station\",\"city\":\"Dummy City\",\"county\":\"Dummy County\",\"latitude\":\"52\",\"longitude\":\"-7\"}"
-    },
-    {
-      "id": 104,
-      "date": "23/08/2025",
-      "time": "15:16:41",
-      "user": "Alex Korne",
-      "text1": "edited station ",
-      "record_id": "",
-      "text2": "",
-      "station_id": "537850d2-94bb-4a5d-a9e6-ea789c02cf39",
-      "text3": " old data: {\"name\":\"Dummy station\",\"city\":\"Dummy City\",\"county\":\"Dummy County\",\"latitude\":\"\",\"longitude\":\"-7\"}, new data: {\"name\":\"Dummy station\",\"city\":\"Dummy City\",\"county\":\"Dummy County\",\"latitude\":\"\",\"longitude\":\"-7\"}"
-    },
-    {
-      "id": 105,
-      "date": "23/08/2025",
-      "time": "15:17:04",
-      "user": "Alex Korne",
-      "text1": "edited station ",
-      "record_id": "",
-      "text2": "",
-      "station_id": "1f5f75f0-352e-43ca-83a7-e9d8d69931cb",
-      "text3": " old data: {\"name\":\"Dummy station\",\"city\":\"Dummy City\",\"county\":\"Dummy County\",\"latitude\":\"52\",\"longitude\":\"-7\"}, new data: {\"name\":\"Dummy station\",\"city\":\"Dummy City\",\"county\":\"Dummy County\",\"latitude\":\"52\",\"longitude\":\"-7\"}"
-    },
-    {
-      "id": 106,
-      "date": "23/08/2025",
-      "time": "15:17:56",
-      "user": "Alex Korne",
-      "text1": "edited station ",
-      "record_id": "",
-      "text2": "",
-      "station_id": "e044756a-0e4c-47f3-887b-7195827c9791",
-      "text3": " old data: {\"name\":\"Dummy station\",\"city\":\"Dummy City\",\"county\":\"Dummy County\",\"latitude\":\"52\",\"longitude\":\"-7\"}, new data: {\"name\":\"Dummy station\",\"city\":\"Dummy City\",\"county\":\"Dummy County\",\"latitude\":\"\",\"longitude\":\"-7\"}"
-    },
-    {
-      "id": 107,
-      "date": "23/08/2025",
-      "time": "15:18:51",
-      "user": "Alex Korne",
-      "text1": "edited station ",
-      "record_id": "",
-      "text2": "",
-      "station_id": "e044756a-0e4c-47f3-887b-7195827c9791",
-      "text3": " old data: {\"name\":\"Dummy station\",\"city\":\"Dummy City\",\"county\":\"Dummy County\",\"latitude\":\"\",\"longitude\":\"-7\"}, new data: {\"name\":\"Dummy station\",\"city\":\"Dummy City\",\"county\":\"Dummy County\",\"latitude\":\"\",\"longitude\":\"-7\"}"
-    },
-    {
-      "id": 108,
-      "date": "23/08/2025",
-      "time": "15:18:55",
-      "user": "Alex Korne",
-      "text1": "edited station ",
-      "record_id": "",
-      "text2": "",
-      "station_id": "e044756a-0e4c-47f3-887b-7195827c9791",
-      "text3": " old data: {\"name\":\"Dummy station\",\"city\":\"Dummy City\",\"county\":\"Dummy County\",\"latitude\":\"\",\"longitude\":\"-7\"}, new data: {\"name\":\"Dummy station\",\"city\":\"Dummy City\",\"county\":\"Dummy County\",\"latitude\":\"\",\"longitude\":\"-7\"}"
-    },
-    {
-      "id": 109,
-      "date": "23/08/2025",
-      "time": "15:19:12",
-      "user": "Alex Korne",
-      "text1": "edited station ",
-      "record_id": "",
-      "text2": "",
-      "station_id": "2eb00f1d-95ac-405f-96b0-db4f82869b90",
-      "text3": " old data: {\"name\":\"Dummy station\",\"city\":\"Dummy City\",\"county\":\"Dummy County\",\"latitude\":\"77\",\"longitude\":\"-7\"}, new data: {\"name\":\"Dummy station\",\"city\":\"Dummy City\",\"county\":\"Dummy County\",\"latitude\":\"77\",\"longitude\":\"-7\"}"
-    },
-    {
-      "id": 110,
-      "date": "23/08/2025",
-      "time": "15:28:00",
-      "user": "Alex Korne",
-      "text1": "edited station ",
-      "record_id": "",
-      "text2": "",
-      "station_id": "537850d2-94bb-4a5d-a9e6-ea789c02cf39",
-      "text3": " old data: {\"name\":\"Dummy station\",\"city\":\"Dummy City\",\"county\":\"Dummy County\",\"latitude\":\"\",\"longitude\":\"-7\"}, new data: {\"name\":\"Dummy station\",\"city\":\"Dummy City\",\"county\":\"Dummy County\",\"latitude\":\"\",\"longitude\":\"-7\"}"
-    },
-    {
-      "id": 111,
-      "date": "23/08/2025",
-      "time": "15:28:07",
-      "user": "Alex Korne",
-      "text1": "edited station ",
-      "record_id": "",
-      "text2": "",
-      "station_id": "e044756a-0e4c-47f3-887b-7195827c9791",
-      "text3": " old data: {\"name\":\"Dummy station\",\"city\":\"Dummy City\",\"county\":\"Dummy County\",\"latitude\":\"\",\"longitude\":\"-7\"}, new data: {\"name\":\"Dummy station\",\"city\":\"Dummy City\",\"county\":\"Dummy County\",\"latitude\":\"\",\"longitude\":\"-7\"}"
-    },
-    {
-      "id": 112,
-      "date": "23/08/2025",
-      "time": "16:09:31",
-      "user": "Alex Korne",
-      "text1": "edited station ",
-      "record_id": "",
-      "text2": "",
-      "station_id": "1f5f75f0-352e-43ca-83a7-e9d8d69931cb",
-      "text3": " old data: {\"name\":\"Dummy station\",\"city\":\"Dummy City\",\"county\":\"Dummy County\",\"latitude\":\"52\",\"longitude\":\"-7\"}, new data: {\"name\":\"Dummy station\",\"city\":\"Dummy City\",\"county\":\"Dummy County\",\"latitude\":\"52\",\"longitude\":\"-7\"}"
-    },
-    {
-      "id": 113,
-      "date": "23/08/2025",
-      "time": "16:09:56",
-      "user": "Alex Korne",
-      "text1": "edited station ",
-      "record_id": "",
-      "text2": "",
-      "station_id": "1f5f75f0-352e-43ca-83a7-e9d8d69931cb",
-      "text3": " old data: {\"name\":\"Dummy station\",\"city\":\"Dummy City\",\"county\":\"Dummy County\",\"latitude\":\"52\",\"longitude\":\"-7\"}, new data: {\"name\":\"Dummy station\",\"city\":\"Dummy City\",\"county\":\"Dummy County\",\"latitude\":\"52\",\"longitude\":\"-7\"}"
-    },
-    {
-      "id": 114,
-      "date": "23/08/2025",
-      "time": "16:10:33",
-      "user": "Alex Korne",
-      "text1": "edited station ",
-      "record_id": "",
-      "text2": "",
-      "station_id": "537850d2-94bb-4a5d-a9e6-ea789c02cf39",
-      "text3": " old data: {\"name\":\"Dummy station\",\"city\":\"Dummy City\",\"county\":\"Dummy County\",\"latitude\":\"\",\"longitude\":\"-7\"}, new data: {\"name\":\"Dummy station\",\"city\":\"Dummy City\",\"county\":\"Dummy County\",\"latitude\":\"\",\"longitude\":\"-7\"}"
-    },
-    {
-      "id": 115,
-      "date": "23/08/2025",
-      "time": "16:11:21",
-      "user": "Alex Korne",
-      "text1": "edited station ",
-      "record_id": "",
-      "text2": "",
-      "station_id": "2eb00f1d-95ac-405f-96b0-db4f82869b90",
-      "text3": " old data: {\"name\":\"Dummy station\",\"city\":\"Dummy City\",\"county\":\"Dummy County\",\"latitude\":\"77\",\"longitude\":\"-7\"}, new data: {\"name\":\"Dummy station\",\"city\":\"Dummy City\",\"county\":\"Dummy County\",\"latitude\":\"77\",\"longitude\":\"-7\"}"
-    },
-    {
-      "id": 116,
-      "date": "23/08/2025",
-      "time": "16:11:47",
-      "user": "Alex Korne",
-      "text1": "edited station ",
-      "record_id": "",
-      "text2": "",
-      "station_id": "1f5f75f0-352e-43ca-83a7-e9d8d69931cb",
-      "text3": " old data: {\"name\":\"Dummy station\",\"city\":\"Dummy City\",\"county\":\"Dummy County\",\"latitude\":\"52\",\"longitude\":\"-7\"}, new data: {\"name\":\"Dummy station\",\"city\":\"Dummy City\",\"county\":\"Dummy County\",\"latitude\":\"52\",\"longitude\":\"-7\"}"
-    },
-    {
-      "id": 117,
-      "date": "23/08/2025",
-      "time": "16:11:53",
-      "user": "Alex Korne",
-      "text1": "edited station ",
-      "record_id": "",
-      "text2": "",
-      "station_id": "537850d2-94bb-4a5d-a9e6-ea789c02cf39",
-      "text3": " old data: {\"name\":\"Dummy station\",\"city\":\"Dummy City\",\"county\":\"Dummy County\",\"latitude\":\"\",\"longitude\":\"-7\"}, new data: {\"name\":\"Dummy station\",\"city\":\"Dummy City\",\"county\":\"Dummy County\",\"latitude\":\"\",\"longitude\":\"-7\"}"
-    },
-    {
-      "id": 118,
-      "date": "23/08/2025",
-      "time": "16:13:06",
-      "user": "Alex Korne",
-      "text1": "edited station ",
-      "record_id": "",
-      "text2": "",
-      "station_id": "537850d2-94bb-4a5d-a9e6-ea789c02cf39",
-      "text3": " old data: {\"name\":\"Dummy station\",\"city\":\"Dummy City\",\"county\":\"Dummy County\",\"latitude\":\"\",\"longitude\":\"-7\"}, new data: {\"name\":\"Dummy station\",\"city\":\"Dummy City\",\"county\":\"Dummy County\",\"latitude\":\"\",\"longitude\":\"-7\"}"
-    },
-    {
-      "id": 119,
-      "date": "23/08/2025",
-      "time": "16:14:13",
-      "user": "Alex Korne",
-      "text1": "edited station ",
-      "record_id": "",
-      "text2": "",
-      "station_id": "537850d2-94bb-4a5d-a9e6-ea789c02cf39",
-      "text3": " old data: {\"name\":\"Dummy station\",\"city\":\"Dummy City\",\"county\":\"Dummy County\",\"latitude\":\"\",\"longitude\":\"-7\"}, new data: {\"name\":\"Dummy station\",\"city\":\"Dummy City\",\"county\":\"Dummy County\",\"latitude\":\"66\",\"longitude\":\"-7\"}"
-    },
-    {
-      "id": 120,
-      "date": "23/08/2025",
-      "time": "16:21:08",
-      "user": "Alex Korne",
-      "text1": "edited station ",
-      "record_id": "",
-      "text2": "",
-      "station_id": "1f5f75f0-352e-43ca-83a7-e9d8d69931cb",
-      "text3": " old data: {\"name\":\"Dummy station\",\"city\":\"Dummy City\",\"county\":\"Dummy County\",\"latitude\":\"52\",\"longitude\":\"-7\"}, new data: {\"name\":\"Dummy station\",\"city\":\"Dummy City\",\"county\":\"Dummy County\",\"latitude\":\"52\",\"longitude\":\"-7\"}"
-    },
-    {
-      "id": 121,
-      "date": "23/08/2025",
-      "time": "16:22:04",
-      "user": "Alex Korne",
-      "text1": "edited station ",
-      "record_id": "",
-      "text2": "",
-      "station_id": "e044756a-0e4c-47f3-887b-7195827c9791",
-      "text3": " old data: {\"name\":\"Dummy station\",\"city\":\"Dummy City\",\"county\":\"Dummy County\",\"latitude\":\"\",\"longitude\":\"-7\"}, new data: {\"name\":\"Dummy station\",\"city\":\"Dummy City\",\"county\":\"Dummy County\",\"latitude\":\"88\",\"longitude\":\"-7\"}"
-    },
-    {
-      "id": 122,
-      "date": "23/08/2025",
-      "time": "16:28:34",
-      "user": "Alex Korne",
-      "text1": "edited station ",
-      "record_id": "",
-      "text2": "",
-      "station_id": "e044756a-0e4c-47f3-887b-7195827c9791",
-      "text3": " old data: {\"name\":\"Dummy station\",\"city\":\"Dummy City\",\"county\":\"Dummy County\",\"latitude\":\"88\",\"longitude\":\"-7\"}, new data: {\"name\":\"Dummy station\",\"city\":\"Dummy City\",\"county\":\"Dummy County\",\"latitude\":\"55\",\"longitude\":\"-7\"}"
-    },
-    {
-      "id": 123,
-      "date": "23/08/2025",
-      "time": "16:28:52",
-      "user": "Alex Korne",
-      "text1": "edited station ",
-      "record_id": "",
-      "text2": "",
-      "station_id": "dcba1c5a-2579-4bda-88d4-6bf0d758dd06",
-      "text3": " old data: {\"name\":\"Dummy station\",\"city\":\"Dummy City\",\"county\":\"Dummy County\",\"latitude\":\"52\",\"longitude\":\"-7\"}, new data: {\"name\":\"Dummy station\",\"city\":\"Dummy City\",\"county\":\"Dummy County\",\"latitude\":\"52\",\"longitude\":\"10\"}"
-    },
-    {
-      "id": 124,
-      "date": "23/08/2025",
-      "time": "16:29:12",
-      "user": "Alex Korne",
-      "text1": "edited station ",
-      "record_id": "",
-      "text2": "",
-      "station_id": "dcba1c5a-2579-4bda-88d4-6bf0d758dd06",
-      "text3": " old data: {\"name\":\"Dummy station\",\"city\":\"Dummy City\",\"county\":\"Dummy County\",\"latitude\":\"52\",\"longitude\":\"10\"}, new data: {\"name\":\"Dummy station\",\"city\":\"Dummy City\",\"county\":\"Dummy County\",\"latitude\":\"52\",\"longitude\":\"-10\"}"
-    },
-    {
       "id": 125,
       "date": "23/08/2025",
       "time": "16:29:43",
@@ -2529,17 +1771,6 @@
       "text2": " to the station ",
       "station_id": "eb07ccad-d7a9-4a2b-b332-91c3d78729cb",
       "text3": "manually"
-    },
-    {
-      "id": 126,
-      "date": "23/08/2025",
-      "time": "16:30:07",
-      "user": "Alex Korne",
-      "text1": "edited record ",
-      "record_id": "ca21ea59-eb25-4ecc-8c42-22c91572e9d9",
-      "text2": " on the station ",
-      "station_id": "eb07ccad-d7a9-4a2b-b332-91c3d78729cb",
-      "text3": " old data: {\"code\":\"202\",\"temperature\":\"3\",\"wind_speed\":\"3\",\"wind_direction\":\"3\",\"pressure\":\"1000\"}, new data: {\"code\":\"202\",\"temperature\":\"4\",\"wind_speed\":\"2.99\",\"wind_direction\":\"34\",\"pressure\":\"1000\"}"
     },
     {
       "id": 127,
@@ -2562,17 +1793,6 @@
       "text2": " with ID: ",
       "station_id": "2eb00f1d-95ac-405f-96b0-db4f82869b90",
       "text3": ""
-    },
-    {
-      "id": 129,
-      "date": "23/08/2025",
-      "time": "16:53:26",
-      "user": "Alex Korne",
-      "text1": "edited station ",
-      "record_id": "",
-      "text2": "",
-      "station_id": "8fd8c21b-8398-4b6c-b160-23b7f95b0c6b",
-      "text3": " old data: {\"name\":\"GAL-001\",\"city\":\"Galway\",\"county\":\"Galway\",\"latitude\":\"53.35645090\",\"longitude\":\"-8.85341130\"}, new data: {\"name\":\"GAL-001\",\"city\":\"Galway\",\"county\":\"Galway\",\"latitude\":\"53.2740\",\"longitude\":\"-9.0513\"}"
     },
     {
       "id": 130,
@@ -2674,17 +1894,6 @@
       "text3": ""
     },
     {
-      "id": 139,
-      "date": "23/08/2025",
-      "time": "16:58:35",
-      "user": "Alex Korne",
-      "text1": "edited station ",
-      "record_id": "",
-      "text2": "",
-      "station_id": "dcba1c5a-2579-4bda-88d4-6bf0d758dd06",
-      "text3": " old data: {\"name\":\"Dummy station\",\"city\":\"Dummy City\",\"county\":\"Dummy County\",\"latitude\":\"52\",\"longitude\":\"-10\"}, new data: {\"name\":\"BEL-001\",\"city\":\"Belfast\",\"county\":\"NI\",\"latitude\":\"54.607868\",\"longitude\":\"-5.926437\"}"
-    },
-    {
       "id": 140,
       "date": "23/08/2025",
       "time": "16:59:12",
@@ -2694,28 +1903,6 @@
       "text2": " to the station ",
       "station_id": "dcba1c5a-2579-4bda-88d4-6bf0d758dd06",
       "text3": " from OpenWeather"
-    },
-    {
-      "id": 141,
-      "date": "23/08/2025",
-      "time": "17:01:31",
-      "user": "Alex Korne",
-      "text1": "edited station ",
-      "record_id": "",
-      "text2": "",
-      "station_id": "dcba1c5a-2579-4bda-88d4-6bf0d758dd06",
-      "text3": " old data: {\"name\":\"BEL-001\",\"city\":\"Belfast\",\"county\":\"NI\",\"latitude\":\"54.607868\",\"longitude\":\"-5.926437\"}, new data: {\"name\":\"BEL-001\",\"city\":\"Belfast\",\"county\":\"Antrim\",\"latitude\":\"54.607868\",\"longitude\":\"-5.926437\"}"
-    },
-    {
-      "id": 142,
-      "date": "23/08/2025",
-      "time": "17:02:52",
-      "user": "Alex Korne",
-      "text1": "edited station ",
-      "record_id": "",
-      "text2": "",
-      "station_id": "cce1f7d4-60c9-49ed-93f2-e453c15ab051",
-      "text3": " old data: {\"name\":\"Dummy station\",\"city\":\"Dummy City\",\"county\":\"Dummy County\",\"latitude\":\"52\",\"longitude\":\"-7\"}, new data: {\"name\":\"DUB-001\",\"city\":\"Dublin\",\"county\":\"Dublin\",\"latitude\":\"53.350140\",\"longitude\":\"-6.266155\"}"
     },
     {
       "id": 143,
@@ -2729,17 +1916,6 @@
       "text3": " from OpenWeather"
     },
     {
-      "id": 144,
-      "date": "23/08/2025",
-      "time": "17:03:57",
-      "user": "Alex Korne",
-      "text1": "edited station ",
-      "record_id": "",
-      "text2": "",
-      "station_id": "a889a3d7-f85e-4c87-8d89-c826f1fb4e45",
-      "text3": " old data: {\"name\":\"Dummy station\",\"city\":\"Dummy City\",\"county\":\"Dummy County\",\"latitude\":\"52\",\"longitude\":\"-7.0\"}, new data: {\"name\":\"LIM-001\",\"city\":\"Limerick\",\"county\":\"Limerick\",\"latitude\":\"52.668018\",\"longitude\":\"-8.630498\"}"
-    },
-    {
       "id": 145,
       "date": "23/08/2025",
       "time": "17:04:01",
@@ -2749,17 +1925,6 @@
       "text2": " to the station ",
       "station_id": "a889a3d7-f85e-4c87-8d89-c826f1fb4e45",
       "text3": " from OpenWeather"
-    },
-    {
-      "id": 146,
-      "date": "23/08/2025",
-      "time": "17:05:45",
-      "user": "Alex Korne",
-      "text1": "edited station ",
-      "record_id": "",
-      "text2": "",
-      "station_id": "1f5f75f0-352e-43ca-83a7-e9d8d69931cb",
-      "text3": " old data: {\"name\":\"Dummy station\",\"city\":\"Dummy City\",\"county\":\"Dummy County\",\"latitude\":\"52\",\"longitude\":\"-7\"}, new data: {\"name\":\"KIL-001\",\"city\":\"Kilkenny\",\"county\":\"Killkenny\",\"latitude\":\"52.6477\",\"longitude\":\"-7.2561\"}"
     },
     {
       "id": 147,
@@ -2773,17 +1938,6 @@
       "text3": " from OpenWeather"
     },
     {
-      "id": 148,
-      "date": "23/08/2025",
-      "time": "17:07:22",
-      "user": "Alex Korne",
-      "text1": "edited station ",
-      "record_id": "",
-      "text2": "",
-      "station_id": "0ded1343-6105-4ca9-b3ca-c930a0a20a79",
-      "text3": " old data: {\"name\":\"Dummy station\",\"city\":\"Dummy City\",\"county\":\"Dummy County\",\"latitude\":\"52\",\"longitude\":\"-7\"}, new data: {\"name\":\"WEX-001\",\"city\":\"Wexford\",\"county\":\"Wexford\",\"latitude\":\"52.3369\",\"longitude\":\"6.4633\"}"
-    },
-    {
       "id": 149,
       "date": "23/08/2025",
       "time": "17:07:25",
@@ -2793,28 +1947,6 @@
       "text2": " to the station ",
       "station_id": "0ded1343-6105-4ca9-b3ca-c930a0a20a79",
       "text3": " from OpenWeather"
-    },
-    {
-      "id": 150,
-      "date": "23/08/2025",
-      "time": "17:07:43",
-      "user": "Alex Korne",
-      "text1": "edited station ",
-      "record_id": "",
-      "text2": "",
-      "station_id": "0ded1343-6105-4ca9-b3ca-c930a0a20a79",
-      "text3": " old data: {\"name\":\"WEX-001\",\"city\":\"Wexford\",\"county\":\"Wexford\",\"latitude\":\"52.3369\",\"longitude\":\"6.4633\"}, new data: {\"name\":\"WEX-001\",\"city\":\"Wexford\",\"county\":\"Wexford\",\"latitude\":\"52.3369\",\"longitude\":\"-6.4633\"}"
-    },
-    {
-      "id": 151,
-      "date": "23/08/2025",
-      "time": "17:13:09",
-      "user": "Alex Korne",
-      "text1": "edited station ",
-      "record_id": "",
-      "text2": "",
-      "station_id": "d285da0d-a0a6-4f37-971b-2741bb4ddf5e",
-      "text3": " old data: {\"name\":\"Dummy station\",\"city\":\"Dummy City\",\"county\":\"Dummy County\",\"latitude\":\"53.35645090\",\"longitude\":\"-9\"}, new data: {\"name\":\"TRA-001\",\"city\":\"Tralee\",\"county\":\"Co. Kerry\",\"latitude\":\"52.2675\",\"longitude\":\"-9.6962\"}"
     },
     {
       "id": 152,
@@ -2880,7 +2012,8 @@
       "record_id": "",
       "text2": "",
       "station_id": "b76e0253-86f3-4c7a-b2ac-ac1dd0be9f80",
-      "text3": " old data: {\"name\":\"CORK-001\",\"city\":\"Cork\",\"county\":\"Cork\",\"latitude\":\"51.89797\",\"longitude\":\"-8.47061\"}, new data: {\"name\":\"COR-001\",\"city\":\"Cork\",\"county\":\"Cork\",\"latitude\":\"51.89797\",\"longitude\":\"-8.47061\"}"
+      "text3": " old data: {\"name\":\"CORK-001\",\"location\":\"Cork\",\"country\":\"Cork\",\"latitude\":\"51.89797\",\"longitude\":\"-8.47061\"},",
+      "text4": "new data: {\"name\":\"COR-001\",\"location\":\"Cork\",\"country\":\"Cork\",\"latitude\":\"51.89797\",\"longitude\":\"-8.47061\"}"
     },
     {
       "id": 158,
@@ -2946,7 +2079,8 @@
       "record_id": "",
       "text2": "",
       "station_id": "d285da0d-a0a6-4f37-971b-2741bb4ddf5e",
-      "text3": " old data: {\"name\":\"TRA-001\",\"city\":\"Tralee\",\"county\":\"Co. Kerry\",\"latitude\":\"52.2675\",\"longitude\":\"-9.6962\"}, new data: {\"name\":\"TRA-001\",\"city\":\"Tralee\",\"county\":\"Kerry\",\"latitude\":\"52.2675\",\"longitude\":\"-9.6962\"}"
+      "text3": " old data: {\"name\":\"TRA-001\",\"location\":\"Tralee\",\"country\":\"Co. Kerry\",\"latitude\":\"52.2675\",\"longitude\":\"-9.6962\"},",
+      "text4": " new data: {\"name\":\"TRA-001\",\"location\":\"Tralee\",\"country\":\"Kerry\",\"latitude\":\"52.2675\",\"longitude\":\"-9.6962\"}"
     },
     {
       "id": 164,
@@ -2979,7 +2113,8 @@
       "record_id": "16269087-abfb-4f23-93df-82be537a57c8",
       "text2": " on the station ",
       "station_id": "eb07ccad-d7a9-4a2b-b332-91c3d78729cb",
-      "text3": " old data: {\"code\":\"HACKED\",\"temperature\":\"2\",\"wind_speed\":\"2\",\"wind_direction\":\"2\",\"pressure\":\"1000\"}, new data: {\"code\":\"HACKED\",\"temperature\":\"2\",\"wind_speed\":\"2\",\"wind_direction\":\"2\",\"pressure\":\"3000\"}"
+      "text3": " old data: {\"code\":\"HACKED\",\"temperature\":\"2\",\"wind_speed\":\"2\",\"wind_direction\":\"2\",\"pressure\":\"1000\"},",
+      "text4": " new data: {\"code\":\"HACKED\",\"temperature\":\"2\",\"wind_speed\":\"2\",\"wind_direction\":\"2\",\"pressure\":\"3000\"}"
     },
     {
       "id": 167,
@@ -2990,7 +2125,8 @@
       "record_id": "16269087-abfb-4f23-93df-82be537a57c8",
       "text2": " on the station ",
       "station_id": "eb07ccad-d7a9-4a2b-b332-91c3d78729cb",
-      "text3": " old data: {\"code\":\"HACKED\",\"temperature\":\"2\",\"wind_speed\":\"2\",\"wind_direction\":\"2\",\"pressure\":\"3000\"}, new data: {\"code\":\"HACKED\",\"temperature\":\"999\",\"wind_speed\":\"-999\",\"wind_direction\":\"-999\",\"pressure\":\"3000\"}"
+      "text3": " old data: {\"code\":\"HACKED\",\"temperature\":\"2\",\"wind_speed\":\"2\",\"wind_direction\":\"2\",\"pressure\":\"3000\"},",
+      "text4": " new data: {\"code\":\"HACKED\",\"temperature\":\"999\",\"wind_speed\":\"-999\",\"wind_direction\":\"-999\",\"pressure\":\"3000\"}"
     },
     {
       "id": 168,
@@ -3002,6 +2138,689 @@
       "text2": " from the station ",
       "station_id": "eb07ccad-d7a9-4a2b-b332-91c3d78729cb",
       "text3": ""
+    },
+    {
+      "id": 169,
+      "date": "23/08/2025",
+      "time": "18:53:53",
+      "user": "Alex Korne",
+      "text1": "added record ",
+      "record_id": "60f38d78-a817-4da6-9e9e-c19618768b8e",
+      "text2": " to the station ",
+      "station_id": "d92dcfde-b484-4da2-afa0-503391d95dc4",
+      "text3": " from OpenWeather"
+    },
+    {
+      "id": 170,
+      "date": "24/08/2025",
+      "time": "11:13:29",
+      "user": "Alex Korne",
+      "text1": "added record ",
+      "record_id": "60292ec1-19d7-4503-8dc4-8d6cdea6e77e",
+      "text2": " to the station ",
+      "station_id": "0b10c7c2-6559-45b0-9f03-66bd9a37643c",
+      "text3": " from OpenWeather"
+    },
+    {
+      "id": 171,
+      "date": "24/08/2025",
+      "time": "11:51:08",
+      "user": "Alex Korne",
+      "text1": "created station ",
+      "record_id": "test",
+      "text2": " with ID: ",
+      "station_id": "99a99bf4-8c9e-4750-b32d-de18dda04f4a",
+      "text3": ""
+    },
+    {
+      "id": 172,
+      "date": "24/08/2025",
+      "time": "11:51:18",
+      "user": "Alex Korne",
+      "text1": "deleted station ",
+      "record_id": "test",
+      "text2": " with ID: ",
+      "station_id": "99a99bf4-8c9e-4750-b32d-de18dda04f4a",
+      "text3": ""
+    },
+    {
+      "id": 173,
+      "date": "24/08/2025",
+      "time": "12:47:59",
+      "user": "Alex Korne",
+      "text1": "added record ",
+      "record_id": "dde122f1-d2b2-4486-980c-9e7cf4fd120d",
+      "text2": " to the station ",
+      "station_id": "dcba1c5a-2579-4bda-88d4-6bf0d758dd06",
+      "text3": " from OpenWeather"
+    },
+    {
+      "id": 174,
+      "date": "24/08/2025",
+      "time": "12:47:59",
+      "user": "Alex Korne",
+      "text1": "added record ",
+      "record_id": "57eb05fd-b8b9-4aac-b625-0918a3c8ab8c",
+      "text2": " to the station ",
+      "station_id": "cce1f7d4-60c9-49ed-93f2-e453c15ab051",
+      "text3": " from OpenWeather"
+    },
+    {
+      "id": 175,
+      "date": "24/08/2025",
+      "time": "12:47:59",
+      "user": "Alex Korne",
+      "text1": "added record ",
+      "record_id": "dd0ef13b-7609-4a92-a1e5-c2cde35fad3b",
+      "text2": " to the station ",
+      "station_id": "1f5f75f0-352e-43ca-83a7-e9d8d69931cb",
+      "text3": " from OpenWeather"
+    },
+    {
+      "id": 176,
+      "date": "24/08/2025",
+      "time": "12:47:59",
+      "user": "Alex Korne",
+      "text1": "added record ",
+      "record_id": "0cd97bce-8a87-446c-903b-db90a789d0b4",
+      "text2": " to the station ",
+      "station_id": "d285da0d-a0a6-4f37-971b-2741bb4ddf5e",
+      "text3": " from OpenWeather"
+    },
+    {
+      "id": 177,
+      "date": "24/08/2025",
+      "time": "12:54:15",
+      "user": "Alex Korne",
+      "text1": "added record ",
+      "record_id": "eec069d6-1a19-43bb-8465-b2af20e6e046",
+      "text2": " to the station ",
+      "station_id": "a889a3d7-f85e-4c87-8d89-c826f1fb4e45",
+      "text3": " from OpenWeather"
+    },
+    {
+      "id": 178,
+      "date": "24/08/2025",
+      "time": "12:54:15",
+      "user": "Alex Korne",
+      "text1": "added record ",
+      "record_id": "8f0fba5a-90df-4ac1-a8e5-b88000f78c59",
+      "text2": " to the station ",
+      "station_id": "d285da0d-a0a6-4f37-971b-2741bb4ddf5e",
+      "text3": " from OpenWeather"
+    },
+    {
+      "id": 179,
+      "date": "24/08/2025",
+      "time": "12:54:15",
+      "user": "Alex Korne",
+      "text1": "added record ",
+      "record_id": "32939ffe-4c5f-4277-8d25-3449ae2881ca",
+      "text2": " to the station ",
+      "station_id": "0ded1343-6105-4ca9-b3ca-c930a0a20a79",
+      "text3": " from OpenWeather"
+    },
+    {
+      "id": 180,
+      "date": "24/08/2025",
+      "time": "12:54:15",
+      "user": "Alex Korne",
+      "text1": "added record ",
+      "record_id": "64130f9d-283c-4e7e-8766-0978b90b07be",
+      "text2": " to the station ",
+      "station_id": "cce1f7d4-60c9-49ed-93f2-e453c15ab051",
+      "text3": " from OpenWeather"
+    },
+    {
+      "id": 181,
+      "date": "24/08/2025",
+      "time": "12:57:00",
+      "user": "Alex Korne",
+      "text1": "added record ",
+      "record_id": "b4b45ac7-f2dc-41d1-bfb6-ad27782983cd",
+      "text2": " to the station ",
+      "station_id": "eb07ccad-d7a9-4a2b-b332-91c3d78729cb",
+      "text3": " from OpenWeather"
+    },
+    {
+      "id": 182,
+      "date": "24/08/2025",
+      "time": "12:57:00",
+      "user": "Alex Korne",
+      "text1": "added record ",
+      "record_id": "5f51c18b-866c-49b2-90e1-284579e07079",
+      "text2": " to the station ",
+      "station_id": "a889a3d7-f85e-4c87-8d89-c826f1fb4e45",
+      "text3": " from OpenWeather"
+    },
+    {
+      "id": 183,
+      "date": "24/08/2025",
+      "time": "12:57:00",
+      "user": "Alex Korne",
+      "text1": "added record ",
+      "record_id": "c5847eee-ded2-463f-a43e-5931d32d7036",
+      "text2": " to the station ",
+      "station_id": "2e805229-48ea-4ff7-b42a-5b0049c69a6c",
+      "text3": " from OpenWeather"
+    },
+    {
+      "id": 184,
+      "date": "24/08/2025",
+      "time": "12:57:00",
+      "user": "Alex Korne",
+      "text1": "added record ",
+      "record_id": "e27c87bb-2c7d-4e9a-956a-01604fcf7b26",
+      "text2": " to the station ",
+      "station_id": "d92dcfde-b484-4da2-afa0-503391d95dc4",
+      "text3": " from OpenWeather"
+    },
+    {
+      "id": 185,
+      "date": "24/08/2025",
+      "time": "13:36:06",
+      "user": "Alex Korne",
+      "text1": "added record ",
+      "record_id": "2fc21725-8929-49e9-b6fd-18ae2697b8e7",
+      "text2": " to the station ",
+      "station_id": "eb07ccad-d7a9-4a2b-b332-91c3d78729cb",
+      "text3": " from OpenWeather"
+    },
+    {
+      "id": 186,
+      "date": "24/08/2025",
+      "time": "13:36:06",
+      "user": "Alex Korne",
+      "text1": "added record ",
+      "record_id": "0e9564cc-9732-43ee-8a9a-384d6fa25071",
+      "text2": " to the station ",
+      "station_id": "8fd8c21b-8398-4b6c-b160-23b7f95b0c6b",
+      "text3": " from OpenWeather"
+    },
+    {
+      "id": 187,
+      "date": "24/08/2025",
+      "time": "13:36:06",
+      "user": "Alex Korne",
+      "text1": "added record ",
+      "record_id": "82224ccc-9891-479c-bcc9-c6708fefc5c9",
+      "text2": " to the station ",
+      "station_id": "0ded1343-6105-4ca9-b3ca-c930a0a20a79",
+      "text3": " from OpenWeather"
+    },
+    {
+      "id": 188,
+      "date": "24/08/2025",
+      "time": "13:36:06",
+      "user": "Alex Korne",
+      "text1": "added record ",
+      "record_id": "6bee422b-cc32-4e1d-af26-db5ef38f51af",
+      "text2": " to the station ",
+      "station_id": "1f5f75f0-352e-43ca-83a7-e9d8d69931cb",
+      "text3": " from OpenWeather"
+    },
+    {
+      "id": 189,
+      "date": "24/08/2025",
+      "time": "13:36:06",
+      "user": "Alex Korne",
+      "text1": "added record ",
+      "record_id": "902e5cef-9b3f-4b7f-bf8b-aec684b4ac46",
+      "text2": " to the station ",
+      "station_id": "d285da0d-a0a6-4f37-971b-2741bb4ddf5e",
+      "text3": " from OpenWeather"
+    },
+    {
+      "id": 190,
+      "date": "24/08/2025",
+      "time": "13:36:06",
+      "user": "Alex Korne",
+      "text1": "added record ",
+      "record_id": "5e30d71c-b1ae-4a70-8012-f74260042411",
+      "text2": " to the station ",
+      "station_id": "2e805229-48ea-4ff7-b42a-5b0049c69a6c",
+      "text3": " from OpenWeather"
+    },
+    {
+      "id": 191,
+      "date": "24/08/2025",
+      "time": "14:14:47",
+      "user": "Alex Korne",
+      "text1": "restored station ",
+      "record_id": "test",
+      "text2": " with ID: ",
+      "station_id": "99a99bf4-8c9e-4750-b32d-de18dda04f4a",
+      "text3": ""
+    },
+    {
+      "id": 192,
+      "date": "24/08/2025",
+      "time": "14:14:56",
+      "user": "Alex Korne",
+      "text1": "edited station ",
+      "record_id": "",
+      "text2": "",
+      "station_id": "99a99bf4-8c9e-4750-b32d-de18dda04f4a",
+      "text3": " old data: {\"name\":\"test\",\"location\":\"test\",\"country\":\"test\",\"latitude\":\"44\",\"longitude\":\"44\"},",
+      "text4": " new data: {\"name\":\"test\",\"location\":\"test\",\"country\":\"test\",\"latitude\":\"44\",\"longitude\":\"55\"}"
+    },
+    {
+      "id": 193,
+      "date": "24/08/2025",
+      "time": "14:15:01",
+      "user": "Alex Korne",
+      "text1": "deleted station ",
+      "record_id": "test",
+      "text2": " with ID: ",
+      "station_id": "99a99bf4-8c9e-4750-b32d-de18dda04f4a",
+      "text3": ""
+    },
+    {
+      "id": 194,
+      "date": "24/08/2025",
+      "time": "14:19:10",
+      "user": "Alex Korne",
+      "text1": "restored station ",
+      "record_id": "test",
+      "text2": " with ID: ",
+      "station_id": "99a99bf4-8c9e-4750-b32d-de18dda04f4a",
+      "text3": ""
+    },
+    {
+      "id": 196,
+      "date": "24/08/2025",
+      "time": "14:23:14",
+      "user": "Alex Korne",
+      "text1": "edited station ",
+      "record_id": "",
+      "text2": "",
+      "station_id": "99a99bf4-8c9e-4750-b32d-de18dda04f4a",
+      "text3": " old data: {\"name\":\"test\",\"location\":\"test\",\"country\":\"test\",\"latitude\":\"44\",\"longitude\":\"33\"},",
+      "text4": " new data: {\"name\":\"test\",\"location\":\"test\",\"country\":\"test\",\"latitude\":\"44\",\"longitude\":\"55\"}"
+    },
+    {
+      "id": 197,
+      "date": "24/08/2025",
+      "time": "14:37:07",
+      "user": "test test",
+      "text1": "added record ",
+      "record_id": "d62dacbc-a337-4537-a770-ee3952ad785a",
+      "text2": " to the station ",
+      "station_id": "1f5f75f0-352e-43ca-83a7-e9d8d69931cb",
+      "text3": " from OpenWeather",
+      "text4": ""
+    },
+    {
+      "id": 198,
+      "date": "24/08/2025",
+      "time": "14:37:07",
+      "user": "test test",
+      "text1": "added record ",
+      "record_id": "273027ea-a69c-438d-a02e-338e0ab9394f",
+      "text2": " to the station ",
+      "station_id": "2e805229-48ea-4ff7-b42a-5b0049c69a6c",
+      "text3": " from OpenWeather",
+      "text4": ""
+    },
+    {
+      "id": 199,
+      "date": "24/08/2025",
+      "time": "14:37:07",
+      "user": "test test",
+      "text1": "added record ",
+      "record_id": "368a016b-6e8b-45df-b017-8bb4ae7c4c0c",
+      "text2": " to the station ",
+      "station_id": "d92dcfde-b484-4da2-afa0-503391d95dc4",
+      "text3": " from OpenWeather",
+      "text4": ""
+    },
+    {
+      "id": 200,
+      "date": "24/08/2025",
+      "time": "14:37:07",
+      "user": "test test",
+      "text1": "added record ",
+      "record_id": "ad95a0cd-21bc-4c51-b9ad-0c85b67db687",
+      "text2": " to the station ",
+      "station_id": "99a99bf4-8c9e-4750-b32d-de18dda04f4a",
+      "text3": " from OpenWeather",
+      "text4": ""
+    },
+    {
+      "id": 201,
+      "date": "24/08/2025",
+      "time": "14:37:07",
+      "user": "test test",
+      "text1": "added record ",
+      "record_id": "3981c97b-a9a6-4d2a-927f-4ff3712bd6d6",
+      "text2": " to the station ",
+      "station_id": "0ded1343-6105-4ca9-b3ca-c930a0a20a79",
+      "text3": " from OpenWeather",
+      "text4": ""
+    },
+    {
+      "id": 202,
+      "date": "24/08/2025",
+      "time": "14:38:18",
+      "user": "Alex Korne",
+      "text1": "deleted station ",
+      "record_id": "test",
+      "text2": " with ID: ",
+      "station_id": "99a99bf4-8c9e-4750-b32d-de18dda04f4a",
+      "text3": "",
+      "text4": ""
+    },
+    {
+      "id": 203,
+      "date": "24/08/2025",
+      "time": "14:38:49",
+      "user": "Alex Korne",
+      "text1": "added record ",
+      "record_id": "d58e1fe3-bc01-4e3a-ba3d-057f92237ef3",
+      "text2": " to the station ",
+      "station_id": "b76e0253-86f3-4c7a-b2ac-ac1dd0be9f80",
+      "text3": " from OpenWeather",
+      "text4": ""
+    },
+    {
+      "id": 204,
+      "date": "24/08/2025",
+      "time": "14:38:49",
+      "user": "Alex Korne",
+      "text1": "added record ",
+      "record_id": "829387de-1074-479b-a1c3-28d9210caf53",
+      "text2": " to the station ",
+      "station_id": "cce1f7d4-60c9-49ed-93f2-e453c15ab051",
+      "text3": " from OpenWeather",
+      "text4": ""
+    },
+    {
+      "id": 205,
+      "date": "24/08/2025",
+      "time": "14:38:49",
+      "user": "Alex Korne",
+      "text1": "added record ",
+      "record_id": "bafe188c-f388-4f13-a9cf-d25d25749e26",
+      "text2": " to the station ",
+      "station_id": "a889a3d7-f85e-4c87-8d89-c826f1fb4e45",
+      "text3": " from OpenWeather",
+      "text4": ""
+    },
+    {
+      "id": 206,
+      "date": "24/08/2025",
+      "time": "14:38:49",
+      "user": "Alex Korne",
+      "text1": "added record ",
+      "record_id": "a40d63f3-ecfe-4c87-b338-51aac7666662",
+      "text2": " to the station ",
+      "station_id": "0b10c7c2-6559-45b0-9f03-66bd9a37643c",
+      "text3": " from OpenWeather",
+      "text4": ""
+    },
+    {
+      "id": 207,
+      "date": "24/08/2025",
+      "time": "14:38:49",
+      "user": "Alex Korne",
+      "text1": "added record ",
+      "record_id": "a301a565-a508-4a3b-8525-521a861b9feb",
+      "text2": " to the station ",
+      "station_id": "d92dcfde-b484-4da2-afa0-503391d95dc4",
+      "text3": " from OpenWeather",
+      "text4": ""
+    },
+    {
+      "id": 208,
+      "date": "24/08/2025",
+      "time": "14:38:49",
+      "user": "Alex Korne",
+      "text1": "added record ",
+      "record_id": "4a8836dc-e281-4c28-b272-61addebc9dd8",
+      "text2": " to the station ",
+      "station_id": "2e805229-48ea-4ff7-b42a-5b0049c69a6c",
+      "text3": " from OpenWeather",
+      "text4": ""
+    },
+    {
+      "id": 209,
+      "date": "24/08/2025",
+      "time": "14:41:44",
+      "user": "Alex Korne",
+      "text1": "added record ",
+      "record_id": "38f8be8c-fb92-4128-a84b-cc294002a951",
+      "text2": " to the station ",
+      "station_id": "eb07ccad-d7a9-4a2b-b332-91c3d78729cb",
+      "text3": " from OpenWeather",
+      "text4": ""
+    },
+    {
+      "id": 210,
+      "date": "24/08/2025",
+      "time": "14:41:44",
+      "user": "Alex Korne",
+      "text1": "added record ",
+      "record_id": "d27f4d20-3c9f-43c2-96a1-7324c57c1e8e",
+      "text2": " to the station ",
+      "station_id": "b76e0253-86f3-4c7a-b2ac-ac1dd0be9f80",
+      "text3": " from OpenWeather",
+      "text4": ""
+    },
+    {
+      "id": 211,
+      "date": "24/08/2025",
+      "time": "14:41:44",
+      "user": "Alex Korne",
+      "text1": "added record ",
+      "record_id": "60f4b0b0-1d0d-4b92-9997-a6e64ee1739e",
+      "text2": " to the station ",
+      "station_id": "8fd8c21b-8398-4b6c-b160-23b7f95b0c6b",
+      "text3": " from OpenWeather",
+      "text4": ""
+    },
+    {
+      "id": 212,
+      "date": "24/08/2025",
+      "time": "14:41:44",
+      "user": "Alex Korne",
+      "text1": "added record ",
+      "record_id": "3638efe0-e134-4141-8fe9-d72771c752b5",
+      "text2": " to the station ",
+      "station_id": "dcba1c5a-2579-4bda-88d4-6bf0d758dd06",
+      "text3": " from OpenWeather",
+      "text4": ""
+    },
+    {
+      "id": 213,
+      "date": "24/08/2025",
+      "time": "14:41:44",
+      "user": "Alex Korne",
+      "text1": "added record ",
+      "record_id": "818ffc5a-d207-4293-89ab-a012623e1913",
+      "text2": " to the station ",
+      "station_id": "cce1f7d4-60c9-49ed-93f2-e453c15ab051",
+      "text3": " from OpenWeather",
+      "text4": ""
+    },
+    {
+      "id": 214,
+      "date": "24/08/2025",
+      "time": "14:41:44",
+      "user": "Alex Korne",
+      "text1": "added record ",
+      "record_id": "933a575c-d604-4421-9b80-f0535570fe80",
+      "text2": " to the station ",
+      "station_id": "a889a3d7-f85e-4c87-8d89-c826f1fb4e45",
+      "text3": " from OpenWeather",
+      "text4": ""
+    },
+    {
+      "id": 215,
+      "date": "24/08/2025",
+      "time": "14:41:44",
+      "user": "Alex Korne",
+      "text1": "added record ",
+      "record_id": "66d04d58-563c-4397-8e8a-e680ffea2664",
+      "text2": " to the station ",
+      "station_id": "1f5f75f0-352e-43ca-83a7-e9d8d69931cb",
+      "text3": " from OpenWeather",
+      "text4": ""
+    },
+    {
+      "id": 216,
+      "date": "24/08/2025",
+      "time": "14:41:44",
+      "user": "Alex Korne",
+      "text1": "added record ",
+      "record_id": "4abf1db2-ba29-4124-89fa-47ccf586bb44",
+      "text2": " to the station ",
+      "station_id": "0ded1343-6105-4ca9-b3ca-c930a0a20a79",
+      "text3": " from OpenWeather",
+      "text4": ""
+    },
+    {
+      "id": 217,
+      "date": "24/08/2025",
+      "time": "14:41:44",
+      "user": "Alex Korne",
+      "text1": "added record ",
+      "record_id": "a1ef194c-348c-4cbe-874e-ac45942d8e13",
+      "text2": " to the station ",
+      "station_id": "d285da0d-a0a6-4f37-971b-2741bb4ddf5e",
+      "text3": " from OpenWeather",
+      "text4": ""
+    },
+    {
+      "id": 218,
+      "date": "24/08/2025",
+      "time": "14:41:44",
+      "user": "Alex Korne",
+      "text1": "added record ",
+      "record_id": "6994e588-8a7e-4a9e-b60b-2f497c9d693b",
+      "text2": " to the station ",
+      "station_id": "d92dcfde-b484-4da2-afa0-503391d95dc4",
+      "text3": " from OpenWeather",
+      "text4": ""
+    },
+    {
+      "id": 219,
+      "date": "24/08/2025",
+      "time": "14:41:44",
+      "user": "Alex Korne",
+      "text1": "added record ",
+      "record_id": "3071e5e1-53f4-40d7-8bc8-e7fdd09249ec",
+      "text2": " to the station ",
+      "station_id": "0b10c7c2-6559-45b0-9f03-66bd9a37643c",
+      "text3": " from OpenWeather",
+      "text4": ""
+    },
+    {
+      "id": 220,
+      "date": "24/08/2025",
+      "time": "14:41:44",
+      "user": "Alex Korne",
+      "text1": "added record ",
+      "record_id": "ff664c1e-e38b-4e23-9fe1-ace5767f5cb2",
+      "text2": " to the station ",
+      "station_id": "2e805229-48ea-4ff7-b42a-5b0049c69a6c",
+      "text3": " from OpenWeather",
+      "text4": ""
+    },
+    {
+      "id": 221,
+      "date": "24/08/2025",
+      "time": "15:11:15",
+      "user": "Server",
+      "text1": "the user 34 32",
+      "record_id": "",
+      "text2": "has been created with email & ID: ",
+      "station_id": "",
+      "text3": "admffin@weathertop.com",
+      "text4": "6b5c2ece-e150-4950-a3eb-6dd043f4d82a"
+    },
+    {
+      "id": 222,
+      "date": "24/08/2025",
+      "time": "15:35:26",
+      "user": "Server",
+      "text1": "attempt to log in: ",
+      "record_id": "",
+      "text2": "",
+      "station_id": "",
+      "text3": "the login data is not entered",
+      "text4": ""
+    },
+    {
+      "id": 223,
+      "date": "24/08/2025",
+      "time": "15:35:34",
+      "user": "Server",
+      "text1": "attempt to log in with email: ",
+      "record_id": "",
+      "text2": "admin@weathertop.com",
+      "station_id": "",
+      "text3": "the password is incorrect",
+      "text4": ""
+    },
+    {
+      "id": 224,
+      "date": "24/08/2025",
+      "time": "15:35:44",
+      "user": "Server",
+      "text1": "attempt to log in with email: ",
+      "record_id": "",
+      "text2": "adminjjj@weathertop.com",
+      "station_id": "",
+      "text3": "user is not found",
+      "text4": ""
+    },
+    {
+      "id": 225,
+      "date": "24/08/2025",
+      "time": "15:35:53",
+      "user": "Alex Korne",
+      "text1": "has successfully logged in",
+      "record_id": "",
+      "text2": "",
+      "station_id": "",
+      "text3": "",
+      "text4": ""
+    },
+    {
+      "id": 226,
+      "date": "24/08/2025",
+      "time": "15:39:59",
+      "user": "Alex Korne",
+      "text1": "logged out",
+      "record_id": "",
+      "text2": "",
+      "station_id": "",
+      "text3": "",
+      "text4": ""
+    },
+    {
+      "id": 227,
+      "date": "24/08/2025",
+      "time": "15:40:01",
+      "user": "Alex Korne",
+      "text1": "has successfully logged in",
+      "record_id": "",
+      "text2": "",
+      "station_id": "",
+      "text3": "",
+      "text4": ""
+    },
+    {
+      "id": 228,
+      "date": "24/08/2025",
+      "time": "16:02:12",
+      "user": "Alex Korne",
+      "text1": "added record ",
+      "record_id": "769316d6-e280-4dab-b2ed-fe535efb3463",
+      "text2": " to the station ",
+      "station_id": "99a99bf4-8c9e-4750-b32d-de18dda04f4a",
+      "text3": " from OpenWeather",
+      "text4": ""
     }
   ]
 }

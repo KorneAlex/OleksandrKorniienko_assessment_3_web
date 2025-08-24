@@ -1,4 +1,6 @@
-import { usersStore } from "../models/user-store.js";
+import { usersStore } from "../models/users-store.js";
+import { adminsStore } from "../models/admins-store.js";
+
 
 export const accountsController = {
   async index(req, res) {
@@ -47,22 +49,28 @@ export const accountsController = {
     switch(accessGranted){
       case 1:
         const user = await usersStore.getUserByEmail(req.body.email);
-        res.cookie("loggedInUser", user.id, { httpOnly: true }); //copilot helped with this one :D
+        res.cookie("loggedInUser", user.id, { httpOnly: true }); //AI: copilot helped with this one :D
+        await adminsStore.createLog(`${user.firstName} ${user.lastName}`, "has successfully logged in", ``, ``, ``, ``, ``);
         res.redirect("/dashboard");
         break;
-      case 2:
-        res.render("login", { title: "Welcome!", "noUser": true, email: req.body.email });
-        break;
-      case 3:
-        res.render("login", { title: "Welcome!", "wrongPass": true, email: req.body.email });
-        break;
-      case 4:
-        res.render("login", { title: "Welcome!", "noPass": true, email: req.body.email });
-        break;
-      case 0:
-        res.render("login", { title: "Welcome!", "noLoginData": true, email: req.body.email });
-        break;
-      default:
+        case 2:
+          await adminsStore.createLog(`Server`, `attempt to log in with email: `, ``, req.body.email, ``, "user is not found", ``);
+          res.render("login", { title: "Welcome!", "noUser": true, email: req.body.email });
+          break;
+          case 3:
+            await adminsStore.createLog(`Server`, `attempt to log in with email: `, ``, req.body.email, ``, "the password is incorrect", ``);
+            res.render("login", { title: "Welcome!", "wrongPass": true, email: req.body.email });
+            break;
+            case 4:
+              await adminsStore.createLog(`Server`, `attempt to log in with email: `, ``, req.body.email, ``, "the password is not entered", ``);
+              res.render("login", { title: "Welcome!", "noPass": true, email: req.body.email });
+              break;
+              case 0:
+                await adminsStore.createLog(`Server`, `attempt to log in: `, ``, ``, ``, "the login data is not entered", ``);
+                res.render("login", { title: "Welcome!", "noLoginData": true, email: req.body.email });
+                break;
+                default:
+        await adminsStore.createLog(`Server`, `attempt to log in:`, ``, ``, ``, `unknown error`, ``);
         res.render("login", { title: "Welcome!", "unknownError": true, email: req.body.email });
         break;
     }
@@ -76,6 +84,8 @@ export const accountsController = {
     },
 
   async logout(req,res) {
+    const user = await usersStore.getUserById(req.cookies.loggedInUser);
+    await adminsStore.createLog(`${user.firstName} ${user.lastName}`, `logged out`, ``, ``, ``, ``, ``);
     res.cookie("loggedInUser", "", { httpOnly: true });
     // res.cookie("WEATHER_API_KEY", "", { httpOnly: true }); // TODO clear all cookies
     res.redirect("/");

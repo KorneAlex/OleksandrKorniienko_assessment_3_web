@@ -1,4 +1,7 @@
 /* layout */
+abbr {
+  text-decoration: none !important;
+}
 
 a {
     text-decoration: none !important;
@@ -72,7 +75,8 @@ body {
 
 .centered__table table {
     text-align: left;
-    position: relative;
+    white-space: normal !important;
+  word-break: break-word;
 }
 
 .centered__table th, .logs__table th {

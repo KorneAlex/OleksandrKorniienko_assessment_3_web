@@ -1,0 +1,47 @@
+<div class="p-2 dashboard__summary--element" style="width: 100% !important">
+    <div class="dashboard__summary--header is-flex is-flex-direction-row">
+        <div class="card-header-title">Station information</div>
+    </div>
+    <div class="card-content">
+        <table class="table is-narrow">
+            <tbody>
+                <tr>
+                    <th>Station ID</th>
+                    <td>{{currentStation.id}}</td>
+                </tr>
+                <tr>
+                    <th>Created</th>
+                    <td>{{currentStation.timestamp_created}}</td>
+                </tr>
+                <tr>
+                    <th>Created By</th>
+                    <td>{{currentStation.created_by}}</td>
+                </tr>
+                <tr>
+                    <th><abbr title="Created By User">Name</abbr>
+                    <td>{{currentStation.created_by_name}}</td>
+                </tr>
+                <tr>
+                    <th>Deleted</th>
+                    <td>{{currentStation.deleted}}</td>
+                </tr>
+                <tr>
+                    <th>Deleted On</th>
+                    <td>{{currentStation.deleted_timestamp}}</td>
+                </tr>
+                <tr>
+                    <th>Deleted By</th>
+                    <td>{{currentStation.deleted_by}}</td>
+                </tr>
+                <tr>
+                    <th><abbr title="Deleted By User">Name</abbr>
+                    <td>{{currentStation.deleted_by_name}}</td>
+                </tr>
+                <tr>
+                    <th>Last Updated</th>
+                    <td>{{currentStation.last_updated}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
