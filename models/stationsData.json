@@ -14,10 +14,13 @@
       "deleted": false,
       "deleted_timestamp": null,
       "deleted_by": null,
-      "last_updated": "24/08/2025 - 14:41:44",
+      "last_updated": "24/08/2025 - 22:37:51",
       "edited_by": "877835af-3a73-415a-b51b-27ae8426e599",
       "edited_by_name": "Alex Korne",
-      "timestamp_edited": "23/08/2025 - 14:10:14"
+      "timestamp_edited": "23/08/2025 - 14:10:14",
+      "last_updated_by": "877835af-3a73-415a-b51b-27ae8426e599",
+      "last_updated_with": " from OpenWeather",
+      "last_updated_by_name": "Alex Korne"
     },
     {
       "name": "Cork-001",
@@ -32,12 +35,15 @@
       "deleted": false,
       "deleted_timestamp": "21/08/2025 - 18:42:34",
       "deleted_by": "23260601-127c-4b43-b72c-fcf8e99fc0e6",
-      "last_updated": "24/08/2025 - 14:41:44",
+      "last_updated": "24/08/2025 - 22:37:52",
       "restored_by": "877835af-3a73-415a-b51b-27ae8426e599",
       "restored_timestamp": "21/08/2025 - 18:43:12",
       "edited_by": "877835af-3a73-415a-b51b-27ae8426e599",
       "edited_by_name": "Alex Korne",
-      "timestamp_edited": "23/08/2025 - 17:16:47"
+      "timestamp_edited": "23/08/2025 - 17:16:47",
+      "last_updated_by": "877835af-3a73-415a-b51b-27ae8426e599",
+      "last_updated_by_name": "Alex Korne",
+      "last_updated_with": " from OpenWeather"
     },
     {
       "name": "Galway-001",
@@ -52,10 +58,13 @@
       "deleted": false,
       "deleted_timestamp": null,
       "deleted_by": null,
-      "last_updated": "24/08/2025 - 14:41:44",
+      "last_updated": "24/08/2025 - 22:37:52",
       "edited_by": "877835af-3a73-415a-b51b-27ae8426e599",
       "edited_by_name": "Alex Korne",
-      "timestamp_edited": "23/08/2025 - 16:53:26"
+      "timestamp_edited": "23/08/2025 - 16:53:26",
+      "last_updated_by": "877835af-3a73-415a-b51b-27ae8426e599",
+      "last_updated_by_name": "Alex Korne",
+      "last_updated_with": " from OpenWeather"
     },
     {
       "name": "Belfast-001",
@@ -72,10 +81,13 @@
       "deleted_by": "877835af-3a73-415a-b51b-27ae8426e599",
       "restored_by": "877835af-3a73-415a-b51b-27ae8426e599",
       "restored_timestamp": "21/08/2025 - 11:49:45",
-      "last_updated": "24/08/2025 - 14:41:44",
+      "last_updated": "24/08/2025 - 22:37:52",
       "edited_by": "877835af-3a73-415a-b51b-27ae8426e599",
       "edited_by_name": "Alex Korne",
-      "timestamp_edited": "23/08/2025 - 17:01:31"
+      "timestamp_edited": "23/08/2025 - 17:01:31",
+      "last_updated_by": "877835af-3a73-415a-b51b-27ae8426e599",
+      "last_updated_by_name": "Alex Korne",
+      "last_updated_with": " from OpenWeather"
     },
     {
       "name": "Dublin-001",
@@ -92,10 +104,13 @@
       "deleted_by": "877835af-3a73-415a-b51b-27ae8426e599",
       "restored_by": "877835af-3a73-415a-b51b-27ae8426e599",
       "restored_timestamp": "21/08/2025 - 11:51:12",
-      "last_updated": "24/08/2025 - 14:41:44",
+      "last_updated": "24/08/2025 - 22:37:52",
       "edited_by": "877835af-3a73-415a-b51b-27ae8426e599",
       "edited_by_name": "Alex Korne",
-      "timestamp_edited": "23/08/2025 - 17:02:52"
+      "timestamp_edited": "23/08/2025 - 17:02:52",
+      "last_updated_by": "877835af-3a73-415a-b51b-27ae8426e599",
+      "last_updated_by_name": "Alex Korne",
+      "last_updated_with": " from OpenWeather"
     },
     {
       "name": "Limerick-001",
@@ -115,7 +130,10 @@
       "edited_by": "877835af-3a73-415a-b51b-27ae8426e599",
       "edited_by_name": "Alex Korne",
       "timestamp_edited": "23/08/2025 - 17:03:57",
-      "last_updated": "24/08/2025 - 14:41:44"
+      "last_updated": "24/08/2025 - 22:37:52",
+      "last_updated_by": "877835af-3a73-415a-b51b-27ae8426e599",
+      "last_updated_by_name": "Alex Korne",
+      "last_updated_with": " from OpenWeather"
     },
     {
       "name": "Dummy station",
@@ -153,7 +171,10 @@
       "edited_by": "877835af-3a73-415a-b51b-27ae8426e599",
       "edited_by_name": "Alex Korne",
       "timestamp_edited": "23/08/2025 - 17:05:45",
-      "last_updated": "24/08/2025 - 14:41:44"
+      "last_updated": "24/08/2025 - 22:37:52",
+      "last_updated_by": "877835af-3a73-415a-b51b-27ae8426e599",
+      "last_updated_by_name": "Alex Korne",
+      "last_updated_with": " from OpenWeather"
     },
     {
       "name": "Dummy station",
@@ -188,7 +209,10 @@
       "edited_by": "877835af-3a73-415a-b51b-27ae8426e599",
       "edited_by_name": "Alex Korne",
       "timestamp_edited": "23/08/2025 - 17:07:43",
-      "last_updated": "24/08/2025 - 14:41:44"
+      "last_updated": "24/08/2025 - 22:37:52",
+      "last_updated_by": "877835af-3a73-415a-b51b-27ae8426e599",
+      "last_updated_by_name": "Alex Korne",
+      "last_updated_with": " from OpenWeather"
     },
     {
       "name": "Tralee-001",
@@ -206,7 +230,10 @@
       "edited_by": "877835af-3a73-415a-b51b-27ae8426e599",
       "edited_by_name": "Alex Korne",
       "timestamp_edited": "23/08/2025 - 17:33:22",
-      "last_updated": "24/08/2025 - 14:41:44"
+      "last_updated": "24/08/2025 - 22:37:52",
+      "last_updated_by": "877835af-3a73-415a-b51b-27ae8426e599",
+      "last_updated_by_name": "Alex Korne",
+      "last_updated_with": " from OpenWeather"
     },
     {
       "name": "Dummy edited",
@@ -227,20 +254,26 @@
     },
     {
       "name": "Dummy station",
-      "location": "Dummy Location",
+      "location": "Dummy Locationss",
       "country": "Dummy Country",
-      "latitude": "77",
-      "longitude": "-7",
+      "latitude": "65",
+      "longitude": "-6",
       "id": "2eb00f1d-95ac-405f-96b0-db4f82869b90",
       "timestamp_created": "23/08/2025 - 13:35:37",
       "created_by": "877835af-3a73-415a-b51b-27ae8426e599",
       "created_by_name": "Alex Korne",
       "deleted": true,
-      "deleted_timestamp": "23/08/2025 - 16:37:04",
+      "deleted_timestamp": "24/08/2025 - 22:41:12",
       "deleted_by": "877835af-3a73-415a-b51b-27ae8426e599",
       "edited_by": "877835af-3a73-415a-b51b-27ae8426e599",
       "edited_by_name": "Alex Korne",
-      "timestamp_edited": "23/08/2025 - 16:11:21"
+      "timestamp_edited": "24/08/2025 - 22:40:57",
+      "restored_by": "877835af-3a73-415a-b51b-27ae8426e599",
+      "restored_timestamp": "24/08/2025 - 22:40:42",
+      "last_updated": "24/08/2025 - 22:41:02",
+      "last_updated_by": "877835af-3a73-415a-b51b-27ae8426e599",
+      "last_updated_by_name": "Alex Korne",
+      "last_updated_with": " from OpenWeather"
     },
     {
       "name": "Skibbereen-001",
@@ -255,7 +288,10 @@
       "deleted": false,
       "deleted_timestamp": null,
       "deleted_by": null,
-      "last_updated": "24/08/2025 - 14:41:44"
+      "last_updated": "24/08/2025 - 22:37:52",
+      "last_updated_by": "877835af-3a73-415a-b51b-27ae8426e599",
+      "last_updated_by_name": "Alex Korne",
+      "last_updated_with": " from OpenWeather"
     },
     {
       "name": "Kyiv-001",
@@ -270,7 +306,10 @@
       "deleted": false,
       "deleted_timestamp": null,
       "deleted_by": null,
-      "last_updated": "24/08/2025 - 14:41:44"
+      "last_updated": "24/08/2025 - 22:37:52",
+      "last_updated_by": "877835af-3a73-415a-b51b-27ae8426e599",
+      "last_updated_by_name": "Alex Korne",
+      "last_updated_with": " from OpenWeather"
     },
     {
       "name": "Rio-de-Janeiro-001",
@@ -285,27 +324,10 @@
       "deleted": false,
       "deleted_timestamp": null,
       "deleted_by": null,
-      "last_updated": "24/08/2025 - 14:41:44"
-    },
-    {
-      "name": "test",
-      "location": "test",
-      "country": "test",
-      "latitude": "44",
-      "longitude": "55",
-      "id": "99a99bf4-8c9e-4750-b32d-de18dda04f4a",
-      "timestamp_created": "24/08/2025 - 11:51:08",
-      "created_by": "877835af-3a73-415a-b51b-27ae8426e599",
-      "created_by_name": "Alex Korne",
-      "deleted": true,
-      "deleted_timestamp": "24/08/2025 - 14:38:18",
-      "deleted_by": "877835af-3a73-415a-b51b-27ae8426e599",
-      "restored_by": "877835af-3a73-415a-b51b-27ae8426e599",
-      "restored_timestamp": "24/08/2025 - 14:19:10",
-      "edited_by": "877835af-3a73-415a-b51b-27ae8426e599",
-      "edited_by_name": "Alex Korne",
-      "timestamp_edited": "24/08/2025 - 14:23:14",
-      "last_updated": "24/08/2025 - 16:02:12"
+      "last_updated": "24/08/2025 - 22:37:52",
+      "last_updated_by": "877835af-3a73-415a-b51b-27ae8426e599",
+      "last_updated_by_name": "Alex Korne",
+      "last_updated_with": " from OpenWeather"
     }
   ]
 }

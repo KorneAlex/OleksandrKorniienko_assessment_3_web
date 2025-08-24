@@ -75,7 +75,7 @@ export const recordsStore = {
       return false;
     },
     
-    async addRecord(station_id, record, loggedInUser, extra_info) {
+    async addRecord(station_id, record, loggedInUser, method) {
     await db_rec.read();
     record.id = v4();
     record.station_id = station_id;
@@ -86,11 +86,11 @@ export const recordsStore = {
     record.deleted_timestamp = null;
     record.deleted_by = null;
     db_rec.data.recordsData.push(record);
-    await stationsStore.lastTimeUpdatedStation(station_id);
+    await stationsStore.lastTimeUpdatedStation(station_id, loggedInUser, method);
     await db_rec.write();
     console.log("records-store: Records data saved successfully.");
-    extra_info = extra_info===""? "manually":extra_info; 
-    await adminsStore.createLog(await usersStore.getUsersFullNameById(loggedInUser),"added record ", record.id, " to the station ", station_id, extra_info, "");
+    method = method===""? "manually":method; 
+    await adminsStore.createLog(await usersStore.getUsersFullNameById(loggedInUser),"added record ", record.id, " to the station ", station_id, method, "");
     return record;
   },
   

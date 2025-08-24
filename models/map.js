@@ -47,8 +47,8 @@ document.addEventListener("DOMContentLoaded", function () {
         );
         if (latestRecord) {
           const latest = latestRecord[latestRecord.length - 1];
-          description = `${station.country}<br><font color="grey">${latest.timestamp_created}</font><br><br>${latest.temperature} °C <br>${latest.wind_speed} m/sec <span><img src="/views/partials/icons/wind_unselected.svg" alt="wind_direction}"
-            style="position: absolute; height: 16px; width: 16px; rotate: -${latest.wind_direction}deg;"></span>
+          description = `${station.country}<br><font color="grey">${latest.timestamp_created}</font><br><br>${latest.temperature} °C <br>${latest.wind_speed} m/sec <span><img src="/views/partials/icons/wind_direction.svg" alt="wind_direction}"
+            style="position: absolute; height: 16px; width: 16px; rotate: ${latest.wind_direction}deg;"></span>
         <span style="padding-left: 20px;">${latest.wind_direction}°</span><br>${latest.pressure} hPa`;
         }
       } catch {

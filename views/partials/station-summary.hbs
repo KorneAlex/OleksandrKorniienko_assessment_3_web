@@ -1,6 +1,6 @@
 <style>
     .dashboard__summary--element {
-        width: 18%; 
+        width: 225px; 
         {{!-- border-style: solid; --}}
         border-radius: 4px;
         border-color: red;
@@ -11,7 +11,9 @@
     }
 </style>
 
-<section class="is-flex is-justify-content-center is-justify-content-space-around" style="margin-bottom: 2rem;">
+<section class="is-flex is-justify-content-center is-justify-content-space-around is-flex-wrap-wrap" style="margin-bottom: 2rem;">
+    <div>
+
     <div class="p-2 dashboard__summary--element">
         <div class="dashboard__summary--header is-flex is-flex-direction-row">
             <div class="card-header-title">Location<br>{{summaryForTheStation.location}}</div>
@@ -25,7 +27,7 @@
 
     <div class="p-2 dashboard__summary--element">
         <div class="dashboard__summary--header is-flex is-flex-direction-row">
-            <div class="card-header-title">Weather<br>{{currentWeatherConditions.code}}<br></div>
+            <div class="card-header-title">Weather<br>Code {{currentWeatherConditions.code}}<br></div>
             <div class="card-header-icon">{{>icons/current-weather}}</div>
         </div>
         <div class="card-content">
@@ -35,47 +37,49 @@
 
         </div>
     </div>
+    </div>
 
     <div class="p-2 dashboard__summary--element">
         <div class="dashboard__summary--header is-flex is-flex-direction-row">
-            <div class="card-header-title">Temp<br>{{summaryForTheStation.currentTemp}}</div>
+            <div class="card-header-title">Temp<br>{{summaryForTheStation.currentTemp}}°C</div>
             <div class="card-header-icon">{{>icons/temperature}}</div>
         </div>
         <div class="card-content">
-            <p>Now: {{summaryForTheStation.currentTemp}}</p>
-            <p>Min: {{summaryForTheStation.minTemp}}</p>
-            <p>Max: {{summaryForTheStation.maxTemp}}</p>
-            <p>Average: {{summaryForTheStation.avarageTemp}}</p>
+            <p>Now: {{summaryForTheStation.currentTemp}}°C</p>
+            <br><br><p>Overall: </p>
+            <p>Min: {{summaryForTheStation.minTemp}}°C</p>
+            <p>Max: {{summaryForTheStation.maxTemp}}°C</p>
+            <p>Average: {{summaryForTheStation.avarageTemp}}°C</p>
         </div>
     </div>
 
     <div class="p-2 dashboard__summary--element">
         <div class="dashboard__summary--header is-flex is-flex-direction-row">
-            <div class="card-header-title">Wind<br>{{summaryForTheStation.currentWindSpeed}}</div>
+            <div class="card-header-title">Wind<br>{{summaryForTheStation.currentWindSpeed}} m/s</div>
             <div class="card-header-icon">{{>icons/wind}}</div>
         </div>
         <div class="card-content">
-            <p>Speed: {{summaryForTheStation.currentWindSpeed}}</p>
-            <p>Direction: {{summaryForTheStation.currentWindDirection}}</p>
-            <p>Min: {{summaryForTheStation.minWindSpeed}}</p>
-            <p>Max: {{summaryForTheStation.maxWindSpeed}}</p>
-            <p>Average: {{summaryForTheStation.avarageWindDirection}}</p>
+            <p>Speed: {{summaryForTheStation.currentWindSpeed}} m/s</p>
+            <p>Direction: {{summaryForTheStation.currentWindDirection}} m/s</p>
+            <br><p>Overall: </p>
+            <p>Min: {{summaryForTheStation.minWindSpeed}} m/s</p>
+            <p>Max: {{summaryForTheStation.maxWindSpeed}} m/s</p>
+            <p>Average: {{summaryForTheStation.avarageWindDirection}} m/s</p>
         </div>
     </div>
 
     <div class="p-2 dashboard__summary--element">
         <div class="dashboard__summary--header is-flex is-flex-direction-row">
-            <div class="card-header-title">Pressure<br>{{summaryForTheStation.currentPressure}}</div>
+            <div class="card-header-title">Pressure<br>{{summaryForTheStation.currentPressure}} hPa</div>
             <div class="card-header-icon">{{>icons/pressure}}</div>
         </div>
         <div class="card-content">
-            <p>Now: {{summaryForTheStation.currentPressure}}</p>
-            <p>Min: {{summaryForTheStation.minPressure}}</p>
-            <p>Max: {{summaryForTheStation.maxPressure}}</p>
-            <p>Avarage: {{summaryForTheStation.avaragePressure}}</p>
+            <p>Now: {{summaryForTheStation.currentPressure}} hPa</p>
+            <br><br><p>Overall: </p>
+            <p>Min: {{summaryForTheStation.minPressure}} hPa</p>
+            <p>Max: {{summaryForTheStation.maxPressure}} hPa</p>
+            <p>Avarage: {{summaryForTheStation.avaragePressure}} hPa</p>
         </div>
     </div>
 
 </section>
-
-{{!-- TODO: make better design --}}

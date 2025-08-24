@@ -87,7 +87,8 @@ export const accountsController = {
     const user = await usersStore.getUserById(req.cookies.loggedInUser);
     await adminsStore.createLog(`${user.firstName} ${user.lastName}`, `logged out`, ``, ``, ``, ``, ``);
     res.cookie("loggedInUser", "", { httpOnly: true });
-    // res.cookie("WEATHER_API_KEY", "", { httpOnly: true }); // TODO clear all cookies
+    res.cookie("WEATHER_API_KEY", "", { httpOnly: true }); // TODO clear all cookies
+    res.cookie("MAP_API_KEY", "", { httpOnly: true }); // TODO clear all cookies
     res.redirect("/");
   },
 

@@ -1,6 +1,4 @@
 {{!-- TODO: css search by station name, location or country --}}
-{{!-- TODO: edit button on the tile opens the form to edit the station information + the same button in the station
-itself --}}
 {{!-- TODO: optimise for the mobile divices. tiles long press calls the tiles bar, fix the scroll (double touch scroll?)
 --}}
 
@@ -46,8 +44,8 @@ itself --}}
               {{#if this.currentWindDirection}}
               Direction: {{this.currentWindDirection}}°&nbsp
 
-              <img src="/views/partials/icons/wind_unselected.svg" alt="{{currentWindDirection}}"
-                style="rotate: -{{currentWindDirection}}deg; height: 16px; width: 16px;" {{else}} Deg: - {{/if}} </p>
+              <img src="/views/partials/icons/wind_direction.svg" alt="{{currentWindDirection}}"
+                style="rotate: {{currentWindDirection}}deg; height: 16px; width: 16px;"> {{else}} Deg: - {{/if}} </p>
           </div>
           <p>Pressure:
             {{#if this.currentPressure}}
@@ -110,18 +108,8 @@ itself --}}
   {{/if}}
 </div>
 {{/each}}
+
 {{!-- add new station --}}
-<style>
-  .station__card--add {
-    max-width: 25%;
-    min-width: 215px;
-    height: 300px;
-    margin: 8px;
-    margin-top: 8px;
-  }
-</style>
-
-
   {{#if userIsAdmin}}
 {{!-- this code is a mess but it works --}}
   <div class="card is-flex is-flex-direction-column is-justify-content-center is-align-items-center p-2 station__card station__card--add">

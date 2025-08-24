@@ -1,5 +1,5 @@
 <div>
-  <div class="table-container" style="max-height: 40rem; overflow-y:auto" id="scroll">
+  <div class="table-container" style="max-height: 40rem; overflow-y:auto">
     <table class="table is-fullwidth centered__table is-striped is-narrow">
       {{#if userIsAdmin}}
       <thead>
@@ -16,18 +16,18 @@
           <th>Delete</th>
         </tr>
       </thead>
-      {{#each activeRecordsDataByStationId}}
+      {{#each (revert activeRecordsDataByStationId)}}
       {{#if (eq ../editRecord id)}}
       {{>editRecord}}
       {{else}}
       <tr>
         <td>{{code}}</td>
-        <td>{{temperature}}</td>
-        <td>{{wind_speed}}</td>
-        <td><img src="/views/partials/icons/wind_unselected.svg" alt="{{wind_direction}}"
-            style="height: 16px; width: 16px; rotate: -{{wind_direction}}deg;">
+        <td>{{temperature}}°C</td>
+        <td>{{wind_speed}} m/s</td>
+        <td><img src="/views/partials/icons/wind_direction.svg" alt="{{wind_direction}}"
+            style="height: 16px; width: 16px; rotate: {{wind_direction}}deg;">
         {{wind_direction}}°</td>
-        <td>{{pressure}}</td>
+        <td>{{pressure}} hPa</td>
         <td>{{id}}</td>
         <td>{{created_by_name}}</td>
         <td>{{timestamp_created}}</td>
@@ -62,12 +62,12 @@
     {{else}}
     <tr>
       <td>{{code}}</td>
-      <td>{{temperature}}</td>
-      <td>{{wind_speed}}</td>
-      <td><img src="/views/partials/icons/wind_unselected.svg" alt="{{wind_direction}}"
-            style="height: 16px; width: 16px; rotate: -{{wind_direction}}deg;">
+      <td>{{temperature}}°C</td>
+      <td>{{wind_speed}} m/s</td>
+      <td><img src="/views/partials/icons/wind_direction.svg" alt="{{wind_direction}}"
+            style="height: 16px; width: 16px; rotate: {{wind_direction}}deg;">
         {{wind_direction}}°</td>
-      <td>{{pressure}}</td>
+      <td>{{pressure}} hPa</td>
       <td>{{created_by_name}}</td>
       <td>{{timestamp_created}}</td>
       {{!-- <td><a href="/stations/{{station_id}}/{{id}}">Edit</a></td> --}}

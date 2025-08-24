@@ -121,14 +121,19 @@ body {
       right: 0; 
       width: 45px; 
       height: 310px; 
-      {{!-- border-style:solid;  --}}
-      {{!-- border-color: red; --}}
     }
 
      .buttons__bar a{
         margin: 3px;
       }
 
+  .station__card--add {
+    max-width: 25%;
+    min-width: 215px;
+    height: 300px;
+    margin: 8px;
+    margin-top: 8px;
+  }
     
 .station__card .buttons__bar {
     position: absolute;
@@ -180,5 +185,3 @@ body {
           border-color: #E0E0E1;
           background-color: #E0E0E1;
         }
-
-/*  */

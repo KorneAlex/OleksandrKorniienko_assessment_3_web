@@ -2,9 +2,26 @@
     <div class="dashboard__summary--header is-flex is-flex-direction-row">
         <div class="card-header-title">Station information</div>
     </div>
-    <div class="card-content">
-        <table class="table is-narrow">
+    <div class="card-content is-flex is-flex-wrap-wrap">
+        <div class="is-flex is-flex-grow-1">
+        <table class="table is-narrow is-striped" style="width: 100%">
             <tbody>
+                <tr>
+                    <th>Location</th>
+                    <td>{{currentStation.location}}</td>
+                </tr>
+                <tr>
+                    <th>Country</th>
+                    <td>{{currentStation.country}}</td>
+                </tr>
+                <tr>
+                    <th>Latitude</th>
+                    <td>{{currentStation.latitude}}</td>
+                </tr>
+                <tr>
+                    <th>Longitude</th>
+                    <td>{{currentStation.longitude}}</td>
+                </tr>
                 <tr>
                     <th>Station ID</th>
                     <td>{{currentStation.id}}</td>
@@ -14,13 +31,19 @@
                     <td>{{currentStation.timestamp_created}}</td>
                 </tr>
                 <tr>
-                    <th>Created By</th>
+                    <th>Created By ID</th>
                     <td>{{currentStation.created_by}}</td>
                 </tr>
                 <tr>
-                    <th><abbr title="Created By User">Name</abbr>
+                    <th><abbr title="Created By User">Created By User</abbr>
                     <td>{{currentStation.created_by_name}}</td>
                 </tr>
+            </tbody>
+        </table>
+        </div>
+        <div class="is-flex is-flex-grow-1">
+        <table class="table is-narrow is-striped" style="width: 100%">
+            <tbody>
                 <tr>
                     <th>Deleted</th>
                     <td>{{currentStation.deleted}}</td>
@@ -41,7 +64,20 @@
                     <th>Last Updated</th>
                     <td>{{currentStation.last_updated}}</td>
                 </tr>
+                <tr>
+                    <th>Last Updated By</th>
+                    <td>{{currentStation.last_updated_by}}</td>
+                </tr>
+                <tr>
+                    <th><abbr title="Last Updated By User">Name</abbr>
+                    <td>{{currentStation.last_updated_by_name}}</td>
+                </tr>
+                <tr>
+                    <th>Last Updated Method</th>
+                    <td>{{currentStation.last_updated_with}}</td>
+                </tr>
             </tbody>
         </table>
+        </div>
     </div>
 </div>

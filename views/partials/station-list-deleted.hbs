@@ -16,7 +16,7 @@
         <th>Created By</th>
         <th>Deleted By</th>
         <th>Deleted On</th>
-        <th>EDIT</th>
+        <th>Open</th>
         <th><abbr title="Restore">RSTR</abbr></th>
         <th><abbr title="Delete From DB">DFDB</abbr></th>
       </tr>
@@ -32,7 +32,7 @@
       <td>{{created_by_name}}</td>
       <td>{{deleted_by_name}}</td>
       <td>{{deleted_timestamp}}</td>
-      <td><a href="/stations/{{id}}" class="button"><div class="station-button">{{>icons/edit-icon}}</div></a></td>
+      <td><a href="/stations/{{id}}" class="button"><div class="station-button">{{>icons/logo}}</div></a></td>
       <td><a href="/stations/{{id}}/restoreStation" class="button"><div class="station-button">{{>icons/restore-icon}}</div></a></td>
       <td><a href="/stations/{{id}}/deleteStationFromDB" class="button"><div class="station-button">{{>icons/delete-forever-icon}}</div></a></td>
     </tr>

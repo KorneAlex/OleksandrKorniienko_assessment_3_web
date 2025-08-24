@@ -45,6 +45,15 @@
       "id": "6b5c2ece-e150-4950-a3eb-6dd043f4d82a",
       "created_timestamp": "24/08/2025 - 15:11:15",
       "admin": false
+    },
+    {
+      "firstName": "Lecturer",
+      "lastName": "Setu",
+      "email": "lecturer@setu.ie",
+      "password": "setupass",
+      "id": "5f9a08ba-dc6d-4348-94ac-c6c287a6879c",
+      "created_timestamp": "24/08/2025 - 22:53:23",
+      "admin": true
     }
   ]
 }

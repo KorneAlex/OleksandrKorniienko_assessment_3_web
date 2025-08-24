@@ -902,6 +902,23 @@
       "deleted_timestamp": "23/08/2025 - 17:13:28",
       "deleted_by": "877835af-3a73-415a-b51b-27ae8426e599",
       "deleted_fromDB": "23/08/2025 - 17:13:30"
+    },
+    {
+      "source": "OpenWeather",
+      "code": 800,
+      "temperature": 31.19,
+      "wind_speed": 3.03,
+      "wind_direction": 129,
+      "pressure": 1011,
+      "id": "769316d6-e280-4dab-b2ed-fe535efb3463",
+      "station_id": "99a99bf4-8c9e-4750-b32d-de18dda04f4a",
+      "timestamp_created": "24/08/2025 - 16:02:12",
+      "created_by": "877835af-3a73-415a-b51b-27ae8426e599",
+      "created_by_name": "Alex Korne",
+      "deleted": false,
+      "deleted_timestamp": null,
+      "deleted_by": null,
+      "deleted_fromDB": "24/08/2025 - 22:38:12"
     }
   ]
 }

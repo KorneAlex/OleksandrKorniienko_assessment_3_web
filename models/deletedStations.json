@@ -388,6 +388,27 @@
       "restored_by": "877835af-3a73-415a-b51b-27ae8426e599",
       "restored_timestamp": "21/08/2025 - 11:51:20",
       "deleted_fromDB": "23/08/2025 - 17:52:52"
+    },
+    {
+      "name": "test",
+      "location": "test",
+      "country": "test",
+      "latitude": "44",
+      "longitude": "55",
+      "id": "99a99bf4-8c9e-4750-b32d-de18dda04f4a",
+      "timestamp_created": "24/08/2025 - 11:51:08",
+      "created_by": "877835af-3a73-415a-b51b-27ae8426e599",
+      "created_by_name": "Alex Korne",
+      "deleted": true,
+      "deleted_timestamp": "24/08/2025 - 22:38:09",
+      "deleted_by": "877835af-3a73-415a-b51b-27ae8426e599",
+      "restored_by": "877835af-3a73-415a-b51b-27ae8426e599",
+      "restored_timestamp": "24/08/2025 - 22:38:06",
+      "edited_by": "877835af-3a73-415a-b51b-27ae8426e599",
+      "edited_by_name": "Alex Korne",
+      "timestamp_edited": "24/08/2025 - 14:23:14",
+      "last_updated": "24/08/2025 - 16:02:12",
+      "deleted_fromDB": "24/08/2025 - 22:38:12"
     }
   ]
 }

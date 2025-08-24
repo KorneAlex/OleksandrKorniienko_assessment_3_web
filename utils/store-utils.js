@@ -60,7 +60,4 @@ export const utils = {
     }
   return null;
   },
-  
-  async test() {},
-
 }

@@ -21,6 +21,24 @@ Handlebars.registerHelper('eq', function (operand1, operand2) {
     }
 });
 
+// reverts array list for records lists
+Handlebars.registerHelper('revert', function (arr) {
+  let arrReverted = [];
+  if(arr){
+    if(Object.keys(arr).length>1){
+      let j = 0;
+      for(let i = Object.keys(arr).length; i>0; i--){
+        arrReverted.push(arr[i-1]);
+      }
+      return arrReverted;
+    }
+      console.log("arr.lenght<1");
+      return null;
+    }
+    console.log("!arr.lenght");
+    return null;
+});
+
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 

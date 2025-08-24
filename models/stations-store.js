@@ -194,10 +194,13 @@ export const stationsStore = {
         return stationToEdit;
   },
 
-  async lastTimeUpdatedStation(station_id) {
+  async lastTimeUpdatedStation(station_id, loggedInUser, method) {
     await db.read();
     let stationToEdit = await stationsStore.getStationById(station_id);
     stationToEdit.last_updated = format(new Date(), "dd/MM/yyyy' - 'HH:mm:ss");
+    stationToEdit.last_updated_by = loggedInUser;
+    stationToEdit.last_updated_by_name = await usersStore.getUsersFullNameById(loggedInUser);
+    stationToEdit.last_updated_with = method;
     console.log("stationToEdit.last_updated: " + stationToEdit.last_updated);
     await db.write();
   },

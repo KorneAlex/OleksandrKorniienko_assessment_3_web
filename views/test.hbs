@@ -1,15 +1,99 @@
-<!DOCTYPE html>
-<html lang="en">
+{{>page/menu active="test"}}
 
-<head>
-  <meta charset="UTF-8">
-  <title>Cluste</title>
-  <link rel="stylesheet" href="./style.css">
-</head>
+  <p><img src="/views/partials/icons/wind_direction.svg" style="rotate: 0deg; height: 16px; width: 16px;"> Deg: 0</p>
+  <p><img src="/views/partials/icons/wind_direction.svg" style="rotate: 225deg; height: 16px; width: 16px;"> Deg: 225
+  </p>
+  <p><img src="/views/partials/icons/wind_direction.svg" style="rotate: 135deg; height: 16px; width: 16px;"> Deg: 135
+  </p>
+  <p><span id="wind_dir">winddir</span></p>
+  <button class="button" onclick="windDirection(233)">tesst</button>
 
-<body>
+  {{!-- <script>
+    function windDirection(deg) {
+      console.log("tesssst");
+      let wind_dir = document.getElementsByClassName("wind_dir");
+      let direction;
 
-
+      if (deg >= 0 && deg < 11.25) {
+        direction = "N";
+      } else if (deg >= 11.25 && deg < 33.75) {
+        direction = "N/NE";
+      } else if (deg >= 33.75 && deg < 56.25) {
+        direction = "NE";
+      } else if (deg >= 56.25 && deg < 78.75) {
+        direction = "E/NE";
+      } else if (deg >= 78.75 && deg < 101.25) {
+        direction = "E";
+      } else if (deg >= 101.25 && deg < 123.75) {
+        direction = "E/SE";
+      } else if (deg >= 123.75 && deg < 146.25) {
+        direction = "SE";
+      } else if (deg >= 146.25 && deg < 168.75) {
+        direction = "S/SE";
+      } else if (deg >= 168.75 && deg < 191.25) {
+        direction = "S";
+      } else if (deg >= 191.25 && deg < 213.75) {
+        direction = "S/SW";
+      } else if (deg >= 213.75 && deg < 236.25) {
+        direction = "SW";
+      } else if (deg >= 236.25 && deg < 258.75) {
+        direction = "W/SW";
+      } else if (deg >= 258.75 && deg < 281.25) {
+        direction = "W";
+      } else if (deg >= 281.25 && deg < 303.75) {
+        direction = "W/NW";
+      } else if (deg >= 303.75 && deg < 326.25) {
+        direction = "NW";
+      } else if (deg >= 326.25 && deg < 348.75) {
+        direction = "N/NW";
+      } else if (deg >= 348.75 && deg <= 360) {
+        direction = "N";
+      } else {
+        direction = "ERR";
+      }
+      wind_dir.innerHTML = direction;
+    }
+});
+  </script> --}}
 </body>
 
 </html>
+
+  {{!-- // https://www.e-education.psu.edu/meteo300/node/719
+  // https://uni.edu/storm/Wind%20Direction%20slide.pdf
+  // 
+  // 348.75 - 11.25: N
+  // 11.25 - 33.75: N/NE
+  // 33.75 - 56.25: NE
+  // 56.25 - 78.75: E/NE
+  // 78.75 - 101.25: E
+  // 101.25 - 123.75: E/SE
+  // 123.75 - 146.25: SE
+  // 146.25 - 168.75: S/SE
+  // 168.75 - 191.25: S
+  // 191.25 - 213.75: S/SW
+  // 213.75 - 236.25: SW
+  // 236.25 - 258.75: W/SW
+  // 258.75 - 281.25: W
+  // 281.25 - 303.75: W/NW
+  // 303.75 - 326.25: NW
+  // 326.25 - 348.75: N/NW
+  async windDirection(deg) {
+    return (0<=deg<=11.25)? "N":
+           (11.25<=deg<=33.75)? "N/NE":
+           (33.75<=deg<=56.25)? "NE":
+           (56.25<=deg<=78.75)? "E/NE":
+           (78.75<=deg<=101.25)? "E":
+           (101.25<=deg<=123.75)? "E/SE":
+           (123.75<=deg<=146.25)? "SE":
+           (146.25<=deg<=168.75)? "S/SE":
+           (168.75<=deg<=191.25)? "S":
+           (191.25<=deg<=213.75)? "S/SW":
+           (213.75<=deg<=236.25)? "SW":
+           (236.25<=deg<=258.75)? "W/SW":
+           (258.75<=deg<=281.25)? "W":
+           (281.25<=deg<=303.75)? "W/NW":
+           (303.75<=deg<=326.25)? "NW":
+           (326.25<=deg<=348.75)? "N/NW":
+           (348.75<=deg<=360)? "N":"ERR";
+} --}}

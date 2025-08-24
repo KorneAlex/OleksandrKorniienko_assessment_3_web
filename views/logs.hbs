@@ -1,6 +1,6 @@
 {{>page/menu active="logs"}}
 <section>
-    <div class="table-container logs__table" style="max-height: 40rem; overflow-y:auto;" id="scroll">
+    <div class="table-container logs__table" style="max-height: 40rem; overflow-y:auto;">
         <table class="table is-striped is-narrow is-fullwidth">
 
             <thead>
@@ -12,7 +12,7 @@
                     <th>Description</th>
                 </tr>
             </thead>
-            {{#each logsData}}
+            {{#each (revert logsData)}}
             <tr>
                 <td>{{this.id}}</td>
                 <td>{{this.date}}</td>
