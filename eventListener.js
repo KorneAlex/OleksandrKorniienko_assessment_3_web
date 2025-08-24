@@ -38,4 +38,4 @@ document.addEventListener("DOMContentLoaded", function() {
 // burgerIcon.addEventListener("click", () => {
 //             navbarMenu.classList.toggle("is-active");
 //         });
-});
+// });
