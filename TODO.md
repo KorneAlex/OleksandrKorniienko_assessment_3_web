@@ -5,7 +5,7 @@ Add feature that will allow to recover data for all data stores. Instead of Dele
 Create users-controller and permissions for them {cm:2025-07-26}
 Add the ability to update all data, Admins - evething, users - only data they created. {cm:2025-08-16}
 Create logs of events: updates, deletions, creations, etc. {cm:2025-08-17}
-Create an Admin page console to see logs and etc.
+Create an Admin page console to see logs and etc. {cm:2025-08-24}
 Create all buttons and functions with routes for stations and records {cm:2025-07-24}
 Last time updated in stations when add a new record {cm:2025-08-16}
 Instead of delete forever from database make it be moved to the deleted_stations.json and deleted_records.json so it still could be recovered {cm:2025-07-24}

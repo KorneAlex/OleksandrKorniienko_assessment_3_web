@@ -7,7 +7,7 @@
   {{#each summaryForTheStation}}
 
   {{!-- card --}}
-  <a href="/stations/{{id}}">
+  {{!-- <a href="/stations/{{id}}"> --}}
     <div class="card is-flex is-flex-direction-column is-justify-content-center p-2 station__card"
       style="max-width: 25%; min-width: 215px; height: 300px; margin: 8px; margin-top: 8px;">
 
@@ -55,17 +55,20 @@
             {{/if}}</p>
         </div>
       </div>
-  </a>
+  {{!-- </a> --}}
   {{!-- buttons bar for admin --}}
-  {{#if ../userIsAdmin}}
   <div class="buttons__bar">
+    <a href="/stations/{{id}}" class="button"><div class="station-button">{{>icons/logo}}</div></a>
+    {{#if ../userIsAdmin}}
     <a onclick="openEditOnTile('{{id}}')" class="button">
       <div class="station-button">{{>icons/edit-icon}}</div>
     </a>
     <a href="/stations/{{id}}/deleteStation" class="button">
       <div class="station-button">{{>icons/delete-icon}}</div>
     </a>
+    {{/if}}
   </div>
+  {{#if ../userIsAdmin}}
   {{!-- popup edit station on the card --}}
   <form class="box message edit__station_tile" name="{{id}}" id="{{id}}" action="/stations/editStation/{{id}}/false"
     method="POST" onsubmit="return validateFormStationTile(this)">

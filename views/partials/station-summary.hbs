@@ -9,10 +9,19 @@
         background-color: #EEEEEE;
         border-radius: 10px;
     }
+    @media only screen and (max-width: 600px){
+    .dashboard__summary--element {
+        width: 100%;
+    }
+
+    .fullwidth__mobile {
+        width: 100%;
+    }
+    }
 </style>
 
 <section class="is-flex is-justify-content-center is-justify-content-space-around is-flex-wrap-wrap" style="margin-bottom: 2rem;">
-    <div>
+    <div class="dashboard__summary--element">
 
     <div class="p-2 dashboard__summary--element">
         <div class="dashboard__summary--header is-flex is-flex-direction-row">
