@@ -33,9 +33,8 @@ document.addEventListener("DOMContentLoaded", function() {
 //   });
 
 //TODO: finish the bulma burger
-//   const burgerIcon = document.querySelector(`navbar-burger`);
-//         const navbarMenu = document.querySelector(`#navMenu`);
-// burgerIcon.addEventListener("click", () => {
-//             navbarMenu.classList.toggle("is-active");
-//         });
-// });
+const burgerIcon = document.querySelector(`navbar-burger`);
+const navbarMenu = document.querySelector(`#navMenu`);
+burgerIcon.addEventListener("click", () => {
+            navbarMenu.classList.toggle("is-active");
+        });
