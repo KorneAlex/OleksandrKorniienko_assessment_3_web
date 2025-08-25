@@ -1,17 +1,16 @@
 <nav class="navbar mb-6 is-align-items-baseline">
   <div class="navbar-brand">
     {{>page/brand}}
-{{!-- <a class="navbar-burger" role="button" aria-label="menu" aria-expanded="false">
-  <span aria-hidden="true"></span>
-  <span aria-hidden="true"></span>
-  <span aria-hidden="true"></span>
-  <span aria-hidden="true"></span>
-</a> --}}
+    <a id="navbar-burger" class="navbar-burger" role="button" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
   </div>
-   <span id="locationStatus"></span>
+   <span id="locationStatus" style="padding-left: 20px !important;"></span>
 
 
-  <div class="navbar-menu is-active" id="navMenu">
+  <div class="navbar-menu" id="navMenu">
     <div class="navbar-end">
       <div class="navbar-item">
         <div class="buttons">
@@ -46,4 +45,12 @@
   {{#if stationView}}
   try { document.getElementById("locationStatus").innerHTML = `in {{currentWeatherConditions.friendlyStatus}} {{currentStation.location}}`; } catch { console.log("menu.hbs: no location")}
   {{/if}}
+
+  const burgerIcon = document.querySelector('#navbar-burger');
+  const navbarMenu = document.querySelector('#navMenu');
+
+  burgerIcon.addEventListener('click', () => {
+    navbarMenu.classList.toggle('is-active');
+    burgerIcon.classList.toggle('is-active');
+  });
 </script>
